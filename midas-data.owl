@@ -311,7 +311,7 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000035">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000043"/>
         <datasets:MIDAS_DATA000003>Data on impact of outbreak on humanitarian efforts external to the outbreak. For example, the impact of the COVID-19 pandemic on childhood vaccination.</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Aid/responses</rdfs:label>
     </owl:Class>
@@ -519,7 +519,7 @@
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000065 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000065">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000086"/>
         <datasets:MIDAS_DATA000003>Policies undertaken to slow spread or otherwise combat outbreaks</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Interventions</rdfs:label>
     </owl:Class>
@@ -717,6 +717,56 @@
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000074"/>
         <datasets:MIDAS_DATA000003>Datasets about references to outbreaks or discussion of outbreaks on social media sites. Includes information distributed about an outbreak via social media</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Social media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000086 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000086">
+        <rdfs:label xml:lang="en">Deprecated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000087 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000087">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
+        <datasets:MIDAS_DATA000003>Natural surroundings and related phenomena that might influence outbreaks</datasets:MIDAS_DATA000003>
+        <datasets:MIDAS_DATA000003>could be environemntal system process ENVO: 02500000</datasets:MIDAS_DATA000003>
+        <rdfs:label xml:lang="en">Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000088 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000088">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000087"/>
+        <datasets:MIDAS_DATA000003>Long-term weather systems and their influence on outbreaks</datasets:MIDAS_DATA000003>
+        <rdfs:comment>might instead be APOLLO_SV:00000591</rdfs:comment>
+        <rdfs:label xml:lang="en">Climate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000089 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000089">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
+        <rdfs:comment>Data relating to health care</rdfs:comment>
+        <rdfs:label xml:lang="en">Medical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000090 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000090">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000089"/>
+        <datasets:MIDAS_DATA000003>Information related to medical trials</datasets:MIDAS_DATA000003>
+        <rdfs:label xml:lang="en">Clinical Trial</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
