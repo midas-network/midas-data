@@ -398,7 +398,7 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000049">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000016"/>
         <datasets:MIDAS_DATA000003>Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge</datasets:MIDAS_DATA000003>
-        <rdfs:label xml:lang="en">Expert opinion forecasts</rdfs:label>
+        <rdfs:label xml:lang="en">Expert assessment/opinion</rdfs:label>
     </owl:Class>
     
 
@@ -643,7 +643,7 @@
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000078 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000078">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000067"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000086"/>
         <datasets:MIDAS_DATA000003>Estimates of parameter values based on expert opinion</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Expert assessments of parameter values</rdfs:label>
     </owl:Class>
@@ -664,7 +664,7 @@
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000080 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000080">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
         <datasets:MIDAS_DATA000003>Data about transmission or cases in a specific location (e.g., schools, hospitals), particularly if transmission is different in this location compared to the broader world</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Transmission settings</rdfs:label>
     </owl:Class>
