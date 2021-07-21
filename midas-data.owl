@@ -734,7 +734,6 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000087">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
         <datasets:MIDAS_DATA000003>Natural surroundings and related phenomena that might influence outbreaks</datasets:MIDAS_DATA000003>
-        <datasets:MIDAS_DATA000003>could be environemntal system process ENVO: 02500000</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Environment</rdfs:label>
     </owl:Class>
     
@@ -745,7 +744,6 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000088">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000087"/>
         <datasets:MIDAS_DATA000003>Long-term weather systems and their influence on outbreaks</datasets:MIDAS_DATA000003>
-        <rdfs:comment>might instead be APOLLO_SV:00000591</rdfs:comment>
         <rdfs:label xml:lang="en">Climate</rdfs:label>
     </owl:Class>
     
