@@ -222,6 +222,16 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000019 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000019">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000038"/>
+        <datasets:MIDAS_DATA000003 xml:lang="en">data on occurrences of different pathogen species, strains, clades, or variants</datasets:MIDAS_DATA000003>
+        <rdfs:label xml:lang="en">Variant cases</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000021 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000021">
