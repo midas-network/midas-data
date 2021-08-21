@@ -153,7 +153,7 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000012">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
-        <datasets:MIDAS_DATA000003>An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counrs and forecats.</datasets:MIDAS_DATA000003>
+        <datasets:MIDAS_DATA000003 xml:lang="en">An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counts and forecasts.</datasets:MIDAS_DATA000003>
         <rdfs:comment>link to some existing ontological term?</rdfs:comment>
         <rdfs:label xml:lang="en">Dashboard</rdfs:label>
     </owl:Class>
@@ -164,7 +164,7 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000013">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
-        <datasets:MIDAS_DATA000003>Code that allows users to change input and obtain modified output (interactive)</datasets:MIDAS_DATA000003>
+        <datasets:MIDAS_DATA000003 xml:lang="en">An app or executable file that results in different outputs depending on user-specified inputs.</datasets:MIDAS_DATA000003>
         <rdfs:comment>link to some external entity?</rdfs:comment>
         <rdfs:label xml:lang="en">Software</rdfs:label>
     </owl:Class>
@@ -175,7 +175,9 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000014">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
+        <datasets:MIDAS_DATA000003 xml:lang="en">A body of structured information describing some topic(s) of interest. (Schema.org)</datasets:MIDAS_DATA000003>
         <datasets:MIDAS_DATA000003>A collection of data presented in a formatted and defined manner, along with metadata enabling interpretation of that data. Might be one of the elements in a catalog or repository</datasets:MIDAS_DATA000003>
+        <datasets:MIDAS_DATA000003 xml:lang="en">A collection of related data records.</datasets:MIDAS_DATA000003>
         <rdfs:comment>is there some existing external definition to tie this to?</rdfs:comment>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
     </owl:Class>
@@ -291,6 +293,7 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000032">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
         <datasets:MIDAS_DATA000003>A collection of information in various types of structured or non-structured formats</datasets:MIDAS_DATA000003>
+        <datasets:MIDAS_DATA000003 xml:lang="en">A collection of objects within a single infrastructure/organization, with mostly consistent formats and metadata</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Repository</rdfs:label>
     </owl:Class>
     
