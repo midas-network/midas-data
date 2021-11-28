@@ -426,7 +426,7 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000035">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <datasets:MIDAS_DATA000003>Data on impact of outbreak on humanitarian efforts</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Aid/responses</rdfs:label>
     </owl:Class>
@@ -492,7 +492,7 @@
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000045 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000045">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <datasets:MIDAS_DATA000003>Events that were cancelled due to an outbreak</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Event cancellations</rdfs:label>
     </owl:Class>
@@ -569,7 +569,7 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000057">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <datasets:MIDAS_DATA000003>Aggregate descriptions of multiple factors invovling susceptibility to outbreaks</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Risk factors</rdfs:label>
     </owl:Class>
@@ -593,6 +593,7 @@
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
         <datasets:MIDAS_DATA000003>Information about vaccination, lockdowns, school closures, other interventions</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Public health interventions and policies</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -600,7 +601,7 @@
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000060 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000060">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <datasets:MIDAS_DATA000003>Where tests are available, how mmany tests, etc.</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Testing availability</rdfs:label>
     </owl:Class>
@@ -620,7 +621,7 @@
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000062 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000062">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <datasets:MIDAS_DATA000003>Reports of policy violations</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Regulatory complaints</rdfs:label>
     </owl:Class>
@@ -645,6 +646,7 @@
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
         <datasets:MIDAS_DATA000003>Policies undertaken to slow spread or otherwise combat outbreaks</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Interventions</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -695,7 +697,7 @@
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000071 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000071">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <datasets:MIDAS_DATA000003>Data regarding the availability or administration of vaccinations.</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Vaccinations</rdfs:label>
     </owl:Class>
@@ -964,10 +966,25 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
+        <obo:IAO_0000111 xml:lang="en">infectious disease control strategy census</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">a census of infectious disease control strategies put into place to reduce infection acquisitions that are part of an infection in an ecosystem.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-16T16:43:04Z</dc:date>
+        <rdfs:label xml:lang="en">control strategy census</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000605 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000111 xml:lang="en">school closure infectious disease control strategy census</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">an infectious disease control strategy census that is about school closure infectious disease control strategies implemented in a particular geographical region.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
