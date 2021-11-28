@@ -506,6 +506,7 @@
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000038"/>
         <datasets:MIDAS_DATA000003>Increases in deaths potentially attributable to an outbreak</datasets:MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Excess mortality</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -993,6 +994,20 @@
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-16T16:44:03Z</dc:date>
         <rdfs:comment xml:lang="en">This class represents datasets about strategies for school closure.  Datasets about individual actual school closures go elsewhere.</rdfs:comment>
         <rdfs:label xml:lang="en">school closure control strategy census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000608">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000038"/>
+        <obo:IAO_0000111 xml:lang="en">dataset about excess mortality in a population</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A population mortality dataset that compares deaths in the population during one time interval to deaths in the population during a previous time interval and reports an estimate of how many more or less deaths occurred in the later time interval.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Often used during epidemics or pandemics to estimate the death toll.</rdfs:comment>
+        <rdfs:label xml:lang="en">excess mortality dataset</rdfs:label>
     </owl:Class>
     
 
