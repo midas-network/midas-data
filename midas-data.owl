@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://midasnetwork.us/datasets/"
-     xml:base="http://midasnetwork.us/datasets/"
+<rdf:RDF xmlns="http://w3id.org/midas-metadata/"
+     xml:base="http://w3id.org/midas-metadata/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,7 +11,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:datasets="http://midasnetwork.us/datasets#"
+     xmlns:datasets="http://w3id.org/midas-metadata/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets"/>
@@ -29,18 +29,18 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000001 -->
+    <!-- http://w3id.org/midas-metadata/1 -->
 
-    <owl:AnnotationProperty rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000001">
+    <owl:AnnotationProperty rdf:about="http://w3id.org/midas-metadata/1">
         <rdfs:label xml:lang="en">Definition</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000003 -->
+    <!-- http://w3id.org/midas-metadata/3 -->
 
-    <owl:AnnotationProperty rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000003">
+    <owl:AnnotationProperty rdf:about="http://w3id.org/midas-metadata/3">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -219,121 +219,121 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000000 -->
+    <!-- http://w3id.org/midas-metadata/0 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000000">
-        <datasets:MIDAS_DATA000003>A medical diagnosis associated with a given outbreak or dataset related to that outbreak. Usually will refer to an ICD, NCIT, UMLS, or similar code.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/0">
+        <datasets:3>A medical diagnosis associated with a given outbreak or dataset related to that outbreak. Usually will refer to an ICD, NCIT, UMLS, or similar code.</datasets:3>
         <rdfs:comment></rdfs:comment>
         <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000002 -->
+    <!-- http://w3id.org/midas-metadata/2 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000002">
-        <datasets:MIDAS_DATA000003>The subject of the digital object - what it is about.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/2">
+        <datasets:3>The subject of the digital object - what it is about.</datasets:3>
         <rdfs:label xml:lang="en">Topic</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000004 -->
+    <!-- http://w3id.org/midas-metadata/4 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000004">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000000"/>
-        <datasets:MIDAS_DATA000003>Associated with the 2019-2020 COVID-19 outbreak.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/4">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/0"/>
+        <datasets:3>Associated with the 2019-2020 COVID-19 outbreak.</datasets:3>
         <rdfs:label xml:lang="en">COVID-19</rdfs:label>
         <rdfs:seeAlso>ICD Code U07.1</rdfs:seeAlso>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000005 -->
+    <!-- http://w3id.org/midas-metadata/5 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000005">
-        <datasets:MIDAS_DATA000003>The &quot;domain&quot; of the entity - specifically, the focus of the data contained therein.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/5">
+        <datasets:3>The &quot;domain&quot; of the entity - specifically, the focus of the data contained therein.</datasets:3>
         <rdfs:label xml:lang="en">Biological Scale</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000006 -->
+    <!-- http://w3id.org/midas-metadata/6 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000006">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <datasets:MIDAS_DATA000003>Descriptors of the behavior of an outbreak</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/6">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <datasets:3>Descriptors of the behavior of an outbreak</datasets:3>
         <rdfs:label xml:lang="en">Modeling</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000007 -->
+    <!-- http://w3id.org/midas-metadata/7 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000007">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000011"/>
-        <datasets:MIDAS_DATA000003>Collections of entities from the research literature, or derived from the literature.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/7">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/11"/>
+        <datasets:3>Collections of entities from the research literature, or derived from the literature.</datasets:3>
         <rdfs:label xml:lang="en">Literature</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000008 -->
+    <!-- http://w3id.org/midas-metadata/8 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000008">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000005"/>
-        <datasets:MIDAS_DATA000003>Items referring to sequence-level data, including genomics, microbiomics, proteomics, etc.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/8">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/5"/>
+        <datasets:3>Items referring to sequence-level data, including genomics, microbiomics, proteomics, etc.</datasets:3>
         <rdfs:label xml:lang="en">Molecular</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000009 -->
+    <!-- http://w3id.org/midas-metadata/9 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000009">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000005"/>
-        <datasets:MIDAS_DATA000003>Items corresponding to entire populations or subpopulations. Might be geographically or temporally temporally limited.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/9">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/5"/>
+        <datasets:3>Items corresponding to entire populations or subpopulations. Might be geographically or temporally temporally limited.</datasets:3>
         <rdfs:label xml:lang="en">Population</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000010 -->
+    <!-- http://w3id.org/midas-metadata/10 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000010">
-        <datasets:MIDAS_DATA000003>Descriptors of the data found in the dataset - broadly categorizing the entries that might be annotated with this model</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/10">
+        <datasets:3>Descriptors of the data found in the dataset - broadly categorizing the entries that might be annotated with this model</datasets:3>
         <rdfs:label xml:lang="en">Digital Object Type</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000011 -->
+    <!-- http://w3id.org/midas-metadata/11 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000011">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
-        <datasets:MIDAS_DATA000003>A collection of links to other data items, often found in external repositories. No claims are made as to the format or consistency of the items associated with those links.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/11">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/10"/>
+        <datasets:3>A collection of links to other data items, often found in external repositories. No claims are made as to the format or consistency of the items associated with those links.</datasets:3>
         <rdfs:comment>Probably should link to some external dataset.</rdfs:comment>
         <rdfs:label xml:lang="en">Catalog</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000012 -->
+    <!-- http://w3id.org/midas-metadata/12 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000012">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
-        <datasets:MIDAS_DATA000003>An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counrs and forecats.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/12">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/10"/>
+        <datasets:3>An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counrs and forecats.</datasets:3>
         <rdfs:comment>link to some existing ontological term?</rdfs:comment>
         <rdfs:label xml:lang="en">Dashboard</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000013 -->
+    <!-- http://w3id.org/midas-metadata/13 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000013">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
-        <datasets:MIDAS_DATA000003>Code that allows users to change input and obtain modified output (interactive)</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/13">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/10"/>
+        <datasets:3>Code that allows users to change input and obtain modified output (interactive)</datasets:3>
         <rdfs:comment>link to some external entity?</rdfs:comment>
         <rdfs:label xml:lang="en">Software</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -341,11 +341,11 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000014 -->
+    <!-- http://w3id.org/midas-metadata/14 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000014">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
-        <datasets:MIDAS_DATA000003>A collection of data presented in a formatted and defined manner, along with metadata enabling interpretation of that data. Might be one of the elements in a catalog or repository</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/14">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/10"/>
+        <datasets:3>A collection of data presented in a formatted and defined manner, along with metadata enabling interpretation of that data. Might be one of the elements in a catalog or repository</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/IAO_0000100</obo:IAO_0100001>
         <rdfs:comment>is there some existing external definition to tie this to?</rdfs:comment>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
@@ -354,35 +354,35 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000018 -->
+    <!-- http://w3id.org/midas-metadata/18 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000018">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000006"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003 xml:lang="en">Projections of outbreak behavior into some future time, determined relative to a defined starting point. Might include retrospective projects or projections for current activitiy (known as &quot;now-casting&quot;).</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/18">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/6"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3 xml:lang="en">Projections of outbreak behavior into some future time, determined relative to a defined starting point. Might include retrospective projects or projections for current activitiy (known as &quot;now-casting&quot;).</datasets:3>
         <rdfs:label>Forecasting</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000021 -->
+    <!-- http://w3id.org/midas-metadata/21 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000021">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Information about capacity, including hospital beds, PPE supplies, nursing home capacity, testing sites, therapeutics, etc.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/21">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Information about capacity, including hospital beds, PPE supplies, nursing home capacity, testing sites, therapeutics, etc.</datasets:3>
         <rdfs:label xml:lang="en">Health system capacity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000025 -->
+    <!-- http://w3id.org/midas-metadata/25 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000025">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000013"/>
-        <datasets:MIDAS_DATA000003>Code for facilitating access to modeling data from a remote source.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/25">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/13"/>
+        <datasets:3>Code for facilitating access to modeling data from a remote source.</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OBI_0001530</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Data retrieval/API</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -390,120 +390,120 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000028 -->
+    <!-- http://w3id.org/midas-metadata/28 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000028">
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/28">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
-        <datasets:MIDAS_DATA000003>Construction and/or visualization of phylogenetic trees based on sequence data</datasets:MIDAS_DATA000003>
+        <datasets:3>Construction and/or visualization of phylogenetic trees based on sequence data</datasets:3>
         <rdfs:label xml:lang="en">Phylogenetics</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000029 -->
+    <!-- http://w3id.org/midas-metadata/29 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000029">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000008"/>
-        <datasets:MIDAS_DATA000003>Analysis and comparison of DNA, RNA, or other sequence data. Includes all types of analysises, including alignment, cleaning, and other comparisons.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/29">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/8"/>
+        <datasets:3>Analysis and comparison of DNA, RNA, or other sequence data. Includes all types of analysises, including alignment, cleaning, and other comparisons.</datasets:3>
         <rdfs:label xml:lang="en">Sequence data</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000030 -->
+    <!-- http://w3id.org/midas-metadata/30 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000030">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000007"/>
-        <datasets:MIDAS_DATA000003>Papers describing modeling studies</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/30">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/7"/>
+        <datasets:3>Papers describing modeling studies</datasets:3>
         <rdfs:label xml:lang="en">Modeling studies</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000032 -->
+    <!-- http://w3id.org/midas-metadata/32 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000032">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
-        <datasets:MIDAS_DATA000003>A collection of information in various types of structured or non-structured formats</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/32">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/10"/>
+        <datasets:3>A collection of information in various types of structured or non-structured formats</datasets:3>
         <rdfs:label xml:lang="en">Repository</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000033 -->
+    <!-- http://w3id.org/midas-metadata/33 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000033">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000007"/>
-        <datasets:MIDAS_DATA000003>A catalog focused on a specific disease</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/33">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/7"/>
+        <datasets:3>A catalog focused on a specific disease</datasets:3>
         <rdfs:label xml:lang="en">Disease-specific collection</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000034 -->
+    <!-- http://w3id.org/midas-metadata/34 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000034">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Information about diagnostic tests, results, including serology tests, PCR, and other tests</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/34">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Information about diagnostic tests, results, including serology tests, PCR, and other tests</datasets:3>
         <rdfs:label xml:lang="en">Diagnostic Tests</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000035 -->
+    <!-- http://w3id.org/midas-metadata/35 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000035">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/35">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <datasets:MIDAS_DATA000003>Data on impact of outbreak on humanitarian efforts</datasets:MIDAS_DATA000003>
+        <datasets:3>Data on impact of outbreak on humanitarian efforts</datasets:3>
         <rdfs:label xml:lang="en">Aid/responses</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000036 -->
+    <!-- http://w3id.org/midas-metadata/36 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000036">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Data describing human behavior in terms of shopping gathering, transit, etc.</datasets:MIDAS_DATA000003>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://midasnetwork.us/datasets#MIDAS_DATA000079</obo:IAO_0100001>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/36">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Data describing human behavior in terms of shopping gathering, transit, etc.</datasets:3>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://w3id.org/midas-metadata/79</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Behavior</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000038 -->
+    <!-- http://w3id.org/midas-metadata/38 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000038">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Counts of cases, deaths, etc. Often includes multiple types of counts as not compatible with more specific labels. Information about diagnostic tests, results, including serology tests, PCR, and other tests. Can include various methods of estimation, including the COVID-19 Forecast and Scenario Hubs</datasets:MIDAS_DATA000003>
-        <datasets:MIDAS_DATA000003>Hospitalizations</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/38">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Counts of cases, deaths, etc. Often includes multiple types of counts as not compatible with more specific labels. Information about diagnostic tests, results, including serology tests, PCR, and other tests. Can include various methods of estimation, including the COVID-19 Forecast and Scenario Hubs</datasets:3>
+        <datasets:3>Hospitalizations</datasets:3>
         <rdfs:label xml:lang="en">Case counts</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000040 -->
+    <!-- http://w3id.org/midas-metadata/40 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000040">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000018"/>
-        <datasets:MIDAS_DATA000003>Forecasts based on SIR (Susceptible, Infected, Recovered) models or any of the many variants of this basic famework.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/40">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/18"/>
+        <datasets:3>Forecasts based on SIR (Susceptible, Infected, Recovered) models or any of the many variants of this basic famework.</datasets:3>
         <rdfs:label xml:lang="en">Compartmental Models</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000041 -->
+    <!-- http://w3id.org/midas-metadata/41 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000041">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Information about population counts, and counts for subgroups</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/41">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Information about population counts, and counts for subgroups</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/APOLLO_SV_00000159</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Demographics</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -511,54 +511,54 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000043 -->
+    <!-- http://w3id.org/midas-metadata/43 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000043">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>includes social, economic, also mental health impact</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/43">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>includes social, economic, also mental health impact</datasets:3>
         <rdfs:label>Socio-economic impacts</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000045 -->
+    <!-- http://w3id.org/midas-metadata/45 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000045">
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/45">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <datasets:MIDAS_DATA000003>Events that were cancelled due to an outbreak</datasets:MIDAS_DATA000003>
+        <datasets:3>Events that were cancelled due to an outbreak</datasets:3>
         <rdfs:label xml:lang="en">Event cancellations</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000046 -->
+    <!-- http://w3id.org/midas-metadata/46 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000046">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000038"/>
-        <datasets:MIDAS_DATA000003>Increases in deaths potentially attributable to an outbreak</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/46">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/38"/>
+        <datasets:3>Increases in deaths potentially attributable to an outbreak</datasets:3>
         <rdfs:label xml:lang="en">Excess mortality</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000049 -->
+    <!-- http://w3id.org/midas-metadata/49 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000049">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000018"/>
-        <datasets:MIDAS_DATA000003>Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/49">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/18"/>
+        <datasets:3>Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge</datasets:3>
         <rdfs:label xml:lang="en">Expert opinion forecasts</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000050 -->
+    <!-- http://w3id.org/midas-metadata/50 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000050">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Health systems/providers participating in some aspect of relevant data</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/50">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Health systems/providers participating in some aspect of relevant data</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/APOLLO_SV_00000595</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Health systems</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -566,12 +566,12 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000051 -->
+    <!-- http://w3id.org/midas-metadata/51 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000051">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Includes diagnosed cases, deaths, hospitalizations. Also known as line lists.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/51">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Includes diagnosed cases, deaths, hospitalizations. Also known as line lists.</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/APOLLO_SV_00000397</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Individual cases reported</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -579,21 +579,21 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000053 -->
+    <!-- http://w3id.org/midas-metadata/53 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000053">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000018"/>
-        <datasets:MIDAS_DATA000003>Models based on simulated actions of individuals and interactions between those individuals</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/53">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/18"/>
+        <datasets:3>Models based on simulated actions of individuals and interactions between those individuals</datasets:3>
         <rdfs:label xml:lang="en">Agent-Based models</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000054 -->
+    <!-- http://w3id.org/midas-metadata/54 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000054">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000036"/>
-        <datasets:MIDAS_DATA000003>Impacts of outbreak on human movement</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/54">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/36"/>
+        <datasets:3>Impacts of outbreak on human movement</datasets:3>
         <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000602</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Mobility</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -601,44 +601,44 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000057 -->
+    <!-- http://w3id.org/midas-metadata/57 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000057">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/57">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <datasets:MIDAS_DATA000003>Aggregate descriptions of multiple factors invovling susceptibility to outbreaks</datasets:MIDAS_DATA000003>
+        <datasets:3>Aggregate descriptions of multiple factors invovling susceptibility to outbreaks</datasets:3>
         <rdfs:label xml:lang="en">Risk factors</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000058 -->
+    <!-- http://w3id.org/midas-metadata/58 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000058">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000038"/>
-        <datasets:MIDAS_DATA000003>Numbers of deaths</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/58">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/38"/>
+        <datasets:3>Numbers of deaths</datasets:3>
         <rdfs:label xml:lang="en">Deaths</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000059 -->
+    <!-- http://w3id.org/midas-metadata/59 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000059">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Information about vaccination, lockdowns, school closures, other interventions</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/59">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Information about vaccination, lockdowns, school closures, other interventions</datasets:3>
         <rdfs:label xml:lang="en">Public health interventions and policies</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000060 -->
+    <!-- http://w3id.org/midas-metadata/60 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000060">
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/60">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <datasets:MIDAS_DATA000003>Where tests are available, how mmany tests, etc.</datasets:MIDAS_DATA000003>
+        <datasets:3>Where tests are available, how mmany tests, etc.</datasets:3>
         <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000610</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Testing availability</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -646,11 +646,11 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000061 -->
+    <!-- http://w3id.org/midas-metadata/61 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000061">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000036"/>
-        <datasets:MIDAS_DATA000003>Places where outbreaks are transmitted.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/61">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/36"/>
+        <datasets:3>Places where outbreaks are transmitted.</datasets:3>
         <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000603</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Transmission settings</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -658,21 +658,21 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000062 -->
+    <!-- http://w3id.org/midas-metadata/62 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000062">
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/62">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <datasets:MIDAS_DATA000003>Reports of policy violations</datasets:MIDAS_DATA000003>
+        <datasets:3>Reports of policy violations</datasets:3>
         <rdfs:label xml:lang="en">Regulatory complaints</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000064 -->
+    <!-- http://w3id.org/midas-metadata/64 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000064">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000038"/>
-        <datasets:MIDAS_DATA000003>Counts of inpatients by region, facilty, etc.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/64">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/38"/>
+        <datasets:3>Counts of inpatients by region, facilty, etc.</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/APOLLO_SV_00000600</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Hospitalizations</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -680,42 +680,42 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000065 -->
+    <!-- http://w3id.org/midas-metadata/65 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000065">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
-        <datasets:MIDAS_DATA000003>Policies undertaken to slow spread or otherwise combat outbreaks</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/65">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/59"/>
+        <datasets:3>Policies undertaken to slow spread or otherwise combat outbreaks</datasets:3>
         <rdfs:label xml:lang="en">Interventions</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000066 -->
+    <!-- http://w3id.org/midas-metadata/66 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000066">
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/66">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <datasets:MIDAS_DATA000003>Tools for initial stages of data processing, usually prior to modeling. Includes pre-processing, cleaning, exploratory analysis.</datasets:MIDAS_DATA000003>
+        <datasets:3>Tools for initial stages of data processing, usually prior to modeling. Includes pre-processing, cleaning, exploratory analysis.</datasets:3>
         <rdfs:label xml:lang="en">Data Preparation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000067 -->
+    <!-- http://w3id.org/midas-metadata/67 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000067">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000006"/>
-        <datasets:MIDAS_DATA000003>Predicted value of key outbreak parameters, including (but not limited to) fatality rate, R_0, etc.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/67">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/6"/>
+        <datasets:3>Predicted value of key outbreak parameters, including (but not limited to) fatality rate, R_0, etc.</datasets:3>
         <rdfs:label xml:lang="en">Parameter estimation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000068 -->
+    <!-- http://w3id.org/midas-metadata/68 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000068">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000006"/>
-        <datasets:MIDAS_DATA000003>Estimates of  understanding potential impacts of aspects of human behavior on transmission risk , often under different scenarios.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/68">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/6"/>
+        <datasets:3>Estimates of  understanding potential impacts of aspects of human behavior on transmission risk , often under different scenarios.</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/APOLLO_SV_00000174</obo:IAO_0100001>
         <rdfs:comment>Need a clearer distinction to distinguish from other parameter estimation.</rdfs:comment>
         <rdfs:label xml:lang="en">Transmission modeling</rdfs:label>
@@ -724,21 +724,21 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000069 -->
+    <!-- http://w3id.org/midas-metadata/69 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000069">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000006"/>
-        <datasets:MIDAS_DATA000003>Models of interactions between entities that might impact outbreak progression.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/69">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/6"/>
+        <datasets:3>Models of interactions between entities that might impact outbreak progression.</datasets:3>
         <rdfs:label xml:lang="en">Network modeling</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000071 -->
+    <!-- http://w3id.org/midas-metadata/71 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000071">
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/71">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <datasets:MIDAS_DATA000003>Data regarding the availability or administration of vaccinations.</datasets:MIDAS_DATA000003>
+        <datasets:3>Data regarding the availability or administration of vaccinations.</datasets:3>
         <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000609</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Vaccinations</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -746,11 +746,11 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000072 -->
+    <!-- http://w3id.org/midas-metadata/72 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000072">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000059"/>
-        <datasets:MIDAS_DATA000003>Information about the edudcational institutions that either paused in-person instruction or closed entirely in repsonse to an outbreak.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/72">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/59"/>
+        <datasets:3>Information about the edudcational institutions that either paused in-person instruction or closed entirely in repsonse to an outbreak.</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/APOLLO_SV_00000605</obo:IAO_0100001>
         <rdfs:label xml:lang="en">School closures</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -758,12 +758,12 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000073 -->
+    <!-- http://w3id.org/midas-metadata/73 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000073">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
-        <datasets:MIDAS_DATA000003>Information about population mobility: Flights , trains, general travel, cruise ships, etc.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/73">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/79"/>
+        <datasets:3>Information about population mobility: Flights , trains, general travel, cruise ships, etc.</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/APOLLO_SV_00000602</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Mobility</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -771,73 +771,73 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000074 -->
+    <!-- http://w3id.org/midas-metadata/74 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000074">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Information about media, coverage about a topic</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/74">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Information about media, coverage about a topic</datasets:3>
         <rdfs:label xml:lang="en">Media</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000075 -->
+    <!-- http://w3id.org/midas-metadata/75 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000075">
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/75">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
-        <datasets:MIDAS_DATA000003>Population data divided by age ranges</datasets:MIDAS_DATA000003>
+        <datasets:3>Population data divided by age ranges</datasets:3>
         <rdfs:label xml:lang="en">Age-stratified</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000076 -->
+    <!-- http://w3id.org/midas-metadata/76 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000076">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Groups of people relevant to specific locations - schools, nursing homes, prisons, etc.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/76">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Groups of people relevant to specific locations - schools, nursing homes, prisons, etc.</datasets:3>
         <rdfs:label xml:lang="en">Location-specific</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000077 -->
+    <!-- http://w3id.org/midas-metadata/77 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000077">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Population for certain regions, or stratified by region</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/77">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Population for certain regions, or stratified by region</datasets:3>
         <rdfs:label xml:lang="en">Geographical</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000078 -->
+    <!-- http://w3id.org/midas-metadata/78 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000078">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000067"/>
-        <datasets:MIDAS_DATA000003>Estimates of parameter values based on expert opinion</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/78">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/67"/>
+        <datasets:3>Estimates of parameter values based on expert opinion</datasets:3>
         <rdfs:label xml:lang="en">Expert assessments of parameter values</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000079 -->
+    <!-- http://w3id.org/midas-metadata/79 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000079">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <datasets:MIDAS_DATA000003>Actions of groups of people in response to outbreaks.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/79">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <datasets:3>Actions of groups of people in response to outbreaks.</datasets:3>
         <rdfs:label xml:lang="en">Behavior</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000080 -->
+    <!-- http://w3id.org/midas-metadata/80 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000080">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
-        <datasets:MIDAS_DATA000003>data about high-risk areas, and places where transmission is likely to happen.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/80">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/79"/>
+        <datasets:3>data about high-risk areas, and places where transmission is likely to happen.</datasets:3>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/APOLLO_SV_00000603</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Transmission settings</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -845,51 +845,51 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000081 -->
+    <!-- http://w3id.org/midas-metadata/81 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000081">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
-        <datasets:MIDAS_DATA000003>Frequency of interactions between individuals in different settings, at different times...</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/81">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/79"/>
+        <datasets:3>Frequency of interactions between individuals in different settings, at different times...</datasets:3>
         <rdfs:label xml:lang="en">Contact rates</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000082 -->
+    <!-- http://w3id.org/midas-metadata/82 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000082">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
-        <datasets:MIDAS_DATA000003>Rates of compliance with policies/interventions including mask wearing, facility closures, large events, etc.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/82">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/79"/>
+        <datasets:3>Rates of compliance with policies/interventions including mask wearing, facility closures, large events, etc.</datasets:3>
         <rdfs:label xml:lang="en">Policy adherence</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000083 -->
+    <!-- http://w3id.org/midas-metadata/83 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000083">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
-        <datasets:MIDAS_DATA000003>Claims of false or unsubstantiated rumors about any aspect of an outbreak.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/83">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/79"/>
+        <datasets:3>Claims of false or unsubstantiated rumors about any aspect of an outbreak.</datasets:3>
         <rdfs:label xml:lang="en">Conspiracy theories</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000084 -->
+    <!-- http://w3id.org/midas-metadata/84 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000084">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
-        <datasets:MIDAS_DATA000003>Estimates of reluctance to being vaccinated.</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/84">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/79"/>
+        <datasets:3>Estimates of reluctance to being vaccinated.</datasets:3>
         <rdfs:label xml:lang="en">Vaccine hesitancy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000085 -->
+    <!-- http://w3id.org/midas-metadata/85 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000085">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000074"/>
-        <datasets:MIDAS_DATA000003>Datasets discussing outbreaks on social media sites</datasets:MIDAS_DATA000003>
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/85">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/74"/>
+        <datasets:3>Datasets discussing outbreaks on social media sites</datasets:3>
         <rdfs:label xml:lang="en">Social media</rdfs:label>
     </owl:Class>
     
@@ -898,8 +898,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000159 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000159">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
         <obo:IAO_0000115 xml:lang="en">A census that is the specific outcome of a population demographic survey.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
@@ -912,7 +912,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000174 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000174">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000006"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/6"/>
         <obo:IAO_0000115 xml:lang="en">An algorithm that models the progress of a transmissible disease in a population.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <obo:IAO_0000600 xml:lang="en">An algorithm that models the progress of a transmissible disease in a population.</obo:IAO_0000600>
@@ -925,7 +925,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000397 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000397">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000038"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/38"/>
         <obo:IAO_0000115 xml:lang="en">A data set that is a collection of case records.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
@@ -940,8 +940,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000542 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
         <obo:IAO_0000111 xml:lang="en">population mortality data set</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A data set that is about either some mortality rate or the death events themselves of some individuals of a given population of a particular biological taxon.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
@@ -956,8 +956,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000591">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
         <obo:IAO_0000111 xml:lang="en">climate data set</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A data set that is an aggregate of data items that are about an environmental system process (e.g., hydrological precipitation) or a participant in an environmental system process.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matt Diller</obo:IAO_0000117>
@@ -971,8 +971,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000593 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000593">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
         <obo:IAO_0000111 xml:lang="en">abiotic ecosystem data set</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A data set that is about some abiotic ecosystem or abiotic ecosystem element.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -988,7 +988,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000595 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000595">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
         <obo:IAO_0000111 xml:lang="en">census of treatment facility</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A census that counts the number of treatment facilities of some kind in a particular geographical region.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -1006,7 +1006,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000600">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000038"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/38"/>
         <obo:IAO_0000111 xml:lang="en">dataset about hospital stays</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The datasets at this link are rdf:type this class: https://www.opendataphilly.org/dataset/covid-hospitalizations</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more hospital stays involving two or more patients.</obo:IAO_0000115>
@@ -1025,8 +1025,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000602 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000602">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/79"/>
         <obo:IAO_0000111 xml:lang="en">human daily movement behavior data set</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">https://www.google.com/covid19/mobility/</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a data set that is about the human daily movement behavior of the individual huamns in a given population.</obo:IAO_0000115>
@@ -1042,7 +1042,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000603 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000603">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000079"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/79"/>
         <obo:IAO_0000111 xml:lang="en">potentially infectious contact process data set in a population</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">a data set that is about one or more potentially infectious contact processes in a population of host organisms.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -1058,7 +1058,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000604 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
         <obo:IAO_0000111 xml:lang="en">infectious disease control strategy census</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">a census of infectious disease control strategies put into place to reduce infection acquisitions that are part of an infection in an ecosystem.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -1139,7 +1139,7 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
     <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/10"/>
         <obo:IAO_0000111 xml:lang="en">software</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">Software is a plan specification composed of a series of instructions that can be 
@@ -1159,7 +1159,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/10"/>
         <obo:IAO_0000111 xml:lang="en">data set</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -1182,7 +1182,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OBI_0001530 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001530">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/9"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data service</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data analysis service such statistical abalysis or storage service such data  backup.</obo:IAO_0000112>
@@ -1201,8 +1201,8 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/SO_0001260 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000008"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/8"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of discontinuous sequences.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/so/2021-11-22/so.owl</obo:IAO_0000412>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:ke</oboInOwl:hasDbXref>
