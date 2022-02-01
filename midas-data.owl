@@ -469,7 +469,9 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000036">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
         <datasets:MIDAS_DATA000003>Data describing human behavior in terms of shopping gathering, transit, etc.</datasets:MIDAS_DATA000003>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://midasnetwork.us/datasets#MIDAS_DATA000079</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Behavior</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -592,7 +594,9 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000054">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000036"/>
         <datasets:MIDAS_DATA000003>Impacts of outbreak on human movement</datasets:MIDAS_DATA000003>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000602</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Mobility</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -635,7 +639,9 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <datasets:MIDAS_DATA000003>Where tests are available, how mmany tests, etc.</datasets:MIDAS_DATA000003>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000610</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Testing availability</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -645,7 +651,9 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000061">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000036"/>
         <datasets:MIDAS_DATA000003>Places where outbreaks are transmitted.</datasets:MIDAS_DATA000003>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000603</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Transmission settings</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -731,7 +739,9 @@
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <datasets:MIDAS_DATA000003>Data regarding the availability or administration of vaccinations.</datasets:MIDAS_DATA000003>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000609</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Vaccinations</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1086,6 +1096,42 @@
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">Often used during epidemics or pandemics to estimate the death toll.</rdfs:comment>
         <rdfs:label xml:lang="en">excess mortality dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000111 xml:lang="en">census of supplies of vaccine products</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A control strategy inventory census that counts available vaccine doses of one or more similar vaccines.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">vaccine availability</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
+        <dc:creator>https://orcid.org/0000-0002-9881-1017</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-01T00:03:00Z</dc:date>
+        <rdfs:comment xml:lang="en">Motivated my MIDAS coordination center indexing of COVID-19 data, software, etc.
+
+By &quot;similar vaccines&quot; we typically mean same pathogen, but could be similar in other ways (requiring refrigeration of a certain kind).</rdfs:comment>
+        <rdfs:label xml:lang="en">census of vaccination supplies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000111 xml:lang="en">census of facilities that conduct clinical laboratory tests</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A census of facilities that conduct clinical laboratory testing.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">testing availability</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
+        <dc:creator>https://orcid.org/0000-0002-9881-1017</dc:creator>
+        <dc:date>2022-02-01T00:10:00Z</dc:date>
+        <rdfs:comment xml:lang="en">The census might also include information about each facility such as operating hours, address, accessibility, and so on.</rdfs:comment>
+        <rdfs:label xml:lang="en">laboratory testing facility census</rdfs:label>
     </owl:Class>
     
 
