@@ -14,7 +14,10 @@
      xmlns:datasets="http://w3id.org/midas-metadata/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
-    <owl:Ontology rdf:about="http://midasnetwork.us/datasets"/>
+    <owl:Ontology rdf:about="http://midasnetwork.us/datasets">
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2022-02-09"/>
+        <owl:versionInfo>v2022-02-09</owl:versionInfo>
+    </owl:Ontology>
     
 
 
