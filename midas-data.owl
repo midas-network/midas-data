@@ -607,6 +607,26 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas15 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas15">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <datasets:midas3 xml:lang="en">The goal or purpose of a modeling study.</datasets:midas3>
+        <rdfs:label xml:lang="en">Modeling purpose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas16 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas16">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <datasets:midas3 xml:lang="en">The method or type of model used to achieve the purpose.</datasets:midas3>
+        <rdfs:label xml:lang="en">Modeling method</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas18 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas18">
