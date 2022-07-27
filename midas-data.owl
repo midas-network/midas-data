@@ -618,6 +618,16 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas19 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas19">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <datasets:midas3 xml:lang="en">data on occurrences of different pathogen species, strains, clades, or variants</datasets:midas3>
+        <rdfs:label xml:lang="en">Variant cases</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas2 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas2">
