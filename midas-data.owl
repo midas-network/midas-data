@@ -657,6 +657,16 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas20 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas20">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <datasets:midas3 xml:lang="en">An environmental dataset about natural cover of land surface such as forest, plains, rock, etc. or about human land development.</datasets:midas3>
+        <rdfs:label xml:lang="en">Land cover / land use</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas21 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas21">
@@ -664,6 +674,26 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas9"/>
         <datasets:midas3>Information about capacity, including hospital beds, PPE supplies, nursing home capacity, testing sites, therapeutics, etc.</datasets:midas3>
         <rdfs:label xml:lang="en">Health system capacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas22 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas22">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <datasets:midas3 xml:lang="en">An environmenal dataset about air contaminants that threaten human health.</datasets:midas3>
+        <rdfs:label xml:lang="en">Air quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas23 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas23">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <datasets:midas3 xml:lang="en">An environmental dataset about destruction of human-built sructures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</datasets:midas3>
+        <rdfs:label xml:lang="en">Natural disasters</rdfs:label>
     </owl:Class>
     
 
