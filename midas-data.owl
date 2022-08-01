@@ -804,7 +804,6 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas9"/>
         <datasets:midas3>Counts of cases, deaths, etc. Often includes multiple types of counts as not compatible with more specific labels. Information about diagnostic tests, results, including serology tests, PCR, and other tests. Can include various methods of estimation, including the COVID-19 Forecast and Scenario Hubs</datasets:midas3>
-        <datasets:midas3>Hospitalizations</datasets:midas3>
         <rdfs:label xml:lang="en">Case counts</rdfs:label>
     </owl:Class>
     
