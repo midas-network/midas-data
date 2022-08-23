@@ -957,8 +957,10 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas58">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000542</obo:IAO_0100001>
         <datasets:midas3>Numbers of deaths</datasets:midas3>
         <rdfs:label xml:lang="en">Deaths</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
