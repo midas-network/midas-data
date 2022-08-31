@@ -536,7 +536,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence collection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0001260</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence_collection</rdfs:label>
+        <rdfs:label xml:lang="en">sequence collection</rdfs:label>
     </owl:Class>
     
 
@@ -586,6 +586,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas13">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/IAO_0000010</obo:IAO_0100001>
         <datasets:midas3>Code that allows users to change input and obtain modified output (interactive)</datasets:midas3>
         <rdfs:comment>link to some external entity?</rdfs:comment>
         <rdfs:label xml:lang="en">Software</rdfs:label>
@@ -727,6 +728,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas29">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas8"/>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/SO_0001260</obo:IAO_0100001>
         <datasets:midas3>Analysis and comparison of DNA, RNA, or other sequence data. Includes all types of analysises, including alignment, cleaning, and other comparisons.</datasets:midas3>
         <rdfs:label xml:lang="en">Sequence data</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -739,7 +741,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas30">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
         <datasets:midas3>Papers describing modeling studies</datasets:midas3>
-        <rdfs:label xml:lang="en">Modeling studies</rdfs:label>
+        <rdfs:label xml:lang="en">modeling studies</rdfs:label>
     </owl:Class>
     
 
@@ -759,7 +761,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas33">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
         <datasets:midas3>A catalog focused on a specific disease</datasets:midas3>
-        <rdfs:label xml:lang="en">Disease-specific collection</rdfs:label>
+        <rdfs:label xml:lang="en">disease-specific collection</rdfs:label>
     </owl:Class>
     
 
@@ -869,6 +871,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas46">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas9"/>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000608</obo:IAO_0100001>
         <datasets:midas3>Increases in deaths potentially attributable to an outbreak</datasets:midas3>
         <rdfs:label xml:lang="en">Excess mortality</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -890,7 +893,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas5">
         <datasets:midas3>The &quot;domain&quot; of the entity - specifically, the focus of the data contained therein.</datasets:midas3>
-        <rdfs:label xml:lang="en">biological Scale</rdfs:label>
+        <rdfs:label xml:lang="en">biological scale</rdfs:label>
     </owl:Class>
     
 
@@ -1092,7 +1095,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas7">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas11"/>
         <datasets:midas3>Collections of entities from the research literature, or derived from the literature.</datasets:midas3>
-        <rdfs:label xml:lang="en">Literature</rdfs:label>
+        <rdfs:label xml:lang="en">literature</rdfs:label>
     </owl:Class>
     
 
