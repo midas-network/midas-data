@@ -729,6 +729,17 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas03 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas03">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas9"/>
+        <datasets:midas3 xml:lang="en">Level of details of the location: ADMIN0, ADMIN1, Country, State, … (can be multiple).</datasets:midas3>
+        <rdfs:comment xml:lang="en">List comes from GEONAMES class like: &quot;Dependent political entity&quot; or &quot;First-order administrative division&quot;, but it also contains common terms (from https://en.wikipedia.org/wiki/Administrative_division for example) to help with the data entry</rdfs:comment>
+        <rdfs:label xml:lang="en">geographical resolution</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas10 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas10">
@@ -1330,6 +1341,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas9"/>
         <datasets:midas3>Groups of people relevant to specific locations - schools, nursing homes, prisons, etc.</datasets:midas3>
         <rdfs:label xml:lang="en">location-specific</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1338,8 +1350,9 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas77">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas9"/>
-        <datasets:midas3>Population for certain regions, or stratified by region</datasets:midas3>
-        <rdfs:label xml:lang="en">geographical</rdfs:label>
+        <datasets:midas3 xml:lang="en">Name of the location in English at country or ADMIN1 level corresponding from GEONAMES (if more than 10 different countries possible &quot;Earth&quot; can be used).</datasets:midas3>
+        <rdfs:comment xml:lang="en">Also have Continent and Earth information as some data set have data for multiple countries but in the same continent.</rdfs:comment>
+        <rdfs:label xml:lang="en">geographical scope</rdfs:label>
     </owl:Class>
     
 
