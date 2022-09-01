@@ -721,6 +721,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <!-- http://w3id.org/midas-metadata/midas0 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas0">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <datasets:midas3>A medical diagnosis associated with a given outbreak or dataset related to that outbreak. Usually will refer to an ICD, NCIT, UMLS, or similar code.</datasets:midas3>
         <rdfs:comment></rdfs:comment>
         <rdfs:label xml:lang="en">diagnosis</rdfs:label>
@@ -985,9 +986,11 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas4">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas0"/>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/DOID_0080600</obo:IAO_0100001>
         <datasets:midas3>Associated with the 2019-2020 COVID-19 outbreak.</datasets:midas3>
         <rdfs:label xml:lang="en">COVID-19</rdfs:label>
         <rdfs:seeAlso>ICD Code U07.1</rdfs:seeAlso>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
