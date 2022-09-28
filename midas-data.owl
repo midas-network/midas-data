@@ -242,6 +242,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
@@ -592,6 +598,25 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-18T18:51:00</dc:date>
         <rdfs:comment xml:lang="en">requested by MIDAS CC</rdfs:comment>
         <rdfs:label xml:lang="en">human monkeypox</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60816 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60816">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An antigen capable, on its own, of inducing an immune response.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">immunogenicity</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/chebi/213/chebi.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19152635</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19328011</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19397283</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:60816</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe PMC</oboInOwl:source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunogen</rdfs:label>
     </owl:Class>
     
 
