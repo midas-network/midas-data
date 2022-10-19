@@ -1377,7 +1377,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas59">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://w3id.org/midas-metadata/midas59</obo:IAO_0100001>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/APOLLO_SV_00000604</obo:IAO_0100001>
         <datasets:midas3>Information about vaccination, lockdowns, school closures, other interventions</datasets:midas3>
         <rdfs:label xml:lang="en">Public health interventions and policies</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
