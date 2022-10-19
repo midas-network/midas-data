@@ -598,6 +598,7 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-18T18:51:00</dc:date>
         <rdfs:comment xml:lang="en">requested by MIDAS CC</rdfs:comment>
         <rdfs:label xml:lang="en">human monkeypox</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
