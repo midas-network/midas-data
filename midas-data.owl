@@ -365,7 +365,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000591">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
         <obo:IAO_0000111 xml:lang="en">climate data set</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A data set that is an aggregate of data items that are about an environmental system process (e.g., hydrological precipitation) or a participant in an environmental system process.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matt Diller</obo:IAO_0000117>
