@@ -1105,7 +1105,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas23">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
-        <datasets:midas3 xml:lang="en">An environmental dataset about destruction of human-built sructures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</datasets:midas3>
+        <datasets:midas3 xml:lang="en">An environmental dataset about destruction of entities in an ecosystem including living things and human-built sructures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</datasets:midas3>
         <rdfs:label xml:lang="en">natural disasters</rdfs:label>
     </owl:Class>
     
