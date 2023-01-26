@@ -670,7 +670,7 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:3292</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#zoonotic_infectious_disease"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monkeypox</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mpox</rdfs:label>
     </owl:Class>
     
 
