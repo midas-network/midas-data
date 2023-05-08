@@ -1,2 +1,4 @@
 .ipynb_checkpoints/*
 *~
+src/ontology/build/*
+src/ontology/mirror/*
