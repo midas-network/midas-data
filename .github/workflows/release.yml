@@ -1,11 +1,11 @@
 name: Build Midas release files and create a release
 on:
   workflow_dispatch:
-  #push:
-  #  branches: [ main ]
-  #  paths:
-  #    - 'src/ontology/imports/**_import.owl'
-  #    - 'src/ontology/midas-data-edit.owl'
+  push:
+    branches: [ main ]
+    paths:
+      - 'src/ontology/imports/**_import.owl'
+      - 'src/ontology/midas-data-edit.owl'
 
 jobs:
   build:
