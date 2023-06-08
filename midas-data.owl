@@ -15,6 +15,7 @@
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
         <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2023-06-08/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
+        <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
         <owl:versionInfo>2023-06-08</owl:versionInfo>
     </owl:Ontology>
     
