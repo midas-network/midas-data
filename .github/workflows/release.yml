@@ -1,4 +1,4 @@
-name: Build release files
+name: Build Midas release files and create a release
 on:
   workflow_dispatch:
   #push:
@@ -23,13 +23,12 @@ jobs:
 
       - name: work around permission issue
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
-        
+  
       - name: Update release files
         run: cd src/ontology/ && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' GITHUB_ACTION=true prepare_release -B
         env:
           TODAY: ${{ steps.date.outputs.date }}
-      - name: Add empty line to release (remove before production)
-        run: echo "$(date +'%Y-%m-%dT%H:%M:%S')" >> midas-data.owl
+      
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
@@ -55,6 +54,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ steps.date.outputs.date }}
-          release_name: Release {{ steps.date.outputs.date }}
+          release_name: Release ${{ steps.date.outputs.date }}
           draft: false
           prerelease: false
