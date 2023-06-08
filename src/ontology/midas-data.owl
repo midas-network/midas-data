@@ -577,7 +577,7 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60816">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>An antigen capable, on its own, of inducing an immune response.</obo:IAO_0000115>
+        <obo:IAO_0000115>An antigen capable, on its own, of inducing an immune response..</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">immunogenicity</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/chebi/213/chebi.owl</obo:IAO_0000412>
         <oboInOwl:hasDbXref>PMID:19152635</oboInOwl:hasDbXref>
