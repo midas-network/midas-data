@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl#"
+     xml:base="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.referent-tracking.com/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
+    <owl:Ontology rdf:about="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl">
+        <dc:contributor>Amanda Hicks</dc:contributor>
+        <dc:contributor>John Levander</dc:contributor>
+        <dc:contributor>Josh Hanna</dc:contributor>
+        <dc:contributor>Matt Diller</dc:contributor>
+        <dc:contributor>Mike Wagner</dc:contributor>
+        <dc:contributor>Shawn T. Brown</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <dc:title xml:lang="en">Apollo Structured Vocabulary (Apollo-SV)</dc:title>
+        <terms:description xml:lang="en">An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <www:RTS_00000001>C87985BA-6A8A-483A-A6B6-63975101F672</www:RTS_00000001>
+        <www:RTS_00000002>082D5D78-D916-457E-B4FD-365F86F45B30</www:RTS_00000002>
+        <rdfs:comment xml:lang="en">When citing Apollo-SV, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/apollo_sv.owl.  When referencing a specific component of the Apollo-SV such as a class, object property, annotation property, or individual, use the component&apos;s Uniform Resource Identifier (URI).</rdfs:comment>
+        <owl:versionInfo>2023-01-10</owl:versionInfo>
+        <owl:versionInfo>2023-05-05</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.referent-tracking.com/RTS_00000001 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.referent-tracking.com/RTS_00000001"/>
+    
+
+
+    <!-- http://www.referent-tracking.com/RTS_00000002 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.referent-tracking.com/RTS_00000002"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
+        <obo:IAO_0000115 xml:lang="en">An action specification giving the number of vaccinations possible in a population during a specific time interval.</obo:IAO_0000115>
+        <obo:IAO_0000600 xml:lang="en">The counts of individuals that could be vaccinated in a population location per time step unit in the absence of any vaccine supply constraints.  It represents the capacity of medical system to vaccinate individuals.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">vaccination administration capacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000159">
+        <obo:IAO_0000115 xml:lang="en">A census that is the specific outcome of a population demographic survey.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A census that is the specific outcome of a population demographic survey.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">population demographic census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000174">
+        <obo:IAO_0000115 xml:lang="en">An algorithm that models the progress of a transmissible disease in a population.</obo:IAO_0000115>
+        <obo:IAO_0000600 xml:lang="en">An algorithm that models the progress of a transmissible disease in a population.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>disease transmission model</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">disease transmission model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000237">
+        <obo:IAO_0000115 xml:lang="en">An organism of a particular biological taxon that is the bearer of an infectious dispositions towards an organism of a different particular biological taxon.</obo:IAO_0000115>
+        <obo:IAO_0000600 xml:lang="en">An organism, virus, or prion that can infect another organism.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>pathogen</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">pathogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000238">
+        <obo:IAO_0000115 xml:lang="en">An organism of a particular biological taxon that is the site of reproduction of an organism of a different taxon.</obo:IAO_0000115>
+        <obo:IAO_0000600 xml:lang="en">An organism of a particular biological taxon that is the site of reproduction of an organism of a different taxon.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040 xml:lang="en">host</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">host</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000397">
+        <obo:IAO_0000115 xml:lang="en">A data set that is a collection of case records.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A data set that is a collection of case records.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>CaseList</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">infection case list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
+        <obo:IAO_0000111 xml:lang="en">population mortality data set</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about either some mortality rate or the death events themselves of some individuals of a given population of a particular biological taxon.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A data set that is about either some mortality rate or the death events themselves of some individuals of a given population of a particular biological taxon.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">mortality data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000591 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000591">
+        <obo:IAO_0000111 xml:lang="en">climate data set</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A data set that is an aggregate of data items that are about an environmental system process (e.g., hydrological precipitation) or a participant in an environmental system process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matt Diller</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">climate data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000593 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000593">
+        <obo:IAO_0000111 xml:lang="en">abiotic ecosystem data set</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about some abiotic ecosystem or abiotic ecosystem element.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">abiotic ecosystem dataset</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data set about an abiotic ecosystem or abiotic ecosystem element</obo:IAO_0000118>
+        <obo:IAO_0000600 xml:lang="en">A data set that is about an abiotic ecosystem or some abiotic ecosystem element.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">abiotic ecosystem data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000595 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000595">
+        <obo:IAO_0000111 xml:lang="en">census of treatment facility</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A census that counts the number of treatment facilities of some kind in a particular geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">census of treatment facilities</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">treatment facilities census</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">treatment facility census</obo:IAO_0000118>
+        <obo:IAO_0000600 xml:lang="en">A census that counts the number of treatment facilities of some kind in a particular geographical region.</obo:IAO_0000600>
+        <rdfs:comment xml:lang="en">NOTE: this class counts the facilities themselves, not patients (people) in those facilities.  For example, how many hospitals in a state.  Not how many patients are in a hospital or hospitals in a state.</rdfs:comment>
+        <rdfs:label xml:lang="en">treatment facility census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000600">
+        <obo:IAO_0000111 xml:lang="en">dataset about hospital stays</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The datasets at this link are rdf:type this class: https://www.opendataphilly.org/dataset/covid-hospitalizations</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more hospital stays involving two or more patients.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">hospital discharge dataset</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">hospitalization dataset</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">The dataset may be limited to stays in one hospital, but hospital discharge datasets as compiled by state departments of health typically contain stays from multiple hospitals (typically every hospital) in the geographical region over which they have jurisdiction</rdfs:comment>
+        <rdfs:label xml:lang="en">hospital stay dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000602 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000602">
+        <obo:IAO_0000111 xml:lang="en">human daily movement behavior data set</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">https://www.google.com/covid19/mobility/</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a data set that is about the human daily movement behavior of the individual huamns in a given population.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human daily movement data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000603">
+        <obo:IAO_0000111 xml:lang="en">potentially infectious contact process data set in a population</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">a data set that is about one or more potentially infectious contact processes in a population of host organisms.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">contact data set</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">potentially infectious contact data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
+        <obo:IAO_0000111 xml:lang="en">infectious disease control strategy census</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">a census of infectious disease control strategies put into place to reduce infection acquisitions that are part of an infection in an ecosystem.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">control strategy census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000111 xml:lang="en">school closure infectious disease control strategy census</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">an infectious disease control strategy census that is about school closure infectious disease control strategies implemented in a particular geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This class represents datasets about strategies for school closure.  Datasets about individual actual school closures go elsewhere.</rdfs:comment>
+        <rdfs:label xml:lang="en">school closure control strategy census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000607">
+        <obo:IAO_0000111 xml:lang="en">population vaccination census</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">vaccine / immunization registry data, vaccination / immunization records extracted from an EHR</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a population treatment census that is about one or more vaccinations of organisms in a population.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">vaccination census</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">vaccination administration census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
+        <obo:IAO_0000111 xml:lang="en">dataset about excess mortality in a population</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A population mortality dataset that compares deaths in the population during one time interval to deaths in the population during a previous time interval and reports an estimate of how many more or less deaths occurred in the later time interval.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">Often used during epidemics or pandemics to estimate the death toll.</rdfs:comment>
+        <rdfs:label xml:lang="en">excess mortality dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
+        <obo:IAO_0000111 xml:lang="en">census of supplies of vaccine products</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A control strategy inventory census that counts available vaccine doses of one or more similar vaccines.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">vaccine availability</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">Motivated my MIDAS coordination center indexing of COVID-19 data, software, etc.
+
+By &quot;similar vaccines&quot; we typically mean same pathogen, but could be similar in other ways (requiring refrigeration of a certain kind).</rdfs:comment>
+        <rdfs:label xml:lang="en">census of vaccination supplies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
+        <obo:IAO_0000111 xml:lang="en">census of facilities that conduct clinical laboratory tests</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A census of facilities that conduct clinical laboratory testing.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">testing availability</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">The census might also include information about each facility such as operating hours, address, accessibility, and so on.</rdfs:comment>
+        <rdfs:label xml:lang="en">laboratory testing facility census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000613 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000613">
+        <obo:IAO_0000111 xml:lang="en">laboratory testing capacity action specification</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">An action specification giving the number of laboratory tests of a certain type that it is possible to perform in a given population during a specific time interval.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">laboratory testing capacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000614">
+        <obo:IAO_0000111 xml:lang="en">data set about Earth&apos;s atmospheric weather</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A data set about the Earth&apos;s atmospheric weather</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">weather data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000615">
+        <obo:IAO_0000111 xml:lang="en">monkeypox disease inhering in a human being</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A monkeypox disease inhering in a human being.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">requested by MIDAS CC</rdfs:comment>
+        <rdfs:label xml:lang="en">human monkeypox</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+
