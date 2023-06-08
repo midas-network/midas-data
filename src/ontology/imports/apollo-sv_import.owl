@@ -27,7 +27,7 @@
         <www:RTS_00000002>082D5D78-D916-457E-B4FD-365F86F45B30</www:RTS_00000002>
         <rdfs:comment xml:lang="en">When citing Apollo-SV, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/apollo_sv.owl.  When referencing a specific component of the Apollo-SV such as a class, object property, annotation property, or individual, use the component&apos;s Uniform Resource Identifier (URI).</rdfs:comment>
         <owl:versionInfo>2023-01-10</owl:versionInfo>
-        <owl:versionInfo>2023-05-05</owl:versionInfo>
+        <owl:versionInfo>2023-06-02</owl:versionInfo>
     </owl:Ontology>
     
 
