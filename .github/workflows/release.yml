@@ -29,7 +29,7 @@ jobs:
         env:
           TODAY: ${{ steps.date.outputs.date }}
       - name: Add empty line to release (remove before production)
-        run: echo "" >> midas-data.owl
+        run: echo "$(date +'%Y-%m-%dT%H:%M:%S')" >> midas-data.owl
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
@@ -54,7 +54,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.date.outputs.date }}
-          release_name: Release ${{ github.ref }}
+          tag_name: v${{ steps.date.outputs.date }}
+          release_name: Release {{ steps.date.outputs.date }}
           draft: false
           prerelease: false
