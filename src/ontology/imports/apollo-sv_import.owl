@@ -408,6 +408,17 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
         <rdfs:comment xml:lang="en">requested by MIDAS CC</rdfs:comment>
         <rdfs:label xml:lang="en">human monkeypox</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000618 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">
+        <obo:IAO_0000115 xml:lang="en">A disease surveillance data set that is about some wastewater disease surveillance.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">sewage surveillance data</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">wastewater surveillance data set</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
