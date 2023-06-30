@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'src/ontology/imports/**_import.owl'
+      - 'src/ontology/imports/seed.txt'
       - 'src/ontology/midas-data-edit.owl'
 
 jobs:

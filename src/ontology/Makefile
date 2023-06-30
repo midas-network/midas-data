@@ -31,7 +31,7 @@ TODAY   := $(shell date +%Y-%m-%d)
 # We use the official development version of ROBOT for most things.
 build/robot.jar:
 	mkdir -p build
-	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.9.3/robot.jar
+	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.9.4/robot.jar
 
 ROBOT := java -jar build/robot.jar
 
