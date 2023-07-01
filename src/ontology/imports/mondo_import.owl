@@ -1,39 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://midasnetwork.us/datasets/imports/mondo_import.owl#"
      xml:base="http://midasnetwork.us/datasets/imports/mondo_import.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/imports/mondo_import.owl">
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021125"/>
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021178"/>
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0042489"/>
-        <dc:description>A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.</dc:description>
-        <dc:title>Mondo Disease Ontology</dc:title>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/mf.owl"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-        <terms:source rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <terms:source rdf:resource="http://www.orpha.net/ontology/orphanet.owl"/>
-        <terms:source rdf:resource="https://id.nlm.nih.gov/mesh/"/>
-        <terms:source rdf:resource="https://rarediseases.info.nih.gov/"/>
-        <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
-        <rdfs:comment>Includes Ontology(OntologyID(Anonymous-51)) [Axioms: 74979 Logical Axioms: 0]</rdfs:comment>
-        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://obofoundry.org/ontology/mondo.html</foaf:homepage>
+        <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
     </owl:Ontology>
     
 
@@ -49,45 +24,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/homepage -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
     
 
 
