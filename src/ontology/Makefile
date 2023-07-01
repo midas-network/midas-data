@@ -33,7 +33,7 @@ build/robot.jar:
 	mkdir -p build
 	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.9.4/robot.jar
 
-ROBOT := java -Xmx16G -jar build/robot.jar
+ROBOT := java -jar build/robot.jar
 
 SRC = midas-data-edit.owl
 RELEASE_ASSETS = midas-data.owl
@@ -41,7 +41,7 @@ RELEASEDIR = ../..
 MIRRORDIR = mirror
 IMPORTDIR = imports
 ANNOTATION_PROPERTIES = rdfs:label IAO:0000115 dc:creator dc:date IAO:0000111 IAO:0000112 IAO:0000117 rdfs:comment IAO:0000118 IAO:0000412 IAO:0000600 http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040
-IMPORTS = $(IMPORTDIR)/apollo-sv_import.owl $(IMPORTDIR)/ncbitaxon_import.owl
+IMPORTS = $(IMPORTDIR)/apollo-sv_import.owl $(IMPORTDIR)/ncbitaxon_import.owl $(IMPORTDIR)/mondo_import.owl
 
 all: midas-data.owl
 
@@ -64,6 +64,17 @@ $(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl $(IMPORTDIR)/seed.
 	$(ROBOT) \
 		extract -i $< -T $(IMPORTDIR)/seed.txt --copy-ontology-annotations true --force true --method subset \
 	remove --base-iri http://purl.obolibrary.org/obo/NCBITaxon_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/seed.txt --select complement \
+	annotate --ontology-iri "$(MIDAS)/$@" --output $@
+
+$(MIRRORDIR)/mondo.owl: | build/robot.jar
+	mkdir -p $(MIRRORDIR)
+	$(ROBOT) convert -I $(OBO)/mondo.owl -o $@
+
+$(IMPORTDIR)/mondo_import.owl: $(MIRRORDIR)/mondo.owl $(IMPORTDIR)/seed.txt | build/robot.jar
+	$(ROBOT) \
+		extract -i $< -T $(IMPORTDIR)/seed.txt --copy-ontology-annotations true --force true --method subset \
+	remove --base-iri http://purl.obolibrary.org/obo/MONDO_ --axioms external --preserve-structure false --trim false \
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/seed.txt --select complement \
 	annotate --ontology-iri "$(MIDAS)/$@" --output $@
 
