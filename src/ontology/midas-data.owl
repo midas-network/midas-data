@@ -768,6 +768,87 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11082">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>West Nile virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label xml:lang="en">Mumps virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label>Measles morbillivirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label>Influenza A virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label>Human immunodeficiency virus 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12637">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label>Dengue virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1773 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1773">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label>Mycobacterium tuberculosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_186536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label>Ebolavirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2560602 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2560602">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Mumps orthorubulavirus</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2697049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2697049">
@@ -783,6 +864,24 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SARS2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <rdfs:label>Severe acute respiratory syndrome coronavirus 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5820 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label>Plasmodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_64320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_64320">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Zika virus</rdfs:label>
     </owl:Class>
     
 
