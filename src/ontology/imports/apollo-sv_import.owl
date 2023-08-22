@@ -399,18 +399,6 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000615 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000615">
-        <obo:IAO_0000111 xml:lang="en">monkeypox disease inhering in a human being</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A monkeypox disease inhering in a human being.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">requested by MIDAS CC</rdfs:comment>
-        <rdfs:label xml:lang="en">human monkeypox</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000618 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">

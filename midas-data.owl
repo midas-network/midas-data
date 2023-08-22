@@ -17,10 +17,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2023-08-18/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2023-08-22/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2023-08-18</owl:versionInfo>
+        <owl:versionInfo>2023-08-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -569,11 +569,6 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000615">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3292"/>
-        <obo:IAO_0000111 xml:lang="en">monkeypox disease inhering in a human being</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A monkeypox disease inhering in a human being.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">requested by MIDAS CC</rdfs:comment>
-        <rdfs:label xml:lang="en">human monkeypox</rdfs:label>
     </owl:Class>
     
 
@@ -768,6 +763,15 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0001577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:label>respiratory syncytial virus infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0002282 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002282">
@@ -882,6 +886,15 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
         <rdfs:label>Measles morbillivirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:label>Human orthopneumovirus</rdfs:label>
     </owl:Class>
     
 

@@ -601,6 +601,14 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0001577 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0004619 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0004619">
@@ -670,6 +678,14 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11234 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11250 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
     </rdf:Description>
     

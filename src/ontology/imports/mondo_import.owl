@@ -49,6 +49,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0001577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
+        <rdfs:label>respiratory syncytial virus infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0002282 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002282">

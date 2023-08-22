@@ -39,6 +39,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
+        <rdfs:label>Human orthopneumovirus</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11320 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320">
