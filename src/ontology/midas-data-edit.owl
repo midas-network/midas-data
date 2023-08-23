@@ -683,9 +683,25 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11309 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11320 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11520 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11520">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
     </rdf:Description>
     
