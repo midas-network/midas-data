@@ -63,10 +63,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11709 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11709">
+        <rdfs:label>Human immunodeficiency virus 2</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12637">
         <rdfs:label>Dengue virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12721 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12721">
+        <rdfs:label>Human immunodeficiency virus</rdfs:label>
     </owl:Class>
     
 
