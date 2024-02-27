@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl">
-        <owl:versionInfo>2023-06-20</owl:versionInfo>
+        <owl:versionInfo>2023-12-12</owl:versionInfo>
     </owl:Ontology>
     
 

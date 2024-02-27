@@ -27,7 +27,7 @@
         <www:RTS_00000002>082D5D78-D916-457E-B4FD-365F86F45B30</www:RTS_00000002>
         <rdfs:comment xml:lang="en">When citing Apollo-SV, use the permanent URL of the ontology: http://purl.obolibrary.org/obo/apollo_sv.owl.  When referencing a specific component of the Apollo-SV such as a class, object property, annotation property, or individual, use the component&apos;s Uniform Resource Identifier (URI).</rdfs:comment>
         <owl:versionInfo>2023-01-10</owl:versionInfo>
-        <owl:versionInfo>2023-06-02</owl:versionInfo>
+        <owl:versionInfo>2024-02-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -406,6 +406,111 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">sewage surveillance data</obo:IAO_0000118>
         <rdfs:label xml:lang="en">wastewater surveillance data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000622">
+        <obo:IAO_0000115 xml:lang="en">A count of cases in an epidemic that is about the entire temporal interval occupied by the epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A count of cases from the beginning of the epidemic until recently.</obo:IAO_0000600>
+        <rdfs:comment xml:lang="en">The count is also nearly always geographically localized, for example, the case count for the state of Pennsylvania or the case count for Waukesha County, Wisconsin.</rdfs:comment>
+        <rdfs:label xml:lang="en">cumulative epidemic case count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000623">
+        <obo:IAO_0000115 xml:lang="en">A count of cases in an epidemic that is about a proper part of the temporal interval occupied by the epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A count of cases in an epidemic that spans a shorter interval, such as a particular day or a week.</obo:IAO_0000600>
+        <rdfs:comment>Incident case counts are measured according to regular intervals, typically day or week.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The count is also nearly always geographically localized, for example, the case count for the state of Pennsylvania or the case count for Waukesha County, Wisconsin.</rdfs:comment>
+        <rdfs:label xml:lang="en">incident epidemic case count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000629">
+        <obo:IAO_0000115 xml:lang="en">A count of infections in a population where the infections are an occurrent part of the same epidemic, and the temporal region over which the count is made is the region occupied by the entire epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">cumulative epidemic infection count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000630">
+        <obo:IAO_0000115 xml:lang="en">A count of infections in a population where the infections are an occurrent part of the same epidemic, and the temporal region over which the count is made is a proper part of the region occupied by the entire epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">incident epidemic infection count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000631">
+        <obo:IAO_0000115>A count of deaths in a population where the deaths are an occurrent part of the same epidemic, the deaths are attributed to the epidemic disease, and the temporal region over which the count is made is the region occupied by the entire epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">cumulative epidemic death count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000632 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000632">
+        <obo:IAO_0000115 xml:lang="en">A count of deaths in a population where the deaths are an occurrent part of the same epidemic, the deaths are attributed to the epidemic disease, and the temporal region over which the count is made is a proper part of the region occupied by the entire epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">incident epidemic death count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000633 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000633">
+        <obo:IAO_0000115>A count of hospitalizations in a population where the hospitalizations are an occurrent part of the same epidemic, the hospitalizations are attributed to the epidemic disease, and the temporal region over which the count is made is the region occupied by the entire epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">cumulative epidemic hospitalization count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000634">
+        <obo:IAO_0000115>A count of hospitalizations in a population where the hospitalizations are an occurrent part of the same epidemic, the hospitalizations are attributed to the epidemic disease, and the temporal region over which the count is made is a proper part of the region occupied by the entire epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">incident epidemic hospitalization count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000635 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000635">
+        <obo:IAO_0000115>A count of vaccinations in a population where the vaccinations are an occurrent part of the same epidemic, the vaccinations are against the type of pathogen causing the epidemic, and the temporal region over which the count is made is the region occupied by the entire epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">cumulative epidemic vaccination count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000636">
+        <obo:IAO_0000115 xml:lang="en">A count of vaccinations in a population where the vaccinations are an occurrent part of the same epidemic, the vaccinations are against the type of pathogen causing the epidemic, and the temporal region over which the count is made is a proper part of the region occupied by the entire epidemic.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">incident epidemic vaccination count</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
