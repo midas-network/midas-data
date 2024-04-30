@@ -264,6 +264,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000142 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000159 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000159">
@@ -416,90 +424,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000622 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000622">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000623 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000623">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000629 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000629">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000630 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000630">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000631 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000631">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000632 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000632">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000633 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000633">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000634 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000634">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000635 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000635">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000636 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000636">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000637 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000637">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
     </rdf:Description>
     
 
@@ -507,15 +435,95 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000638 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000638">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000639 -->
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000640 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000639">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000607"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000641 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000641">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000607"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000642 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000642">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000643 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000643">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000644 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000644">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000645 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000645">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000646 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000646">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000647 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000647">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000648 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000648">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000649 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000649">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000650 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000650">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
     </rdf:Description>
     
 
