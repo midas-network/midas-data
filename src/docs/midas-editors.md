@@ -11,3 +11,5 @@
 1. Even without performing an edit, you can manually run a release by going to the [GitHub Actions Tab](https://github.com/midas-network/midas-data/actions/workflows/release.yml) and clicking on the "Run workflow" button on the right. Make sure the `main` branch is selected, and click `Run workflow` (green button) again. Currently, a full release takes about 90-100 seconds.
 1. When a release has failed, you will receive an email. You can head, again, to the [GitHub Actions Tab](https://github.com/midas-network/midas-data/actions/workflows/release.yml) and click on the last failed run of the action (red X). You then click on the failed task (for example, `build` or `Create Release`), and read through the documentation. The most likely reason of failure is that you tried to create a second release after you have already created one, but occassionally, there may be problems with the ontology (such as a logical inconsistency).
 
+References: 
+1. [Ontology Development Kit](https://incatools.github.io/ontology-development-kit/)
