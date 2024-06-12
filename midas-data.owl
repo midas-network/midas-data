@@ -1097,7 +1097,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <rdfs:label>Human orthopneumovirus</rdfs:label>
+        <rdfs:label>human respiratory syncytial virus</rdfs:label>
     </owl:Class>
     
 
