@@ -1167,6 +1167,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas17 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">emergency department visit dataset</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas18 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas18">
@@ -1236,6 +1246,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas24 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas24">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
+        <obo:IAO_0000115 xml:lang="en">A count of emergency department visits in a population that is the total number of emergency department visits that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cumulative emergency department visit count</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas25 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas25">
@@ -1245,6 +1265,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OBI_0001530</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Data retrieval/API</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas26 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas26">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
+        <obo:IAO_0000115>A count of emergency department visits in a population that is the number of emergency department visits that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">incident emergency department visit count</rdfs:label>
     </owl:Class>
     
 
