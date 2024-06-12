@@ -17,10 +17,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2024-04-30/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2024-06-12/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2024-04-30</owl:versionInfo>
+        <owl:versionInfo>2024-06-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1097,7 +1097,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <rdfs:label>Human orthopneumovirus</rdfs:label>
+        <rdfs:label>human respiratory syncytial virus</rdfs:label>
     </owl:Class>
     
 
@@ -1472,6 +1472,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas17 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">emergency department visit dataset</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas18 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas18">
@@ -1542,6 +1552,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas24 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas24">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
+        <obo:IAO_0000115 xml:lang="en">A count of emergency department visits in a population that is the total number of emergency department visits that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cumulative emergency department visit count</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas25 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas25">
@@ -1551,6 +1571,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OBI_0001530</obo:IAO_0100001>
         <rdfs:label xml:lang="en">Data retrieval/API</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas26 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas26">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
+        <obo:IAO_0000115>A count of emergency department visits in a population that is the number of emergency department visits that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">incident emergency department visit count</rdfs:label>
     </owl:Class>
     
 
