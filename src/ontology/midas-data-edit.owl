@@ -315,7 +315,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000542 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
     </owl:Class>
     
 
@@ -1343,7 +1343,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas34 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas34">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
         <obo:IAO_0000115>Information about diagnostic tests, results, including serology tests, PCR, and other tests</obo:IAO_0000115>
         <rdfs:label xml:lang="en">diagnostic tests</rdfs:label>
     </owl:Class>
