@@ -427,7 +427,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000637 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000637">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
     </rdf:Description>
     
 
@@ -435,7 +435,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000638 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000638">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
     </rdf:Description>
     
 
@@ -523,7 +523,7 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000650 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000650">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
     </rdf:Description>
     
 
@@ -1275,6 +1275,15 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
         <obo:IAO_0000115>A count of emergency department visits in a population that is the number of emergency department visits that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">incident emergency department visit count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas27 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas27">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <rdfs:label xml:lang="en">vaccination intent</rdfs:label>
     </owl:Class>
     
 
