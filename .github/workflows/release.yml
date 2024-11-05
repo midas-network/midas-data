@@ -26,7 +26,7 @@ jobs:
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
   
       - name: Update release files
-        run: cd src/ontology/ && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx16G' GITHUB_ACTION=true prepare_release -B
+        run: cd src/ontology/ && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx32G' GITHUB_ACTION=true prepare_release -B
         env:
           TODAY: ${{ steps.date.outputs.date }}
       
