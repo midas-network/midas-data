@@ -67,11 +67,11 @@ $(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl $(IMPORTDIR)/seed.
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/seed.txt --select complement \
 	annotate --ontology-iri "$(MIDAS)/$@" --output $@
 
-$(MIRRORDIR)/mondo.owl: | build/robot.jar
+$(MIRRORDIR)/mondo.obo: | build/robot.jar
 	mkdir -p $(MIRRORDIR)
-	$(ROBOT) convert -I https://github.com/monarch-initiative/mondo/releases/download/v2024-07-02/mondo-minimal.owl -o $@
+	$(ROBOT) convert -I https://github.com/monarch-initiative/mondo/releases/download/v2024-07-02/mondo.owl -o $@
 
-$(IMPORTDIR)/mondo_import.owl: $(MIRRORDIR)/mondo.owl $(IMPORTDIR)/seed.txt | build/robot.jar
+$(IMPORTDIR)/mondo_import.owl: $(MIRRORDIR)/mondo.obo $(IMPORTDIR)/seed.txt | build/robot.jar
 	$(ROBOT) \
 		extract -i $< -T $(IMPORTDIR)/seed.txt --copy-ontology-annotations true --force true --method subset \
 	remove --base-iri http://purl.obolibrary.org/obo/MONDO_ --axioms external --preserve-structure false --trim false \
