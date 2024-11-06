@@ -69,7 +69,7 @@ $(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl $(IMPORTDIR)/seed.
 
 $(MIRRORDIR)/mondo.ttl: | build/robot.jar
 	mkdir -p $(MIRRORDIR)
-	$(ROBOT) convert -I $(OBO)/mondo/subsets/mondo-minimal.owl -o $@
+	$(ROBOT) convert -I $(OBO)/mondo/subsets/mondo.owl -o $@
 	
 $(IMPORTDIR)/mondo_import.owl: $(MIRRORDIR)/mondo.ttl $(IMPORTDIR)/seed.txt | build/robot.jar
 	$(ROBOT) \
