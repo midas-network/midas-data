@@ -69,7 +69,7 @@ $(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl $(IMPORTDIR)/seed.
 
 $(MIRRORDIR)/mondo.ttl: | build/robot.jar
 	mkdir -p $(MIRRORDIR)
-	$(ROBOT) convert -I https://github.com/monarch-initiative/mondo/releases/download/v2024-07-02/mondo.ttl -o $@
+	$(ROBOT) convert -I https://github.com/monarch-initiative/mondo/releases/download/v2024-07-02/mondo.owl -o $@
 
 $(IMPORTDIR)/mondo_import.owl: $(MIRRORDIR)/mondo.ttl $(IMPORTDIR)/seed.txt | build/robot.jar
 	$(ROBOT) \
