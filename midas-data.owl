@@ -17,11 +17,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2024-11-11/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2025-04-23/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2024-11-11</owl:versionInfo>
+        <owl:versionInfo>2025-04-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -283,6 +283,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas100 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <rdfs:label xml:lang="en">peak hospitalization count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas101 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <rdfs:label xml:lang="en">peak hospitalization time cumulative distribution</rdfs:label>
+    </owl:Class>
     
 
 
