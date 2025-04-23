@@ -3,3 +3,4 @@
 src/ontology/build/*
 src/ontology/mirror/A
 midas-data.properties*
+src/ontology/midas-data-edit.properties
