@@ -17,11 +17,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2025-04-24/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2025-05-07/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2025-04-24</owl:versionInfo>
+        <owl:versionInfo>2025-05-07</owl:versionInfo>
     </owl:Ontology>
     
 
