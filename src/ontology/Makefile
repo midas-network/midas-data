@@ -1,5 +1,6 @@
 # Midas Ontology Makefile
 # Bill Hogan <hoganwr@ufl.edu>
+# edit 2025-05-27, John Levander <jdl50@pitt.edu>
 #
 # This Makefile is used to build artifacts
 # for the Ontology for Biomedical Investigations.
@@ -42,18 +43,10 @@ MIRRORDIR = mirror
 IMPORTDIR = imports
 ANNOTATION_PROPERTIES = rdfs:label IAO:0000115 dc:creator dc:date IAO:0000111 IAO:0000112 IAO:0000117 rdfs:comment IAO:0000118 IAO:0000412 IAO:0000600 http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040
 IMPORTS = $(IMPORTDIR)/apollo-sv_import.owl $(IMPORTDIR)/ncbitaxon_import.owl $(IMPORTDIR)/mondo_import.owl
+MIRRORS = $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/ncbitaxon.owl $(MIRRORDIR)/mondo.owl
 
-.PHONY: clean
-clean:
-	rm -f midas-data.owl
-	rm -f $(MIRRORDIR).owl
-	rm -f $(MIRRORDIR).zip
-
-all: clean midas-data.owl prepare_release
-
-
-
-# Define a function for mirroring ontologies
+########################### Helper Functions ##################################
+# "mirror_ontology" is a helper function to download and convert ontologies
 # $(1) = ontology name (e.g., apollo-sv)
 # $(2) = ontology source path (e.g., apollo_sv.owl)
 define mirror_ontology
@@ -62,7 +55,7 @@ $(MIRRORDIR)/$(1).owl: | build/robot.jar
 	$(ROBOT) convert -I $(OBO)/$(2) -o $$@
 endef
 
-# Define a function for creating ontology imports
+# "create_import" is a helper function to create imports for ontologies
 # $(1) = ontology name (e.g., mondo)
 # $(2) = base IRI for removal (e.g., http://purl.obolibrary.org/obo/MONDO_)
 # $(3) = copy ontology annotations (true/false)
@@ -74,18 +67,24 @@ $(IMPORTDIR)/$(1)_import.owl: $(MIRRORDIR)/$(1).owl $(IMPORTDIR)/seed.txt | buil
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/seed.txt --select complement \
 		annotate --ontology-iri "$(MIDAS)/$$@" --output $$@
 endef
+########################### End Helper Functions ##############################
 
-# Define a function for zipping individual ontologies
-# $(1) = ontology name (e.g., apollo-sv)
-define zip_individual_ontology
-.PHONY: zip_$(1)
-zip_$(1): $(MIRRORDIR)/$(1).zip
+.PHONY: clean
+clean:
+	@echo "-- Cleaning up build artifacts --"
+	rm -f midas-data.owl
+	rm -f $(MIRRORDIR)/*.owl
+	rm -f $(MIRRORDIR)/*.zip
+	rm -f $(IMPORTDIR)/*.owl
 
-$(MIRRORDIR)/$(1).zip: $(MIRRORDIR)/$(1).owl
-	mkdir -p $(MIRRORDIR)
-	cd $(MIRRORDIR) && zip -j $(1).zip $(1).owl
-endef
-
+.PHONY: create_imports
+create_imports: $(IMPORTS)
+	@echo "-- Creating imports in $(IMPORTDIR) --"
+	mkdir -p $(IMPORTDIR)
+	@echo "Seed file for imports $(IMPORTDIR)/seed.txt"
+	@echo "This file is used to create imports for the ontologies. $(IMPORTDIR)/seed.txt"
+	@echo "You can add terms to this file to include them in the imports.  $(IMPORTDIR)/seed.txt"
+	@echo "You can also remove terms from this file to exclude them from the imports. $(IMPORTDIR)/seed.txt"
 # Download and mirror the ontologies
 $(eval $(call mirror_ontology,apollo-sv,apollo_sv.owl))
 $(eval $(call mirror_ontology,ncbitaxon,ncbitaxon/subsets/taxslim.owl))
@@ -97,7 +96,8 @@ $(eval $(call create_import,apollo-sv,http://purl.obolibrary.org/obo/APOLLO_SV_,
 $(eval $(call create_import,ncbitaxon,http://purl.obolibrary.org/obo/NCBITaxon_,true))
 
 # Create the MIDAS data ontology
-midas-data.owl: $(SRC) $(IMPORTS) | build/robot.jar
+midas-data.owl: $(SRC) $(IMPORTS) $(MIRRORS) | build/robot.jar
+	@echo "-- Creating MIDAS data ontology in $(realpath .) --"
 	$(ROBOT) merge --input $< \
 		reason --reasoner HermiT --equivalent-classes-allowed none \
 		annotate \
@@ -106,17 +106,27 @@ midas-data.owl: $(SRC) $(IMPORTS) | build/robot.jar
 			--annotation owl:versionInfo "$(TODAY)" \
 			--output $@
 
+.PHONY: zip_ontologies
+zip_ontologies: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl
+	@echo "-- Zipping all ontologies in $(MIRRORDIR) and $(IMPORTDIR) --"
+	for f in mirror/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
+	@echo "Zipped ontologies in $(MIRRORDIR) to $(MIRRORDIR).zip"
+	for f in imports/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
+	@echo "Zipped all ontologies in $(IMPORTDIR) to $(IMPORTDIR).zip"
+
+.PHONY: delete_owl_files
+delete_owl_files: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl
+	@echo "-- Deleting all owl files in $(MIRRORDIR) and $(IMPORTDIR) --"
+	rm -f $(MIRRORDIR)/*.owl
+	@echo "Deleted all owl files in $(MIRRORDIR)"
+	rm -f $(IMPORTDIR)/*.owl
+	@echo "Deleted all owl files in $(IMPORTDIR)"
+
 
 .PHONY: prepare_release
-prepare_release: $(RELEASE_ASSETS)
-	@echo "Preparing release files in $(RELEASEDIR)"
-	@echo "Zipping all ontologies in $(MIRRORDIR)"
-	zip -r9 $(MIRRORDIR).zip $(MIRRORDIR)/*
-	rm -f $(MIRRORDIR).owl
-	@echo "Deleted all owl files in $(MIRRORDIR)"
-
-
-
+prepare_release: $(RELEASE_ASSETS) midas-data.owl
+	@echo "-- Preparing release files in $$(realpath $(RELEASEDIR)) --"
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR)
-	@echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release \
-        on your git hosting site such as GitHub or GitLab"
+	@echo "Release files are now in $$(realpath $(RELEASEDIR)) - now you should commit, push and make a release \n on your git hosting site such as GitHub or GitLab"
+
+all: clean create_imports zip_ontologies delete_owl_files prepare_release
