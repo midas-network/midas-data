@@ -1,90 +1,107 @@
-name: Build Midas release files and create a release
+name: Build MIDAS release files and publish a GitHub Release
+
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
-      - 'src/ontology/imports/**_import.owl'
-      - 'src/ontology/imports/seed.txt'
-      - 'src/ontology/midas-data-edit.owl'
+      - src/ontology/imports/**_import.owl
+      - src/ontology/imports/seed.txt
+      - src/ontology/midas-data-edit.owl
+
+defaults:
+  run:
+    shell: bash -eu {0}
 
 jobs:
+# ------------------------------------------------------------
+#  Build job – compiles the OWL releases, commits them, and
+#             exposes TAG as an output for the next job.
+# ------------------------------------------------------------
   build:
+    name: Build release artefacts
     runs-on: ubuntu-latest
     container: obolibrary/odkfull:latest
+    timeout-minutes: 60
     strategy:
       max-parallel: 1
-    steps:
-      - name: Get current date
-        id: date
-        shell: bash
-        run: |
-          echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
-      
-      - name: Checkout main branch
-        uses: actions/checkout@v2
 
-      - name: work around permission issue
+    outputs:
+      tag: ${{ steps.date.outputs.tag }}
+
+    steps:
+      - name: Stamp date tag (YYYY-MM-DD)
+        id: date
+        run: |
+          echo "tag=v$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Work-around safe-directory warning
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - name: Install zip
+      - name: Install zip utilities
         run: |
           apt-get update -qq
-          apt-get install -y zip unzip
-  
-      - name: Update release files
-        run: cd src/ontology/ && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xms16G -Xmx128G' GITHUB_ACTION=true all -B
+          DEBIAN_FRONTEND=noninteractive \
+          apt-get install -y --no-install-recommends zip unzip
+
+      - name: Build release files
+        working-directory: src/ontology
         env:
-          TODAY: ${{ steps.date.outputs.date }}
-      
-      - name: Commit changes
+          ROBOT_ENV: 'ROBOT_JAVA_ARGS=-Xms16G -Xmx128G'
+          GITHUB_ACTION: true
+        run: make all -B
+
+      - name: Commit generated OWL files
         uses: EndBug/add-and-commit@v9
         with:
           author_name: matentzn
           author_email: nicolas.matentzoglu@gmail.com
           message: 'Update release files'
           add: '*.owl'
-          tag: 'v${{ steps.date.outputs.date }} --force'
-          tag_push: '--force'
+          tag: ${{ steps.date.outputs.tag }} --force
+          tag_push: --force
+
+# ------------------------------------------------------------
+#  Release job – wipes any existing release with that tag, then
+#                creates a fresh one.
+# ------------------------------------------------------------
   release:
-    name: Create Release
+    name: Publish GitHub Release
+    needs: build
     runs-on: ubuntu-latest
     permissions:
-      contents: write          
+      contents: write        # required for deleting/creating releases
+    timeout-minutes: 15
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@main   
-      
-      - name: Get current date
-        id: date
-        shell: bash
-        run: |
-            echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
-        
-      - name: Delete existing release if it already exists
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Delete existing release (if any)
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # gh CLI reads GH\_TOKEN
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TAG="v${{ steps.date.outputs.date }}"
-          echo "Checking for existing release $TAG"
-          # gh is pre-installed on GitHub-hosted runners
-          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" \
-               >/dev/null 2>&1; then
-            echo "Deleting release $TAG (and its tag)…"
-            gh release delete "$TAG" --yes --cleanup-tag \
-              --repo "$GITHUB_REPOSITORY"            # --cleanup-tag removes the tag too :contentReference[oaicite:0]{index=0}
+          TAG="${{ needs.build.outputs.tag }}"
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Removing prior release $TAG"
+            gh release delete "$TAG" --yes --cleanup-tag --repo "$GITHUB_REPOSITORY"
           else
-            echo "No existing release to delete."
+            echo "No prior release found for $TAG"
           fi
 
-      
       - name: Create Release
-        id: create_release
-        uses: actions/create-release@latest
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ steps.date.outputs.date }}
-          release_name: Release ${{ steps.date.outputs.date }}
+          tag_name: ${{ needs.build.outputs.tag }}
+          release_name: "Release ${{ needs.build.outputs.tag }}"
           draft: false
           prerelease: false
