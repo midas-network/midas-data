@@ -42,12 +42,33 @@ jobs:
   release:
     name: Create Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write             # <-- add this
     steps:
       - name: Checkout code
         uses: actions/checkout@main   
+      
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        
+      - name: Delete existing release if it already exists
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # gh CLI reads GH\_TOKEN
+        run: |
+          TAG="v${{ steps.date.outputs.date }}"
+          echo "Checking for existing release $TAG"
+          # gh is pre-installed on GitHub-hosted runners
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" \
+               >/dev/null 2>&1; then
+            echo "Deleting release $TAG (and its tag)…"
+            gh release delete "$TAG" --yes --cleanup-tag \
+              --repo "$GITHUB_REPOSITORY"            # --cleanup-tag removes the tag too :contentReference[oaicite:0]{index=0}
+          else
+            echo "No existing release to delete."
+          fi
+
+      
       - name: Create Release
         id: create_release
         uses: actions/create-release@latest
