@@ -17,7 +17,9 @@ jobs:
     steps:
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        shell: bash
+        run: |
+          echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
       
       - name: Checkout main branch
         uses: actions/checkout@v2
@@ -48,14 +50,16 @@ jobs:
     name: Create Release
     runs-on: ubuntu-latest
     permissions:
-      contents: write             # <-- add this
+      contents: write          
     steps:
       - name: Checkout code
         uses: actions/checkout@main   
       
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        shell: bash
+        run: |
+            echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
         
       - name: Delete existing release if it already exists
         env:
