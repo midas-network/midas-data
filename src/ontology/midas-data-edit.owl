@@ -184,6 +184,18 @@
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
@@ -287,9 +299,9 @@
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000142 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -439,113 +451,113 @@
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000618 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000637 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000637">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000637">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000638 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000638">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000638">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000640 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000640">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000640">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000607"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000641 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000641">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000641">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000607"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000642 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000642">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000642">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000643 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000643">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000643">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000644 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000644">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000644">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000645 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000645">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000645">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000646 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000646">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000646">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000647 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000647">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000647">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000648 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000648">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000648">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000649 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000649">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000649">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000650 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000650">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000650">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -736,65 +748,65 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0000989 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0000989">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000989">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0001577 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0004619 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0004619">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004619">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005737 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005737">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005737">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005812 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005812">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005812">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0012268 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0012268">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0012268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0018076 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0018076">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0100120 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0100120">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -810,105 +822,105 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11082 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11082">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11234 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11234">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11250 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11309 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11309">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11309">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11320 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11520 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11520">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11520">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11676 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11709 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11709">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11709">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12637 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12637">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12637">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12721 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12721">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12721">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1773 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1773">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1773">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_186536 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2560602 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2560602">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2560602">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -933,17 +945,17 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_5820 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_64320 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_64320">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_64320">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -959,10 +971,29 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C172305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115>A computer application that requires with an active internet connection and that uses HTTP as its primary communications protocol.</obo:IAO_0000115>
+        <rdfs:label>Web Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115>Written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory.</obo:IAO_0000115>
+        <rdfs:label>Package</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001530 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001530">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000111>data service</obo:IAO_0000111>
         <obo:IAO_0000112>Data analysis service such statistical abalysis or storage service such data  backup.</obo:IAO_0000112>
@@ -1026,6 +1057,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">racial identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONTOAVIDA_00000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONTOAVIDA_00000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115>An executable file is a digital file that executes a process.</obo:IAO_0000115>
+        <rdfs:label>executable file</rdfs:label>
     </owl:Class>
     
 
@@ -1641,7 +1682,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas66 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas66">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Tools for initial stages of data processing, usually prior to modeling. Includes pre-processing, cleaning, exploratory analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">data preparation</rdfs:label>
@@ -1874,5 +1914,5 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
