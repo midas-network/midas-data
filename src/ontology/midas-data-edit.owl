@@ -269,6 +269,16 @@
     
 
 
+    <!-- http://edamontology.org/operation_0324 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_0324">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis. Analyse an existing phylogenetic tree or trees, typically to detect features or make predictions.</obo:IAO_0000115>
+        <rdfs:label>Phylogenetic analysis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/topic_4013 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4013">
@@ -392,12 +402,72 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#midas95 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas95">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <obo:IAO_0000115>&quot;Dynamic models are [..] called dynamic because they describe how system properties change over time: a gene’s expression level, the abundance of an endangered species, the mercury level in different organs within an individual, and so on.&quot; from https://assets.press.princeton.edu/chapters/s8124.pdf</obo:IAO_0000115>
+        <rdfs:label>Dynamic Models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas96 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas96">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <obo:IAO_0000115>&quot;Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms). &quot; from https://www.nature.com/articles/s41370-024-00712-8</obo:IAO_0000115>
+        <rdfs:label>Geospatial Models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas97 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas97">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <obo:IAO_0000115>The output of a model</obo:IAO_0000115>
+        <rdfs:label>modeling output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas98 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas98">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>&quot;Decision models (and decision science as a field, more broadly) provide an approach to defining and evaluating alternative policy options under complex and changing conditions.&quot; (https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003018)</obo:IAO_0000115>
+        <rdfs:label>Decision models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas99 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas99">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>intra-host models (also known as within-host models) are mathematical descriptions that focus on the dynamics of an infection within a single individual host</obo:IAO_0000115>
+        <rdfs:label>Intra-host modeling</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
         <obo:IAO_0000115>An action specification giving the number of vaccinations possible in a population during a specific time interval.</obo:IAO_0000115>
         <rdfs:label>vaccination administration capacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <obo:IAO_0000115>A time sampled measurement data set, where the position in the sequence of each data item corresponds to a specific time_step of the simulation.</obo:IAO_0000115>
+        <rdfs:label>simulation time series</rdfs:label>
     </owl:Class>
     
 
@@ -424,6 +494,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000174">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>An algorithm that models the progress of a transmissible disease in a population.</obo:IAO_0000115>
+        <rdfs:label>disease transmission model</rdfs:label>
     </owl:Class>
     
 
@@ -1844,6 +1916,26 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15367">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>An estimated probability that one or more adverse event(s) will occur as a result of exposure to an actual or potential hazardous situation or chemical.</obo:IAO_0000115>
+        <rdfs:label>Health Risk Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16870 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16870">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <obo:IAO_0000115>Theoretical representations that simulate the behavior or activity of systems, processes, or phenomena.</obo:IAO_0000115>
+        <rdfs:label>Mathematical Model</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C172305 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172305">
@@ -1860,6 +1952,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4013"/>
         <obo:IAO_0000115>The mechanisms, functions, activities, or processes exhibited by microorganisms, especially bacteria, to resist or to become tolerant to antibiotics.</obo:IAO_0000115>
         <rdfs:label>Antibiotic Resistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C176231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C176231">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <obo:IAO_0000115>A computing system (inspired by biological neural networks) that learns (progressively improves its ability) to do tasks by considering examples without task-specific programming. (After DeepAI Machine Learning Glossary and Terms)</obo:IAO_0000115>
+        <rdfs:label>Machine Learning</rdfs:label>
     </owl:Class>
     
 
@@ -1900,6 +2002,26 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>A research study that prospectively assigns human participants or groups of humans to one or more health-related interventions to evaluate the effects on health outcomes.</obo:IAO_0000115>
         <rdfs:label>Clinical Trial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000267">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>A method that tries to describe logical and internally consistent sequences of events to explore how the future might, could or should evolve from the past and present.</obo:IAO_0000115>
+        <rdfs:label>scenario analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000375">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>Representation of model output uncertainty using probability distributions.</obo:IAO_0000115>
+        <rdfs:label>uncertainty quantification</rdfs:label>
     </owl:Class>
     
 
@@ -2029,6 +2151,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/stato.owl</obo:IAO_0000412>
         <obo:STATO_0000032 xml:lang="en">statistical model</obo:STATO_0000032>
         <rdfs:label xml:lang="en">statistical model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <obo:IAO_0000115>a Bayesian model is a statistical model where inference is based on using Bayes theorem to obtain a posterior distribution for a quantity (or quantities) of interest for some model (such as parameter values) based on some prior distribution for the relevant unknown parameters and the likelihood from the model.</obo:IAO_0000115>
+        <rdfs:label>Bayesian model</rdfs:label>
     </owl:Class>
     
 
