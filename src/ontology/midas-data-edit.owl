@@ -272,6 +272,7 @@
     <!-- http://edamontology.org/topic_4013 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</obo:IAO_0000115>
         <rdfs:label>Antimicrobial resistance</rdfs:label>
@@ -365,6 +366,28 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations.</obo:IAO_0000115>
         <rdfs:label>Wildlife Health Interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas93 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas93">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences.</obo:IAO_0000115>
+        <rdfs:comment>from WHO website (https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases)</rdfs:comment>
+        <rdfs:label>Neglected Tropical Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas94 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas94">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Vaccine preventable diseases are those infectious diseases that can be prevented by vaccination</obo:IAO_0000115>
+        <rdfs:comment>WHO, 2012. Vaccine-preventable diseases and vaccines. In: International Travel and Health, Chapter 6. World Health Organization (WHO) (https://cdn.who.int/media/docs/default-source/documents/emergencies/travel-advice/ith-travel-chapter-6-vaccines_cc218697-75d2-4032-b5b7-92e0fa171474.pdf?sfvrsn=285473b4_4&amp;download=true)</rdfs:comment>
+        <rdfs:label>Vaccine-Preventable Disease</rdfs:label>
     </owl:Class>
     
 
@@ -810,7 +833,8 @@
     <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
         <obo:IAO_0000115>A Coronavirus infection that is characterized by fever, cough and shortness of breath and that has_material_basis_in SARS-CoV-2.</obo:IAO_0000115>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
         <oboInOwl:hasDbXref>ICD10CM:U07.1</oboInOwl:hasDbXref>
@@ -839,7 +863,8 @@
     <!-- http://purl.obolibrary.org/obo/DOID_3292 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3292">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
         <obo:IAO_0000115>A viral infectious disease that results in infection of primates, rodents and humans, located in skin, has_material_basis_in Monkeypox virus, which is transmitted by contact with the animal&apos;s blood, body fluids, rash, or with the body fluids of a sick person, transmitted by fomites, and transmitted by respiratory droplets. The infection has symptom fever, has symptom muscle ache, has symptom headache, and has symptom lymphadenopathy.</obo:IAO_0000115>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
@@ -956,10 +981,46 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000827 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000827">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>Infections with bacteria of the genus salmonella.</obo:IAO_0000115>
+        <rdfs:label>salmonellosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000916 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000916">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>An infectious disease involving a pathogenic inflammatory response in the intestinal mucosa.</obo:IAO_0000115>
+        <rdfs:label>intestinal infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0000989 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000989">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A contagious viral infection caused by the mumps virus. Symptoms include swollen and tender parotid glands, fever, muscle aches and fatigue. Due to vaccination programs, mumps has become a rare disease.</obo:IAO_0000115>
+        <rdfs:label>mumps infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0001195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0025294"/>
+        <obo:IAO_0000115>A type of tick-borne disease which presents on the skin caused by bacteria of the genus Rickettsia.</obo:IAO_0000115>
+        <rdfs:label>spotted fever</rdfs:label>
     </owl:Class>
     
 
@@ -967,7 +1028,82 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0001577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <obo:IAO_0000115>Infection with the respiratory syncytial virus, an RNA virus of the genus Pneumovirus, in the family Paramyxoviridae, which is characterized by the formation of syncytia in tissue culture. It causes minor respiratory infection with rhinitis and cough in adults, but is capable of causing severe bronchitis and bronchopneumonia in young children.</obo:IAO_0000115>
+        <rdfs:label>respiratory syncytial virus infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0001673 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001673">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>The condition of having at least three loose or liquid bowel movements each day.</obo:IAO_0000115>
+        <rdfs:label>diarrheal disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>An infection caused by a fungus.</obo:IAO_0000115>
+        <rdfs:label>fungal infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>An active inflammatory process affecting the liver for more than six months. Causes include viral infections, autoimmune disorders, drugs, and metabolic disorders.</obo:IAO_0000115>
+        <rdfs:label>hepatitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>A mosquito-borne viral illness caused by the west nile virus, a flavivirus and endemic to regions of Africa, Asia, and Europe. Common clinical features include headache; fever; maculopapular rash; gastrointestinal symptoms; and lymphadenopathy. meningitis; encephalitis; and myelitis may also occur. The disease may occasionally be fatal or leave survivors with residual neurologic deficits. (From Joynt, Clinical Neurology, 1996, Ch26, p13; Lancet 1998 Sep 5;352(9130):767-71)</obo:IAO_0000115>
+        <rdfs:label>West Nile fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>A category of psychiatric disorders which include disorders related to the taking of a drug of abuse (including alcohol, prescribed medications and recreational drugs).</obo:IAO_0000115>
+        <rdfs:label>substance-related disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <obo:IAO_0000115>A common sexually transmitted bacterial infection caused by Neisseria gonorrhoeae. It is transmitted through vaginal, oral, or anal intercourse. Infected individuals may be asymptomatic. Symptoms in males include burning sensation during urination, discharge from the penis, and painful swelling of the testes. Symptoms in females include painful urination, vaginal discharge, and vaginal bleeding between periods. If untreated, the infection may lead to pelvic inflammatory disease.</obo:IAO_0000115>
+        <rdfs:label>gonorrhea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>A disease or disorder that involves the digestive system.</obo:IAO_0000115>
+        <rdfs:label>digestive system disorder</rdfs:label>
     </owl:Class>
     
 
@@ -975,7 +1111,232 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0004619 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004619">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A highly contagious viral infection caused by the measles virus. Symptoms appear 8-12 days after exposure and include a rash, cough, fever and muscle pains that can last 4-7 days. Measles vaccines are available to provide prophylaxis, usually combined with mumps and rubella vaccines (MMR).</obo:IAO_0000115>
+        <rdfs:label>measles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A condition that is caused by infection with Variola, and that is characterized by small, raised bumps.</obo:IAO_0000115>
+        <rdfs:label>smallpox</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004656">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A viral infection caused by the rubella virus. It is initially manifested with flu-like symptoms that last one or two days, followed by the development of a characteristic red rash which lasts from one to five days. The rash first appears in the neck and face. It subsequently spreads to the rest of the body.</obo:IAO_0000115>
+        <rdfs:label>rubella</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005077">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>A contagious bacterial respiratory infection caused by Bordetella pertussis. It is characterized by severe and uncontrollable cough, resulting in a whooping sound during breathing following the cough.</obo:IAO_0000115>
+        <rdfs:label>pertussis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Any disease caused by a virus.</obo:IAO_0000115>
+        <rdfs:label>viral infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>An acute infectious disorder that is caused by gram positive or gram negative bacteria; representative examples include pneumococcal, streptococcal, salmonella, and meningeal infections.</obo:IAO_0000115>
+        <rdfs:label>bacterial infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005114">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>Infections with bacteria of the species streptococcus pneumoniae.</obo:IAO_0000115>
+        <rdfs:label>pneumococcal infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>An infection caused by Bacillus anthracis bacteria. It may affect the lungs, gastrointestinal tract, or skin. Patients with lung infection present with fever, headaches, cough, chest pain and shortness of breath. Patients with gastrointestinal infection present with nausea, vomiting and bloody diarrhea. Patients with skin infection develop blisters and ulcers.</obo:IAO_0000115>
+        <rdfs:label>anthrax infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>A successful invasion of a host by an organism that uses the host for food and shelter.</obo:IAO_0000115>
+        <rdfs:label>parasitic infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005136">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005135"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>Malaria is a serious and sometimes fatal disease caused by a parasite that commonly infects a certain type of mosquito which feeds on humans. Infection with malaria parasites may result in a wide variety of symptoms, ranging from absent or very mild symptoms to severe disease and even death. People who get malaria are typically very sick with high fevers, shaking chills, and flu-like illness. In general, malaria is a curable disease if diagnosed and treated promptly and correctly.Treatment depends on many factors including disease severity, the species of malaria parasite causing the infection and the part of the world in which the infection was acquired.</obo:IAO_0000115>
+        <rdfs:label>malaria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A viral infection caused by the hepatitis C virus.</obo:IAO_0000115>
+        <rdfs:label>hepatitis C virus infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <obo:IAO_0000115>An acute, acute and chronic, or chronic inflammation focally or diffusely affecting the lung parenchyma, caused by an infection in one or both of the lungs (by bacteria, viruses, fungi, or mycoplasma.). Symptoms include cough, shortness of breath, fevers, chills, chest pain, headache, sweating, and weakness.</obo:IAO_0000115>
+        <rdfs:label>pneumonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005344">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A viral infection caused by the hepatitis B virus.</obo:IAO_0000115>
+        <rdfs:label>hepatitis B virus infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>Infections with bacteria of the species neisseria meningitidis.</obo:IAO_0000115>
+        <rdfs:label>meningococcal infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005502">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas93"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <obo:IAO_0000115>Dengue fever (DF), caused by dengue virus, is an arboviral disease characterized by an initial non-specific febrile illness that can sometimes progress to more severe forms manifesting capillary leakage and hemorrhage (dengue hemorrhagic fever, or DHF) and shock (dengue shock syndrome, or DSS).</obo:IAO_0000115>
+        <rdfs:label>dengue disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005504">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>A Gram-positive bacterial infection caused by Corynebacterium diphtheriae. It usually involves the oral cavity, pharynx, and nasal cavity. Patients develop pseudomembranes in the affected areas and manifest signs and symptoms of an upper respiratory infection. The diphtheria toxin may cause myocarditis, polyneuritis, and other systemic effects.</obo:IAO_0000115>
+        <rdfs:label>diphtheria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005526">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>A serious infectious disorder that follows wound contamination by the Gram-positive bacterium Clostridium tetani. The bacteria produce a neurotoxin called tetanospasmin, which causes muscle spasm in the jaw and other anatomic sites.</obo:IAO_0000115>
+        <rdfs:label>tetanus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005619 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005619">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000827"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>A bacterial infectious disorder contracted by consumption of food or drink contaminated with Salmonella typhi. This disorder is common in developing countries and can be treated with antibiotics.</obo:IAO_0000115>
+        <rdfs:label>typhoid fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005700">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A contagious childhood disorder caused by the varicella zoster virus. It is transmitted via respiratory secretions and contact with chickenpox blister contents. It presents with a vesicular skin rash, usually associated with fever, headache, and myalgias. The pruritic fluid-filled vesicles occur 10-21 days after exposure and last for 3-4 days. An additional 3-4 days of malaise follows before the affected individual feels better. An individual is contagious 1-2 days prior to the appearance of the blisters until all blisters are crusted over. Generally, healthy individuals recover without complications.</obo:IAO_0000115>
+        <rdfs:label>chickenpox</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <obo:IAO_0000115>An infection that is caused by Chlamydia trachomatis.</obo:IAO_0000115>
+        <rdfs:label>chlamydia trachomatis infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005706 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005706">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002041"/>
+        <obo:IAO_0000115>A fungal infection caused by Coccidioides immitis. Affected individuals usually have mild flu-like symptoms. However, pneumonia and systemic involvement with the formation of abscesses may develop as complications of the disease.</obo:IAO_0000115>
+        <rdfs:label>coccidioidomycosis</rdfs:label>
     </owl:Class>
     
 
@@ -983,7 +1344,35 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005737 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005737">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018087"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>A viral hemorrhagic fever that is caused by the Ebola virus, which is transmitted by contact with infected animals or humans; it is characterized by high fever, unexplained bleeding, and a high mortality rate.</obo:IAO_0000115>
+        <rdfs:label>Ebola hemorrhagic fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005779 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005779">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A clinical syndrome that is usually caused by enterovirus infection, and that is characterized by fever, anorexia, and painful sores in the mouth, distal extremities, and/or other sites, including the buttocks.</obo:IAO_0000115>
+        <rdfs:label>hand, foot and mouth disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005790 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005790">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <obo:IAO_0000115>Acute inflammation of the liver caused by the hepatitis A virus. It is highly contagious and usually contracted through close contact with an infected individual or their feces, contaminated food or water.</obo:IAO_0000115>
+        <rdfs:label>hepatitis A virus infection</rdfs:label>
     </owl:Class>
     
 
@@ -991,7 +1380,44 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005812 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005812">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>An acute viral infection of the respiratory tract, occurring in isolated cases, in epidemics, or in pandemics; it is caused by serologically different strains of viruses (influenzaviruses) designated A, B, and C, has a 3-day incubation period, and usually lasts for 3 to 10 days. It is marked by inflammation of the nasal mucosa, pharynx, and conjunctiva; headache; myalgia; often fever, chills, and prostration; and occasionally involvement of the myocardium or central nervous system.</obo:IAO_0000115>
+        <rdfs:label>influenza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005823 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005823">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>Any disease caused by Legionella bacteria.</obo:IAO_0000115>
+        <rdfs:label>legionellosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005828">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>A bacterial infection caused by Listeria monocytogenes. It occurs in newborns, elderly, and immunocompromised patients. The bacteria are transmitted through ingestion of contaminated food. Clinical manifestations include fever, muscle pain, respiratory distress, nausea, diarrhea, neck stiffness, irritability, seizures, and lethargy.</obo:IAO_0000115>
+        <rdfs:label>listeriosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005976 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005976">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <obo:IAO_0000115>A contagious bacterial infection caused by the spirochete Treponema pallidum. It is a sexually transmitted disorder, although it can also be transmitted from the mother to the fetus in utero. Typically, it is initially manifested with a single sore which heals without treatment. If the infection is left untreated, the initial stage is followed by skin rash and mucous membrane lesions. A late stage follows, which is characterized by damage of the internal organs, including the nervous system.</obo:IAO_0000115>
+        <rdfs:label>syphilis</rdfs:label>
     </owl:Class>
     
 
@@ -999,7 +1425,45 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0012268 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0012268">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <obo:IAO_0000115>A syndrome resulting from the acquired deficiency of cellular immunity caused by the human immunodeficiency virus (HIV). It is characterized by the reduction of the Helper T-lymphocytes in the peripheral blood and the lymph nodes. Symptoms include generalized lymphadenopathy, fever, weight loss, and chronic diarrhea. Patients with AIDS are especially susceptible to opportunistic infections (usually pneumocystis carinii pneumonia, cytomegalovirus (CMV) infections, tuberculosis, candida infections, and cryptococcosis), and the development of malignant neoplasms (usually non-Hodgkin lymphoma and Kaposi sarcoma). The human immunodeficiency virus is transmitted through sexual contact, sharing of contaminated needles, or transfusion of contaminated blood.</obo:IAO_0000115>
+        <rdfs:label>AIDS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015766 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015766">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000916"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>Cholera is an infectious disease, caused by intestinal infection with Vibrio cholerae, characterized by massive watery diarrhea and severe dehydration that can lead to shock and death if left untreated.</obo:IAO_0000115>
+        <rdfs:label>cholera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0017373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017373">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>An acute infectious disorder that affects the nervous system. It is caused by the poliovirus. The virus spreads by direct contact, and can be prevented by prophylaxis with the polio vaccine.</obo:IAO_0000115>
+        <rdfs:label>poliomyelitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0017941 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017941">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas93"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <obo:IAO_0000115>An infection that is caused by the Chikungunya virus, which is transmitted by mosquitoes; it is characterized by fever and severe arthralgia.</obo:IAO_0000115>
+        <rdfs:label>chikungunya</rdfs:label>
     </owl:Class>
     
 
@@ -1007,7 +1471,133 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0018076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018076">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <obo:IAO_0000115>A chronic, recurrent infection caused by the bacterium Mycobacterium tuberculosis. Tuberculosis (TB) may affect almost any tissue or organ of the body with the lungs being the most common site of infection. The clinical stages of TB are primary or initial infection, latent or dormant infection, and recrudescent or adult-type TB. Ninety to 95% of primary TB infections may go unrecognized. Histopathologically, tissue lesions consist of granulomas which usually undergo central caseation necrosis. Local symptoms of TB vary according to the part affected; acute symptoms include hectic fever, sweats, and emaciation; serious complications include granulomatous erosion of pulmonary bronchi associated with hemoptysis. If untreated, progressive TB may be associated with a high degree of mortality. This infection is frequently observed in immunocompromised individuals with AIDS or a history of illicit IV drug use.</obo:IAO_0000115>
+        <rdfs:label>tuberculosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0018087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>A viral infectious disease caused by RNA viruses in the Arenaviridae, Bunyaviridae, Filoviridae, or Flaviviridae family, and characterized by a severe multisystem syndrome, with damage to the vascular system and hemorrhaging.</obo:IAO_0000115>
+        <rdfs:label>viral hemorrhagic fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0018661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>Mosquito-born virus disease characterized by a clinical course that may be asymptomatic or mild with fever, conjunctivitis, muscle and joint pain, headache, exanthema, but may also be associated with severe neurological (meningitis, meningoencephalitis and myelitis) and auto-immune (Guillain-Barre syndrome) complications, as well as a potential increase of birth defects (microcephaly) if the infection occurs during pregnancy.</obo:IAO_0000115>
+        <rdfs:label>Zika virus infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019345">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001673"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <obo:IAO_0000115>Shigellosis is a bacterial infection leading to dysentery and is caused by Shigella, which are small, ubiquitous Gram-negative bacteria belonging to the enterobacteria family. There are four species: S. dysenteriae, S. flexneri, S. boydii and S. sonnei, all of which cause bacillary dysentery and are strictly limited to human hosts.</obo:IAO_0000115>
+        <rdfs:label>shigellosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019632 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0025294"/>
+        <obo:IAO_0000115>Lyme disease (named after the towns in the USA where the disease was first identified) is a bacterial infection caused by Borrelia burgdorferi.</obo:IAO_0000115>
+        <rdfs:label>Lyme disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0020502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020502">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>Yellow fever (YF), caused by YF virus, is a zoonotic disease characterized by fever and constitutional symptoms, with the potential to progress to severe and fatal viral hemorrhagic fever with shock and multi-organ system failure.</obo:IAO_0000115>
+        <rdfs:label>yellow fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0020920 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020920">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>Infection with the organism Escherichia Coli.</obo:IAO_0000115>
+        <rdfs:label>escherichia coli infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>A Disease due to or propagated by sexual contact.</obo:IAO_0000115>
+        <rdfs:label>sexually transmitted disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024352">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A respiratory tract infection caused by a virus. Viruses represent the most common causes of upper and lower respiratory tract infections and include rhinoviruses, influenza viruses, parainfluenza viruses, and respiratory syncytial virus.</obo:IAO_0000115>
+        <rdfs:label>viral respiratory tract infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0025294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0025294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <obo:IAO_0000115>Bacterial, viral, or parasitic diseases transmitted to humans and animals by the bite of infected ticks. The families Ixodidae and Argasidae contain many bloodsucking species that are important pests of man and domestic birds and mammals and probably exceed all other arthropods in the number and variety of disease agents they transmit. Many of the tick-borne diseases are zoonotic.</obo:IAO_0000115>
+        <rdfs:label>tick-borne infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0043544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0043544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>An infection acquired in a hospital or other healthcare setting.</obo:IAO_0000115>
+        <rdfs:label>nosocomial infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0043544"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17449"/>
+        <obo:IAO_0000115>Infections caused by a strain of Staphylococcus aureus that is non-susceptible to the action of the antibiotic, methicillin. The mechanism of resistance usually involves modification of normal or the presence of acquired penicillin binding proteins.</obo:IAO_0000115>
+        <rdfs:label>methicillin-resistant staphylococcus aureus infectious disease</rdfs:label>
     </owl:Class>
     
 
@@ -1016,6 +1606,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>An infectious disease where a pathogen is carried and transmitted by another organism that acts as disease vector.</obo:IAO_0000115>
+        <rdfs:label>vector-borne disease</rdfs:label>
     </owl:Class>
     
 
@@ -1181,6 +1773,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C128351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C128351">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>Any disorder that results from the consumption of food contaminated with an infectious agent or toxin.</obo:IAO_0000115>
+        <rdfs:label>Foodborne Illness</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C14419 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14419">
@@ -1197,6 +1799,26 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000115>A computer application that requires with an active internet connection and that uses HTTP as its primary communications protocol.</obo:IAO_0000115>
         <rdfs:label>Web Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17449 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17449">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4013"/>
+        <obo:IAO_0000115>The mechanisms, functions, activities, or processes exhibited by microorganisms, especially bacteria, to resist or to become tolerant to antibiotics.</obo:IAO_0000115>
+        <rdfs:label>Antibiotic Resistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C35803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C35803">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Infection by an etiologic agent that can be passed between animals and humans.</obo:IAO_0000115>
+        <rdfs:label>Zoonotic Infection</rdfs:label>
     </owl:Class>
     
 
