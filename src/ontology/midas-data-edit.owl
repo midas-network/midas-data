@@ -299,6 +299,66 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#midas86 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas86">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A count of recovery that occured in a population in a given temporal region.</obo:IAO_0000115>
+        <rdfs:label>count of recovered in a population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas87 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas87">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas86"/>
+        <obo:IAO_0000115>A count of recovery in a population that is the total number of recovery that occur during a reference temporal interval</obo:IAO_0000115>
+        <rdfs:label>cumulative recovered count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas88 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas88">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas86"/>
+        <rdfs:label>A count of recovery in a population that is the number of recovery that occured during a proper occurent part of a reference temporal interval.</rdfs:label>
+        <rdfs:label>incident recovered count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas89 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas89">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>count of outpatient visit in a population.</obo:IAO_0000115>
+        <rdfs:label>count of outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas90 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas90">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas89"/>
+        <obo:IAO_0000115>A count of outpatient visit in a population that is the total number of outpatient visit that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>cumulative outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas91 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas91">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas89"/>
+        <rdfs:label>A count of outpatient visit in a population that is the number of outpatient visit that occured during a proper occurent part of a reference  temporal interval.</rdfs:label>
+        <rdfs:label>incident outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
@@ -350,7 +410,19 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000397 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000397">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A data set that is a collection of case records.</obo:IAO_0000115>
+        <rdfs:label>infection case list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A count of individuals in a population who meet the criteria of some case definition during some time interval.</obo:IAO_0000115>
+        <rdfs:label>count of disease cases</rdfs:label>
     </owl:Class>
     
 
@@ -358,7 +430,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000542 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A data set that is about either some mortality rate or the death events themselves of some individuals of a given population of a particular biological taxon.</obo:IAO_0000115>
+        <rdfs:label>mortality data</rdfs:label>
     </owl:Class>
     
 
@@ -390,7 +464,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000600">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A dataset that is about two or more hospital stays involving two or more patients.</obo:IAO_0000115>
+        <rdfs:label>hospital stay dataset</rdfs:label>
     </owl:Class>
     
 
@@ -430,6 +506,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
+        <obo:IAO_0000115>A population mortality dataset that compares deaths in the population during one time interval to deaths in the population during a previous time interval and reports an estimate of how many more or less deaths occurred in the later time interval.</obo:IAO_0000115>
+        <rdfs:label>excess mortality dataset</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
@@ -462,10 +548,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000617 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000617">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>A count of simulated or physical individuals in a population.</obo:IAO_0000115>
+        <rdfs:label>population count</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000618 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A count of infections (process) that occurred in a population in a given temporal region.</obo:IAO_0000115>
+        <rdfs:label>count of infections in a population</rdfs:label>
     </owl:Class>
     
 
@@ -509,7 +615,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000642 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000642">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000628"/>
+        <obo:IAO_0000115>A count of infections in a population that is the total number of infections that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>cumulative infection count</rdfs:label>
     </owl:Class>
     
 
@@ -517,7 +625,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000643 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000643">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000628"/>
+        <obo:IAO_0000115>A count of infections in a population that is the number of infections of a given type that occurred during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>incident infection count</rdfs:label>
     </owl:Class>
     
 
@@ -526,6 +636,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000644">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <obo:IAO_0000115>A count of hospital stays in a population that is the total number of hospitalizations that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>cumulative hospitalization count</rdfs:label>
     </owl:Class>
     
 
@@ -534,6 +646,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000645">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <obo:IAO_0000115>A count of hospital stays in a population that is the number of hospital stays that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>incident hospitalization count</rdfs:label>
     </owl:Class>
     
 
@@ -542,6 +656,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000646">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
+        <obo:IAO_0000115>A count of deaths in a population that is the total number of deaths that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>cumulative death count</rdfs:label>
     </owl:Class>
     
 
@@ -550,6 +666,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000647">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
+        <obo:IAO_0000115>A count of deaths in a population that is the number of deaths that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>incident death count</rdfs:label>
     </owl:Class>
     
 
@@ -557,7 +675,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000648 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000648">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000497"/>
+        <obo:IAO_0000115>A count of disease cases that is the total number of individuals who come to meet the criteria of some case definition during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>cumulative case count</rdfs:label>
     </owl:Class>
     
 
@@ -565,7 +685,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000649 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000649">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000497"/>
+        <obo:IAO_0000115>A count of cases in a population that is the number of individuals who come to meet the criteria of some case definition during a proper part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>incident case count</rdfs:label>
     </owl:Class>
     
 
@@ -1000,6 +1122,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C14419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A population or type of organisms that is genetically different from others of the same species and possessing a set of defined characteristics.</obo:IAO_0000115>
+        <rdfs:label>Organism Strain</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C172305 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172305">
@@ -1261,7 +1393,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas17 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
         <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">emergency department visit dataset</rdfs:label>
     </owl:Class>
@@ -1284,6 +1416,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
         <obo:IAO_0000115 xml:lang="en">data on occurrences of different pathogen species, strains, clades, or variants</obo:IAO_0000115>
         <rdfs:label xml:lang="en">variant cases</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1434,7 +1567,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas34 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas34">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
         <obo:IAO_0000115>Information about diagnostic tests, results, including serology tests, PCR, and other tests</obo:IAO_0000115>
         <rdfs:label xml:lang="en">diagnostic tests</rdfs:label>
     </owl:Class>
@@ -1469,6 +1602,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Counts of cases, deaths, etc. Often includes multiple types of counts as not compatible with more specific labels. Information about diagnostic tests, results, including serology tests, PCR, and other tests. Can include various methods of estimation, including the COVID-19 Forecast and Scenario Hubs</obo:IAO_0000115>
         <rdfs:label xml:lang="en">case counts</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
