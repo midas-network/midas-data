@@ -744,6 +744,7 @@
         <obo:IAO_0000119>https://www.who.int/ictrp/en/</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/cto.owl</obo:IAO_0000412>
         <rdfs:label xml:lang="en">clinical trial</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1148,6 +1149,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000115>Written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory.</obo:IAO_0000115>
         <rdfs:label>Package</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71104">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>A research study that prospectively assigns human participants or groups of humans to one or more health-related interventions to evaluate the effects on health outcomes.</obo:IAO_0000115>
+        <rdfs:label>Clinical Trial</rdfs:label>
     </owl:Class>
     
 
