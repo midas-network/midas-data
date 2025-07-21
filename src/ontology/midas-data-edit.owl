@@ -269,6 +269,16 @@
     
 
 
+    <!-- http://edamontology.org/topic_4013 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4013">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</obo:IAO_0000115>
+        <rdfs:label>Antimicrobial resistance</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://midasnetwork.us/datasets#midas100 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas100">
@@ -389,6 +399,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000602">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <obo:IAO_0000115>A data set that is about the human daily movement behavior of the individual huamns in a given population.</obo:IAO_0000115>
+        <rdfs:label>human daily movement data set</rdfs:label>
     </owl:Class>
     
 
@@ -397,6 +409,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000603">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -461,6 +474,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000637">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
+        <obo:IAO_0000115>An intentionality directed at future participation in a vaccination as the recipient of a vaccine or other immunization.</obo:IAO_0000115>
+        <rdfs:label>intent to be vaccinated</rdfs:label>
     </owl:Class>
     
 
@@ -469,6 +484,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000638">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
+        <obo:IAO_0000115>An intentionality directed at future participation in a vaccination as the administrator of a vaccine or other immunization to an organism with an immune system.</obo:IAO_0000115>
+        <rdfs:label>intent to vaccinate</rdfs:label>
     </owl:Class>
     
 
@@ -557,6 +574,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000650">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
+        <obo:IAO_0000115>An intentionality inhering in a person bearing a guardian role and that is directed at their future participation in an authorization for the vaccination or other immunization of a person under their care and who bears a ward role.</obo:IAO_0000115>
+        <rdfs:label>intent to have a ward vaccinated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000650"/>
+        <obo:IAO_0000115>An intent to have a ward vaccinated where the guardian is a parent (natural or adoptive) and the ward is a child (natural or adopted) of that parent, and the parent has not otherwise been legally barred from making healthcare decisions for the child.</obo:IAO_0000115>
+        <rdfs:label>intent to have a child vaccinated</rdfs:label>
     </owl:Class>
     
 
