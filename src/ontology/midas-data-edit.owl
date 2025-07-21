@@ -1761,6 +1761,26 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6935 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6935">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <obo:IAO_0000115>Blood-sucking acarid parasites of the order Ixodida comprising two families: the softbacked ticks (ARGASIDAE) and hardbacked ticks (IXODIDAE). Ticks are larger than their relatives, the MITES. They penetrate the skin of their host by means of highly specialized, hooked mouth parts and feed on its blood. Ticks attack all groups of terrestrial vertebrates. In humans they are responsible for many TICK-BORNE DISEASES, including the transmission of ROCKY MOUNTAIN SPOTTED FEVER; TULAREMIA; BABESIOSIS; AFRICAN SWINE FEVER; and RELAPSING FEVER. (From Barnes, Invertebrate Zoology, 5th ed, pp543-44)</obo:IAO_0000115>
+        <rdfs:label>Ixodida</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <obo:IAO_0000115>A family of the order DIPTERA that comprises the mosquitoes. The larval stages are aquatic, and the adults can be recognized by the characteristic WINGS, ANIMAL venation, the scales along the wing veins, and the long proboscis. Many species are of particular medical importance.</obo:IAO_0000115>
+        <rdfs:label>Culicidae</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
@@ -1779,6 +1799,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
         <obo:IAO_0000115>Any disorder that results from the consumption of food contaminated with an infectious agent or toxin.</obo:IAO_0000115>
         <rdfs:label>Foodborne Illness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C14198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14198">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>An invertebrate animal (e.g., tick, mite, mosquito, bloodsucking fly) capable of transmitting an infectious agent among vertebrates.</obo:IAO_0000115>
+        <rdfs:label>Disease Vector</rdfs:label>
     </owl:Class>
     
 
