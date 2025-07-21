@@ -359,10 +359,22 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#midas92 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas92">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations.</obo:IAO_0000115>
+        <rdfs:label>Wildlife Health Interventions</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <obo:IAO_0000115>An action specification giving the number of vaccinations possible in a population during a specific time interval.</obo:IAO_0000115>
+        <rdfs:label>vaccination administration capacity</rdfs:label>
     </owl:Class>
     
 
@@ -370,7 +382,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000142 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>A treatment that consists of the administration of antigenic material to stimulate an individual&apos;s immune system to develop adaptive immunity to a pathogen.</obo:IAO_0000115>
+        <rdfs:label>vaccination</rdfs:label>
     </owl:Class>
     
 
@@ -403,6 +417,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000238">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>A treatment with a drug product.</obo:IAO_0000115>
+        <rdfs:label>drug treatment</rdfs:label>
     </owl:Class>
     
 
@@ -494,6 +518,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>A census of infectious disease control strategies put into place to reduce infection acquisitions that are part of an infection in an ecosystem.</obo:IAO_0000115>
+        <rdfs:label>control strategy census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>An infectious disease control strategy census that is about school closure infectious disease control strategies implemented in a particular geographical region.</obo:IAO_0000115>
+        <rdfs:label>school closure control strategy census</rdfs:label>
     </owl:Class>
     
 
@@ -501,7 +537,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000607">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <obo:IAO_0000115>A population treatment census that is about one or more vaccinations of organisms in a population.</obo:IAO_0000115>
+        <rdfs:label>vaccination administration census</rdfs:label>
     </owl:Class>
     
 
@@ -519,7 +557,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <obo:IAO_0000115>A control strategy inventory census that counts available vaccine doses of one or more similar vaccines.</obo:IAO_0000115>
+        <rdfs:label>census of vaccination supplies</rdfs:label>
     </owl:Class>
     
 
@@ -528,6 +568,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>A census of facilities that conduct clinical laboratory testing.</obo:IAO_0000115>
+        <rdfs:label>laboratory testing facility census</rdfs:label>
     </owl:Class>
     
 
@@ -536,6 +578,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000613">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>An action specification giving the number of laboratory tests of a certain type that it is possible to perform in a given population during a specific time interval.</obo:IAO_0000115>
+        <rdfs:label>laboratory testing capacity</rdfs:label>
     </owl:Class>
     
 
@@ -596,10 +640,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <obo:IAO_0000115>A vaccination against respiratory syncytial virus via the administration of the monoclonal antibody nirsevimab.</obo:IAO_0000115>
+        <rdfs:label>vaccination with nirsevimab</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000640 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000640">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000607"/>
+        <obo:IAO_0000115>A count of vaccinations in a population that is the total number of a given type of vaccines administered during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>cumulative vaccination count</rdfs:label>
     </owl:Class>
     
 
@@ -608,6 +664,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000641">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000607"/>
+        <obo:IAO_0000115>A count of vaccinations in a population that is the number of a given type of vaccines administered during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>incident vaccination count</rdfs:label>
     </owl:Class>
     
 
