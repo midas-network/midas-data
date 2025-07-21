@@ -440,6 +440,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000238">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>An organism of a particular biological taxon that is the site of reproduction of an organism of a different taxon.</obo:IAO_0000115>
+        <rdfs:label>host organism</rdfs:label>
     </owl:Class>
     
 
@@ -487,7 +489,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000591">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
+        <obo:IAO_0000115>A data set that is an aggregate of data items that are about an environmental system process (e.g., hydrological precipitation) or a participant in an environmental system process.</obo:IAO_0000115>
+        <rdfs:label>climate data set</rdfs:label>
     </owl:Class>
     
 
@@ -496,6 +500,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000593">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -504,6 +509,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000595">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
+        <obo:IAO_0000115>A census that counts the number of treatment facilities of some kind in a particular geographical region.</obo:IAO_0000115>
+        <rdfs:label>treatment facility census</rdfs:label>
     </owl:Class>
     
 
@@ -610,7 +617,9 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000614 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000614">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
+        <obo:IAO_0000115>A data set about the Earth&apos;s atmospheric weather</obo:IAO_0000115>
+        <rdfs:label>weather data set</rdfs:label>
     </owl:Class>
     
 
@@ -808,6 +817,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <oboInOwl:source>Europe PMC</oboInOwl:source>
         <rdfs:label>immunogen</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -906,6 +916,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000587 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000587">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>An information content entity about environmental material, environmental feature, environmental system, etc.</obo:IAO_0000115>
+        <rdfs:label>environment information</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
@@ -968,7 +988,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IDO_0000488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000488">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18011"/>
         <obo:IAO_0000115 xml:lang="en">A quality that inheres in an organism population and is the number of organisms in the population that have antibod
 y specific for an infectious agent in their serum at a specified time.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
@@ -1785,6 +1805,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000238"/>
+        <obo:IAO_0000115>Members of the species Homo sapiens.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>human</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
@@ -1839,6 +1860,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4013"/>
         <obo:IAO_0000115>The mechanisms, functions, activities, or processes exhibited by microorganisms, especially bacteria, to resist or to become tolerant to antibiotics.</obo:IAO_0000115>
         <rdfs:label>Antibiotic Resistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18011">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>The study of the immune system and its reaction to pathogens, as well as its malfunctions (autoimmune diseases, allergies, rejection of organ transplants).</obo:IAO_0000115>
+        <rdfs:label>Immunology</rdfs:label>
     </owl:Class>
     
 
@@ -2154,7 +2185,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas20 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas20">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about natural cover of land surface such as forest, plains, rock, etc. or about human land development.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">land cover / land use</rdfs:label>
     </owl:Class>
@@ -2174,7 +2205,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas22 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas22">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmenal dataset about air contaminants that threaten human health.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">air quality</rdfs:label>
     </owl:Class>
@@ -2184,7 +2215,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas23 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas23">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about destruction of entities in an ecosystem including living things and human-built sructures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">natural disasters</rdfs:label>
     </owl:Class>
