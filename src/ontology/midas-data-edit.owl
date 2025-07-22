@@ -310,6 +310,76 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#midas102 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
+        <obo:IAO_0000115>&quot;To understand the behavior of complex biological systems, it is useful to devise computer based models by approximating the interactions, via biomathematical expressions. Without doubt, these models could be over simplifications of complex interactions but they would be useful in comparison to classical laboratory experimental approaches which may not be practical or feasible.&quot; [Habtemariam et al., 1988]</obo:IAO_0000115>
+        <rdfs:label>Computational Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas103 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas103">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>One Health is a collaborative, multisectoral, and transdisciplinary approach — working at the local, regional, national, and global levels — with the goal of achieving optimal health outcomes recognizing the interconnection between people, animals, plants, and their shared environment. (USG Definition, 2017)</obo:IAO_0000115>
+        <rdfs:label>One Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas104 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas104">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>&quot;an inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response&quot; Caitlin Rivers et al. 2019</obo:IAO_0000115>
+        <rdfs:label>Outbreak Science</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas105 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas105">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem</obo:IAO_0000115>
+        <rdfs:label>Parasite Ecology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas106 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas106">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The genetic changes that occur within a pathogen population over time</obo:IAO_0000115>
+        <rdfs:label>Pathogen Evolution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas107 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas107">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>&quot;Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.&quot; (https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/phylodynamics)</obo:IAO_0000115>
+        <rdfs:label>Phylodynamics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#midas108 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas108">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>&quot;the practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.&quot; (https://scienceeurope.org/our-priorities/science-communication/)</obo:IAO_0000115>
+        <rdfs:label>Science Communication</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://midasnetwork.us/datasets#midas86 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas86">
@@ -2086,12 +2156,42 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
+        <obo:IAO_0000115>Artificial intelligence is the branch of computer science that deals with writing computer programs that can solve problems creatively.</obo:IAO_0000115>
+        <rdfs:label>Artificial Intelligence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C16347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16347">
         <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
         <obo:IAO_0000115>The application of statistical methods to biological studies.</obo:IAO_0000115>
         <rdfs:label>Biostatistics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16556 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16556">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of the causes, incidence and distribution of disease in the population and its application for prevention or control.</obo:IAO_0000115>
+        <rdfs:label>Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16825 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16825">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of numbers, shapes, patterns, and logical reasoning.</obo:IAO_0000115>
+        <rdfs:label>Mathematics</rdfs:label>
     </owl:Class>
     
 
@@ -2106,12 +2206,52 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17039">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The science and practice of protecting and improving the health of a community, as by preventive medicine, health education, control of communicable diseases, application of sanitary measures, and monitoring of environmental hazards.</obo:IAO_0000115>
+        <rdfs:label>Public Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C171586 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C171586">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The conditions in which people are born, grow, live, work and age. They include socioeconomic status, education, neighborhood and physical environment, employment, and social support networks, as well as access to health care.</obo:IAO_0000115>
+        <rdfs:label>Social Determinants of Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17214">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>A passage or transfer, as of a disease from one individual to another.</obo:IAO_0000115>
+        <rdfs:label>Disease Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C172305 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000115>A computer application that requires with an active internet connection and that uses HTTP as its primary communications protocol.</obo:IAO_0000115>
         <rdfs:label>Web Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173755 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173755">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>A description of how infectious diseases cases appear to have been communicated within a population. Sub-categorized as no cases, sporadic cases, case clusters, or community spread.</obo:IAO_0000115>
+        <rdfs:label>Transmission Pattern</rdfs:label>
     </owl:Class>
     
 
@@ -2129,6 +2269,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C176231 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C176231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
         <obo:IAO_0000115>A computing system (inspired by biological neural networks) that learns (progressively improves its ability) to do tasks by considering examples without task-specific programming. (After DeepAI Machine Learning Glossary and Terms)</obo:IAO_0000115>
         <rdfs:label>Machine Learning</rdfs:label>
@@ -2146,10 +2287,62 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18141">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of the structure and dynamics of computational systems using mathematical, logical, and empirical tools.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Computer Sciences; Computer Technology</oboInOwl:hasExactSynonym>
+        <rdfs:label>Computer Sciences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
+        <obo:IAO_0000115>Refers to a class of evolving technologies that provide leading-edge computational capabilities. Includes scalable high performance computers, high end graphic systems, and high speed networks. Used for molecular modeling, genome analysis, and image processing, among others.</obo:IAO_0000115>
+        <rdfs:label>High Performance Computing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18769 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18769">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
+        <obo:IAO_0000115>Environmental epidemiology focuses on exposures that are external to the individual, including physical, chemical, biologic, soci-cultural and lifestyle factors that influence the risk of disease.</obo:IAO_0000115>
+        <rdfs:label>Environmental Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18851 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18851">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
+        <obo:IAO_0000115>Epidemiology as it relates to infectious diseases.</obo:IAO_0000115>
+        <rdfs:label>Infectious Disease Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C189155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C189155">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>An approach to develop novel, or enhance existing, scientific tools and methods for use in research.</obo:IAO_0000115>
+        <rdfs:label>Method Development</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C35803 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C35803">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
         <obo:IAO_0000115>Infection by an etiologic agent that can be passed between animals and humans.</obo:IAO_0000115>
         <rdfs:label>Zoonotic Infection</rdfs:label>
     </owl:Class>
@@ -2210,6 +2403,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <rdfs:comment>Information content entity was used as specified input and output since it was more appropriate then data item or dataset.</rdfs:comment>
         <rdfs:label>data service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0015767 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0015767">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>&quot;global health was defined as “an area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide”&quot; Smeeth et al, 2023</obo:IAO_0000115>
+        <rdfs:label>Global Health</rdfs:label>
     </owl:Class>
     
 
