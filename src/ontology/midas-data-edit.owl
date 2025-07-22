@@ -504,6 +504,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000237">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>An organism of a particular biological taxon that is the bearer of an infectious dispositions towards an organism of a different particular biological taxon.</obo:IAO_0000115>
+        <rdfs:label>pathogen</rdfs:label>
     </owl:Class>
     
 
@@ -572,6 +574,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000593">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/EUPATH_0000587</obo:IAO_0100001>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -881,6 +884,7 @@
         <obo:IAO_0000115>An antigen capable, on its own, of inducing an immune response.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">immunogenicity</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/chebi/213/chebi.owl</obo:IAO_0000412>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/NCIT_C18011</obo:IAO_0100001>
         <oboInOwl:hasDbXref>PMID:19152635</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:19328011</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:19397283</oboInOwl:hasDbXref>
@@ -906,6 +910,7 @@
         <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.who.int/ictrp/en/</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/cto.owl</obo:IAO_0000412>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/NCIT_C71104</obo:IAO_0100001>
         <rdfs:label xml:lang="en">clinical trial</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -1709,7 +1714,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10244">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
-        <rdfs:label>Monkeypox virus</rdfs:label>
     </owl:Class>
     
 
@@ -1794,10 +1798,56 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of gram-negative, anaerobic, helical bacteria, various species of which produce RELAPSING FEVER in humans and other animals.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1392">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of bacteria that causes ANTHRAX in humans and animals.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>The cause of TETANUS in humans and domestic animals. It is a common inhabitant of human and horse intestines as well as soil. Two components make up its potent exotoxin activity, a neurotoxin and a hemolytic toxin.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-positive, rod-shaped bacteria widely distributed in nature. It has been isolated from sewage, soil, silage, and from feces of healthy animals and man. Infection with this bacterium leads to encephalitis, meningitis, endocarditis, and abortion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1717 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1717">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-positive, asporogenous bacteria in which three cultural types are recognized. These types (gravis, intermedius, and mitis) were originally given in accordance with the clinical severity of the cases from which the different strains were most frequently isolated. This species is the causative agent of DIPHTHERIA.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1773 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1773">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-positive, aerobic bacteria that produces TUBERCULOSIS in humans, other primates, CATTLE; DOGS; and some other animals which have contact with humans. Growth tends to be in serpentine, cordlike masses in which the bacilli show a parallel orientation.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1806,6 +1856,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <obo:IAO_0000115>One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</obo:IAO_0000115>
+        <rdfs:label>Bacteria</rdfs:label>
     </owl:Class>
     
 
@@ -1837,10 +1897,64 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>Gram-negative aerobic rods, isolated from surface water or thermally polluted lakes or streams. Member are pathogenic for man. Legionella pneumophila is the causative agent for LEGIONNAIRES&apos; DISEASE.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_485 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_485">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-negative, aerobic bacteria primarily found in purulent venereal discharges. It is the causative agent of GONORRHEA.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-negative, aerobic BACTERIA. It is a commensal and pathogen only of humans, and can be carried asymptomatically in the NASOPHARYNX. When found in cerebrospinal fluid it is the causative agent of cerebrospinal meningitis (MENINGITIS, MENINGOCOCCAL). It is also found in venereal discharges and blood. There are at least 13 serogroups based on antigenic differences in the capsular polysaccharides; the ones causing most meningitis infections being A, B, C, Y, and W-135. Each serogroup can be further classified by serotype, serosubtype, and immunotype.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-negative, aerobic bacteria that is the causative agent of WHOOPING COUGH. Its cells are minute coccobacilli that are surrounded by a slime sheath.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_562 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_562">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-negative, facultatively anaerobic, rod-shaped bacteria (GRAM-NEGATIVE FACULTATIVELY ANAEROBIC RODS) commonly found in the lower part of the intestine of warm-blooded animals. It is usually nonpathogenic, but some strains are known to produce DIARRHEA and pyogenic infections. Pathogenic strains (virotypes) are classified by their specific pathogenic mechanisms such as toxins (ENTEROTOXIGENIC ESCHERICHIA COLI), etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_5820 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_590 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that utilizes citrate as a sole carbon source. It is pathogenic for humans, causing enteric fevers, gastroenteritis, and bacteremia. Food poisoning is the most common clinical manifestation. Organisms within this genus are separated on the basis of antigenic characteristics, sugar fermentation patterns, and bacteriophage susceptibility.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1869,6 +1983,24 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
         <obo:IAO_0000115>A family of the order DIPTERA that comprises the mosquitoes. The larval stages are aquatic, and the adults can be recognized by the characteristic WINGS, ANIMAL venation, the scales along the wing veins, and the long proboscis. Many species are of particular medical importance.</obo:IAO_0000115>
         <rdfs:label>Culicidae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_780 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of gram-negative, aerobic, rod-shaped bacteria often surrounded by a protein microcapsular layer and slime layer. The natural cycle of its organisms generally involves a vertebrate and an invertebrate host. Species of the genus are the etiological agents of human diseases, such as typhus.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_810 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_810">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of the family CHLAMYDIACEAE whose species cause a variety of diseases in vertebrates including humans, mice, and swine. Chlamydia species are gram-negative and produce glycogen. The type species is CHLAMYDIA TRACHOMATIS.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2299,6 +2431,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas19">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
         <obo:IAO_0000115 xml:lang="en">data on occurrences of different pathogen species, strains, clades, or variants</obo:IAO_0000115>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/NCIT_C14419</obo:IAO_0100001>
         <rdfs:label xml:lang="en">variant cases</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
