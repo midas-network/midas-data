@@ -410,6 +410,16 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#midas112 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas112">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>&quot;artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.&quot; (https://thedecisionlab.com/reference-guide/statistics/synthetic-population)</obo:IAO_0000115>
+        <rdfs:label>Synthetic Populations</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://midasnetwork.us/datasets#midas86 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas86">
@@ -2200,6 +2210,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115>An estimated probability that one or more adverse event(s) will occur as a result of exposure to an actual or potential hazardous situation or chemical.</obo:IAO_0000115>
         <rdfs:label>Health Risk Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15719 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15719">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>The systematic collection, analysis, and interpretation of health data on an ongoing basis.</obo:IAO_0000115>
+        <rdfs:label>Surveillance</rdfs:label>
     </owl:Class>
     
 
