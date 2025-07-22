@@ -1593,6 +1593,15 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of ORTHOPOXVIRUS causing infections in humans. No infections have been reported since 1977 and the virus is now believed to be virtually extinct.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10335 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10335">
@@ -1611,10 +1620,29 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type (and only) species of RUBIVIRUS causing acute infection in humans, primarily children and young adults. Humans are the only natural host. A live, attenuated vaccine is available for prophylaxis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11082 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of FLAVIVIRUS, one of the Japanese encephalitis virus group (ENCEPHALITIS VIRUSES, JAPANESE). It can infect birds and mammals. In humans, it is seen most frequently in Africa, Asia, and Europe presenting as a silent infection or undifferentiated fever (WEST NILE FEVER). The virus appeared in North America for the first time in 1999. It is transmitted mainly by CULEX spp mosquitoes which feed primarily on birds, but it can also be carried by the Asian Tiger mosquito, AEDES albopictus, which feeds mainly on mammals.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of the FLAVIVIRUS genus. Principal vector transmission to humans is by AEDES spp. mosquitoes.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1829,18 +1857,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2697049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2697049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <oboInOwl:hasBroadSynonym>SARS-CoV-2</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>2019-nCoV</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>COVID-19 virus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>HCoV-19</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Human coronavirus 2019</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SARS-2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SARS-CoV2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SARS2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <rdfs:label>Severe acute respiratory syndrome coronavirus 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of BETACORONAVIRUS causing atypical respiratory disease (COVID-19) in humans. The organism was first identified in 2019 in Wuhan, China. The natural host is the Chinese intermediate horseshoe bat, RHINOLOPHUS affinis.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1965,7 +1983,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_64320 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_64320">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>An arbovirus in the FLAVIVIRUS genus of the family FLAVIVIRIDAE. Originally isolated in the Zika Forest of UGANDA it has been introduced to Asia and the Americas.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2063,6 +2082,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115>An estimated probability that one or more adverse event(s) will occur as a result of exposure to an actual or potential hazardous situation or chemical.</obo:IAO_0000115>
         <rdfs:label>Health Risk Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16347">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The application of statistical methods to biological studies.</obo:IAO_0000115>
+        <rdfs:label>Biostatistics</rdfs:label>
     </owl:Class>
     
 
@@ -2302,6 +2331,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
         <obo:IAO_0000115>a Bayesian model is a statistical model where inference is based on using Bayes theorem to obtain a posterior distribution for a quantity (or quantities) of interest for some model (such as parameter values) based on some prior distribution for the relevant unknown parameters and the likelihood from the model.</obo:IAO_0000115>
         <rdfs:label>Bayesian model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabs.lter-europe.net/EnvThes/21604 -->
+
+    <owl:Class rdf:about="http://vocabs.lter-europe.net/EnvThes/21604">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>A discipline is knowledge or wisdom associated with one academic field of study or profession. A discipline incorporates types of knowledge, expertise, skills, people, projects, communities, problems, challenges, studies, inquiry, approaches, and research areas that are strongly associated with academic areas of study or areas of professional practice</obo:IAO_0000115>
+        <rdfs:label>research topic</rdfs:label>
     </owl:Class>
     
 
