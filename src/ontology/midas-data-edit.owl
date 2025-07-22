@@ -380,6 +380,16 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#midas109 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas109">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Variation in characteristics among individuals within a population that can influence their susceptibility to infection, transmission dynamics, and response to interventions</obo:IAO_0000115>
+        <rdfs:label>Health Heterogeneity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://midasnetwork.us/datasets#midas86 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas86">
@@ -2913,7 +2923,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas43 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas43">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas109"/>
         <obo:IAO_0000115>includes social, economic, also mental health impact</obo:IAO_0000115>
         <rdfs:label>socio-economic impacts</rdfs:label>
     </owl:Class>
