@@ -1575,11 +1575,38 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <obo:IAO_0000115>Minute infectious agents whose genomes are composed of DNA or RNA, but not both. They are characterized by a lack of independent metabolism and the inability to replicate outside living host cells.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10244 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10244">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of ORTHOPOXVIRUS that is the etiological agent of MPOX, MONKEYPOX.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of VARICELLOVIRUS causing CHICKENPOX (varicella) and HERPES ZOSTER (shingles) in humans.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of the genus ORTHOHEPADNAVIRUS which causes human HEPATITIS B and is also apparently a causal agent in human HEPATOCELLULAR CARCINOMA. The Dane particle is an intact hepatitis virion, named after its discoverer. Non-infectious spherical and tubular particles are also seen in the serum.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1595,7 +1622,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11234 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11234">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of MORBILLIVIRUS and the cause of the highly infectious human disease MEASLES, which affects mostly children.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1603,7 +1631,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11250 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of PNEUMOVIRUS and an important cause of lower respiratory disease in infants and young children. It frequently presents with bronchitis and bronchopneumonia and is further characterized by fever, cough, dyspnea, wheezing, and pallor.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1611,7 +1640,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11309 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11309">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>Unidentified influenza virus is a species of ssRNA(-) virus in the family Orthomyxoviridae.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1619,7 +1649,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11320 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of the genus ALPHAINFLUENZAVIRUS that causes influenza and other diseases in humans and animals. Antigenic variation occurs frequently between strains, allowing classification into subtypes and variants. Transmission is usually by aerosol (human and most non-aquatic hosts) or waterborne (ducks). Infected birds shed the virus in their saliva, nasal secretions, and feces.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1627,7 +1658,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11520 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11520">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>Species of the genus BETAINFLUENZAVIRUS that cause HUMAN INFLUENZA and other diseases primarily in humans. Antigenic variation is less extensive than in type A viruses (INFLUENZA A VIRUS) and consequently there is no basis for distinct subtypes or variants. Epidemics are less likely than with INFLUENZA A VIRUS and there have been no pandemics. Previously only found in humans, Influenza B virus has been isolated from seals which may constitute the animal reservoir from which humans are exposed.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1636,6 +1668,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1644,6 +1677,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11709">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1651,7 +1685,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12637">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of the genus FLAVIVIRUS which causes an acute febrile and sometimes hemorrhagic disease in man. Dengue is mosquito-borne and four serotypes are known.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1659,7 +1694,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12721 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12721">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>Human immunodeficiency virus. A non-taxonomic and historical term referring to any of two species, specifically HIV-1 and/or HIV-2. Prior to 1986, this was called human T-lymphotropic virus type III/lymphadenopathy-associated virus (HTLV-III/LAV). From 1986-1990, it was an official species called HIV. Since 1991, HIV was no longer considered an official species name; the two species were designated HIV-1 and HIV-2.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1687,6 +1723,15 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
         <obo:IAO_0000115>A genus of gram-negative, anaerobic, helical bacteria, various species of which produce RELAPSING FEVER in humans and other animals.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_138950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of ENTEROVIRUS infecting humans and containing 11 serotypes, all coxsackieviruses.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1748,7 +1793,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_186536 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A genus in the family FILOVIRIDAE consisting of several distinct species of Ebolavirus, each containing separate strains. These viruses cause outbreaks of a contagious, hemorrhagic disease (HEMORRHAGIC FEVER, EBOLA) in humans, usually with high mortality.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1762,10 +1808,20 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_208726 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_208726">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A strain of HEPATITIS A VIRUS which causes hepatitis in humans. The virus replicates in hepatocytes and is presumed to reach the intestine via the bile duct. Transmission occurs by the fecal-oral route.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2560602 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2560602">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of RUBULAVIRUS that causes an acute infectious disease in humans, affecting mainly children. Transmission occurs by droplet infection.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1789,11 +1845,47 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <obo:IAO_0000115>One of the three domains of life (the others being BACTERIA and ARCHAEA), also called Eukarya. These are organisms whose cells are enclosed in membranes and possess a nucleus. They comprise almost all multicellular and many unicellular organisms, and are traditionally divided into groups (sometimes called kingdoms) including ANIMALS; PLANTS; FUNGI; and various algae and other taxa that were previously part of the old kingdom Protista.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3052230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_3052230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A genus of FLAVIVIRIDAE causing parenterally-transmitted HEPATITIS C which is associated with transfusions and drug abuse. Hepatitis C virus is the type species.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_37124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_37124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of ALPHAVIRUS causing an acute dengue-like fever.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_445 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_445">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
         <obo:IAO_0000115>Gram-negative aerobic rods, isolated from surface water or thermally polluted lakes or streams. Member are pathogenic for man. Legionella pneumophila is the causative agent for LEGIONNAIRES&apos; DISEASE.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4751 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4751">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000115>A kingdom of eukaryotic, heterotrophic organisms that live parasitically as saprobes, including MUSHROOMS; YEASTS; smuts, molds, etc. They reproduce either sexually or asexually, and have life cycles that range from simple to complex. Filamentous fungi, commonly known as molds, refer to those that grow as multicellular colonies.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1825,6 +1917,15 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <obo:IAO_0000115>A mitosporic fungal genus which causes COCCIDIOIDOMYCOSIS.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_562 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_562">
@@ -1837,7 +1938,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_5820 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000115>A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</obo:IAO_0000115>
     </owl:Class>
     
 
