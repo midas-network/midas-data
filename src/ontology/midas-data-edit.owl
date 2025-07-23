@@ -2402,7 +2402,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51306">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/ncit/releases/2024-05-07/ncit.owl</obo:IAO_0000412>
     </owl:Class>
     
 
