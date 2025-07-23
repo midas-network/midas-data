@@ -393,7 +393,7 @@
     <!-- http://midasnetwork.us/datasets#midas110 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas110">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Decision support systems (DSS) in infectious disease management utilize technology to aid in the prevention, detection, and response to outbreaks.</obo:IAO_0000115>
         <rdfs:label>Decision Support Systems</rdfs:label>
     </owl:Class>
@@ -403,7 +403,7 @@
     <!-- http://midasnetwork.us/datasets#midas111 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas111">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Evaluation metrics are quantitative measures used to assess the performance and effectiveness of a model</obo:IAO_0000115>
         <rdfs:label>Evaluation</rdfs:label>
     </owl:Class>
@@ -558,24 +558,6 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115>intra-host models (also known as within-host models) are mathematical descriptions that focus on the dynamics of an infection within a single individual host</obo:IAO_0000115>
         <rdfs:label>Intra-host modeling</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115 xml:lang="en">Software is a plan specification composed of a series of instructions that can be 
-interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1958818&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
-        <rdfs:label>software</rdfs:label>
     </owl:Class>
     
 
@@ -2420,7 +2402,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C51306 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51306">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>The activities of educating or instructing or teaching; activities that impart knowledge or skill.</obo:IAO_0000115>
         <rdfs:label>Educational Activity</rdfs:label>
     </owl:Class>
@@ -2450,7 +2432,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C85439 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C85439">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Computer methods for creating images, diagrams or animations.</obo:IAO_0000115>
         <rdfs:label>Graphics Visualization</rdfs:label>
     </owl:Class>
@@ -2480,7 +2462,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/OBI_0001530 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001530">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000111>data service</obo:IAO_0000111>
         <obo:IAO_0000112>Data analysis service such statistical abalysis or storage service such data  backup.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -3201,7 +3183,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas66 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas66">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000115>Tools for initial stages of data processing, usually prior to modeling. Includes pre-processing, cleaning, exploratory analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">data preparation</rdfs:label>
     </owl:Class>
@@ -3375,7 +3357,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas81 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas81">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000115>Frequency of interactions between individuals in different settings, at different times...</obo:IAO_0000115>
         <rdfs:label xml:lang="en">contact rates</rdfs:label>
@@ -3436,7 +3417,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000037 -->
 
     <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000037">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
         <rdfs:label>ensemble specification</rdfs:label>
     </owl:Class>
