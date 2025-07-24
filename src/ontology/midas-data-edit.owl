@@ -261,6 +261,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0014001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0014001">
+        <obo:IAO_0000115>A relationship between a disease and an infectious agent where the material basis of the disease is an infection with some infectious agent.</obo:IAO_0000115>
+        <rdfs:label>disease has infectious agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1135,6 +1155,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000989">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2560602"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A contagious viral infection caused by the mumps virus. Symptoms include swollen and tender parotid glands, fever, muscle aches and fatigue. Due to vaccination programs, mumps has become a rare disease.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1466,6 +1492,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_208726"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Acute inflammation of the liver caused by the hepatitis A virus. It is highly contagious and usually contracted through close contact with an infected individual or their feces, contaminated food or water.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1590,6 +1622,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001673"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Shigellosis is a bacterial infection leading to dysentery and is caused by Shigella, which are small, ubiquitous Gram-negative bacteria belonging to the enterobacteria family. There are four species: S. dysenteriae, S. flexneri, S. boydii and S. sonnei, all of which cause bacillary dysentery and are strictly limited to human hosts.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1623,6 +1661,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_562"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Infection with the organism Escherichia Coli.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1671,6 +1715,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0043544"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17449"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1280"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Infections caused by a strain of Staphylococcus aureus that is non-susceptible to the action of the antibiotic, methicillin. The mechanism of resistance usually involves modification of normal or the presence of acquired penicillin binding proteins.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1820,6 +1870,15 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A genus of the family PICORNAVIRIDAE whose members preferentially inhabit the intestinal tract of a variety of hosts. The genus contains many species. Newly described members of human enteroviruses are assigned continuous numbers with the species designated human enterovirus.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12637">
@@ -1868,7 +1927,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_138950 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_138950">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12059"/>
         <obo:IAO_0000115>A species of ENTEROVIRUS infecting humans and containing 11 serotypes, all coxsackieviruses.</obo:IAO_0000115>
     </owl:Class>
     
