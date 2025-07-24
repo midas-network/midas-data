@@ -1136,6 +1136,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_590"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Infections with bacteria of the genus salmonella.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1171,6 +1177,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0025294"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_780"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A type of tick-borne disease which presents on the skin caused by bacteria of the genus Rickettsia.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1238,6 +1250,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004277">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_485"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A common sexually transmitted bacterial infection caused by Neisseria gonorrhoeae. It is transmitted through vaginal, oral, or anal intercourse. Infected individuals may be asymptomatic. Symptoms in males include burning sensation during urination, discharge from the penis, and painful swelling of the testes. Symptoms in females include painful urination, vaginal discharge, and vaginal bleeding between periods. If untreated, the infection may lead to pelvic inflammatory disease.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1286,6 +1304,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005077">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_520"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A contagious bacterial respiratory infection caused by Bordetella pertussis. It is characterized by severe and uncontrollable cough, resulting in a whooping sound during breathing following the cough.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1314,6 +1338,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005114">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1313"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Infections with bacteria of the species streptococcus pneumoniae.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1324,6 +1354,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1392"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An infection caused by Bacillus anthracis bacteria. It may affect the lungs, gastrointestinal tract, or skin. Patients with lung infection present with fever, headaches, cough, chest pain and shortness of breath. Patients with gastrointestinal infection present with nausea, vomiting and bloody diarrhea. Patients with skin infection develop blisters and ulcers.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1355,6 +1391,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3052230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A viral infection caused by the hepatitis C virus.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1378,6 +1420,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10407"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A viral infection caused by the hepatitis B virus.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1387,6 +1435,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005373">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_487"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Infections with bacteria of the species neisseria meningitidis.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1409,6 +1463,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005504">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1717"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A Gram-positive bacterial infection caused by Corynebacterium diphtheriae. It usually involves the oral cavity, pharynx, and nasal cavity. Patients develop pseudomembranes in the affected areas and manifest signs and symptoms of an upper respiratory infection. The diphtheria toxin may cause myocarditis, polyneuritis, and other systemic effects.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1419,6 +1479,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005526">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1513"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A serious infectious disorder that follows wound contamination by the Gram-positive bacterium Clostridium tetani. The bacteria produce a neurotoxin called tetanospasmin, which causes muscle spasm in the jaw and other anatomic sites.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1450,6 +1516,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005701">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_810"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An infection that is caused by Chlamydia trachomatis.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1518,6 +1590,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005823">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_445"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Any disease caused by Legionella bacteria.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1529,6 +1607,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1639"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A bacterial infection caused by Listeria monocytogenes. It occurs in newborns, elderly, and immunocompromised patients. The bacteria are transmitted through ingestion of contaminated food. Clinical manifestations include fever, muscle pain, respiratory distress, nausea, diarrhea, neck stiffness, irritability, seizures, and lethargy.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1539,6 +1623,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005976">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A contagious bacterial infection caused by the spirochete Treponema pallidum. It is a sexually transmitted disorder, although it can also be transmitted from the mother to the fetus in utero. Typically, it is initially manifested with a single sore which heals without treatment. If the infection is left untreated, the initial stage is followed by skin rash and mucous membrane lesions. A late stage follows, which is characterized by damage of the internal organs, including the nervous system.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1560,6 +1650,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000916"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_666"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Cholera is an infectious disease, caused by intestinal infection with Vibrio cholerae, characterized by massive watery diarrhea and severe dehydration that can lead to shock and death if left untreated.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1591,6 +1687,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018076">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1773"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A chronic, recurrent infection caused by the bacterium Mycobacterium tuberculosis. Tuberculosis (TB) may affect almost any tissue or organ of the body with the lungs being the most common site of infection. The clinical stages of TB are primary or initial infection, latent or dormant infection, and recrudescent or adult-type TB. Ninety to 95% of primary TB infections may go unrecognized. Histopathologically, tissue lesions consist of granulomas which usually undergo central caseation necrosis. Local symptoms of TB vary according to the part affected; acute symptoms include hectic fever, sweats, and emaciation; serious complications include granulomatous erosion of pulmonary bronchi associated with hemoptysis. If untreated, progressive TB may be associated with a high degree of mortality. This infection is frequently observed in immunocompromised individuals with AIDS or a history of illicit IV drug use.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1638,6 +1740,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0025294"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_138"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Lyme disease (named after the towns in the USA where the disease was first identified) is a bacterial infection caused by Borrelia burgdorferi.</obo:IAO_0000115>
     </owl:Class>
     
