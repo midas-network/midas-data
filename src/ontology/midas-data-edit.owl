@@ -974,6 +974,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A Coronavirus infection that is characterized by fever, cough and shortness of breath and that has_material_basis_in SARS-CoV-2.</obo:IAO_0000115>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
         <oboInOwl:hasDbXref>ICD10CM:U07.1</oboInOwl:hasDbXref>
@@ -1004,6 +1010,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3292">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10244"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A viral infectious disease that results in infection of primates, rodents and humans, located in skin, has_material_basis_in Monkeypox virus, which is transmitted by contact with the animal&apos;s blood, body fluids, rash, or with the body fluids of a sick person, transmitted by fomites, and transmitted by respiratory droplets. The infection has symptom fever, has symptom muscle ache, has symptom headache, and has symptom lymphadenopathy.</obo:IAO_0000115>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
@@ -1192,6 +1204,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11250"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Infection with the respiratory syncytial virus, an RNA virus of the genus Pneumovirus, in the family Paramyxoviridae, which is characterized by the formation of syncytia in tissue culture. It causes minor respiratory infection with rhinitis and cough in adults, but is capable of causing severe bronchitis and bronchopneumonia in young children.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1210,6 +1228,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An infection caused by a fungus.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1230,6 +1254,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A mosquito-borne viral illness caused by the west nile virus, a flavivirus and endemic to regions of Africa, Asia, and Europe. Common clinical features include headache; fever; maculopapular rash; gastrointestinal symptoms; and lymphadenopathy. meningitis; encephalitis; and myelitis may also occur. The disease may occasionally be fatal or leave survivors with residual neurologic deficits. (From Joynt, Clinical Neurology, 1996, Ch26, p13; Lancet 1998 Sep 5;352(9130):767-71)</obo:IAO_0000115>
     </owl:Class>
     
@@ -1275,6 +1305,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004619">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11234"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A highly contagious viral infection caused by the measles virus. Symptoms appear 8-12 days after exposure and include a rash, cough, fever and muscle pains that can last 4-7 days. Measles vaccines are available to provide prophylaxis, usually combined with mumps and rubella vaccines (MMR).</obo:IAO_0000115>
     </owl:Class>
     
@@ -1284,6 +1320,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004651">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A condition that is caused by infection with Variola, and that is characterized by small, raised bumps.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1294,6 +1336,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004656">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A viral infection caused by the rubella virus. It is initially manifested with flu-like symptoms that last one or two days, followed by the development of a characteristic red rash which lasts from one to five days. The rash first appears in the neck and face. It subsequently spreads to the rest of the body.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1319,6 +1367,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Any disease caused by a virus.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1369,6 +1423,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A successful invasion of a host by an organism that uses the host for food and shelter.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1381,6 +1441,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005135"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5820"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Malaria is a serious and sometimes fatal disease caused by a parasite that commonly infects a certain type of mosquito which feeds on humans. Infection with malaria parasites may result in a wide variety of symptoms, ranging from absent or very mild symptoms to severe disease and even death. People who get malaria are typically very sick with high fevers, shaking chills, and flu-like illness. In general, malaria is a curable disease if diagnosed and treated promptly and correctly.Treatment depends on many factors including disease severity, the species of malaria parasite causing the infection and the part of the world in which the infection was acquired.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1453,6 +1519,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12637"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Dengue fever (DF), caused by dengue virus, is an arboviral disease characterized by an initial non-specific febrile illness that can sometimes progress to more severe forms manifesting capillary leakage and hemorrhage (dengue hemorrhagic fever, or DHF) and shock (dengue shock syndrome, or DSS).</obo:IAO_0000115>
     </owl:Class>
     
@@ -1506,6 +1578,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005700">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10335"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A contagious childhood disorder caused by the varicella zoster virus. It is transmitted via respiratory secretions and contact with chickenpox blister contents. It presents with a vesicular skin rash, usually associated with fever, headache, and myalgias. The pruritic fluid-filled vesicles occur 10-21 days after exposure and last for 3-4 days. An additional 3-4 days of malaise follows before the affected individual feels better. An individual is contagious 1-2 days prior to the appearance of the blisters until all blisters are crusted over. Generally, healthy individuals recover without complications.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1531,6 +1609,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005706">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002041"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5500"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A fungal infection caused by Coccidioides immitis. Affected individuals usually have mild flu-like symptoms. However, pneumonia and systemic involvement with the formation of abscesses may develop as complications of the disease.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1543,6 +1627,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018087"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A viral hemorrhagic fever that is caused by the Ebola virus, which is transmitted by contact with infected animals or humans; it is characterized by high fever, unexplained bleeding, and a high mortality rate.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1552,6 +1642,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005779">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A clinical syndrome that is usually caused by enterovirus infection, and that is characterized by fever, anorexia, and painful sores in the mouth, distal extremities, and/or other sites, including the buttocks.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1581,6 +1677,24 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11309"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11520"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An acute viral infection of the respiratory tract, occurring in isolated cases, in epidemics, or in pandemics; it is caused by serologically different strains of viruses (influenzaviruses) designated A, B, and C, has a 3-day incubation period, and usually lasts for 3 to 10 days. It is marked by inflammation of the nasal mucosa, pharynx, and conjunctiva; headache; myalgia; often fever, chills, and prostration; and occasionally involvement of the myocardium or central nervous system.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1639,6 +1753,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0012268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A syndrome resulting from the acquired deficiency of cellular immunity caused by the human immunodeficiency virus (HIV). It is characterized by the reduction of the Helper T-lymphocytes in the peripheral blood and the lymph nodes. Symptoms include generalized lymphadenopathy, fever, weight loss, and chronic diarrhea. Patients with AIDS are especially susceptible to opportunistic infections (usually pneumocystis carinii pneumonia, cytomegalovirus (CMV) infections, tuberculosis, candida infections, and cryptococcosis), and the development of malignant neoplasms (usually non-Hodgkin lymphoma and Kaposi sarcoma). The human immunodeficiency virus is transmitted through sexual contact, sharing of contaminated needles, or transfusion of contaminated blood.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1666,6 +1786,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017373">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_138950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An acute infectious disorder that affects the nervous system. It is caused by the poliovirus. The virus spreads by direct contact, and can be prevented by prophylaxis with the polio vaccine.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1677,6 +1803,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas93"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_37124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An infection that is caused by the Chikungunya virus, which is transmitted by mosquitoes; it is characterized by fever and severe arthralgia.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1713,6 +1845,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Mosquito-born virus disease characterized by a clinical course that may be asymptomatic or mild with fever, conjunctivitis, muscle and joint pain, headache, exanthema, but may also be associated with severe neurological (meningitis, meningoencephalitis and myelitis) and auto-immune (Guillain-Barre syndrome) complications, as well as a potential increase of birth defects (microcephaly) if the infection occurs during pregnancy.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1758,6 +1896,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11089"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Yellow fever (YF), caused by YF virus, is a zoonotic disease characterized by fever and constitutional symptoms, with the potential to progress to severe and fatal viral hemorrhagic fever with shock and multi-organ system failure.</obo:IAO_0000115>
     </owl:Class>
     
