@@ -1110,6 +1110,12 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An acute infectious disorder that is caused by gram positive or gram negative bacteria; representative examples include pneumococcal, streptococcal, salmonella, and meningeal infections.</obo:IAO_0000115>
     </owl:Class>
     
@@ -3407,7 +3413,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas66 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas66">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Tools for initial stages of data processing, usually prior to modeling. Includes pre-processing, cleaning, exploratory analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">data preparation</rdfs:label>
     </owl:Class>
