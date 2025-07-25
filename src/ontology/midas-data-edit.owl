@@ -310,274 +310,6 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#midas100 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-        <obo:IAO_0000115 xml:lang="en">Magnitude of the peak of incident hospitalizations occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">peak hospitalization count</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas101 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-        <obo:IAO_0000115 xml:lang="en">Cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">peak hospitalization time cumulative distribution</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas102 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
-        <obo:IAO_0000115>&quot;To understand the behavior of complex biological systems, it is useful to devise computer based models by approximating the interactions, via biomathematical expressions. Without doubt, these models could be over simplifications of complex interactions but they would be useful in comparison to classical laboratory experimental approaches which may not be practical or feasible.&quot; [Habtemariam et al., 1988]</obo:IAO_0000115>
-        <rdfs:label>Computational Epidemiology</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas103 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas103">
-        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>One Health is a collaborative, multisectoral, and transdisciplinary approach — working at the local, regional, national, and global levels — with the goal of achieving optimal health outcomes recognizing the interconnection between people, animals, plants, and their shared environment. (USG Definition, 2017)</obo:IAO_0000115>
-        <rdfs:label>One Health</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas104 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas104">
-        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>&quot;an inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response&quot; Caitlin Rivers et al. 2019</obo:IAO_0000115>
-        <rdfs:label>Outbreak Science</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas105 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas105">
-        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem</obo:IAO_0000115>
-        <rdfs:label>Parasite Ecology</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas106 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas106">
-        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>The genetic changes that occur within a pathogen population over time</obo:IAO_0000115>
-        <rdfs:label>Pathogen Evolution</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas107 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas107">
-        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
-        <rdfs:comment>Definition from Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</rdfs:comment>
-        <rdfs:label>Phylodynamics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas108 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas108">
-        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>The practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
-        <rdfs:comment>Definition from Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</rdfs:comment>
-        <rdfs:label>Science Communication</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas109 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas109">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>Variation in characteristics among individuals within a population that can influence their susceptibility to infection, transmission dynamics, and response to interventions</obo:IAO_0000115>
-        <rdfs:label>Health Heterogeneity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas110 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas110">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>Decision support systems (DSS) utilize technology to aid in the prevention, detection, and response to infectious disease</obo:IAO_0000115>
-        <rdfs:label>Decision Support Systems</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas111 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas111">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>Evaluation metrics are quantitative measures used to assess the performance and effectiveness of a model</obo:IAO_0000115>
-        <rdfs:label>Evaluation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas112 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas112">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</obo:IAO_0000115>
-        <rdfs:comment>Definition from The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</rdfs:comment>
-        <rdfs:label>Synthetic Populations</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas86 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas86">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
-        <obo:IAO_0000115>A count of recovery that occured in a population in a given temporal region.</obo:IAO_0000115>
-        <rdfs:label>count of recovered in a population</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas87 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas87">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas86"/>
-        <obo:IAO_0000115>A count of recovery in a population that is the total number of recovery that occur during a reference temporal interval</obo:IAO_0000115>
-        <rdfs:label>cumulative recovered count</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas88 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas88">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas86"/>
-        <obo:IAO_0000115>A count of recovery in a population that is the number of recovery that occured during a proper occurent part of a reference temporal interval.</obo:IAO_0000115>
-        <rdfs:label>incident recovered count</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas89 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas89">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
-        <obo:IAO_0000115>count of outpatient visit in a population.</obo:IAO_0000115>
-        <rdfs:label>count of outpatient visit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas90 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas90">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas89"/>
-        <obo:IAO_0000115>A count of outpatient visit in a population that is the total number of outpatient visit that occur during a reference temporal interval.</obo:IAO_0000115>
-        <rdfs:label>cumulative outpatient visit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas91 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas91">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas89"/>
-        <obo:IAO_0000115>A count of outpatient visit in a population that is the number of outpatient visit that occured during a proper occurent part of a reference  temporal interval.</obo:IAO_0000115>
-        <rdfs:label>incident outpatient visit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas93 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas93">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000115>Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences.</obo:IAO_0000115>
-        <rdfs:comment>from WHO website (https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases)</rdfs:comment>
-        <rdfs:label>Neglected Tropical Disease</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas94 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas94">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000115>Vaccine preventable diseases are those infectious diseases that can be prevented by vaccination</obo:IAO_0000115>
-        <rdfs:comment>WHO, 2012. Vaccine-preventable diseases and vaccines. In: International Travel and Health, Chapter 6. World Health Organization (WHO) (https://cdn.who.int/media/docs/default-source/documents/emergencies/travel-advice/ith-travel-chapter-6-vaccines_cc218697-75d2-4032-b5b7-92e0fa171474.pdf?sfvrsn=285473b4_4&amp;download=true)</rdfs:comment>
-        <rdfs:label>Vaccine-Preventable Disease</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas95 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas95">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
-        <obo:IAO_0000115>Dynamic models are [..] called dynamic because they describe how system properties change over time: a gene’s expression level, the abundance of an endangered species, the mercury level in different organs within an individual, and so on.</obo:IAO_0000115>
-        <rdfs:comment>Definition from &quot;Chapter 1: What are Dynamic Models?&quot; Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
-        <rdfs:label>Dynamic Models</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas96 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas96">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
-        <obo:IAO_0000115>Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms).</obo:IAO_0000115>
-        <rdfs:comment>Definition from Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
-        <rdfs:label>Geospatial Models</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas97 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas97">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
-        <obo:IAO_0000115>The output of a model</obo:IAO_0000115>
-        <rdfs:label>modeling output</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas98 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas98">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>Decision models (and decision science as a field, more broadly) provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
-        <rdfs:comment>Definition from Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</rdfs:comment>
-        <rdfs:label>Decision models</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas99 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas99">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>intra-host models (also known as within-host models) are mathematical descriptions that focus on the dynamics of an infection within a single individual host</obo:IAO_0000115>
-        <rdfs:label>Intra-host modeling</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
@@ -968,8 +700,8 @@
     <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1167,8 +899,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0000989 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000989">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1299,8 +1031,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0004619 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004619">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1330,8 +1062,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0004656 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004656">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1346,8 +1078,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005077 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005077">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1386,8 +1118,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005114 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005114">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1433,10 +1165,10 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005136 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005136">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005135"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1479,9 +1211,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005344 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005344">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1511,10 +1243,10 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005502 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005502">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas93"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas93"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1529,8 +1261,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005504 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005504">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1545,8 +1277,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005526 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005526">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1561,9 +1293,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005619 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005619">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000827"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <obo:IAO_0000115>A bacterial infectious disorder contracted by consumption of food or drink contaminated with Salmonella typhi. This disorder is common in developing countries and can be treated with antibiotics.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1572,8 +1304,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005700 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005700">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1619,10 +1351,10 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005737 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005737">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018087"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1652,10 +1384,10 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005790 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005790">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1670,9 +1402,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005812 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005812">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1763,9 +1495,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0015766 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015766">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000916"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1780,8 +1512,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0017373 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017373">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1796,9 +1528,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0017941 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017941">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas93"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas93"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1813,8 +1545,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0018076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018076">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -1888,10 +1620,10 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0020502 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020502">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas94"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -3012,6 +2744,110 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas100 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <obo:IAO_0000115 xml:lang="en">Magnitude of the peak of incident hospitalizations occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">peak hospitalization count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas101 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <obo:IAO_0000115 xml:lang="en">Cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">peak hospitalization time cumulative distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas102 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
+        <obo:IAO_0000115>To understand the behavior of complex biological systems, it is useful to devise computer based models by approximating the interactions, via biomathematical expressions. Without doubt, these models could be over simplifications of complex interactions but they would be useful in comparison to classical laboratory experimental approaches which may not be practical or feasible.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Habtemariam, T., A. Ghartey-Tagoe, E. Mamo, and V. Robnett. &quot;Epidemiologic modelling of diseases—a case example using Schistosoma and Trypanosoma.&quot; Mathematical and Computer Modelling 11 (1988): 244-249.</rdfs:comment>
+        <rdfs:label>Computational Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas103 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas103">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>One Health is a collaborative, multisectoral, and transdisciplinary approach — working at the local, regional, national, and global levels — with the goal of achieving optimal health outcomes recognizing the interconnection between people, animals, plants, and their shared environment. (U.S. Government Definition, established 2017)</obo:IAO_0000115>
+        <rdfs:label>One Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas104 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas104">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>an inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response</obo:IAO_0000115>
+        <rdfs:comment>Definition from Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</rdfs:comment>
+        <rdfs:label>Outbreak Science</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas105 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas105">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem</obo:IAO_0000115>
+        <rdfs:label>Parasite Ecology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas106 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas106">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The genetic changes that occur within a pathogen population over time</obo:IAO_0000115>
+        <rdfs:label>Pathogen Evolution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas107 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas107">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</rdfs:comment>
+        <rdfs:label>Phylodynamics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas108 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas108">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</rdfs:comment>
+        <rdfs:label>Science Communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas109 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas109">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Variability or diversity within a population that can influence their health outcomes, risk factors, and response to interventions</obo:IAO_0000115>
+        <rdfs:label>Health Heterogeneity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas11 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas11">
@@ -3019,6 +2855,37 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000115>A collection of links to other data items, often found in external repositories. No claims are made as to the format or consistency of the items associated with those links.</obo:IAO_0000115>
         <rdfs:comment>Probably should link to some external dataset.</rdfs:comment>
         <rdfs:label xml:lang="en">catalog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas110 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas110">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Decision support systems (DSS) utilize technology to aid in the prevention, detection, and response to infectious disease</obo:IAO_0000115>
+        <rdfs:label>Decision Support Systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas111 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas111">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Process using various metrics to assess the performance and effectiveness of a model</obo:IAO_0000115>
+        <rdfs:label>Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas112 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas112">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</obo:IAO_0000115>
+        <rdfs:comment>Definition from The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</rdfs:comment>
+        <rdfs:label>Synthetic Populations</rdfs:label>
     </owl:Class>
     
 
@@ -3336,7 +3203,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas43 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas43">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas109"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas109"/>
         <obo:IAO_0000115>includes social, economic, also mental health impact</obo:IAO_0000115>
         <rdfs:label>socio-economic impacts</rdfs:label>
     </owl:Class>
@@ -3757,6 +3624,46 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas86 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas86">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A count of recovery that occured in a population in a given temporal region.</obo:IAO_0000115>
+        <rdfs:label>count of recovered in a population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas87 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas87">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas86"/>
+        <obo:IAO_0000115>A count of recovery in a population that is the total number of recovery that occur during a reference temporal interval</obo:IAO_0000115>
+        <rdfs:label>cumulative recovered count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas88 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas88">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas86"/>
+        <obo:IAO_0000115>A count of recovery in a population that is the number of recovery that occured during a proper occurent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>incident recovered count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas89 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas89">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>count of outpatient visit in a population.</obo:IAO_0000115>
+        <rdfs:label>count of outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas9 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas9">
@@ -3767,12 +3674,107 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas90 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas90">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas89"/>
+        <obo:IAO_0000115>A count of outpatient visit in a population that is the total number of outpatient visit that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label>cumulative outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas91 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas91">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas89"/>
+        <obo:IAO_0000115>A count of outpatient visit in a population that is the number of outpatient visit that occured during a proper occurent part of a reference  temporal interval.</obo:IAO_0000115>
+        <rdfs:label>incident outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas92 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas92">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention, public health considerations, etc.</obo:IAO_0000115>
         <rdfs:label>Wildlife Health Interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas93 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas93">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences.</obo:IAO_0000115>
+        <rdfs:comment>Definition from “Neglected Tropical Diseases.” n.d. Accessed July 25, 2025. https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases.</rdfs:comment>
+        <rdfs:label>Neglected Tropical Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas94 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas94">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Vaccine preventable diseases are those infectious diseases that can be prevented by vaccination</obo:IAO_0000115>
+        <rdfs:comment>Definition from World Health Organization. 2012. International Travel and Health: Situation as on 1 January 2012. World Health Organization. https://iris.who.int/handle/10665/75329.</rdfs:comment>
+        <rdfs:label>Vaccine-Preventable Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas95 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas95">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <obo:IAO_0000115>Dynamic models are [..] called dynamic because they describe how system properties change over time: a gene’s expression level, the abundance of an endangered species, the mercury level in different organs within an individual, and so on.</obo:IAO_0000115>
+        <rdfs:comment>Definition from &quot;Chapter 1: What are Dynamic Models?&quot; Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
+        <rdfs:label>Dynamic Models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas96 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas96">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <obo:IAO_0000115>Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms).</obo:IAO_0000115>
+        <rdfs:comment>Definition from Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
+        <rdfs:label>Geospatial Models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas97 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas97">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <obo:IAO_0000115>The output of a model</obo:IAO_0000115>
+        <rdfs:label>modeling output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas98 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas98">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>Decision models (and decision science as a field, more broadly) provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</rdfs:comment>
+        <rdfs:label>Decision models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas99 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas99">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>intra-host models are mathematical models focusing on the dynamics of an infection within a single individual host</obo:IAO_0000115>
+        <rdfs:label>Intra-host modeling</rdfs:label>
     </owl:Class>
     
 
