@@ -384,7 +384,8 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas107">
         <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>&quot;Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.&quot; (https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/phylodynamics)</obo:IAO_0000115>
+        <obo:IAO_0000115>Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</rdfs:comment>
         <rdfs:label>Phylodynamics</rdfs:label>
     </owl:Class>
     
@@ -394,7 +395,8 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas108">
         <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>&quot;the practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.&quot; (https://scienceeurope.org/our-priorities/science-communication/)</obo:IAO_0000115>
+        <obo:IAO_0000115>The practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</rdfs:comment>
         <rdfs:label>Science Communication</rdfs:label>
     </owl:Class>
     
@@ -434,7 +436,8 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#midas112">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>&quot;artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.&quot; (https://thedecisionlab.com/reference-guide/statistics/synthetic-population)</obo:IAO_0000115>
+        <obo:IAO_0000115>artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</obo:IAO_0000115>
+        <rdfs:comment>Definition from The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</rdfs:comment>
         <rdfs:label>Synthetic Populations</rdfs:label>
     </owl:Class>
     
@@ -496,16 +499,6 @@
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#midas89"/>
         <obo:IAO_0000115>A count of outpatient visit in a population that is the number of outpatient visit that occured during a proper occurent part of a reference  temporal interval.</obo:IAO_0000115>
         <rdfs:label>incident outpatient visit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://midasnetwork.us/datasets#midas92 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas92">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations.</obo:IAO_0000115>
-        <rdfs:label>Wildlife Health Interventions</rdfs:label>
     </owl:Class>
     
 
@@ -3770,6 +3763,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas5"/>
         <obo:IAO_0000115>Items corresponding to entire populations or subpopulations. Might be geographically or temporally temporally limited.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas92 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas92">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention, public health considerations, etc.</obo:IAO_0000115>
+        <rdfs:label>Wildlife Health Interventions</rdfs:label>
     </owl:Class>
     
 
