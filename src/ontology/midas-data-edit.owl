@@ -2492,6 +2492,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51306">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>The activities of educating or instructing or teaching; activities that impart knowledge or skill.</obo:IAO_0000115>
+        <rdfs:label>Educational Activity</rdfs:label>
     </owl:Class>
     
 
@@ -2510,6 +2512,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71104">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>A research study that prospectively assigns human participants or groups of humans to one or more health-related interventions to evaluate the effects on health outcomes.</obo:IAO_0000115>
+        <rdfs:label>Clinical Trial</rdfs:label>
     </owl:Class>
     
 
