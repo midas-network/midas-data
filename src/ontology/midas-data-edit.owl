@@ -1157,12 +1157,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A successful invasion of a host by an organism that uses the host for food and shelter.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2049,16 +2043,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <obo:IAO_0000115>One of the three domains of life (the others being BACTERIA and ARCHAEA), also called Eukarya. These are organisms whose cells are enclosed in membranes and possess a nucleus. They comprise almost all multicellular and many unicellular organisms, and are traditionally divided into groups (sometimes called kingdoms) including ANIMALS; PLANTS; FUNGI; and various algae and other taxa that were previously part of the old kingdom Protista.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_3052230 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_3052230">
@@ -2092,7 +2076,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_4751 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4751">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
         <obo:IAO_0000115>A kingdom of eukaryotic, heterotrophic organisms that live parasitically as saprobes, including MUSHROOMS; YEASTS; smuts, molds, etc. They reproduce either sexually or asexually, and have life cycles that range from simple to complex. Filamentous fungi, commonly known as molds, refer to those that grow as multicellular colonies.</obo:IAO_0000115>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
@@ -2152,7 +2136,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_5820 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
         <obo:IAO_0000115>A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</obo:IAO_0000115>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
