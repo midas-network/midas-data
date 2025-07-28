@@ -2560,7 +2560,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0015767">
         <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115>&quot;global health was defined as “an area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide”&quot; Smeeth et al, 2023</obo:IAO_0000115>
+        <obo:IAO_0000115>An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</obo:IAO_0000115>
+        <rdfs:comment>Definition from Koplan, Jeffrey P., T. Christopher Bond, Michael H. Merson, et al. 2009. “Towards a Common Definition of Global Health.” The Lancet 373 (9679): 1993–95. https://doi.org/10.1016/S0140-6736(09)60332-9.</rdfs:comment>
         <rdfs:label>Global Health</rdfs:label>
     </owl:Class>
     
