@@ -313,7 +313,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/topic_4013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</obo:IAO_0000115>
         <obo:IAO_0000118>Antimicrobial Resistance</obo:IAO_0000118>
         <rdfs:label>Antimicrobial resistance</rdfs:label>
