@@ -1007,6 +1007,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Infection with the respiratory syncytial virus, an RNA virus of the genus Pneumovirus, in the family Paramyxoviridae, which is characterized by the formation of syncytia in tissue culture. It causes minor respiratory infection with rhinitis and cough in adults, but is capable of causing severe bronchitis and bronchopneumonia in young children.</obo:IAO_0000115>
+        <obo:IAO_0000118>Respiratory Syncytial Virus Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1137,6 +1138,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A condition that is caused by infection with Variola, and that is characterized by small, raised bumps.</obo:IAO_0000115>
+        <obo:IAO_0000118>Smallpox</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1456,7 +1458,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A fungal infection caused by Coccidioides immitis. Affected individuals usually have mild flu-like symptoms. However, pneumonia and systemic involvement with the formation of abscesses may develop as complications of the disease.</obo:IAO_0000115>
-        <obo:IAO_0000118>Valley fever</obo:IAO_0000118>
+        <obo:IAO_0000118>Valley Fever</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1491,7 +1493,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A clinical syndrome that is usually caused by enterovirus infection, and that is characterized by fever, anorexia, and painful sores in the mouth, distal extremities, and/or other sites, including the buttocks.</obo:IAO_0000115>
-        <obo:IAO_0000118>hand, foot, and mouth disease</obo:IAO_0000118>
+        <obo:IAO_0000118>Hand Foot and Mouth Disease</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1811,7 +1813,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021681">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
         <obo:IAO_0000115>A Disease due to or propagated by sexual contact.</obo:IAO_0000115>
-        <obo:IAO_0000118>Sexually Transmitted Disorder</obo:IAO_0000118>
+        <obo:IAO_0000118>Sexually Transmitted Disease</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1821,6 +1823,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024352">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <obo:IAO_0000115>A respiratory tract infection caused by a virus. Viruses represent the most common causes of upper and lower respiratory tract infections and include rhinoviruses, influenza viruses, parainfluenza viruses, and respiratory syncytial virus.</obo:IAO_0000115>
+        <obo:IAO_0000118>Viral Respiratory Tract Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1847,7 +1850,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0043544">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
         <obo:IAO_0000115>An infection acquired in a hospital or other healthcare setting.</obo:IAO_0000115>
-        <obo:IAO_0000118>Nosocomial Infection</obo:IAO_0000118>
+        <obo:IAO_0000118>Healthcare-associated Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1896,6 +1899,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10244">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <obo:IAO_0000115>A species of ORTHOPOXVIRUS that is the etiological agent of MPOX, MONKEYPOX.</obo:IAO_0000115>
+        <obo:IAO_0000118>Mpox virus</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
@@ -1906,7 +1910,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10255">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <obo:IAO_0000115>A species of ORTHOPOXVIRUS causing infections in humans. No infections have been reported since 1977 and the virus is now believed to be virtually extinct.</obo:IAO_0000115>
-        <obo:IAO_0000118>Mpox virus</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
@@ -2880,6 +2883,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://vocabs.lter-europe.net/EnvThes/21604">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>A discipline is knowledge or wisdom associated with one academic field of study or profession. A discipline incorporates types of knowledge, expertise, skills, people, projects, communities, problems, challenges, studies, inquiry, approaches, and research areas that are strongly associated with academic areas of study or areas of professional practice</obo:IAO_0000115>
+        <obo:IAO_0000118>Research Topic</obo:IAO_0000118>
         <rdfs:label>research topic</rdfs:label>
     </owl:Class>
     
