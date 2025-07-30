@@ -3122,6 +3122,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas27">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <obo:IAO_0000115>An intentionality directed at future participation in a vaccination.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">vaccination intent</rdfs:label>
     </owl:Class>
     
