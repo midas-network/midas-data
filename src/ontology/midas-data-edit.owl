@@ -2341,7 +2341,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C15719 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15719">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
         <obo:IAO_0000115>The systematic collection, analysis, and interpretation of health data on an ongoing basis.</obo:IAO_0000115>
         <rdfs:label>Surveillance</rdfs:label>
     </owl:Class>
@@ -2951,7 +2951,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas12">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115>An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counrs and forecats.</obo:IAO_0000115>
+        <obo:IAO_0000115>An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counts and forecats.</obo:IAO_0000115>
         <rdfs:comment>link to some existing ontological term?</rdfs:comment>
         <rdfs:label xml:lang="en">dashboard</rdfs:label>
     </owl:Class>
