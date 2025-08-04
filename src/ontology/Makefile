@@ -35,7 +35,8 @@ build/robot.jar:
 	mkdir -p build
 	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.9.4/robot.jar
 
-ROBOT := java -jar build/robot.jar
+# give Robot a 4 gig heap
+ROBOT := java -Xmx4G -jar build/robot.jar
 
 SRC = midas-data-edit.owl
 RELEASE_ASSETS = midas-data.owl
