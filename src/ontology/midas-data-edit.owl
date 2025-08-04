@@ -184,6 +184,18 @@
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
@@ -249,6 +261,35 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002451 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002451">
+        <obo:IAO_0000115>A relationship that holds between a disease and organism</obo:IAO_0000115>
+        <rdfs:label>transmitted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0014001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0014001">
+        <obo:IAO_0000115>A relationship between a disease and an infectious agent where the material basis of the disease is an infection with some infectious agent.</obo:IAO_0000115>
+        <rdfs:label>disease has infectious agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -257,22 +298,24 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#midas100 -->
+    <!-- http://edamontology.org/operation_0324 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-        <obo:IAO_0000115 xml:lang="en">Magnitude of the peak of incident hospitalizations occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">peak hospitalization count</rdfs:label>
+    <owl:Class rdf:about="http://edamontology.org/operation_0324">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis. Analyse an existing phylogenetic tree or trees, typically to detect features or make predictions.</obo:IAO_0000115>
+        <obo:IAO_0000118>Phylogenetic Analysis</obo:IAO_0000118>
+        <rdfs:label>Phylogenetic analysis</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://midasnetwork.us/datasets#midas101 -->
+    <!-- http://edamontology.org/topic_4013 -->
 
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#midas101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-        <obo:IAO_0000115 xml:lang="en">Cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">peak hospitalization time cumulative distribution</rdfs:label>
+    <owl:Class rdf:about="http://edamontology.org/topic_4013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</obo:IAO_0000115>
+        <obo:IAO_0000118>Antimicrobial Resistance</obo:IAO_0000118>
+        <rdfs:label>Antimicrobial resistance</rdfs:label>
     </owl:Class>
     
 
@@ -280,16 +323,27 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <obo:IAO_0000118>Vaccination Capacity</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <obo:IAO_0000118>Time Series</obo:IAO_0000118>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000142 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000118>Vaccination</obo:IAO_0000118>
+    </owl:Class>
     
 
 
@@ -297,6 +351,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000159">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000118>Population Demographic</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -305,6 +360,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000174">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000118>Disease Transmission</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -313,6 +369,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000237">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000118>Pathogen</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -321,6 +378,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000238">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000118>Host</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000118>Drug Treatment</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -328,7 +395,17 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000397 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000397">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000118>Infection Case List</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000118>Case Count</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -336,7 +413,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000542 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000118>Mortality</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -344,7 +422,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000591">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
+        <obo:IAO_0000118>Climate</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -353,6 +432,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000593">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/EUPATH_0000587</obo:IAO_0100001>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -361,6 +442,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000595">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
+        <obo:IAO_0000118>Treatment Facility</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -368,7 +450,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000600">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000118>Hospitalization</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -377,6 +460,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000602">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <obo:IAO_0000118>Human Movement</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -385,6 +469,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000603">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -393,6 +478,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000118>Control Strategy</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000118>School Closure</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -400,7 +495,17 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000607">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <obo:IAO_0000118>Vaccination Administration</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
+        <obo:IAO_0000118>Excess Mortality</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -408,7 +513,8 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <obo:IAO_0000118>Vaccination Supplies</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -417,6 +523,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000118>Laboratory Testing Facility</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -425,6 +532,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000613">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000118>Laboratory Testing Capacity</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -432,120 +540,171 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000614 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000614">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
+        <obo:IAO_0000118>Weather</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000617 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000617">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000118>Population Count</obo:IAO_0000118>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000618 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Wastewater</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000118>Infection Count</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000637 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000637">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000637">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Intent to be Vaccinated</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000638 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000638">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000638">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Intent to Vaccinate</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <obo:IAO_0000118>Nirsevimab Vaccination</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000640 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000640">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000640">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000607"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Cumulative Vaccination</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000641 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000641">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000641">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000607"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Incident Vaccination</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000642 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000642">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000628"/>
+        <obo:IAO_0000118>Cumulative Infection Count</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000643 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000643">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000643">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000628"/>
+        <obo:IAO_0000118>Incident Infection Count</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000644 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000644">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000644">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Cumulative Hospitalization</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000645 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000645">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000645">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Incident Hospitalization</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000646 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000646">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000646">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Cumulative Death Count</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000647 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000647">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000647">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Incident Death Count</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000648 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000648">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000497"/>
+        <obo:IAO_0000118>Cumulative Case Count</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000649 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000649">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000649">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000497"/>
+        <obo:IAO_0000118>Incident Case Count</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000650 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000650">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000650">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas27"/>
-    </rdf:Description>
+        <obo:IAO_0000118>Intent to Have a Ward Vaccinated</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000650"/>
+        <obo:IAO_0000118>Intent to Have a Child Vaccinated</obo:IAO_0000118>
+    </owl:Class>
     
 
 
@@ -556,6 +715,7 @@
         <obo:IAO_0000115>An antigen capable, on its own, of inducing an immune response.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">immunogenicity</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/chebi/213/chebi.owl</obo:IAO_0000412>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/NCIT_C18011</obo:IAO_0100001>
         <oboInOwl:hasDbXref>PMID:19152635</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:19328011</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:19397283</oboInOwl:hasDbXref>
@@ -564,6 +724,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <oboInOwl:source>Europe PMC</oboInOwl:source>
         <rdfs:label>immunogen</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -580,7 +741,9 @@
         <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.who.int/ictrp/en/</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/cto.owl</obo:IAO_0000412>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/NCIT_C71104</obo:IAO_0100001>
         <rdfs:label xml:lang="en">clinical trial</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -588,7 +751,14 @@
     <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A Coronavirus infection that is characterized by fever, cough and shortness of breath and that has_material_basis_in SARS-CoV-2.</obo:IAO_0000115>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
         <oboInOwl:hasDbXref>ICD10CM:U07.1</oboInOwl:hasDbXref>
@@ -617,8 +787,16 @@
     <!-- http://purl.obolibrary.org/obo/DOID_3292 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3292">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10244"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A viral infectious disease that results in infection of primates, rodents and humans, located in skin, has_material_basis_in Monkeypox virus, which is transmitted by contact with the animal&apos;s blood, body fluids, rash, or with the body fluids of a sick person, transmitted by fomites, and transmitted by respiratory droplets. The infection has symptom fever, has symptom muscle ache, has symptom headache, and has symptom lymphadenopathy.</obo:IAO_0000115>
+        <obo:IAO_0000118>Mpox</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
         <oboInOwl:hasDbXref>GARD:10722</oboInOwl:hasDbXref>
@@ -643,6 +821,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <obo:IAO_0000118>Disease</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
         <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
@@ -655,6 +834,17 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
         <rdfs:label>disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000587 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000587">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>An information content entity about environmental material, environmental feature, environmental system, etc.</obo:IAO_0000115>
+        <obo:IAO_0000118>Environment Information</obo:IAO_0000118>
+        <rdfs:label>environment information</rdfs:label>
     </owl:Class>
     
 
@@ -672,6 +862,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000118>Software</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <rdfs:label xml:lang="en">software</rdfs:label>
@@ -692,6 +883,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000116>2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>Data Set</obo:IAO_0000118>
         <obo:IAO_0000119>OBI_0000042</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
@@ -710,6 +902,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
         <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000118>Infectious Disease</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">tranmissible disease</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/ido/2017-11-03/ido.owl</obo:IAO_0000412>
         <rdfs:comment>The disposition is realized in an infectious disease course.</rdfs:comment>
@@ -721,12 +914,12 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IDO_0000488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000488">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115 xml:lang="en">A quality that inheres in an organism population and is the number of organisms in the population that have antibod
-y specific for an infectious agent in their serum at a specified time.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18011"/>
+        <obo:IAO_0000115 xml:lang="en">A quality that inheres in an organism population and is the number of organisms in the population that have antibody specific for an infectious agent in their serum at a specified time.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
         <obo:IAO_0000117>Lindsay Cowell</obo:IAO_0000117>
+        <obo:IAO_0000118>Seroprevalence</obo:IAO_0000118>
         <rdfs:comment>Prevalence is sometimes defined as a proportion with total population size in the denominator.  A particular instance of infectious
 agent seroprevalence will depend on a type of infectious agent and a population.  Actual measures of seroprevalence are based only on tested individuals and usually specify a geographic location.  Other constraints may include population demographics.</rdfs:comment>
         <rdfs:label xml:lang="en">infectious agent seroprevalence</rdfs:label>
@@ -734,216 +927,1477 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000827 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000827">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_590"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Infections with bacteria of the genus salmonella.</obo:IAO_0000115>
+        <obo:IAO_0000118>Salmonella Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000916 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000916">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>An infectious disease involving a pathogenic inflammatory response in the intestinal mucosa.</obo:IAO_0000115>
+        <obo:IAO_0000118>Intestinal Infectious Disease</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0000989 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0000989">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000989">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2560602"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A contagious viral infection caused by the mumps virus. Symptoms include swollen and tender parotid glands, fever, muscle aches and fatigue. Due to vaccination programs, mumps has become a rare disease.</obo:IAO_0000115>
+        <obo:IAO_0000118>Mumps</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0001195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0025294"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6935"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_780"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A type of tick-borne disease which presents on the skin caused by bacteria of the genus Rickettsia.</obo:IAO_0000115>
+        <obo:IAO_0000118>Spotted Fever</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0001577 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11250"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Infection with the respiratory syncytial virus, an RNA virus of the genus Pneumovirus, in the family Paramyxoviridae, which is characterized by the formation of syncytia in tissue culture. It causes minor respiratory infection with rhinitis and cough in adults, but is capable of causing severe bronchitis and bronchopneumonia in young children.</obo:IAO_0000115>
+        <obo:IAO_0000118>Respiratory Syncytial Virus Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0001673 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001673">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>The condition of having at least three loose or liquid bowel movements each day.</obo:IAO_0000115>
+        <obo:IAO_0000118>Diarrhea</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An infection caused by a fungus.</obo:IAO_0000115>
+        <obo:IAO_0000118>Fungi Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>An active inflammatory process affecting the liver for more than six months. Causes include viral infections, autoimmune disorders, drugs, and metabolic disorders.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hepatitis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A mosquito-borne viral illness caused by the west nile virus, a flavivirus and endemic to regions of Africa, Asia, and Europe. Common clinical features include headache; fever; maculopapular rash; gastrointestinal symptoms; and lymphadenopathy. meningitis; encephalitis; and myelitis may also occur. The disease may occasionally be fatal or leave survivors with residual neurologic deficits. (From Joynt, Clinical Neurology, 1996, Ch26, p13; Lancet 1998 Sep 5;352(9130):767-71)</obo:IAO_0000115>
+        <obo:IAO_0000118>West Nile Fever</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>A category of psychiatric disorders which include disorders related to the taking of a drug of abuse (including alcohol, prescribed medications and recreational drugs).</obo:IAO_0000115>
+        <obo:IAO_0000118>Substance-Related Disorder</obo:IAO_0000118>
+        <rdfs:label>substance-related disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_485"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A common sexually transmitted bacterial infection caused by Neisseria gonorrhoeae. It is transmitted through vaginal, oral, or anal intercourse. Infected individuals may be asymptomatic. Symptoms in males include burning sensation during urination, discharge from the penis, and painful swelling of the testes. Symptoms in females include painful urination, vaginal discharge, and vaginal bleeding between periods. If untreated, the infection may lead to pelvic inflammatory disease.</obo:IAO_0000115>
+        <obo:IAO_0000118>Gonorrhea</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>A disease or disorder that involves the digestive system.</obo:IAO_0000115>
+        <obo:IAO_0000118>Digestive System Disorder</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0004619 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0004619">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004619">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11234"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A highly contagious viral infection caused by the measles virus. Symptoms appear 8-12 days after exposure and include a rash, cough, fever and muscle pains that can last 4-7 days. Measles vaccines are available to provide prophylaxis, usually combined with mumps and rubella vaccines (MMR).</obo:IAO_0000115>
+        <obo:IAO_0000118>Measles</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A condition that is caused by infection with Variola, and that is characterized by small, raised bumps.</obo:IAO_0000115>
+        <obo:IAO_0000118>Smallpox</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A viral infection caused by the rubella virus. It is initially manifested with flu-like symptoms that last one or two days, followed by the development of a characteristic red rash which lasts from one to five days. The rash first appears in the neck and face. It subsequently spreads to the rest of the body.</obo:IAO_0000115>
+        <obo:IAO_0000118>Rubella Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_520"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A contagious bacterial respiratory infection caused by Bordetella pertussis. It is characterized by severe and uncontrollable cough, resulting in a whooping sound during breathing following the cough.</obo:IAO_0000115>
+        <obo:IAO_0000118>Pertussis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any disease caused by a virus.</obo:IAO_0000115>
+        <obo:IAO_0000118>Viruses Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An acute infectious disorder that is caused by gram positive or gram negative bacteria; representative examples include pneumococcal, streptococcal, salmonella, and meningeal infections.</obo:IAO_0000115>
+        <obo:IAO_0000118>Bacterial Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1313"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Infections with bacteria of the species streptococcus pneumoniae.</obo:IAO_0000115>
+        <obo:IAO_0000118>Streptococcus pneumoniae Infectious Disease</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1392"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An infection caused by Bacillus anthracis bacteria. It may affect the lungs, gastrointestinal tract, or skin. Patients with lung infection present with fever, headaches, cough, chest pain and shortness of breath. Patients with gastrointestinal infection present with nausea, vomiting and bloody diarrhea. Patients with skin infection develop blisters and ulcers.</obo:IAO_0000115>
+        <obo:IAO_0000118>Anthrax</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>A successful invasion of a host by an organism that uses the host for food and shelter.</obo:IAO_0000115>
+        <obo:IAO_0000118>Parisitic Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005135"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5820"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Malaria is a serious and sometimes fatal disease caused by a parasite that commonly infects a certain type of mosquito which feeds on humans. Infection with malaria parasites may result in a wide variety of symptoms, ranging from absent or very mild symptoms to severe disease and even death. People who get malaria are typically very sick with high fevers, shaking chills, and flu-like illness. In general, malaria is a curable disease if diagnosed and treated promptly and correctly.Treatment depends on many factors including disease severity, the species of malaria parasite causing the infection and the part of the world in which the infection was acquired.</obo:IAO_0000115>
+        <obo:IAO_0000118>Malaria</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3052230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A viral infection caused by the hepatitis C virus.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hepatitis C Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <obo:IAO_0000115>An acute, acute and chronic, or chronic inflammation focally or diffusely affecting the lung parenchyma, caused by an infection in one or both of the lungs (by bacteria, viruses, fungi, or mycoplasma.). Symptoms include cough, shortness of breath, fevers, chills, chest pain, headache, sweating, and weakness.</obo:IAO_0000115>
+        <obo:IAO_0000118>Pneumonia</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10407"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A viral infection caused by the hepatitis B virus.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hepatitis B Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_487"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Infections with bacteria of the species neisseria meningitidis.</obo:IAO_0000115>
+        <obo:IAO_0000118>Neisseria meningitidis Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas93"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12637"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Dengue fever (DF), caused by dengue virus, is an arboviral disease characterized by an initial non-specific febrile illness that can sometimes progress to more severe forms manifesting capillary leakage and hemorrhage (dengue hemorrhagic fever, or DHF) and shock (dengue shock syndrome, or DSS).</obo:IAO_0000115>
+        <obo:IAO_0000118>Dengue</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1717"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A Gram-positive bacterial infection caused by Corynebacterium diphtheriae. It usually involves the oral cavity, pharynx, and nasal cavity. Patients develop pseudomembranes in the affected areas and manifest signs and symptoms of an upper respiratory infection. The diphtheria toxin may cause myocarditis, polyneuritis, and other systemic effects.</obo:IAO_0000115>
+        <obo:IAO_0000118>Diphtheria</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1513"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A serious infectious disorder that follows wound contamination by the Gram-positive bacterium Clostridium tetani. The bacteria produce a neurotoxin called tetanospasmin, which causes muscle spasm in the jaw and other anatomic sites.</obo:IAO_0000115>
+        <obo:IAO_0000118>Tetanus</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005619 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005619">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000827"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <obo:IAO_0000115>A bacterial infectious disorder contracted by consumption of food or drink contaminated with Salmonella typhi. This disorder is common in developing countries and can be treated with antibiotics.</obo:IAO_0000115>
+        <obo:IAO_0000118>Typhoid Fever</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005700">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10335"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A contagious childhood disorder caused by the varicella zoster virus. It is transmitted via respiratory secretions and contact with chickenpox blister contents. It presents with a vesicular skin rash, usually associated with fever, headache, and myalgias. The pruritic fluid-filled vesicles occur 10-21 days after exposure and last for 3-4 days. An additional 3-4 days of malaise follows before the affected individual feels better. An individual is contagious 1-2 days prior to the appearance of the blisters until all blisters are crusted over. Generally, healthy individuals recover without complications.</obo:IAO_0000115>
+        <obo:IAO_0000118>Varicella</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_810"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An infection that is caused by Chlamydia trachomatis.</obo:IAO_0000115>
+        <obo:IAO_0000118>Chlamydial Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005706 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005706">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002041"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5500"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A fungal infection caused by Coccidioides immitis. Affected individuals usually have mild flu-like symptoms. However, pneumonia and systemic involvement with the formation of abscesses may develop as complications of the disease.</obo:IAO_0000115>
+        <obo:IAO_0000118>Valley Fever</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005737 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005737">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005737">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018087"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A viral hemorrhagic fever that is caused by the Ebola virus, which is transmitted by contact with infected animals or humans; it is characterized by high fever, unexplained bleeding, and a high mortality rate.</obo:IAO_0000115>
+        <obo:IAO_0000118>Ebola</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005779 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005779">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A clinical syndrome that is usually caused by enterovirus infection, and that is characterized by fever, anorexia, and painful sores in the mouth, distal extremities, and/or other sites, including the buttocks.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hand Foot and Mouth Disease</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005790 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005790">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002251"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_208726"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Acute inflammation of the liver caused by the hepatitis A virus. It is highly contagious and usually contracted through close contact with an infected individual or their feces, contaminated food or water.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hepatitis A Infection</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0005812 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0005812">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005812">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11309"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11520"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An acute viral infection of the respiratory tract, occurring in isolated cases, in epidemics, or in pandemics; it is caused by serologically different strains of viruses (influenzaviruses) designated A, B, and C, has a 3-day incubation period, and usually lasts for 3 to 10 days. It is marked by inflammation of the nasal mucosa, pharynx, and conjunctiva; headache; myalgia; often fever, chills, and prostration; and occasionally involvement of the myocardium or central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000118>Influenza</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005823 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005823">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_445"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any disease caused by Legionella bacteria.</obo:IAO_0000115>
+        <obo:IAO_0000118>Legionella Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005828">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1639"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A bacterial infection caused by Listeria monocytogenes. It occurs in newborns, elderly, and immunocompromised patients. The bacteria are transmitted through ingestion of contaminated food. Clinical manifestations include fever, muscle pain, respiratory distress, nausea, diarrhea, neck stiffness, irritability, seizures, and lethargy.</obo:IAO_0000115>
+        <obo:IAO_0000118>Listeria Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005976 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005976">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A contagious bacterial infection caused by the spirochete Treponema pallidum. It is a sexually transmitted disorder, although it can also be transmitted from the mother to the fetus in utero. Typically, it is initially manifested with a single sore which heals without treatment. If the infection is left untreated, the initial stage is followed by skin rash and mucous membrane lesions. A late stage follows, which is characterized by damage of the internal organs, including the nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000118>Syphilis</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0012268 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0012268">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0012268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A syndrome resulting from the acquired deficiency of cellular immunity caused by the human immunodeficiency virus (HIV). It is characterized by the reduction of the Helper T-lymphocytes in the peripheral blood and the lymph nodes. Symptoms include generalized lymphadenopathy, fever, weight loss, and chronic diarrhea. Patients with AIDS are especially susceptible to opportunistic infections (usually pneumocystis carinii pneumonia, cytomegalovirus (CMV) infections, tuberculosis, candida infections, and cryptococcosis), and the development of malignant neoplasms (usually non-Hodgkin lymphoma and Kaposi sarcoma). The human immunodeficiency virus is transmitted through sexual contact, sharing of contaminated needles, or transfusion of contaminated blood.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0015766 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015766">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000916"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_666"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Cholera is an infectious disease, caused by intestinal infection with Vibrio cholerae, characterized by massive watery diarrhea and severe dehydration that can lead to shock and death if left untreated.</obo:IAO_0000115>
+        <obo:IAO_0000118>Cholera</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0017373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_138950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An acute infectious disorder that affects the nervous system. It is caused by the poliovirus. The virus spreads by direct contact, and can be prevented by prophylaxis with the polio vaccine.</obo:IAO_0000115>
+        <obo:IAO_0000118>Poliomyelitis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0017941 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017941">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas93"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_37124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An infection that is caused by the Chikungunya virus, which is transmitted by mosquitoes; it is characterized by fever and severe arthralgia.</obo:IAO_0000115>
+        <obo:IAO_0000118>Chikungunya</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0018076 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0018076">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1773"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A chronic, recurrent infection caused by the bacterium Mycobacterium tuberculosis. Tuberculosis (TB) may affect almost any tissue or organ of the body with the lungs being the most common site of infection. The clinical stages of TB are primary or initial infection, latent or dormant infection, and recrudescent or adult-type TB. Ninety to 95% of primary TB infections may go unrecognized. Histopathologically, tissue lesions consist of granulomas which usually undergo central caseation necrosis. Local symptoms of TB vary according to the part affected; acute symptoms include hectic fever, sweats, and emaciation; serious complications include granulomatous erosion of pulmonary bronchi associated with hemoptysis. If untreated, progressive TB may be associated with a high degree of mortality. This infection is frequently observed in immunocompromised individuals with AIDS or a history of illicit IV drug use.</obo:IAO_0000115>
+        <obo:IAO_0000118>Tuberculosis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0018087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+        <obo:IAO_0000115>A viral infectious disease caused by RNA viruses in the Arenaviridae, Bunyaviridae, Filoviridae, or Flaviviridae family, and characterized by a severe multisystem syndrome, with damage to the vascular system and hemorrhaging.</obo:IAO_0000115>
+        <obo:IAO_0000118>Viral Hemorrhagic Fever</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0018661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Mosquito-born virus disease characterized by a clinical course that may be asymptomatic or mild with fever, conjunctivitis, muscle and joint pain, headache, exanthema, but may also be associated with severe neurological (meningitis, meningoencephalitis and myelitis) and auto-immune (Guillain-Barre syndrome) complications, as well as a potential increase of birth defects (microcephaly) if the infection occurs during pregnancy.</obo:IAO_0000115>
+        <obo:IAO_0000118>Zika</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019345">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001673"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Shigellosis is a bacterial infection leading to dysentery and is caused by Shigella, which are small, ubiquitous Gram-negative bacteria belonging to the enterobacteria family. There are four species: S. dysenteriae, S. flexneri, S. boydii and S. sonnei, all of which cause bacillary dysentery and are strictly limited to human hosts.</obo:IAO_0000115>
+        <obo:IAO_0000118>Shigellosis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019632 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0025294"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6935"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_138"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Lyme disease (named after the towns in the USA where the disease was first identified) is a bacterial infection caused by Borrelia burgdorferi.</obo:IAO_0000115>
+        <obo:IAO_0000118>Lyme Disease</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0020502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11089"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Yellow fever (YF), caused by YF virus, is a zoonotic disease characterized by fever and constitutional symptoms, with the potential to progress to severe and fatal viral hemorrhagic fever with shock and multi-organ system failure.</obo:IAO_0000115>
+        <obo:IAO_0000118>Yellow Fever Virus Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0020920 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020920">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_562"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Infection with the organism Escherichia Coli.</obo:IAO_0000115>
+        <obo:IAO_0000118>Escherichia coli Infections</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>A Disease due to or propagated by sexual contact.</obo:IAO_0000115>
+        <obo:IAO_0000118>Sexually Transmitted Disease</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024352">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <obo:IAO_0000115>A respiratory tract infection caused by a virus. Viruses represent the most common causes of upper and lower respiratory tract infections and include rhinoviruses, influenza viruses, parainfluenza viruses, and respiratory syncytial virus.</obo:IAO_0000115>
+        <obo:IAO_0000118>Viral Respiratory Tract Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0025294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0025294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6935"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Bacterial, viral, or parasitic diseases transmitted to humans and animals by the bite of infected ticks. The families Ixodidae and Argasidae contain many bloodsucking species that are important pests of man and domestic birds and mammals and probably exceed all other arthropods in the number and variety of disease agents they transmit. Many of the tick-borne diseases are zoonotic.</obo:IAO_0000115>
+        <obo:IAO_0000118>Tick-borne Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0043544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0043544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>An infection acquired in a hospital or other healthcare setting.</obo:IAO_0000115>
+        <obo:IAO_0000118>Healthcare-associated Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0043544"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17449"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1280"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Infections caused by a strain of Staphylococcus aureus that is non-susceptible to the action of the antibiotic, methicillin. The mechanism of resistance usually involves modification of normal or the presence of acquired penicillin binding proteins.</obo:IAO_0000115>
+        <obo:IAO_0000118>MRSA</obo:IAO_0000118>
+        <obo:IAO_0000118>Methicillin-Resistant Staphylococcus Aureus Infection</obo:IAO_0000118>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MONDO_0100120 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MONDO_0100120">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-    </rdf:Description>
+        <obo:IAO_0000115>An infectious disease where a pathogen is carried and transmitted by another organism that acts as disease vector.</obo:IAO_0000115>
+        <obo:IAO_0000118>Vector-borne Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <obo:IAO_0000115>Minute infectious agents whose genomes are composed of DNA or RNA, but not both. They are characterized by a lack of independent metabolism and the inability to replicate outside living host cells.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10244 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10244">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
-        <rdfs:label>Monkeypox virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of ORTHOPOXVIRUS that is the etiological agent of MPOX, MONKEYPOX.</obo:IAO_0000115>
+        <obo:IAO_0000118>Mpox virus</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of ORTHOPOXVIRUS causing infections in humans. No infections have been reported since 1977 and the virus is now believed to be virtually extinct.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of VARICELLOVIRUS causing CHICKENPOX (varicella) and HERPES ZOSTER (shingles) in humans.</obo:IAO_0000115>
+        <obo:IAO_0000118>Varicella-zoster virus</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of the genus ORTHOHEPADNAVIRUS which causes human HEPATITIS B and is also apparently a causal agent in human HEPATOCELLULAR CARCINOMA. The Dane particle is an intact hepatitis virion, named after its discoverer. Non-infectious spherical and tubular particles are also seen in the serum.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type (and only) species of RUBIVIRUS causing acute infection in humans, primarily children and young adults. Humans are the only natural host. A live, attenuated vaccine is available for prophylaxis.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11082 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of FLAVIVIRUS, one of the Japanese encephalitis virus group (ENCEPHALITIS VIRUSES, JAPANESE). It can infect birds and mammals. In humans, it is seen most frequently in Africa, Asia, and Europe presenting as a silent infection or undifferentiated fever (WEST NILE FEVER). The virus appeared in North America for the first time in 1999. It is transmitted mainly by CULEX spp mosquitoes which feed primarily on birds, but it can also be carried by the Asian Tiger mosquito, AEDES albopictus, which feeds mainly on mammals.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of the FLAVIVIRUS genus. Principal vector transmission to humans is by AEDES spp. mosquitoes.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11234 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11234">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of MORBILLIVIRUS and the cause of the highly infectious human disease MEASLES, which affects mostly children.</obo:IAO_0000115>
+        <obo:IAO_0000118>Measles virus</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11250 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of PNEUMOVIRUS and an important cause of lower respiratory disease in infants and young children. It frequently presents with bronchitis and bronchopneumonia and is further characterized by fever, cough, dyspnea, wheezing, and pallor.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11309 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11309">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>Unidentified influenza virus is a species of ssRNA(-) virus in the family Orthomyxoviridae.</obo:IAO_0000115>
+        <obo:IAO_0000118>Influenza virus</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11320 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of the genus ALPHAINFLUENZAVIRUS that causes influenza and other diseases in humans and animals. Antigenic variation occurs frequently between strains, allowing classification into subtypes and variants. Transmission is usually by aerosol (human and most non-aquatic hosts) or waterborne (ducks). Infected birds shed the virus in their saliva, nasal secretions, and feces.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11520 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11520">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>Species of the genus BETAINFLUENZAVIRUS that cause HUMAN INFLUENZA and other diseases primarily in humans. Antigenic variation is less extensive than in type A viruses (INFLUENZA A VIRUS) and consequently there is no basis for distinct subtypes or variants. Epidemics are less likely than with INFLUENZA A VIRUS and there have been no pandemics. Previously only found in humans, Influenza B virus has been isolated from seals which may constitute the animal reservoir from which humans are exposed.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11676 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11709 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11709">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11709">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A genus of the family PICORNAVIRIDAE whose members preferentially inhabit the intestinal tract of a variety of hosts. The genus contains many species. Newly described members of human enteroviruses are assigned continuous numbers with the species designated human enterovirus.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12637 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12637">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12637">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of the genus FLAVIVIRUS which causes an acute febrile and sometimes hemorrhagic disease in man. Dengue is mosquito-borne and four serotypes are known.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12721 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12721">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12721">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>Human immunodeficiency virus. A non-taxonomic and historical term referring to any of two species, specifically HIV-1 and/or HIV-2. Prior to 1986, this was called human T-lymphotropic virus type III/lymphadenopathy-associated virus (HTLV-III/LAV). From 1986-1990, it was an official species called HIV. Since 1991, HIV was no longer considered an official species name; the two species were designated HIV-1 and HIV-2.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>Potentially pathogenic bacteria found in nasal membranes, skin, hair follicles, and perineum of warm-blooded animals. They may cause a wide range of infections and intoxications.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1313 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1313">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A gram-positive organism found in the upper respiratory tract, inflammatory exudates, and various body fluids of normal and/or diseased humans and, rarely, domestic animals.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of gram-negative, anaerobic, helical bacteria, various species of which produce RELAPSING FEVER in humans and other animals.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_138950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_138950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12059"/>
+        <obo:IAO_0000115>A species of ENTEROVIRUS infecting humans and containing 11 serotypes, all coxsackieviruses.</obo:IAO_0000115>
+        <obo:IAO_0000118>Poliovirus</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1392">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of bacteria that causes ANTHRAX in humans and animals.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>The cause of TETANUS in humans and domestic animals. It is a common inhabitant of human and horse intestines as well as soil. Two components make up its potent exotoxin activity, a neurotoxin and a hemolytic toxin.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>The causative agent of venereal and non-venereal syphilis as well as yaws.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-positive, rod-shaped bacteria widely distributed in nature. It has been isolated from sewage, soil, silage, and from feces of healthy animals and man. Infection with this bacterium leads to encephalitis, meningitis, endocarditis, and abortion.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1717 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1717">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-positive, asporogenous bacteria in which three cultural types are recognized. These types (gravis, intermedius, and mitis) were originally given in accordance with the clinical severity of the cases from which the different strains were most frequently isolated. This species is the causative agent of DIPHTHERIA.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1773 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1773">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1773">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-positive, aerobic bacteria that produces TUBERCULOSIS in humans, other primates, CATTLE; DOGS; and some other animals which have contact with humans. Growth tends to be in serpentine, cordlike masses in which the bacilli show a parallel orientation.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_186536 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A genus in the family FILOVIRIDAE consisting of several distinct species of Ebolavirus, each containing separate strains. These viruses cause outbreaks of a contagious, hemorrhagic disease (HEMORRHAGIC FEVER, EBOLA) in humans, usually with high mortality.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+        <obo:IAO_0000115>One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_208726 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_208726">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A strain of HEPATITIS A VIRUS which causes hepatitis in humans. The virus replicates in hepatocytes and is presumed to reach the intestine via the bile duct. Transmission occurs by the fecal-oral route.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2560602 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2560602">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2560602">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>The type species of RUBULAVIRUS that causes an acute infectious disease in humans, affecting mainly children. Transmission occurs by droplet infection.</obo:IAO_0000115>
+        <obo:IAO_0000118>Mumps virus</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2697049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2697049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of BETACORONAVIRUS causing atypical respiratory disease (COVID-19) in humans. The organism was first identified in 2019 in Wuhan, China. The natural host is the Chinese intermediate horseshoe bat, RHINOLOPHUS affinis.</obo:IAO_0000115>
+        <obo:IAO_0000118>SARS-CoV2</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3052230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_3052230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A genus of FLAVIVIRIDAE causing parenterally-transmitted HEPATITIS C which is associated with transfusions and drug abuse. Hepatitis C virus is the type species.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hepatitis C virus</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_37124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_37124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A species of ALPHAVIRUS causing an acute dengue-like fever.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>Gram-negative aerobic rods, isolated from surface water or thermally polluted lakes or streams. Member are pathogenic for man. Legionella pneumophila is the causative agent for LEGIONNAIRES&apos; DISEASE.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4751 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4751">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <oboInOwl:hasBroadSynonym>SARS-CoV-2</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>2019-nCoV</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>COVID-19 virus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>HCoV-19</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Human coronavirus 2019</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SARS-2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SARS-CoV2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SARS2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <rdfs:label>Severe acute respiratory syndrome coronavirus 2</rdfs:label>
+        <obo:IAO_0000115>A kingdom of eukaryotic, heterotrophic organisms that live parasitically as saprobes, including MUSHROOMS; YEASTS; smuts, molds, etc. They reproduce either sexually or asexually, and have life cycles that range from simple to complex. Filamentous fungi, commonly known as molds, refer to those that grow as multicellular colonies.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_485 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_485">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-negative, aerobic bacteria primarily found in purulent venereal discharges. It is the causative agent of GONORRHEA.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-negative, aerobic BACTERIA. It is a commensal and pathogen only of humans, and can be carried asymptomatically in the NASOPHARYNX. When found in cerebrospinal fluid it is the causative agent of cerebrospinal meningitis (MENINGITIS, MENINGOCOCCAL). It is also found in venereal discharges and blood. There are at least 13 serogroups based on antigenic differences in the capsular polysaccharides; the ones causing most meningitis infections being A, B, C, Y, and W-135. Each serogroup can be further classified by serotype, serosubtype, and immunotype.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-negative, aerobic bacteria that is the causative agent of WHOOPING COUGH. Its cells are minute coccobacilli that are surrounded by a slime sheath.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <obo:IAO_0000115>A mitosporic fungal genus which causes COCCIDIOIDOMYCOSIS.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_562 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_562">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A species of gram-negative, facultatively anaerobic, rod-shaped bacteria (GRAM-NEGATIVE FACULTATIVELY ANAEROBIC RODS) commonly found in the lower part of the intestine of warm-blooded animals. It is usually nonpathogenic, but some strains are known to produce DIARRHEA and pyogenic infections. Pathogenic strains (virotypes) are classified by their specific pathogenic mechanisms such as toxins (ENTEROTOXIGENIC ESCHERICHIA COLI), etc.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_5820 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+        <obo:IAO_0000115>A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_590 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that utilizes citrate as a sole carbon source. It is pathogenic for humans, causing enteric fevers, gastroenteritis, and bacteremia. Food poisoning is the most common clinical manifestation. Organisms within this genus are separated on the basis of antigenic characteristics, sugar fermentation patterns, and bacteriophage susceptibility.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_620">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that ferments sugar without gas production. Its organisms are intestinal pathogens of man and other primates and cause bacillary dysentery (DYSENTERY, BACILLARY).</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_64320 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_64320">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_64320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>An arbovirus in the FLAVIVIRUS genus of the family FLAVIVIRIDAE. Originally isolated in the Zika Forest of UGANDA it has been introduced to Asia and the Americas.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>The etiologic agent of CHOLERA.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6935 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6935">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <obo:IAO_0000115>Blood-sucking acarid parasites of the order Ixodida comprising two families: the softbacked ticks (ARGASIDAE) and hardbacked ticks (IXODIDAE). Ticks are larger than their relatives, the MITES. They penetrate the skin of their host by means of highly specialized, hooked mouth parts and feed on its blood. Ticks attack all groups of terrestrial vertebrates. In humans they are responsible for many TICK-BORNE DISEASES, including the transmission of ROCKY MOUNTAIN SPOTTED FEVER; TULAREMIA; BABESIOSIS; AFRICAN SWINE FEVER; and RELAPSING FEVER. (From Barnes, Invertebrate Zoology, 5th ed, pp543-44)</obo:IAO_0000115>
+        <obo:IAO_0000118>Ticks</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <obo:IAO_0000115>A family of the order DIPTERA that comprises the mosquitoes. The larval stages are aquatic, and the adults can be recognized by the characteristic WINGS, ANIMAL venation, the scales along the wing veins, and the long proboscis. Many species are of particular medical importance.</obo:IAO_0000115>
+        <obo:IAO_0000118>Mosquitos</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_780 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of gram-negative, aerobic, rod-shaped bacteria often surrounded by a protein microcapsular layer and slime layer. The natural cycle of its organisms generally involves a vertebrate and an invertebrate host. Species of the genus are the etiological agents of human diseases, such as typhus.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_810 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_810">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000115>A genus of the family CHLAMYDIACEAE whose species cause a variety of diseases in vertebrates including humans, mice, and swine. Chlamydia species are gram-negative and produce glycogen. The type species is CHLAMYDIA TRACHOMATIS.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -951,10 +2405,315 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000238"/>
+        <obo:IAO_0000115>Members of the species Homo sapiens.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>human</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <rdfs:label>Homo sapiens</rdfs:label>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C128351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C128351">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <obo:IAO_0000115>Any disorder that results from the consumption of food contaminated with an infectious agent or toxin.</obo:IAO_0000115>
+        <rdfs:label>Foodborne Illness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C14198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14198">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>An invertebrate animal (e.g., tick, mite, mosquito, bloodsucking fly) capable of transmitting an infectious agent among vertebrates.</obo:IAO_0000115>
+        <rdfs:label>Disease Vector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C14419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A population or type of organisms that is genetically different from others of the same species and possessing a set of defined characteristics.</obo:IAO_0000115>
+        <rdfs:label>Organism Strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15367">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>An estimated probability that one or more adverse event(s) will occur as a result of exposure to an actual or potential hazardous situation or chemical.</obo:IAO_0000115>
+        <rdfs:label>Health Risk Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C15719 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15719">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The systematic collection, analysis, and interpretation of health data on an ongoing basis.</obo:IAO_0000115>
+        <rdfs:label>Surveillance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
+        <obo:IAO_0000115>Artificial intelligence is the branch of computer science that deals with writing computer programs that can solve problems creatively.</obo:IAO_0000115>
+        <rdfs:label>Artificial Intelligence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16347">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The application of statistical methods to biological studies.</obo:IAO_0000115>
+        <rdfs:label>Biostatistics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16556 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16556">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of the causes, incidence and distribution of disease in the population and its application for prevention or control.</obo:IAO_0000115>
+        <rdfs:label>Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16825 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16825">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of numbers, shapes, patterns, and logical reasoning.</obo:IAO_0000115>
+        <rdfs:label>Mathematics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16870 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16870">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <obo:IAO_0000115>Theoretical representations that simulate the behavior or activity of systems, processes, or phenomena.</obo:IAO_0000115>
+        <rdfs:label>Mathematical Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17039">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The science and practice of protecting and improving the health of a community, as by preventive medicine, health education, control of communicable diseases, application of sanitary measures, and monitoring of environmental hazards.</obo:IAO_0000115>
+        <rdfs:label>Public Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C171586 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C171586">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The conditions in which people are born, grow, live, work and age. They include socioeconomic status, education, neighborhood and physical environment, employment, and social support networks, as well as access to health care.</obo:IAO_0000115>
+        <rdfs:label>Social Determinants of Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17214">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>A passage or transfer, as of a disease from one individual to another.</obo:IAO_0000115>
+        <rdfs:label>Disease Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C172305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115>A computer application that requires with an active internet connection and that uses HTTP as its primary communications protocol.</obo:IAO_0000115>
+        <rdfs:label>Web Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173755 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173755">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>A description of how infectious diseases cases appear to have been communicated within a population. Sub-categorized as no cases, sporadic cases, case clusters, or community spread.</obo:IAO_0000115>
+        <rdfs:label>Transmission Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17449 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17449">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4013"/>
+        <obo:IAO_0000115>The mechanisms, functions, activities, or processes exhibited by microorganisms, especially bacteria, to resist or to become tolerant to antibiotics.</obo:IAO_0000115>
+        <rdfs:label>Antibiotic Resistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C176231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C176231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <obo:IAO_0000115>A computing system (inspired by biological neural networks) that learns (progressively improves its ability) to do tasks by considering examples without task-specific programming. (After DeepAI Machine Learning Glossary and Terms)</obo:IAO_0000115>
+        <rdfs:label>Machine Learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18011">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>The study of the immune system and its reaction to pathogens, as well as its malfunctions (autoimmune diseases, allergies, rejection of organ transplants).</obo:IAO_0000115>
+        <rdfs:label>Immunology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18141">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of the structure and dynamics of computational systems using mathematical, logical, and empirical tools.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Computer Sciences; Computer Technology</oboInOwl:hasExactSynonym>
+        <rdfs:label>Computer Sciences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
+        <obo:IAO_0000115>Refers to a class of evolving technologies that provide leading-edge computational capabilities. Includes scalable high performance computers, high end graphic systems, and high speed networks. Used for molecular modeling, genome analysis, and image processing, among others.</obo:IAO_0000115>
+        <rdfs:label>High Performance Computing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18769 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18769">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
+        <obo:IAO_0000115>Environmental epidemiology focuses on exposures that are external to the individual, including physical, chemical, biologic, soci-cultural and lifestyle factors that influence the risk of disease.</obo:IAO_0000115>
+        <rdfs:label>Environmental Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18851 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18851">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
+        <obo:IAO_0000115>Epidemiology as it relates to infectious diseases.</obo:IAO_0000115>
+        <rdfs:label>Infectious Disease Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C189155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C189155">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>An approach to develop novel, or enhance existing, scientific tools and methods for use in research.</obo:IAO_0000115>
+        <rdfs:label>Method Development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C35803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C35803">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Infection by an etiologic agent that can be passed between animals and humans.</obo:IAO_0000115>
+        <rdfs:label>Zoonotic Infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C51306 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51306">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>The activities of educating or instructing or teaching; activities that impart knowledge or skill.</obo:IAO_0000115>
+        <rdfs:label>Educational Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115>Written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory.</obo:IAO_0000115>
+        <rdfs:label>Package</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71104">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>A research study that prospectively assigns human participants or groups of humans to one or more health-related interventions to evaluate the effects on health outcomes.</obo:IAO_0000115>
+        <rdfs:label>Clinical Trial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C85439 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C85439">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Computer methods for creating images, diagrams or animations.</obo:IAO_0000115>
+        <rdfs:label>Graphics Visualization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000267">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>A method that tries to describe logical and internally consistent sequences of events to explore how the future might, could or should evolve from the past and present.</obo:IAO_0000115>
+        <obo:IAO_0000118>Scenario Analysis</obo:IAO_0000118>
+        <rdfs:label>scenario analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000375">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>Representation of model output uncertainty using probability distributions.</obo:IAO_0000115>
+        <obo:IAO_0000118>Uncertainty Quantification</obo:IAO_0000118>
+        <rdfs:label>uncertainty quantification</rdfs:label>
     </owl:Class>
     
 
@@ -962,7 +2721,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/OBI_0001530 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001530">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000111>data service</obo:IAO_0000111>
         <obo:IAO_0000112>Data analysis service such statistical abalysis or storage service such data  backup.</obo:IAO_0000112>
@@ -970,10 +2728,22 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115>A service that has some information content entity as input and output.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Carlo Torniai</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000118>Data Service</obo:IAO_0000118>
         <obo:IAO_0000119>PERSON: Carlo Torniai</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <rdfs:comment>Information content entity was used as specified input and output since it was more appropriate then data item or dataset.</rdfs:comment>
         <rdfs:label>data service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0015767 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0015767">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</obo:IAO_0000115>
+        <rdfs:comment>Definition from Koplan, Jeffrey P., T. Christopher Bond, Michael H. Merson, et al. 2009. “Towards a Common Definition of Global Health.” The Lancet 373 (9679): 1993–95. https://doi.org/10.1016/S0140-6736(09)60332-9.</rdfs:comment>
+        <rdfs:label>Global Health</rdfs:label>
     </owl:Class>
     
 
@@ -984,6 +2754,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
         <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some ethnicity.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000118>Ethnicity</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl</obo:IAO_0000412>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -1002,6 +2773,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
         <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some gender.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000118>Gender</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl</obo:IAO_0000412>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -1019,6 +2791,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
         <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some race.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000118>Race</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl</obo:IAO_0000412>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -1030,11 +2803,23 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ONTOAVIDA_00000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONTOAVIDA_00000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115>An executable file is a digital file that executes a process.</obo:IAO_0000115>
+        <obo:IAO_0000118>Executable File</obo:IAO_0000118>
+        <rdfs:label>executable file</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
         <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
+        <obo:IAO_0000118>Sex</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl</obo:IAO_0000412>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0001894</oboInOwl:id>
@@ -1049,6 +2834,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>A collection of discontinuous sequences.</obo:IAO_0000115>
+        <obo:IAO_0000118>Sequence Collection</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/so/2021-11-22/so.owl</obo:IAO_0000412>
         <oboInOwl:hasDbXref>SO:ke</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sequence collection</oboInOwl:hasExactSynonym>
@@ -1068,6 +2854,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>Statistical Model</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">adapted from Wikipedia:
 http://en.wikipedia.org/wiki/Statistical_model
 
@@ -1075,6 +2862,28 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/stato.owl</obo:IAO_0000412>
         <obo:STATO_0000032 xml:lang="en">statistical model</obo:STATO_0000032>
         <rdfs:label xml:lang="en">statistical model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <obo:IAO_0000115>a Bayesian model is a statistical model where inference is based on using Bayes theorem to obtain a posterior distribution for a quantity (or quantities) of interest for some model (such as parameter values) based on some prior distribution for the relevant unknown parameters and the likelihood from the model.</obo:IAO_0000115>
+        <obo:IAO_0000118>Bayesian Model</obo:IAO_0000118>
+        <rdfs:label>Bayesian model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocabs.lter-europe.net/EnvThes/21604 -->
+
+    <owl:Class rdf:about="http://vocabs.lter-europe.net/EnvThes/21604">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>A discipline is knowledge or wisdom associated with one academic field of study or profession. A discipline incorporates types of knowledge, expertise, skills, people, projects, communities, problems, challenges, studies, inquiry, approaches, and research areas that are strongly associated with academic areas of study or areas of professional practice</obo:IAO_0000115>
+        <obo:IAO_0000118>Research Topic</obo:IAO_0000118>
+        <rdfs:label>research topic</rdfs:label>
     </owl:Class>
     
 
@@ -1095,6 +2904,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas03">
         <obo:IAO_0000115 xml:lang="en">Level of details of the location: ADMIN0, ADMIN1, Country, State, … (can be multiple).</obo:IAO_0000115>
+        <obo:IAO_0000118>Geographical Resolution</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">List comes from GEONAMES class like: &quot;Dependent political entity&quot; or &quot;First-order administrative division&quot;, but it also contains common terms (from https://en.wikipedia.org/wiki/Administrative_division for example) to help with the data entry</rdfs:comment>
         <rdfs:label xml:lang="en">geographical resolution</rdfs:label>
     </owl:Class>
@@ -1106,6 +2916,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas04">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
         <obo:IAO_0000115 xml:lang="en">Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge</obo:IAO_0000115>
+        <obo:IAO_0000118>Expert Assessment / Opinion</obo:IAO_0000118>
         <rdfs:label xml:lang="en">expert assessment / opinion</rdfs:label>
     </owl:Class>
     
@@ -1115,7 +2926,114 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas10">
         <obo:IAO_0000115>Descriptors of the data found in the dataset - broadly categorizing the entries that might be annotated with this model</obo:IAO_0000115>
+        <obo:IAO_0000118>Digital Object Type</obo:IAO_0000118>
         <rdfs:label xml:lang="en">digital object type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas100 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <obo:IAO_0000115 xml:lang="en">Magnitude of the peak of incident hospitalizations occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hospitalization Peak Size</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">peak hospitalization count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas101 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <obo:IAO_0000115 xml:lang="en">Cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hospitalization Peak Time</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">peak hospitalization time cumulative distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas102 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
+        <obo:IAO_0000115>To understand the behavior of complex biological systems, it is useful to devise computer based models by approximating the interactions, via biomathematical expressions. Without doubt, these models could be over simplifications of complex interactions but they would be useful in comparison to classical laboratory experimental approaches which may not be practical or feasible.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Habtemariam, T., A. Ghartey-Tagoe, E. Mamo, and V. Robnett. &quot;Epidemiologic modelling of diseases—a case example using Schistosoma and Trypanosoma.&quot; Mathematical and Computer Modelling 11 (1988): 244-249.</rdfs:comment>
+        <rdfs:label>Computational Epidemiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas103 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas103">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>One Health is a collaborative, multisectoral, and transdisciplinary approach — working at the local, regional, national, and global levels — with the goal of achieving optimal health outcomes recognizing the interconnection between people, animals, plants, and their shared environment. (U.S. Government Definition, established 2017)</obo:IAO_0000115>
+        <rdfs:label>One Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas104 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas104">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>an inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response</obo:IAO_0000115>
+        <rdfs:comment>Definition from Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</rdfs:comment>
+        <rdfs:label>Outbreak Science</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas105 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas105">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem</obo:IAO_0000115>
+        <rdfs:label>Parasite Ecology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas106 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas106">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The genetic changes that occur within a pathogen population over time</obo:IAO_0000115>
+        <rdfs:label>Pathogen Evolution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas107 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas107">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</rdfs:comment>
+        <rdfs:label>Phylodynamics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas108 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas108">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115>The practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
+        <rdfs:comment>Definition from Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</rdfs:comment>
+        <rdfs:label>Science Communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas109 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas109">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Variability or diversity within a population that can influence their health outcomes, risk factors, and response to interventions</obo:IAO_0000115>
+        <rdfs:label>Health Heterogeneity</rdfs:label>
     </owl:Class>
     
 
@@ -1125,8 +3043,40 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas11">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
         <obo:IAO_0000115>A collection of links to other data items, often found in external repositories. No claims are made as to the format or consistency of the items associated with those links.</obo:IAO_0000115>
+        <obo:IAO_0000118>Catalog</obo:IAO_0000118>
         <rdfs:comment>Probably should link to some external dataset.</rdfs:comment>
         <rdfs:label xml:lang="en">catalog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas110 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas110">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Decision support systems (DSS) utilize technology to aid in the prevention, detection, and response to infectious disease</obo:IAO_0000115>
+        <rdfs:label>Decision Support Systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas111 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas111">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Process using various metrics to assess the performance and effectiveness of a model</obo:IAO_0000115>
+        <rdfs:label>Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas112 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas112">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</obo:IAO_0000115>
+        <rdfs:comment>Definition from The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</rdfs:comment>
+        <rdfs:label>Synthetic Populations</rdfs:label>
     </owl:Class>
     
 
@@ -1135,7 +3085,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas12">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115>An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counrs and forecats.</obo:IAO_0000115>
+         <obo:IAO_0000115>An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counts and forecats.</obo:IAO_0000115>
+        <obo:IAO_0000118>Dashboard</obo:IAO_0000118>
         <rdfs:comment>link to some existing ontological term?</rdfs:comment>
         <rdfs:label xml:lang="en">dashboard</rdfs:label>
     </owl:Class>
@@ -1173,6 +3124,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas15">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
         <obo:IAO_0000115 xml:lang="en">The goal or purpose of a modeling study.</obo:IAO_0000115>
+        <obo:IAO_0000118>Modeling Purpose</obo:IAO_0000118>
         <rdfs:label xml:lang="en">modeling purpose</rdfs:label>
     </owl:Class>
     
@@ -1183,6 +3135,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas16">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
         <obo:IAO_0000115 xml:lang="en">The method or type of model used to achieve the purpose.</obo:IAO_0000115>
+        <obo:IAO_0000118>Modeling Method</obo:IAO_0000118>
         <rdfs:label xml:lang="en">modeling method</rdfs:label>
     </owl:Class>
     
@@ -1191,8 +3144,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas17 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
         <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
+        <obo:IAO_0000118>Emergency Department Visit</obo:IAO_0000118>
         <rdfs:label xml:lang="en">emergency department visit dataset</rdfs:label>
     </owl:Class>
     
@@ -1203,6 +3157,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas18">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115 xml:lang="en">Projections of outbreak behavior into some future time, determined relative to a defined starting point. Might include retrospective projects or projections for current activitiy (known as &quot;now-casting&quot;).</obo:IAO_0000115>
+        <obo:IAO_0000118>Forecasting</obo:IAO_0000118>
         <rdfs:label>forecasting</rdfs:label>
     </owl:Class>
     
@@ -1213,7 +3168,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas19">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
         <obo:IAO_0000115 xml:lang="en">data on occurrences of different pathogen species, strains, clades, or variants</obo:IAO_0000115>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/NCIT_C14419</obo:IAO_0100001>
         <rdfs:label xml:lang="en">variant cases</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1222,6 +3179,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas2">
         <obo:IAO_0000115>The subject of the digital object - what it is about.</obo:IAO_0000115>
+        <obo:IAO_0000118>Topic</obo:IAO_0000118>
         <rdfs:label xml:lang="en">topic</rdfs:label>
     </owl:Class>
     
@@ -1230,8 +3188,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas20 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas20">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about natural cover of land surface such as forest, plains, rock, etc. or about human land development.</obo:IAO_0000115>
+        <obo:IAO_0000118>Land Cover / Land Use</obo:IAO_0000118>
         <rdfs:label xml:lang="en">land cover / land use</rdfs:label>
     </owl:Class>
     
@@ -1242,6 +3201,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas21">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Information about capacity, including hospital beds, PPE supplies, nursing home capacity, testing sites, therapeutics, etc.</obo:IAO_0000115>
+        <obo:IAO_0000118>Health System Capacity</obo:IAO_0000118>
         <rdfs:label xml:lang="en">health system capacity</rdfs:label>
     </owl:Class>
     
@@ -1250,8 +3210,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas22 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas22">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmenal dataset about air contaminants that threaten human health.</obo:IAO_0000115>
+        <obo:IAO_0000118>Air Quality</obo:IAO_0000118>
         <rdfs:label xml:lang="en">air quality</rdfs:label>
     </owl:Class>
     
@@ -1260,8 +3221,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas23 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas23">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000593"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about destruction of entities in an ecosystem including living things and human-built sructures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</obo:IAO_0000115>
+        <obo:IAO_0000118>Natural Disasters</obo:IAO_0000118>
         <rdfs:label xml:lang="en">natural disasters</rdfs:label>
     </owl:Class>
     
@@ -1272,6 +3234,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas24">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
         <obo:IAO_0000115 xml:lang="en">A count of emergency department visits in a population that is the total number of emergency department visits that occur during a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000118>Cumulative Emergency Department Visit</obo:IAO_0000118>
         <rdfs:label xml:lang="en">cumulative emergency department visit count</rdfs:label>
     </owl:Class>
     
@@ -1295,6 +3258,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas26">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
         <obo:IAO_0000115>A count of emergency department visits in a population that is the number of emergency department visits that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000118>Incident Emergency Department Visit</obo:IAO_0000118>
         <rdfs:label xml:lang="en">incident emergency department visit count</rdfs:label>
     </owl:Class>
     
@@ -1304,6 +3268,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas27">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
+        <obo:IAO_0000115>An intentionality directed at future participation in a vaccination.</obo:IAO_0000115>
+        <obo:IAO_0000118>Vaccination Intent</obo:IAO_0000118>
         <rdfs:label xml:lang="en">vaccination intent</rdfs:label>
     </owl:Class>
     
@@ -1314,6 +3280,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas28">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
         <obo:IAO_0000115>Construction and/or visualization of phylogenetic trees based on sequence data</obo:IAO_0000115>
+        <obo:IAO_0000118>Phylogenetics</obo:IAO_0000118>
         <rdfs:label xml:lang="en">phylogenetics</rdfs:label>
     </owl:Class>
     
@@ -1336,6 +3303,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas30">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
         <obo:IAO_0000115>Papers describing modeling studies</obo:IAO_0000115>
+        <obo:IAO_0000118>Modeling Studies</obo:IAO_0000118>
         <rdfs:label xml:lang="en">modeling studies</rdfs:label>
     </owl:Class>
     
@@ -1346,6 +3314,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas32">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
         <obo:IAO_0000115>A collection of information in various types of structured or non-structured formats</obo:IAO_0000115>
+        <obo:IAO_0000118>Repository</obo:IAO_0000118>
         <rdfs:label xml:lang="en">repository</rdfs:label>
     </owl:Class>
     
@@ -1356,6 +3325,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas33">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
         <obo:IAO_0000115>A catalog focused on a specific disease</obo:IAO_0000115>
+        <obo:IAO_0000118>Disease-Specific Collection</obo:IAO_0000118>
         <rdfs:label xml:lang="en">disease-specific collection</rdfs:label>
     </owl:Class>
     
@@ -1364,8 +3334,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas34 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas34">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas38"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
         <obo:IAO_0000115>Information about diagnostic tests, results, including serology tests, PCR, and other tests</obo:IAO_0000115>
+        <obo:IAO_0000118>Tests</obo:IAO_0000118>
         <rdfs:label xml:lang="en">diagnostic tests</rdfs:label>
     </owl:Class>
     
@@ -1376,6 +3347,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas35">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas43"/>
         <obo:IAO_0000115>Data on impact of outbreak on humanitarian efforts</obo:IAO_0000115>
+        <obo:IAO_0000118>Aid / Responses</obo:IAO_0000118>
         <rdfs:label xml:lang="en">aid/responses</rdfs:label>
     </owl:Class>
     
@@ -1399,6 +3371,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Counts of cases, deaths, etc. Often includes multiple types of counts as not compatible with more specific labels. Information about diagnostic tests, results, including serology tests, PCR, and other tests. Can include various methods of estimation, including the COVID-19 Forecast and Scenario Hubs</obo:IAO_0000115>
         <rdfs:label xml:lang="en">case counts</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1421,6 +3394,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas40">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
         <obo:IAO_0000115>Forecasts based on SIR (Susceptible, Infected, Recovered) models or any of the many variants of this basic famework.</obo:IAO_0000115>
+        <obo:IAO_0000118>Compartmental Models</obo:IAO_0000118>
         <rdfs:label xml:lang="en">compartmental models</rdfs:label>
     </owl:Class>
     
@@ -1441,8 +3415,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas43 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas43">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas109"/>
         <obo:IAO_0000115>includes social, economic, also mental health impact</obo:IAO_0000115>
+        <obo:IAO_0000118>Socio-economic Impacts</obo:IAO_0000118>
         <rdfs:label>socio-economic impacts</rdfs:label>
     </owl:Class>
     
@@ -1453,6 +3428,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas45">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000115>Events that were cancelled due to an outbreak</obo:IAO_0000115>
+        <obo:IAO_0000118>Event Cancellations</obo:IAO_0000118>
         <rdfs:label xml:lang="en">event cancellations</rdfs:label>
     </owl:Class>
     
@@ -1486,6 +3462,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas5">
         <obo:IAO_0000115>The &quot;domain&quot; of the entity - specifically, the focus of the data contained therein.</obo:IAO_0000115>
+        <obo:IAO_0000118>Biological Scale</obo:IAO_0000118>
         <rdfs:label xml:lang="en">biological scale</rdfs:label>
     </owl:Class>
     
@@ -1520,6 +3497,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas53">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
         <obo:IAO_0000115>Models based on simulated actions of individuals and interactions between those individuals</obo:IAO_0000115>
+        <obo:IAO_0000118>Agent-based Models</obo:IAO_0000118>
         <rdfs:label xml:lang="en">agent-based models</rdfs:label>
     </owl:Class>
     
@@ -1542,6 +3520,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas57">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000115>Aggregate descriptions of multiple factors invovling susceptibility to outbreaks</obo:IAO_0000115>
+        <obo:IAO_0000118>Risk Factors</obo:IAO_0000118>
         <rdfs:label xml:lang="en">risk factors</rdfs:label>
     </owl:Class>
     
@@ -1576,6 +3555,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas6">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Descriptors of the behavior of an outbreak</obo:IAO_0000115>
+        <obo:IAO_0000118>Modeling</obo:IAO_0000118>
         <rdfs:label xml:lang="en">modeling</rdfs:label>
     </owl:Class>
     
@@ -1610,6 +3590,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas62">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000115>Reports of policy violations</obo:IAO_0000115>
+        <obo:IAO_0000118>Regulatory Complaints</obo:IAO_0000118>
         <rdfs:label xml:lang="en">regulatory complaints</rdfs:label>
     </owl:Class>
     
@@ -1641,9 +3622,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas66 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas66">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Tools for initial stages of data processing, usually prior to modeling. Includes pre-processing, cleaning, exploratory analysis.</obo:IAO_0000115>
+        <obo:IAO_0000118>Data Preparation</obo:IAO_0000118>
         <rdfs:label xml:lang="en">data preparation</rdfs:label>
     </owl:Class>
     
@@ -1654,6 +3635,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas67">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115>Predicted value of key outbreak parameters, including (but not limited to) fatality rate, R_0, etc.</obo:IAO_0000115>
+        <obo:IAO_0000118>Parameter Estimation</obo:IAO_0000118>
         <rdfs:label xml:lang="en">parameter estimation</rdfs:label>
     </owl:Class>
     
@@ -1677,6 +3659,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas69">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115>Models of interactions between entities that might impact outbreak progression.</obo:IAO_0000115>
+        <obo:IAO_0000118>Network Modeling</obo:IAO_0000118>
         <rdfs:label xml:lang="en">network modeling</rdfs:label>
     </owl:Class>
     
@@ -1687,6 +3670,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas7">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas11"/>
         <obo:IAO_0000115>Collections of entities from the research literature, or derived from the literature.</obo:IAO_0000115>
+        <obo:IAO_0000118>Literature</obo:IAO_0000118>
         <rdfs:label xml:lang="en">literature</rdfs:label>
     </owl:Class>
     
@@ -1733,6 +3717,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas74">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Information about media, coverage about a topic</obo:IAO_0000115>
+        <obo:IAO_0000118>Media</obo:IAO_0000118>
         <rdfs:label xml:lang="en">media</rdfs:label>
     </owl:Class>
     
@@ -1743,6 +3728,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas75">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
         <obo:IAO_0000115>Population data divided by age ranges</obo:IAO_0000115>
+        <obo:IAO_0000118>Age-Stratified</obo:IAO_0000118>
         <rdfs:label xml:lang="en">age-stratified</rdfs:label>
     </owl:Class>
     
@@ -1763,6 +3749,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas77">
         <obo:IAO_0000115 xml:lang="en">Name of the location in English at country or ADMIN1 level corresponding from GEONAMES (if more than 10 different countries possible &quot;Earth&quot; can be used).</obo:IAO_0000115>
+        <obo:IAO_0000118>Geographical Scope</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">Also have Continent and Earth information as some data set have data for multiple countries but in the same continent.</rdfs:comment>
         <rdfs:label xml:lang="en">geographical scope</rdfs:label>
     </owl:Class>
@@ -1786,6 +3773,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas79">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Actions of groups of people in response to outbreaks.</obo:IAO_0000115>
+        <obo:IAO_0000118>Behavior</obo:IAO_0000118>
         <rdfs:label xml:lang="en">behavior</rdfs:label>
     </owl:Class>
     
@@ -1796,6 +3784,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas8">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas5"/>
         <obo:IAO_0000115>Items referring to sequence-level data, including genomics, microbiomics, proteomics, etc.</obo:IAO_0000115>
+        <obo:IAO_0000118>Molecular</obo:IAO_0000118>
         <rdfs:label xml:lang="en">molecular</rdfs:label>
     </owl:Class>
     
@@ -1818,6 +3807,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas81">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000115>Frequency of interactions between individuals in different settings, at different times...</obo:IAO_0000115>
+        <obo:IAO_0000118>Contact Rates</obo:IAO_0000118>
         <rdfs:label xml:lang="en">contact rates</rdfs:label>
     </owl:Class>
     
@@ -1828,6 +3818,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas82">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000115>Rates of compliance with policies/interventions including mask wearing, facility closures, large events, etc.</obo:IAO_0000115>
+        <obo:IAO_0000118>Policy Adherence</obo:IAO_0000118>
         <rdfs:label xml:lang="en">policy adherence</rdfs:label>
     </owl:Class>
     
@@ -1838,6 +3829,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas83">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000115>Claims of false or unsubstantiated rumors about any aspect of an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000118>Conspiracy Theories</obo:IAO_0000118>
         <rdfs:label xml:lang="en">conspiracy theories</rdfs:label>
     </owl:Class>
     
@@ -1848,6 +3840,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas84">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000115>Estimates of reluctance to being vaccinated.</obo:IAO_0000115>
+        <obo:IAO_0000118>Vaccine Hesitancy</obo:IAO_0000118>
         <rdfs:label xml:lang="en">vaccine hesitancy</rdfs:label>
     </owl:Class>
     
@@ -1858,7 +3851,52 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas85">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas74"/>
         <obo:IAO_0000115>Datasets discussing outbreaks on social media sites</obo:IAO_0000115>
+        <obo:IAO_0000118>Social Media</obo:IAO_0000118>
         <rdfs:label xml:lang="en">social media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas86 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas86">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>A count of recovery that occured in a population in a given temporal region.</obo:IAO_0000115>
+        <obo:IAO_0000118>Recovery Count</obo:IAO_0000118>
+        <rdfs:label>count of recovered in a population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas87 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas87">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas86"/>
+        <obo:IAO_0000115>A count of recovery in a population that is the total number of recovery that occur during a reference temporal interval</obo:IAO_0000115>
+        <obo:IAO_0000118>Cumulative Recovered Count</obo:IAO_0000118>
+        <rdfs:label>cumulative recovered count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas88 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas88">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas86"/>
+        <obo:IAO_0000115>A count of recovery in a population that is the number of recovery that occured during a proper occurent part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000118>Incident Recovered Count</obo:IAO_0000118>
+        <rdfs:label>incident recovered count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas89 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas89">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <obo:IAO_0000115>count of outpatient visit in a population.</obo:IAO_0000115>
+        <obo:IAO_0000118>Outpatient Visit</obo:IAO_0000118>
+        <rdfs:label>count of outpatient visit</rdfs:label>
     </owl:Class>
     
 
@@ -1868,11 +3906,133 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas9">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas5"/>
         <obo:IAO_0000115>Items corresponding to entire populations or subpopulations. Might be geographically or temporally temporally limited.</obo:IAO_0000115>
+        <obo:IAO_0000118>Population</obo:IAO_0000118>
         <rdfs:label xml:lang="en">population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas90 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas90">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas89"/>
+        <obo:IAO_0000115>A count of outpatient visit in a population that is the total number of outpatient visit that occur during a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000118>Cumulative Outpatient Visit</obo:IAO_0000118>
+        <rdfs:label>cumulative outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas91 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas91">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas89"/>
+        <obo:IAO_0000115>A count of outpatient visit in a population that is the number of outpatient visit that occured during a proper occurent part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000118>Incident Outpatient Visit</obo:IAO_0000118>
+        <rdfs:label>incident outpatient visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas92 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas92">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention, public health considerations, etc.</obo:IAO_0000115>
+        <rdfs:label>Wildlife Health Interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas93 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas93">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences.</obo:IAO_0000115>
+        <rdfs:comment>Definition from “Neglected Tropical Diseases.” n.d. Accessed July 25, 2025. https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases.</rdfs:comment>
+        <rdfs:label>Neglected Tropical Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas94 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas94">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+        <obo:IAO_0000115>Vaccine preventable diseases are those infectious diseases that can be prevented by vaccination</obo:IAO_0000115>
+        <rdfs:comment>Definition from World Health Organization. 2012. International Travel and Health: Situation as on 1 January 2012. World Health Organization. https://iris.who.int/handle/10665/75329.</rdfs:comment>
+        <rdfs:label>Vaccine-Preventable Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas95 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas95">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <obo:IAO_0000115>Dynamic models are [..] called dynamic because they describe how system properties change over time: a gene’s expression level, the abundance of an endangered species, the mercury level in different organs within an individual, and so on.</obo:IAO_0000115>
+        <rdfs:comment>Definition from &quot;Chapter 1: What are Dynamic Models?&quot; Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
+        <rdfs:label>Dynamic Models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas96 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas96">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <obo:IAO_0000115>Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms).</obo:IAO_0000115>
+        <rdfs:comment>Definition from Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
+        <rdfs:label>Geospatial Models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas97 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas97">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <obo:IAO_0000115>The output of a model</obo:IAO_0000115>
+        <obo:IAO_0000118>Modeling Output</obo:IAO_0000118>
+        <rdfs:label>modeling output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas98 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas98">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>Decision models (and decision science as a field, more broadly) provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
+        <obo:IAO_0000118>Decision Models</obo:IAO_0000118>
+        <rdfs:comment>Definition from Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</rdfs:comment>
+        <rdfs:label>Decision models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas99 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas99">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115>intra-host models are mathematical models focusing on the dynamics of an infection within a single individual host</obo:IAO_0000115>
+        <obo:IAO_0000118>Intra-host Modeling</obo:IAO_0000118>
+        <rdfs:label>Intra-host modeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000037 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000037">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
+        <obo:IAO_0000118>Ensemble Specification</obo:IAO_0000118>
+        <rdfs:label>ensemble specification</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 

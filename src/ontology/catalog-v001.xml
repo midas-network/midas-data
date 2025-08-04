@@ -3,5 +3,6 @@
     <uri id="User Entered Import Resolution" name="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl" uri="imports/apollo-sv_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://midasnetwork.us/datasets/imports/mondo_import.owl" uri="imports/mondo_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://midasnetwork.us/datasets/imports/ncit.owl" uri="imports/ncit.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>

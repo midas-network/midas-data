@@ -1,6 +1,7 @@
 # Midas Ontology Makefile
 # Bill Hogan <hoganwr@ufl.edu>
 # edit 2025-05-27, John Levander <jdl50@pitt.edu>
+# edit 2025-07-23 - add NCIT ontology import, Lucie Contamin <contamin@pitt.edu)
 #
 # This Makefile is used to build artifacts
 # for the Ontology for Biomedical Investigations.
@@ -42,8 +43,8 @@ RELEASEDIR = ../..
 MIRRORDIR = mirror
 IMPORTDIR = imports
 ANNOTATION_PROPERTIES = rdfs:label IAO:0000115 dc:creator dc:date IAO:0000111 IAO:0000112 IAO:0000117 rdfs:comment IAO:0000118 IAO:0000412 IAO:0000600 http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040
-IMPORTS = $(IMPORTDIR)/apollo-sv_import.owl $(IMPORTDIR)/ncbitaxon_import.owl $(IMPORTDIR)/mondo_import.owl
-MIRRORS = $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/ncbitaxon.owl $(MIRRORDIR)/mondo.owl
+IMPORTS = $(IMPORTDIR)/apollo-sv_import.owl $(IMPORTDIR)/ncbitaxon_import.owl $(IMPORTDIR)/mondo_import.owl $(IMPORTDIR)/ncit_import.owl
+MIRRORS = $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/ncbitaxon.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncit.owl
 
 ########################### Helper Functions ##################################
 # "mirror_ontology" is a helper function to download and convert ontologies
@@ -89,11 +90,13 @@ create_imports: $(IMPORTS)
 $(eval $(call mirror_ontology,apollo-sv,apollo_sv.owl))
 $(eval $(call mirror_ontology,ncbitaxon,ncbitaxon/subsets/taxslim.owl))
 $(eval $(call mirror_ontology,mondo,mondo/mondo-simple.owl))
+$(eval $(call mirror_ontology,ncit,ncit.owl))
 
 # Create the imports
 $(eval $(call create_import,mondo,http://purl.obolibrary.org/obo/MONDO_,false))
 $(eval $(call create_import,apollo-sv,http://purl.obolibrary.org/obo/APOLLO_SV_,true))
 $(eval $(call create_import,ncbitaxon,http://purl.obolibrary.org/obo/NCBITaxon_,true))
+$(eval $(call create_import,ncit,http://purl.obolibrary.org/obo/NCIT_,true))
 
 # Create the MIDAS data ontology
 midas-data.owl: $(SRC) $(IMPORTS) $(MIRRORS) | build/robot.jar
@@ -107,7 +110,7 @@ midas-data.owl: $(SRC) $(IMPORTS) $(MIRRORS) | build/robot.jar
 			--output $@
 
 .PHONY: zip_ontologies
-zip_ontologies: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl
+zip_ontologies: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(MIRRORDIR)/ncit.owl $(IMPORTS) midas-data.owl
 	@echo "-- Zipping all ontologies in $(MIRRORDIR) and $(IMPORTDIR) --"
 	for f in mirror/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
 	@echo "Zipped ontologies in $(MIRRORDIR) to $(MIRRORDIR).zip"
@@ -115,7 +118,7 @@ zip_ontologies: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/n
 	@echo "Zipped all ontologies in $(IMPORTDIR) to $(IMPORTDIR).zip"
 
 .PHONY: delete_owl_files
-delete_owl_files: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl
+delete_owl_files: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(MIRRORDIR)/ncit.owl $(IMPORTS) midas-data.owl
 	@echo "-- Deleting all owl files in $(MIRRORDIR) and $(IMPORTDIR) --"
 	rm -f $(MIRRORDIR)/*.owl
 	@echo "Deleted all owl files in $(MIRRORDIR)"
