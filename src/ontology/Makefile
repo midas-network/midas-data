@@ -43,7 +43,7 @@ RELEASE_ASSETS = midas-data.owl
 RELEASEDIR = ../..
 MIRRORDIR = mirror
 IMPORTDIR = imports
-ANNOTATION_PROPERTIES = rdfs:label IAO:0000115 dc:creator dc:date IAO:0000111 IAO:0000112 IAO:0000117 rdfs:comment IAO:0000118 IAO:0000412 IAO:0000600 http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040
+ANNOTATION_PROPERTIES = NCIT:P106 rdfs:label  dc:creator dc:date IAO:0000111 IAO:0000112 IAO:0000117 rdfs:comment IAO:0000118 IAO:0000412 IAO:0000600 http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040
 IMPORTS = $(IMPORTDIR)/apollo-sv_import.owl $(IMPORTDIR)/ncbitaxon_import.owl $(IMPORTDIR)/mondo_import.owl $(IMPORTDIR)/ncit_import.owl
 MIRRORS = $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/ncbitaxon.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncit.owl
 
@@ -99,16 +99,15 @@ $(eval $(call create_import,apollo-sv,http://purl.obolibrary.org/obo/APOLLO_SV_,
 $(eval $(call create_import,ncbitaxon,http://purl.obolibrary.org/obo/NCBITaxon_,true))
 $(eval $(call create_import,ncit,http://purl.obolibrary.org/obo/NCIT_,true))
 
-# Create the MIDAS data ontology
 midas-data.owl: $(SRC) $(IMPORTS) $(MIRRORS) | build/robot.jar
 	@echo "-- Creating MIDAS data ontology in $(realpath .) --"
-	$(ROBOT) merge --input $< \
-		reason --reasoner HermiT --equivalent-classes-allowed none \
-		annotate \
-			--ontology-iri "$(MIDAS)/midas-data.owl" \
-			--version-iri "$(MIDAS)/v$(TODAY)/midas-data.owl" \
-			--annotation owl:versionInfo "$(TODAY)" \
-			--output $@
+	$(ROBOT) merge --input $< $(patsubst %, --input %, $(IMPORTS)) \
+	reason --reasoner HermiT --equivalent-classes-allowed none \
+	annotate \
+	--ontology-iri "$(MIDAS)/midas-data.owl" \
+	--version-iri "$(MIDAS)/v$(TODAY)/midas-data.owl" \
+	--annotation owl:versionInfo "$(TODAY)" \
+	--output $@
 
 .PHONY: zip_ontologies
 zip_ontologies: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl #$(MIRRORDIR)/ncit.owl
