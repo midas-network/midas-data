@@ -2670,8 +2670,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000115>Written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory.</obo:IAO_0000115>
-        <rdfs:label>Package</rdfs:label>
     </owl:Class>
     
 
@@ -2679,7 +2677,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C71104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71104">
-
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
     </owl:Class>
     
 
@@ -2688,8 +2686,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C85439">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>Computer methods for creating images, diagrams or animations.</obo:IAO_0000115>
-        <rdfs:label>Graphics Visualization</rdfs:label>
     </owl:Class>
     
 
