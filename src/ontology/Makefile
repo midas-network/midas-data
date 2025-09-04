@@ -43,7 +43,7 @@ RELEASE_ASSETS = midas-data.owl
 RELEASEDIR = ../..
 MIRRORDIR = mirror
 IMPORTDIR = imports
-ANNOTATION_PROPERTIES = NCIT:P106 rdfs:label  dc:creator dc:date IAO:0000111 IAO:0000112 IAO:0000117 rdfs:comment IAO:0000118 IAO:0000412 IAO:0000600 http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040
+ANNOTATION_PROPERTIES = IAO:0000115 rdfs:label  dc:creator dc:date IAO:0000111 IAO:0000112 IAO:0000117 rdfs:comment IAO:0000118 IAO:0000412 IAO:0000600 http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040
 IMPORTS = $(IMPORTDIR)/apollo-sv_import.owl $(IMPORTDIR)/ncbitaxon_import.owl $(IMPORTDIR)/mondo_import.owl $(IMPORTDIR)/ncit_import.owl
 MIRRORS = $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/ncbitaxon.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncit.owl
 
