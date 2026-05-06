@@ -17,11 +17,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2025-11-21/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2026-05-06/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2025-11-21</owl:versionInfo>
+        <owl:versionInfo>2026-05-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -384,8 +384,7 @@
 
 One property that seems to be common among simulations in comparison to many other fictions is the fact that the chronological order of the simulated purely intentional entities is not changed in the process of simulating.
 
-While in many pieces of fiction the order in which the purely intentional entities are created can vary, this is not the case for simulations.
-</rdfs:comment>
+While in many pieces of fiction the order in which the purely intentional entities are created can vary, this is not the case for simulations.</rdfs:comment>
         <rdfs:label xml:lang="en">simulation time series</rdfs:label>
     </owl:Class>
     
@@ -431,6 +430,46 @@ While in many pieces of fiction the order in which the purely intentional entiti
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000486"/>
+        <obo:IAO_0000115 xml:lang="en">A travel-related infectious disease control strategy that has an action specification that is realized in restricting movement of organisms across international borders.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A travel-related infectious disease control strategy that has an action specification that is realized in restricting movement of organisms across international borders.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>BorderControlMeasure</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">border control strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that has an action specification that is realized in closing facilities where organisms congregate during times when the facilities normally would be open.</obo:IAO_0000115>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118>Place Closure</obo:IAO_0000118>
+        <obo:IAO_0000600 xml:lang="en">An infectious disease control strategy that attempts to prevent infection of susceptible host organisms in a population by preventing potentially infectious contacts (for a particular pathogen) among the organisms in the population.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>PlaceClosureControlMeasure</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">place closure control strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000486"/>
+        <obo:IAO_0000115 xml:lang="en">A travel-related infectious disease control strategy whose action specification is realized in restricting travel of organims from one ecosystem to another ecosystem</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A travel-related infectious disease control strategy whose action specification is realized in restricting travel of organims from one geographical region to another</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>TravelRestrictionControlMeasure</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">travel restriction control strategy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000237 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000237">
@@ -457,6 +496,19 @@ While in many pieces of fiction the order in which the purely intentional entiti
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000229"/>
+        <obo:IAO_0000115 xml:lang="en">A place-closure control strategy that decides on a case-by-case basis whether to close places of a certain type, as opposed to blanket policy that closes all places of a certain type at the same time.</obo:IAO_0000115>
+        <obo:IAO_0000118>Close Individual Places</obo:IAO_0000118>
+        <obo:IAO_0000600 xml:lang="en">A place-closure control strategy that decides on a case-by-case basis whether to close places of a certain type, as opposed to blanket policy that closes all places of a certain type at the same time.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>closeIndividualPlacesIndependently</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">close individual places independently strategy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000318 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000318">
@@ -467,6 +519,19 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <obo:IAO_0000600 xml:lang="en">Treatment with a drug.</obo:IAO_0000600>
         <apollo_sv:APOLLO_SV_0000040>DrugTreatment</apollo_sv:APOLLO_SV_0000040>
         <rdfs:label xml:lang="en">drug treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71902"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy whereby the household members of infectious indivduals voluntarily stay at home to avoid further potentially infectious contacts.</obo:IAO_0000115>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">An infectious disease control strategy whereby the household members of infectious indivduals voluntarily stay at home to avoid further potentially infectious contacts.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>VoluntaryHouseholdQuarantineControlMeasure</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">voluntary household quarantine control strategy</rdfs:label>
     </owl:Class>
     
 
@@ -482,6 +547,32 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <obo:IAO_0000600 xml:lang="en">A data set that is a collection of case records.</obo:IAO_0000600>
         <apollo_sv:APOLLO_SV_0000040>CaseList</apollo_sv:APOLLO_SV_0000040>
         <rdfs:label xml:lang="en">infection case list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000111 xml:lang="en">infectious disease control strategy to prevent infection acquisition by individuals traveling from one ecosystem to another ecosystem</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that has an objective specification of preventing infection acquisition by organisms traveling from one ecosystem to another ecosystem.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">An infectious disease control strategy that has an objective specification of preventing infection acquisition by organisms traveling from one ecosystem to another ecosystem.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">travel-related infectious disease control strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000486"/>
+        <obo:IAO_0000111 xml:lang="en">travel recommendation infectious disease control strategy</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A travel-related infectious disease control strategy that has an action specification that is realized by making recommendations to travelers to either (1) avoid travel to an ecosystem with an ongoing infection such as an epidemic, (2) take precautions when traveling to such an ecosystem, (3) receive certain vaccinations prior to traveling to such an ecosystem, or (4) take certain medications when traveling to such an ecosystem</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A travel-related infectious disease control strategy that recommends to travelers to either (1) avoid travel to a region with an ongoing infection such as an epidemic, (2) take precautions when traveling to such a region, (3) receive certain vaccinations prior to traveling to such a region, or (4) take certain medications when traveling to such a region</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">travel recommendation control strategy</rdfs:label>
     </owl:Class>
     
 
@@ -512,6 +603,20 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <obo:IAO_0000118>Mortality</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">A data set that is about either some mortality rate or the death events themselves of some individuals of a given population of a particular biological taxon.</obo:IAO_0000600>
         <rdfs:label xml:lang="en">mortality data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that identifies and treats contacted organisms in a host population.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118>Contact Tracing</obo:IAO_0000118>
+        <obo:IAO_0000600 xml:lang="en">An infectious disease control strategy that identifies and treats contacted organisms in a host population.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">contact tracing</rdfs:label>
     </owl:Class>
     
 
@@ -557,7 +662,6 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <obo:IAO_0000118>Treatment Facility</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">census of treatment facilities</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">treatment facilities census</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">treatment facility census</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">A census that counts the number of treatment facilities of some kind in a particular geographical region.</obo:IAO_0000600>
         <rdfs:comment xml:lang="en">NOTE: this class counts the facilities themselves, not patients (people) in those facilities.  For example, how many hospitals in a state.  Not how many patients are in a hospital or hospitals in a state.</rdfs:comment>
         <rdfs:label xml:lang="en">treatment facility census</rdfs:label>
@@ -571,7 +675,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
         <obo:IAO_0000111 xml:lang="en">dataset about hospital stays</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The datasets at this link are rdf:type this class: https://www.opendataphilly.org/dataset/covid-hospitalizations</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more hospital stays involving two or more patients.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A dataset that is about two or more hospital stays involving two or more patients.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>Hospitalization</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">hospital discharge dataset</obo:IAO_0000118>
@@ -588,7 +692,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000111 xml:lang="en">human daily movement behavior data set</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">https://www.google.com/covid19/mobility/</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a data set that is about the human daily movement behavior of the individual huamns in a given population.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about the human daily movement behavior of the individual huamns in a given population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>Human Movement</obo:IAO_0000118>
         <rdfs:label xml:lang="en">human daily movement data set</rdfs:label>
@@ -601,7 +705,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000603">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000111 xml:lang="en">potentially infectious contact process data set in a population</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">a data set that is about one or more potentially infectious contact processes in a population of host organisms.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about one or more potentially infectious contact processes in a population of host organisms.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">contact data set</obo:IAO_0000118>
         <rdfs:label xml:lang="en">potentially infectious contact data set</rdfs:label>
@@ -615,7 +719,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000111 xml:lang="en">infectious disease control strategy census</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">a census of infectious disease control strategies put into place to reduce infection acquisitions that are part of an infection in an ecosystem.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A census of infectious disease control strategies put into place to reduce infection acquisitions that are part of an infection in an ecosystem.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>Control Strategy</obo:IAO_0000118>
         <rdfs:label xml:lang="en">control strategy census</rdfs:label>
@@ -626,9 +730,9 @@ While in many pieces of fiction the order in which the purely intentional entiti
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000605 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000229"/>
         <obo:IAO_0000111 xml:lang="en">school closure infectious disease control strategy census</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">an infectious disease control strategy census that is about school closure infectious disease control strategies implemented in a particular geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy census that is about school closure infectious disease control strategies implemented in a particular geographical region.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>School Closure</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">This class represents datasets about strategies for school closure.  Datasets about individual actual school closures go elsewhere.</rdfs:comment>
@@ -643,7 +747,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
         <obo:IAO_0000111 xml:lang="en">population vaccination census</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">vaccine / immunization registry data, vaccination / immunization records extracted from an EHR</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a population treatment census that is about one or more vaccinations of organisms in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A population treatment census that is about one or more vaccinations of organisms in a population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>Vaccination Administration</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">vaccination census</obo:IAO_0000118>
@@ -686,7 +790,7 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181548"/>
         <obo:IAO_0000111 xml:lang="en">census of facilities that conduct clinical laboratory tests</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A census of facilities that conduct clinical laboratory testing.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -701,7 +805,7 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000613 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000613">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181548"/>
         <obo:IAO_0000111 xml:lang="en">laboratory testing capacity action specification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An action specification giving the number of laboratory tests of a certain type that it is possible to perform in a given population during a specific time interval.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -745,6 +849,19 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
         <obo:IAO_0000118>Wastewater</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">sewage surveillance data</obo:IAO_0000118>
         <rdfs:label xml:lang="en">wastewater surveillance data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000229"/>
+        <obo:IAO_0000115 xml:lang="en">A place closure control strategy in which only selected places in a geographical region are permitted to stay open and travel is permitted only for people employed by certain organizations.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118>Lockdown</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">The places that are allowed to stay open are typically selected by the local or state government, and often include hospitals, many healthcare facilities, food stores and food banks, and law enforcement and emergency services.</rdfs:comment>
+        <rdfs:label xml:lang="en">lockdown infectious disease control measure</rdfs:label>
     </owl:Class>
     
 
@@ -2512,8 +2629,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <obo:IAO_0000115>A genus in the family FILOVIRIDAE consisting of several distinct species of Ebolavirus, each containing separate strains. These viruses cause outbreaks of a contagious, hemorrhagic disease (HEMORRHAGIC FEVER, EBOLA) in humans, usually with high mortality.</obo:IAO_0000115>
+        <obo:IAO_0000118>Ebolavirus</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-        <rdfs:label>Ebolavirus</rdfs:label>
     </owl:Class>
     
 
@@ -2571,7 +2688,18 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115>A genus of FLAVIVIRIDAE causing parenterally-transmitted HEPATITIS C which is associated with transfusions and drug abuse. Hepatitis C virus is the type species.</obo:IAO_0000115>
         <obo:IAO_0000118>Hepatitis C virus</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-        <rdfs:label>Hepacivirus hominis</rdfs:label>
+        <rdfs:label>Orthohepacivirus hominis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_36469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_36469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
+        <obo:IAO_0000115>Small proteinaceous infectious particles which resist inactivation by procedures that modify NUCLEIC ACIDS and contain an abnormal isoform of a cellular protein which is a major and necessary component. The abnormal (scrapie) isoform is PrPSc (PRPSC PROTEINS) and the cellular isoform PrPC (PRPC PROTEINS). The primary amino acid sequence of the two isoforms is identical. Human diseases caused by prions include CREUTZFELDT-JAKOB SYNDROME; GERSTMANN-STRAUSSLER SYNDROME; and INSOMNIA, FATAL FAMILIAL.</obo:IAO_0000115>
+        <obo:IAO_0000118>prion</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
 
@@ -2669,8 +2797,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
         <obo:IAO_0000115>A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</obo:IAO_0000115>
+        <obo:IAO_0000118>Plasmodium</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-        <rdfs:label>Plasmodium</rdfs:label>
+        <rdfs:label>Plasmodium &lt;genus&gt;</rdfs:label>
     </owl:Class>
     
 
@@ -2913,8 +3042,38 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000115>A computer application that requires with an active internet connection and that uses HTTP as its primary communications protocol.</obo:IAO_0000115>
+        <obo:IAO_0000115>A computer application that requires an active internet connection and that uses HTTP as its primary communications protocol.</obo:IAO_0000115>
         <rdfs:label>Web Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173636">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>The practice of keeping a safe space between yourself and other people.</obo:IAO_0000115>
+        <rdfs:label>Social Distancing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173747 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173747">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173748"/>
+        <obo:IAO_0000115>A barrier device that covers the nose and mouth, used in infection control.</obo:IAO_0000115>
+        <rdfs:label>Protective Face Mask</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173748 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173748">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>Masks, shields, gloves, gowns, boots, or other equipment used to provide coverage against infectious agents or environmental hazards.</obo:IAO_0000115>
+        <rdfs:label>Personal Protective Equipment</rdfs:label>
     </owl:Class>
     
 
@@ -2977,6 +3136,27 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
         <obo:IAO_0000115>Refers to a class of evolving technologies that provide leading-edge computational capabilities.  Includes scalable high performance computers, high end graphic systems, and high speed networks.  Used for molecular modeling, genome analysis, and image processing, among others.</obo:IAO_0000115>
         <rdfs:label>High Performance Computing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C181548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C181548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>A test whose operational purpose is to determine the presence or absence of a substance, organism, or condition.</obo:IAO_0000115>
+        <rdfs:label>Screening Test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C51306"/>
+        <obo:IAO_0000115>Public communication via television, radio, newspapers, pamphlets, telephone, and other media to influence health or social behaviors.</obo:IAO_0000115>
+        <rdfs:label>Media Campaign</rdfs:label>
     </owl:Class>
     
 
@@ -3051,6 +3231,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71902 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71902">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115>Place into enforced isolation.</obo:IAO_0000115>
+        <rdfs:label>Quarantine</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C85439 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C85439">
@@ -3109,6 +3299,15 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115>An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</obo:IAO_0000115>
         <rdfs:comment>Definition from Koplan, Jeffrey P., T. Christopher Bond, Michael H. Merson, et al. 2009. “Towards a Common Definition of Global Health.” The Lancet 373 (9679): 1993–95. https://doi.org/10.1016/S0140-6736(09)60332-9.</rdfs:comment>
         <rdfs:label>Global Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0028258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0028258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:label>Hand Hygiene</rdfs:label>
     </owl:Class>
     
 
