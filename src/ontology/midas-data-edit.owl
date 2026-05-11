@@ -2392,7 +2392,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115>Bloodsucking flies of the genus Glossina, found primarily in equatorial Africa. Several species are intermediate hosts of trypanosomes.</obo:IAO_0000115>
         <obo:IAO_0000118>Tsetse flies</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-        <rdfs:label>Glossina</rdfs:label>
     </owl:Class>
     
 
