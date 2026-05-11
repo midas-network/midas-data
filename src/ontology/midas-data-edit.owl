@@ -2179,6 +2179,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115>Small proteinaceous infectious particles which resist inactivation by procedures that modify NUCLEIC ACIDS and contain an abnormal isoform of a cellular protein which is a major and necessary component. The abnormal (scrapie) isoform is PrPSc (PRPSC PROTEINS) and the cellular isoform PrPC (PRPC PROTEINS). The primary amino acid sequence of the two isoforms is identical. Human diseases caused by prions include CREUTZFELDT-JAKOB SYNDROME; GERSTMANN-STRAUSSLER SYNDROME; and INSOMNIA, FATAL FAMILIAL.</obo:IAO_0000115>
         <obo:IAO_0000118>Prion</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:label>Prion</rdfs:label>
     </owl:Class>
     
 
@@ -2304,6 +2305,18 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <obo:IAO_0000115>A class in the phylum MOLLUSCA comprised of SNAILS and slugs. The former have coiled external shells and the latter usually lack shells.</obo:IAO_0000115>
+        <obo:IAO_0000118>Gastropods</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:label>Gastropoda</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_666 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_666">
@@ -2325,13 +2338,73 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_70999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_70999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <obo:IAO_0000115>A subfamily of assassin bugs (REDUVIIDAE) that are obligate blood-suckers of vertebrates. Included are the genera TRIATOMA; RHODNIUS; and PANSTRONGYLUS, which are vectors of TRYPANOSOMA CRUZI, the agent of CHAGAS DISEASE in humans.</obo:IAO_0000115>
+        <obo:IAO_0000118>Kissing bugs</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:label>Triatominae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <obo:IAO_0000115>An order of the class Insecta. Wings, when present, number two and distinguish Diptera from other so-called flies, while the halteres, or reduced hindwings, separate Diptera from other insects with one pair of wings. The order includes the families Calliphoridae, Oestridae, Phoridae, SARCOPHAGIDAE, Scatophagidae, Sciaridae, SIMULIIDAE, Tabanidae, Therevidae, Trypetidae, CERATOPOGONIDAE; CHIRONOMIDAE; CULICIDAE; DROSOPHILIDAE; GLOSSINIDAE; MUSCIDAE; TEPHRITIDAE; and PSYCHODIDAE. The larval form of Diptera species are called maggots (see LARVA).</obo:IAO_0000115>
+        <obo:IAO_0000118>Flies</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:label>Dipteria</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_7157 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7157">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7147"/>
         <obo:IAO_0000115>A family of the order DIPTERA that comprises the mosquitoes. The larval stages are aquatic, and the adults can be recognized by the characteristic WINGS, ANIMAL venation, the scales along the wing veins, and the long proboscis. Many species are of particular medical importance.</obo:IAO_0000115>
         <obo:IAO_0000118>Mosquitos</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7147"/>
+        <obo:IAO_0000115>Small, hairy, moth-like flies which are of considerable public health importance as vectors of certain pathogenic organisms. Important disease-related genera are PHLEBOTOMUS, Lutzomyia, and Sergentomyia.</obo:IAO_0000115>
+        <obo:IAO_0000118>Sandflies</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:label>Phlebotominae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7147"/>
+        <obo:IAO_0000115>Bloodsucking flies of the genus Glossina, found primarily in equatorial Africa. Several species are intermediate hosts of trypanosomes.</obo:IAO_0000115>
+        <obo:IAO_0000118>Tsetse flies</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:label>Glossina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
+        <obo:IAO_0000115>An order of parasitic, blood-sucking, wingless INSECTS with the common name of fleas.</obo:IAO_0000115>
+        <obo:IAO_0000118>Fleas</obo:IAO_0000118>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:label>Siphonaptera</rdfs:label>
     </owl:Class>
     
 
