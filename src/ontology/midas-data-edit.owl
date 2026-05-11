@@ -2113,6 +2113,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <obo:IAO_0000115>A genus in the family FILOVIRIDAE consisting of several distinct species of Ebolavirus, each containing separate strains. These viruses cause outbreaks of a contagious, hemorrhagic disease (HEMORRHAGIC FEVER, EBOLA) in humans, usually with high mortality.</obo:IAO_0000115>
+        <obo:IAO_0000118>Ebolavirus</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
@@ -2176,6 +2177,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_36469">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
         <obo:IAO_0000115>Small proteinaceous infectious particles which resist inactivation by procedures that modify NUCLEIC ACIDS and contain an abnormal isoform of a cellular protein which is a major and necessary component. The abnormal (scrapie) isoform is PrPSc (PRPSC PROTEINS) and the cellular isoform PrPC (PRPC PROTEINS). The primary amino acid sequence of the two isoforms is identical. Human diseases caused by prions include CREUTZFELDT-JAKOB SYNDROME; GERSTMANN-STRAUSSLER SYNDROME; and INSOMNIA, FATAL FAMILIAL.</obo:IAO_0000115>
+        <obo:IAO_0000118>Prion</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
@@ -2266,6 +2268,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
         <obo:IAO_0000115>A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</obo:IAO_0000115>
+        <obo:IAO_0000118>Plasmodium</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
