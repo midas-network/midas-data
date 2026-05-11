@@ -2357,7 +2357,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115>An order of the class Insecta. Wings, when present, number two and distinguish Diptera from other so-called flies, while the halteres, or reduced hindwings, separate Diptera from other insects with one pair of wings. The order includes the families Calliphoridae, Oestridae, Phoridae, SARCOPHAGIDAE, Scatophagidae, Sciaridae, SIMULIIDAE, Tabanidae, Therevidae, Trypetidae, CERATOPOGONIDAE; CHIRONOMIDAE; CULICIDAE; DROSOPHILIDAE; GLOSSINIDAE; MUSCIDAE; TEPHRITIDAE; and PSYCHODIDAE. The larval form of Diptera species are called maggots (see LARVA).</obo:IAO_0000115>
         <obo:IAO_0000118>Flies</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-        <rdfs:label>Dipteria</rdfs:label>
+        <rdfs:label>Diptera</rdfs:label>
     </owl:Class>
     
 
