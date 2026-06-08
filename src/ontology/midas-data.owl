@@ -3800,6 +3800,34 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas113 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a population treatment census that is about one or more antibodies administrations of organisms in a population</obo:IAO_0000115>
+        <obo:IAO_0000118>Antibody Administration</obo:IAO_0000118>
+        <rdfs:label>antibody administration census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas114 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
+        <obo:IAO_0000115>An individual treatment control strategy that has as part an action specification that is realized in an antibody injection process.</obo:IAO_0000115>
+        <obo:IAO_0000118>Antibody</obo:IAO_0000118>
+        <rdfs:label>antibody control strategy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas12 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas12">
