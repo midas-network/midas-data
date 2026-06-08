@@ -17,11 +17,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2026-05-28/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2026-06-08/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2026-05-28</owl:versionInfo>
+        <owl:versionInfo>2026-06-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -310,6 +310,12 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#is_about -->
+
+    <owl:ObjectProperty rdf:about="http://midasnetwork.us/datasets#is_about"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002451 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002451">
@@ -375,6 +381,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An action specification giving the number of vaccinations possible in a population during a specific time interval.</obo:IAO_0000115>
         <obo:IAO_0000118>Vaccination Capacity</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">The counts of individuals that could be vaccinated in a population location per time step unit in the absence of any vaccine supply constraints.  It represents the capacity of medical system to vaccinate individuals.</obo:IAO_0000600>
@@ -484,6 +496,12 @@ While in many pieces of fiction the order in which the purely intentional entiti
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A census about a particular medical treatment of a population.</obo:IAO_0000115>
         <obo:IAO_0000118>Treatment Census</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">A census of a population that determines for a particular treatment whether each organism in the population has undergone that treatment.</obo:IAO_0000600>
@@ -844,6 +862,12 @@ While in many pieces of fiction the order in which the purely intentional entiti
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">school closure infectious disease control strategy census</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy census that is about school closure infectious disease control strategies implemented in a particular geographical region.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -858,6 +882,12 @@ While in many pieces of fiction the order in which the purely intentional entiti
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000607">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">population vaccination census</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">vaccine / immunization registry data, vaccination / immunization records extracted from an EHR</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A population treatment census that is about one or more vaccinations of organisms in a population.</obo:IAO_0000115>
@@ -887,6 +917,12 @@ While in many pieces of fiction the order in which the purely intentional entiti
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">census of supplies of vaccine products</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A control strategy inventory census that counts available vaccine doses of one or more similar vaccines.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -904,6 +940,12 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">census of facilities that conduct clinical laboratory tests</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A census of facilities that conduct clinical laboratory testing.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -919,6 +961,12 @@ By &quot;similar vaccines&quot; we typically mean same pathogen, but could be si
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000613">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">laboratory testing capacity action specification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An action specification giving the number of laboratory tests of a certain type that it is possible to perform in a given population during a specific time interval.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>

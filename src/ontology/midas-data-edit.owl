@@ -269,6 +269,12 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#is_about -->
+
+    <owl:ObjectProperty rdf:about="http://midasnetwork.us/datasets#is_about"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002451 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002451">
@@ -334,6 +340,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Capacity</obo:IAO_0000118>
     </owl:Class>
     
@@ -407,6 +419,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Treatment Census</obo:IAO_0000118>
     </owl:Class>
     
@@ -633,6 +651,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>School Closure Census</obo:IAO_0000118>
     </owl:Class>
     
@@ -641,7 +665,13 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000607">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Administration</obo:IAO_0000118>
     </owl:Class>
     
@@ -660,6 +690,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Supplies</obo:IAO_0000118>
     </owl:Class>
     
@@ -669,6 +705,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Laboratory Testing Facility</obo:IAO_0000118>
     </owl:Class>
     
@@ -678,6 +720,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000613">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Laboratory Testing Capacity</obo:IAO_0000118>
     </owl:Class>
     
