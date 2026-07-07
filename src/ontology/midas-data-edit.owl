@@ -343,7 +343,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Capacity</obo:IAO_0000118>
@@ -378,21 +378,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000136 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000136">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-        <obo:IAO_0000118>vaccination</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000142 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
         <obo:IAO_0000118>Vaccination</obo:IAO_0000118>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -422,19 +412,10 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>Treatment Census</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000194 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <obo:IAO_0000118>individual treatment</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -489,15 +470,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000286">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000229"/>
         <obo:IAO_0000118>Close Individual Places</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000304 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000304">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-        <obo:IAO_0000118>anti-infective treatment</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -669,7 +641,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Administration</obo:IAO_0000118>
@@ -693,7 +665,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Supplies</obo:IAO_0000118>
@@ -2873,10 +2845,35 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C35803 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C35803">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C49236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000118>treatment</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3311,16 +3308,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas113 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas114"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20401"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a population treatment census that is about one or more antibodies administrations of organisms in a population</obo:IAO_0000115>
-        <obo:IAO_0000118>Antibody Administration</obo:IAO_0000118>
-        <rdfs:label>antibody administration census</rdfs:label>
+        <obo:IAO_0000115>a population treatment census that is about one or more monoclonal antibodies administrations of organisms in a population</obo:IAO_0000115>
+        <obo:IAO_0000118>Monoclonal Antibody Administration</obo:IAO_0000118>
+        <rdfs:label>monoclonal antibody administration census</rdfs:label>
     </owl:Class>
     
 
@@ -3328,10 +3325,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas114 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas114">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-        <obo:IAO_0000115>An individual treatment control strategy that has as part an action specification that is realized in an antibody injection process.</obo:IAO_0000115>
-        <obo:IAO_0000118>Antibody</obo:IAO_0000118>
-        <rdfs:label>antibody control strategy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a population treatment census that is about one or more anti-infective administrations of organisms in a population</obo:IAO_0000115>
+        <obo:IAO_0000118>Anti-infective Administration</obo:IAO_0000118>
+        <rdfs:label>anti-infective administration census</rdfs:label>
     </owl:Class>
     
 
