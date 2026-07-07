@@ -17,11 +17,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2026-06-08/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2026-07-07/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2026-06-08</owl:versionInfo>
+        <owl:versionInfo>2026-07-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -384,7 +384,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An action specification giving the number of vaccinations possible in a population during a specific time interval.</obo:IAO_0000115>
@@ -439,29 +439,16 @@ While in many pieces of fiction the order in which the purely intentional entiti
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000136 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000136">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-        <obo:IAO_0000115 xml:lang="en">An individual treatment control strategy that has as part an action specification that is realized in a vaccination process.</obo:IAO_0000115>
-        <obo:IAO_0000118>vaccination</obo:IAO_0000118>
-        <obo:IAO_0000600 xml:lang="en">An individual treatment control strategy that administers one or more vaccines to individuals in a population with the goal of inducing resistance to infection with a particular pathogen in those individuals.</obo:IAO_0000600>
-        <rdfs:label xml:lang="en">vaccination control strategy</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000142 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
         <obo:IAO_0000115 xml:lang="en">A treatment that consists of the administration of antigenic material to stimulate an individual&apos;s immune system to develop adaptive immunity to a pathogen.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118>Vaccination</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">A treatment of an individual with antigenic material from a pathogen that has the goal of inducing resistance of the individual to infection with the pathogen.</obo:IAO_0000600>
         <apollo_sv:APOLLO_SV_0000040>Vaccination</apollo_sv:APOLLO_SV_0000040>
         <rdfs:label xml:lang="en">vaccination</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -499,7 +486,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A census about a particular medical treatment of a population.</obo:IAO_0000115>
@@ -507,21 +494,6 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <obo:IAO_0000600 xml:lang="en">A census of a population that determines for a particular treatment whether each organism in the population has undergone that treatment.</obo:IAO_0000600>
         <apollo_sv:APOLLO_SV_0000040>PopulationTreatmentCensus</apollo_sv:APOLLO_SV_0000040>
         <rdfs:label xml:lang="en">population treatment census</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000194 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <obo:IAO_0000112 xml:lang="en">vaccination control strategy, antiviral control strategy</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that immediately targets individuals.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118>individual treatment</obo:IAO_0000118>
-        <obo:IAO_0000600 xml:lang="en">An infectious disease control strategy that immediately targets individuals.</obo:IAO_0000600>
-        <apollo_sv:APOLLO_SV_0000040>IndividualTreatmentControlMeasure</apollo_sv:APOLLO_SV_0000040>
-        <rdfs:label xml:lang="en">individual treatment control strategy</rdfs:label>
     </owl:Class>
     
 
@@ -603,21 +575,6 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <obo:IAO_0000600 xml:lang="en">A place-closure control strategy that decides on a case-by-case basis whether to close places of a certain type, as opposed to blanket policy that closes all places of a certain type at the same time.</obo:IAO_0000600>
         <apollo_sv:APOLLO_SV_0000040>closeIndividualPlacesIndependently</apollo_sv:APOLLO_SV_0000040>
         <rdfs:label xml:lang="en">close individual places independently strategy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000304 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000304">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-        <obo:IAO_0000115 xml:lang="en">An individual treatment control strategy that has as part an action specification that is realized in anti-infective treatment.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <obo:IAO_0000118>anti-infective treatment</obo:IAO_0000118>
-        <obo:IAO_0000600 xml:lang="en">An anti-infective individual treatment control strategy that uses anti-infective medications to treat infected hosts in an attempt to limit their infectiousness and/or infectious period.</obo:IAO_0000600>
-        <apollo_sv:APOLLO_SV_0000040>DrugTreatmentControlStrategy</apollo_sv:APOLLO_SV_0000040>
-        <apollo_sv:APOLLO_SV_0000040>anti-infective control strategy</apollo_sv:APOLLO_SV_0000040>
-        <rdfs:label xml:lang="en">anti-infective individual treatment control strategy</rdfs:label>
     </owl:Class>
     
 
@@ -885,7 +842,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">population vaccination census</obo:IAO_0000111>
@@ -920,7 +877,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">census of supplies of vaccine products</obo:IAO_0000111>
@@ -3426,12 +3383,43 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
+        <obo:IAO_0000115>An antibody produced by a clone or genetically homogenous fast-growing cells i.e., hybridoma. Hybridoma cells are cloned to establish cell lines producing a specific antibody that is chemically and immunologically homogeneous. They are widely used in cancer detection, diagnosis, and treatment.</obo:IAO_0000115>
+        <rdfs:label>Monoclonal Antibody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
+        <obo:IAO_0000115>A pharmacological agent that can kill or prevent the reproduction of infectious organisms.</obo:IAO_0000115>
+        <rdfs:label>Anti-Infective Agent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C35803 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C35803">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
         <obo:IAO_0000115>Infection by an etiologic agent that can be passed between animals and humans.</obo:IAO_0000115>
         <rdfs:label>Zoonotic Infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C49236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000115>Medical care intended to treat or cure a condition or lessen its symptoms. This includes the administration of drugs, surgical procedures, physical or psychotherapy, or the use of therapeutic devices.</obo:IAO_0000115>
+        <obo:IAO_0000118>treatment</obo:IAO_0000118>
+        <rdfs:label>Therapeutic Procedure</rdfs:label>
     </owl:Class>
     
 
@@ -3876,16 +3864,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas113 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas114"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20401"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a population treatment census that is about one or more antibodies administrations of organisms in a population</obo:IAO_0000115>
-        <obo:IAO_0000118>Antibody Administration</obo:IAO_0000118>
-        <rdfs:label>antibody administration census</rdfs:label>
+        <obo:IAO_0000115>a population treatment census that is about one or more monoclonal antibodies administrations of organisms in a population</obo:IAO_0000115>
+        <obo:IAO_0000118>Monoclonal Antibody Administration</obo:IAO_0000118>
+        <rdfs:label>monoclonal antibody administration census</rdfs:label>
     </owl:Class>
     
 
@@ -3893,10 +3881,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas114 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas114">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-        <obo:IAO_0000115>An individual treatment control strategy that has as part an action specification that is realized in an antibody injection process.</obo:IAO_0000115>
-        <obo:IAO_0000118>Antibody</obo:IAO_0000118>
-        <rdfs:label>antibody control strategy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a population treatment census that is about one or more anti-infective administrations of organisms in a population</obo:IAO_0000115>
+        <obo:IAO_0000118>Anti-infective Administration</obo:IAO_0000118>
+        <rdfs:label>anti-infective administration census</rdfs:label>
     </owl:Class>
     
 
