@@ -614,6 +614,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Control Strategy Census</obo:IAO_0000118>
     </owl:Class>
     
