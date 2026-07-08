@@ -17,11 +17,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2026-07-07/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2026-07-08/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2026-07-07</owl:versionInfo>
+        <owl:versionInfo>2026-07-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3418,7 +3418,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49236">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
         <obo:IAO_0000115>Medical care intended to treat or cure a condition or lessen its symptoms. This includes the administration of drugs, surgical procedures, physical or psychotherapy, or the use of therapeutic devices.</obo:IAO_0000115>
-        <obo:IAO_0000118>treatment</obo:IAO_0000118>
+        <obo:IAO_0000118>Treatment</obo:IAO_0000118>
         <rdfs:label>Therapeutic Procedure</rdfs:label>
     </owl:Class>
     
