@@ -269,6 +269,12 @@
     
 
 
+    <!-- http://midasnetwork.us/datasets#is_about -->
+
+    <owl:ObjectProperty rdf:about="http://midasnetwork.us/datasets#is_about"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002451 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002451">
@@ -320,10 +326,26 @@
     
 
 
+    <!-- http://id.nlm.nih.gov/mesh/D063373 -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/D063373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000115>Practices involved in preventing the transmission of diseases by hand.</obo:IAO_0000115>
+        <rdfs:label>Hand Hygiene</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Capacity</obo:IAO_0000118>
     </owl:Class>
     
@@ -338,10 +360,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000118>Control Strategy</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000229"/>
+        <obo:IAO_0000118>School Closure</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000142 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
         <obo:IAO_0000118>Vaccination</obo:IAO_0000118>
     </owl:Class>
     
@@ -365,6 +405,48 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>Treatment Census</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000486"/>
+        <obo:IAO_0000118>Border Control</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000118>Place Closure</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000486"/>
+        <obo:IAO_0000118>Travel Restriction</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000237 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000237">
@@ -383,11 +465,38 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000229"/>
+        <obo:IAO_0000118>Close Individual Places</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000308 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000118>Vector Control</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000318 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000118>Drug Treatment</obo:IAO_0000118>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71902"/>
     </owl:Class>
     
 
@@ -397,6 +506,24 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000397">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
         <obo:IAO_0000118>Infection Case List</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000118>Travel-related Control Strategy</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000486"/>
+        <obo:IAO_0000118>Travel Recommendation</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -415,6 +542,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
         <obo:IAO_0000118>Mortality</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000118>Contact Tracing</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -478,7 +614,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000118>Control Strategy</obo:IAO_0000118>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>Control Strategy Census</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -487,7 +629,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <obo:IAO_0000118>School Closure</obo:IAO_0000118>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>School Closure Census</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -495,7 +643,13 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000607">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Administration</obo:IAO_0000118>
     </owl:Class>
     
@@ -513,7 +667,13 @@
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Vaccination Supplies</obo:IAO_0000118>
     </owl:Class>
     
@@ -523,6 +683,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Laboratory Testing Facility</obo:IAO_0000118>
     </owl:Class>
     
@@ -532,6 +698,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000613">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>Laboratory Testing Capacity</obo:IAO_0000118>
     </owl:Class>
     
@@ -560,6 +732,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000118>Wastewater</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000229"/>
+        <obo:IAO_0000118>Lockdown</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -596,6 +777,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000639">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
         <obo:IAO_0000118>Nirsevimab Vaccination</obo:IAO_0000118>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2555,6 +2737,30 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173636">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173747 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173747">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173748"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173748 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173748">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C173755 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173755">
@@ -2605,6 +2811,22 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C181548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C181548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18227">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas74"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C18769 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18769">
@@ -2629,10 +2851,35 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49236"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C35803 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C35803">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C49236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000118>Treatment</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2657,6 +2904,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71104">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71902 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71902">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
     </owl:Class>
     
 
@@ -3056,6 +3311,40 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas113 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20401"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a population treatment census that is about one or more monoclonal antibodies administrations of organisms in a population</obo:IAO_0000115>
+        <obo:IAO_0000118>Monoclonal Antibody Administration</obo:IAO_0000118>
+        <rdfs:label>monoclonal antibody administration census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas114 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000187"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://midasnetwork.us/datasets#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a population treatment census that is about one or more anti-infective administrations of organisms in a population</obo:IAO_0000115>
+        <obo:IAO_0000118>Anti-infective Administration</obo:IAO_0000118>
+        <rdfs:label>anti-infective administration census</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas12 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas12">
@@ -3401,7 +3690,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas45 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas45">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
         <obo:IAO_0000115>Events that were cancelled due to an outbreak</obo:IAO_0000115>
         <obo:IAO_0000118>Event Cancellations</obo:IAO_0000118>
         <rdfs:label xml:lang="en">event cancellations</rdfs:label>
@@ -3493,8 +3782,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas57 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas57">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <obo:IAO_0000115>Aggregate descriptions of multiple factors invovling susceptibility to outbreaks</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Aggregate descriptions of multiple factors involving susceptibility to outbreaks</obo:IAO_0000115>
         <obo:IAO_0000118>Risk Factors</obo:IAO_0000118>
         <rdfs:label xml:lang="en">risk factors</rdfs:label>
     </owl:Class>
@@ -3563,7 +3852,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas62 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas62">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Reports of policy violations</obo:IAO_0000115>
         <obo:IAO_0000118>Regulatory Complaints</obo:IAO_0000118>
         <rdfs:label xml:lang="en">regulatory complaints</rdfs:label>
@@ -3912,7 +4201,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas92 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas92">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
         <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention, public health considerations, etc.</obo:IAO_0000115>
         <rdfs:label>Wildlife Health Interventions</rdfs:label>
     </owl:Class>
