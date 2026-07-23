@@ -17,11 +17,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/datasets/midas-data.owl">
-        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2025-11-21/midas-data.owl"/>
+        <owl:versionIRI rdf:resource="http://midasnetwork.us/datasets/v2026-07-23/midas-data.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
-        <owl:versionInfo>2025-11-21</owl:versionInfo>
+        <owl:versionInfo>2026-07-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -384,8 +384,7 @@
 
 One property that seems to be common among simulations in comparison to many other fictions is the fact that the chronological order of the simulated purely intentional entities is not changed in the process of simulating.
 
-While in many pieces of fiction the order in which the purely intentional entities are created can vary, this is not the case for simulations.
-</rdfs:comment>
+While in many pieces of fiction the order in which the purely intentional entities are created can vary, this is not the case for simulations.</rdfs:comment>
         <rdfs:label xml:lang="en">simulation time series</rdfs:label>
     </owl:Class>
     
@@ -557,7 +556,6 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <obo:IAO_0000118>Treatment Facility</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">census of treatment facilities</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">treatment facilities census</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">treatment facility census</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">A census that counts the number of treatment facilities of some kind in a particular geographical region.</obo:IAO_0000600>
         <rdfs:comment xml:lang="en">NOTE: this class counts the facilities themselves, not patients (people) in those facilities.  For example, how many hospitals in a state.  Not how many patients are in a hospital or hospitals in a state.</rdfs:comment>
         <rdfs:label xml:lang="en">treatment facility census</rdfs:label>
@@ -571,7 +569,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
         <obo:IAO_0000111 xml:lang="en">dataset about hospital stays</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The datasets at this link are rdf:type this class: https://www.opendataphilly.org/dataset/covid-hospitalizations</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more hospital stays involving two or more patients.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A dataset that is about two or more hospital stays involving two or more patients.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>Hospitalization</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">hospital discharge dataset</obo:IAO_0000118>
@@ -588,7 +586,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000111 xml:lang="en">human daily movement behavior data set</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">https://www.google.com/covid19/mobility/</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a data set that is about the human daily movement behavior of the individual huamns in a given population.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about the human daily movement behavior of the individual huamns in a given population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>Human Movement</obo:IAO_0000118>
         <rdfs:label xml:lang="en">human daily movement data set</rdfs:label>
@@ -601,7 +599,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000603">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas79"/>
         <obo:IAO_0000111 xml:lang="en">potentially infectious contact process data set in a population</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">a data set that is about one or more potentially infectious contact processes in a population of host organisms.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about one or more potentially infectious contact processes in a population of host organisms.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">contact data set</obo:IAO_0000118>
         <rdfs:label xml:lang="en">potentially infectious contact data set</rdfs:label>
@@ -615,7 +613,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000111 xml:lang="en">infectious disease control strategy census</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">a census of infectious disease control strategies put into place to reduce infection acquisitions that are part of an infection in an ecosystem.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A census of infectious disease control strategies put into place to reduce infection acquisitions that are part of an infection in an ecosystem.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>Control Strategy</obo:IAO_0000118>
         <rdfs:label xml:lang="en">control strategy census</rdfs:label>
@@ -628,7 +626,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000111 xml:lang="en">school closure infectious disease control strategy census</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">an infectious disease control strategy census that is about school closure infectious disease control strategies implemented in a particular geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy census that is about school closure infectious disease control strategies implemented in a particular geographical region.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>School Closure</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">This class represents datasets about strategies for school closure.  Datasets about individual actual school closures go elsewhere.</rdfs:comment>
@@ -643,7 +641,7 @@ While in many pieces of fiction the order in which the purely intentional entiti
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
         <obo:IAO_0000111 xml:lang="en">population vaccination census</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">vaccine / immunization registry data, vaccination / immunization records extracted from an EHR</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a population treatment census that is about one or more vaccinations of organisms in a population.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A population treatment census that is about one or more vaccinations of organisms in a population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118>Vaccination Administration</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">vaccination census</obo:IAO_0000118>
@@ -1783,6 +1781,23 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005780 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1980442"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any infection caused by a virus of the genus Hantavirus, which is transmitted by aerosolized rodent excreta or rodent bites, that can result in a variety of clinical manifestations from hemorrhagic fever with renal syndrome to a pulmonary syndrome.</obo:IAO_0000115>
+        <obo:IAO_0000118>Hantavirus Infection</obo:IAO_0000118>
+        <rdfs:label>hantavirus infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0005790 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005790">
@@ -2512,8 +2527,19 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <obo:IAO_0000115>A genus in the family FILOVIRIDAE consisting of several distinct species of Ebolavirus, each containing separate strains. These viruses cause outbreaks of a contagious, hemorrhagic disease (HEMORRHAGIC FEVER, EBOLA) in humans, usually with high mortality.</obo:IAO_0000115>
+        <obo:IAO_0000118>Ebolavirus</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-        <rdfs:label>Ebolavirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1980442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1980442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A genus of the family BUNYAVIRIDAE causing HANTAVIRUS INFECTIONS, first identified during the Korean war. Infection is found primarily in rodents and humans. Transmission does not appear to involve arthropods. HANTAAN VIRUS is the type species.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:label>Orthohantavirus</rdfs:label>
     </owl:Class>
     
 
@@ -2571,7 +2597,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115>A genus of FLAVIVIRIDAE causing parenterally-transmitted HEPATITIS C which is associated with transfusions and drug abuse. Hepatitis C virus is the type species.</obo:IAO_0000115>
         <obo:IAO_0000118>Hepatitis C virus</obo:IAO_0000118>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-        <rdfs:label>Hepacivirus hominis</rdfs:label>
+        <rdfs:label>Orthohepacivirus hominis</rdfs:label>
     </owl:Class>
     
 
@@ -2670,7 +2696,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
         <obo:IAO_0000115>A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</obo:IAO_0000115>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
-        <rdfs:label>Plasmodium</rdfs:label>
+        <rdfs:label>Plasmodium &lt;genus&gt;</rdfs:label>
     </owl:Class>
     
 
@@ -2913,7 +2939,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000115>A computer application that requires with an active internet connection and that uses HTTP as its primary communications protocol.</obo:IAO_0000115>
+        <obo:IAO_0000115>A computer application that requires an active internet connection and that uses HTTP as its primary communications protocol.</obo:IAO_0000115>
         <rdfs:label>Web Application</rdfs:label>
     </owl:Class>
     
