@@ -1461,6 +1461,21 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005780 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1980442"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>Hantavirus Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0005790 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005790">
@@ -2113,6 +2128,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_186536">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <obo:IAO_0000115>A genus in the family FILOVIRIDAE consisting of several distinct species of Ebolavirus, each containing separate strains. These viruses cause outbreaks of a contagious, hemorrhagic disease (HEMORRHAGIC FEVER, EBOLA) in humans, usually with high mortality.</obo:IAO_0000115>
+        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1980442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1980442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+        <obo:IAO_0000115>A genus of the family BUNYAVIRIDAE causing HANTAVIRUS INFECTIONS, first identified during the Korean war. Infection is found primarily in rodents and humans. Transmission does not appear to involve arthropods. HANTAAN VIRUS is the type species.</obo:IAO_0000115>
         <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
     
