@@ -3101,6 +3101,17 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas161 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas161">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
+        <obo:IAO_0000115 xml:lang="en">Resources focused on educational or instructional content</obo:IAO_0000115>
+        <obo:IAO_0000118>Educational Resource</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">educational resource</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas17 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
