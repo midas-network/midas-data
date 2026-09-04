@@ -111,19 +111,19 @@ midas-data.owl: $(SRC) $(IMPORTS) $(MIRRORS) | build/robot.jar
 
 .PHONY: zip_ontologies
 zip_ontologies: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl #$(MIRRORDIR)/ncit.owl
-	@echo "-- Zipping all ontologies in $(MIRRORDIR) and $(IMPORTDIR) --"
+	@echo "-- Zipping all ontologies in $(MIRRORDIR) --" #and $(IMPORTDIR) --"
 	for f in mirror/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
 	@echo "Zipped ontologies in $(MIRRORDIR) to $(MIRRORDIR).zip"
-	for f in imports/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
-	@echo "Zipped all ontologies in $(IMPORTDIR) to $(IMPORTDIR).zip"
+#	for f in imports/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
+#	@echo "Zipped all ontologies in $(IMPORTDIR) to $(IMPORTDIR).zip"
 
 .PHONY: delete_owl_files
 delete_owl_files: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl #$(MIRRORDIR)/ncit.owl
-	@echo "-- Deleting all owl files in $(MIRRORDIR) and $(IMPORTDIR) --"
+	@echo "-- Deleting all owl files in $(MIRRORDIR) --" # and $(IMPORTDIR) --"
 	rm -f $(MIRRORDIR)/*.owl
 	@echo "Deleted all owl files in $(MIRRORDIR)"
-	rm -f $(IMPORTDIR)/*.owl
-	@echo "Deleted all owl files in $(IMPORTDIR)"
+#	rm -f $(IMPORTDIR)/*.owl
+#	@echo "Deleted all owl files in $(IMPORTDIR)"
 
 
 .PHONY: prepare_release
