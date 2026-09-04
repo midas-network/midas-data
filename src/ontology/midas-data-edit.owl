@@ -708,6 +708,32 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240</obo:IAO_0000116>
+        <obo:IAO_0000116>Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</obo:IAO_0000116>
+        <obo:IAO_0000600>A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_60816 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60816">
@@ -866,6 +892,23 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <rdfs:label xml:lang="en">software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
     
 
@@ -2723,9 +2766,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONTOAVIDA_00000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000115>An executable file is a digital file that executes a process.</obo:IAO_0000115>
-        <obo:IAO_0000118>Executable File</obo:IAO_0000118>
-        <rdfs:label>executable file</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An executable file is a digital file that executes a process.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Executable File</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">executable file</rdfs:label>
     </owl:Class>
     
 
@@ -2841,8 +2884,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas10 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas10">
-        <obo:IAO_0000115>Descriptors of the data found in the dataset - broadly categorizing the entries that might be annotated with this model</obo:IAO_0000115>
-        <obo:IAO_0000118>Digital Object Type</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">Descriptors - broadly categorizing the entries that might be annotated with this model</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Digital Object Type</obo:IAO_0000118>
         <rdfs:label xml:lang="en">digital object type</rdfs:label>
     </owl:Class>
     
@@ -2958,9 +3002,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas11">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115>A collection of links to other data items, often found in external repositories. No claims are made as to the format or consistency of the items associated with those links.</obo:IAO_0000115>
-        <obo:IAO_0000118>Catalog</obo:IAO_0000118>
-        <rdfs:comment>Probably should link to some external dataset.</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A collection of links to other items, often found in external repositories. No claims are made as to the format or consistency of the items associated with those links.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Catalog</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">Probably should link to some external dataset.</rdfs:comment>
         <rdfs:label xml:lang="en">catalog</rdfs:label>
     </owl:Class>
     
@@ -3001,9 +3045,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas12">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115>An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counts and forecats.</obo:IAO_0000115>
-        <obo:IAO_0000118>Dashboard</obo:IAO_0000118>
-        <rdfs:comment>link to some existing ontological term?</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counts and forecast.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Dashboard</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">link to some existing ontological term?</rdfs:comment>
         <rdfs:label xml:lang="en">dashboard</rdfs:label>
     </owl:Class>
     
@@ -3218,8 +3262,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas30">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
-        <obo:IAO_0000115>Papers describing modeling studies</obo:IAO_0000115>
-        <obo:IAO_0000118>Modeling Studies</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">Papers describing modeling studies</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Modeling Studies</obo:IAO_0000118>
         <rdfs:label xml:lang="en">modeling studies</rdfs:label>
     </owl:Class>
     
@@ -3229,8 +3273,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas32">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115>A collection of information in various types of structured or non-structured formats</obo:IAO_0000115>
-        <obo:IAO_0000118>Repository</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A collection of information in various types of structured or non-structured formats</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Repository</obo:IAO_0000118>
         <rdfs:label xml:lang="en">repository</rdfs:label>
     </owl:Class>
     
@@ -3240,8 +3284,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas33">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
-        <obo:IAO_0000115>A catalog focused on a specific disease</obo:IAO_0000115>
-        <obo:IAO_0000118>Disease-Specific Collection</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A catalog focused on a specific disease</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Disease-Specific Collection</obo:IAO_0000118>
         <rdfs:label xml:lang="en">disease-specific collection</rdfs:label>
     </owl:Class>
     
@@ -3377,8 +3421,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas5 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas5">
-        <obo:IAO_0000115>The &quot;domain&quot; of the entity - specifically, the focus of the data contained therein.</obo:IAO_0000115>
-        <obo:IAO_0000118>Biological Scale</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">The &quot;domain&quot; of the entity - specifically, the focus of the data contained therein.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Biological Scale</obo:IAO_0000118>
         <rdfs:label xml:lang="en">biological scale</rdfs:label>
     </owl:Class>
     
@@ -3585,8 +3630,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas7">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas11"/>
-        <obo:IAO_0000115>Collections of entities from the research literature, or derived from the literature.</obo:IAO_0000115>
-        <obo:IAO_0000118>Literature</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">Collections of entities from the research literature, or derived from the literature.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Literature</obo:IAO_0000118>
         <rdfs:label xml:lang="en">literature</rdfs:label>
     </owl:Class>
     
@@ -3699,8 +3744,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas8">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas5"/>
-        <obo:IAO_0000115>Items referring to sequence-level data, including genomics, microbiomics, proteomics, etc.</obo:IAO_0000115>
-        <obo:IAO_0000118>Molecular</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">Items referring to sequence-level, including genomics, microbiomics, proteomics, etc.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Molecular</obo:IAO_0000118>
         <rdfs:label xml:lang="en">molecular</rdfs:label>
     </owl:Class>
     
@@ -3821,8 +3866,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas9">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas5"/>
-        <obo:IAO_0000115>Items corresponding to entire populations or subpopulations. Might be geographically or temporally temporally limited.</obo:IAO_0000115>
-        <obo:IAO_0000118>Population</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">Items corresponding to entire populations or subpopulations. Might be geographically or temporally temporally limited.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Population</obo:IAO_0000118>
         <rdfs:label xml:lang="en">population</rdfs:label>
     </owl:Class>
     
