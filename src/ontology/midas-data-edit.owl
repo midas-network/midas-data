@@ -20,6 +20,7 @@
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/mondo_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncit_import.owl"/>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
