@@ -25,7 +25,7 @@ SHELL := bash
 ### Definitions
 
 OBO     := http://purl.obolibrary.org/obo
-MIDAS	:= http://midasnetwork.us/datasets
+MIDAS	:= http://midasnetwork.us/ontology
 TODAY   := $(shell date +%Y-%m-%d)
 
 ### Release files

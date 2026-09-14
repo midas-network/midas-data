@@ -17,10 +17,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/ontology/midas-data.owl">
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl"/>
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/mondo_import.owl"/>
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl"/>
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncit_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/apollo-sv_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/mondo_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncbitaxon_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncit_import.owl"/>
         <dc:creator>MIDAS Coordination Center</dc:creator>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
