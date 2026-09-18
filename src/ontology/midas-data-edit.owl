@@ -266,8 +266,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-  
-
     
 
 
@@ -354,6 +352,8 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
+    
 
 
     <!-- http://edamontology.org/operation_0324 -->
@@ -1448,6 +1448,30 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000111 xml:lang="en">report</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: comment from Darren Natale: I am slightly uneasy with the sentence &quot;Topic of the report is on 
+something that has completed.&quot;  Should it be restricted to those things 
+that are completed?  For example, a progress report is (usually) about 
+something that definitely has *not* been completed, or may include 
+(only) projections.  I think the definition would not suffer if the 
+whole sentence is deleted.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: this was report of results with definition: A report is a narrative object that is a formal statement of the results of an investigation, or of any matter on which definite information is required, made by some person or body instructed or required to do so.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by &apos;document&apos;. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000099</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">report</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
@@ -1512,6 +1536,18 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">document</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A journal article, patent application, laboratory notebook, or a book</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A collection of information content entities intended to be understood together as a whole</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">document</rdfs:label>
     </owl:Class>
     
 
@@ -3669,9 +3705,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas109 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas109">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>Variability or diversity within a population that can influence their health outcomes, risk factors, and response to interventions</obo:IAO_0000115>
-        <rdfs:label>Health Heterogeneity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about variability or diversity within a population that can influence their health outcomes, risk factors, and response to interventions</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health heterogeneity data set</rdfs:label>
     </owl:Class>
     
 
@@ -4392,7 +4428,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas43 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas43">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas109"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>includes social, economic, also mental health impact</obo:IAO_0000115>
         <obo:IAO_0000118>Socio-economic Impacts</obo:IAO_0000118>
         <rdfs:label>socio-economic impacts</rdfs:label>
@@ -4502,9 +4538,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas57 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas57">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas109"/>
         <obo:IAO_0000115>Aggregate descriptions of multiple factors invovling susceptibility to outbreaks</obo:IAO_0000115>
         <obo:IAO_0000118>Risk Factors</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">risk factors</rdfs:label>
+        <rdfs:label xml:lang="en">risk factor data set</rdfs:label>
     </owl:Class>
     
 
@@ -4571,8 +4608,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas62 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas62">
-        <obo:IAO_0000115>Reports of policy violations</obo:IAO_0000115>
-        <obo:IAO_0000118>Regulatory Complaints</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
+        <obo:IAO_0000115 xml:lang="en">Reports of policy violations</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Regulatory Complaints</obo:IAO_0000118>
         <rdfs:label xml:lang="en">regulatory complaints</rdfs:label>
     </owl:Class>
     
