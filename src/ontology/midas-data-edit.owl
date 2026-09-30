@@ -20,7 +20,7 @@
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/mondo_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl"/>
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncit_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncit_import.owl"/>
         <dc:creator>MIDAS Coordination Center</dc:creator>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
@@ -455,6 +455,14 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000139 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000139">
@@ -510,6 +518,41 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000189">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000007"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -580,6 +623,14 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000286">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000229"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
     </owl:Class>
     
 
@@ -889,6 +940,14 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000620">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000621 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000621">
@@ -1059,6 +1118,14 @@ Every behaviour is associated with mental processes, but not every mental proces
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000652">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000650"/>
         <obo:IAO_0000118>Intent to Have a Child Vaccinated</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
     </owl:Class>
     
 
@@ -5114,73 +5181,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000115>intra-host models are mathematical models focusing on the dynamics of an infection within a single individual host</obo:IAO_0000115>
         <obo:IAO_0000118>Intra-host Modeling</obo:IAO_0000118>
         <rdfs:label>Intra-host modeling</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000136 -->
-
-    <owl:Class rdf:about="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000136">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000194 -->
-
-    <owl:Class rdf:about="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000007"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000304 -->
-
-    <owl:Class rdf:about="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000304">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000620 -->
-
-    <owl:Class rdf:about="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000620">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000656 -->
-
-    <owl:Class rdf:about="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000656">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
     </owl:Class>
     
 
