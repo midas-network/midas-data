@@ -613,7 +613,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000238 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000238">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <obo:IAO_0000118>Host</obo:IAO_0000118>
     </owl:Class>
     
@@ -2691,7 +2691,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Minute infectious agents whose genomes are composed of DNA or RNA, but not both. They are characterized by a lack of independent metabolism and the inability to replicate outside living host cells.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2707,7 +2707,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10244"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A species of ORTHOPOXVIRUS that is the etiological agent of MPOX, MONKEYPOX.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2722,7 +2722,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10255"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A species of ORTHOPOXVIRUS causing infections in humans. No infections have been reported since 1977 and the virus is now believed to be virtually extinct.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2738,7 +2738,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10335"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">The type species of VARICELLOVIRUS causing CHICKENPOX (varicella) and HERPES ZOSTER (shingles) in humans.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2753,7 +2753,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10407"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">The type species of the genus ORTHOHEPADNAVIRUS which causes human HEPATITIS B and is also apparently a causal agent in human HEPATOCELLULAR CARCINOMA. The Dane particle is an intact hepatitis virion, named after its discoverer. Non-infectious spherical and tubular particles are also seen in the serum.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2768,7 +2768,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11041"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">The type (and only) species of RUBIVIRUS causing acute infection in humans, primarily children and young adults. Humans are the only natural host. A live, attenuated vaccine is available for prophylaxis.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2783,7 +2783,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11082"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A species of FLAVIVIRUS, one of the Japanese encephalitis virus group (ENCEPHALITIS VIRUSES, JAPANESE). It can infect birds and mammals. In humans, it is seen most frequently in Africa, Asia, and Europe presenting as a silent infection or undifferentiated fever (WEST NILE FEVER). The virus appeared in North America for the first time in 1999. It is transmitted mainly by CULEX spp mosquitoes which feed primarily on birds, but it can also be carried by the Asian Tiger mosquito, AEDES albopictus, which feeds mainly on mammals.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2798,7 +2798,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11089"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">The type species of the FLAVIVIRUS genus. Principal vector transmission to humans is by AEDES spp. mosquitoes.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2814,7 +2814,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11234"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">The type species of MORBILLIVIRUS and the cause of the highly infectious human disease MEASLES, which affects mostly children.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2829,7 +2829,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11250"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">The type species of PNEUMOVIRUS and an important cause of lower respiratory disease in infants and young children. It frequently presents with bronchitis and bronchopneumonia and is further characterized by fever, cough, dyspnea, wheezing, and pallor.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2845,7 +2845,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11309"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Unidentified influenza virus is a species of ssRNA(-) virus in the family Orthomyxoviridae.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2860,7 +2860,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11320"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">The type species of the genus ALPHAINFLUENZAVIRUS that causes influenza and other diseases in humans and animals. Antigenic variation occurs frequently between strains, allowing classification into subtypes and variants. Transmission is usually by aerosol (human and most non-aquatic hosts) or waterborne (ducks). Infected birds shed the virus in their saliva, nasal secretions, and feces.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2875,7 +2875,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11520"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Species of the genus BETAINFLUENZAVIRUS that cause HUMAN INFLUENZA and other diseases primarily in humans. Antigenic variation is less extensive than in type A viruses (INFLUENZA A VIRUS) and consequently there is no basis for distinct subtypes or variants. Epidemics are less likely than with INFLUENZA A VIRUS and there have been no pandemics. Previously only found in humans, Influenza B virus has been isolated from seals which may constitute the animal reservoir from which humans are exposed.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2908,7 +2908,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12059"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A genus of the family PICORNAVIRIDAE whose members preferentially inhabit the intestinal tract of a variety of hosts. The genus contains many species. Newly described members of human enteroviruses are assigned continuous numbers with the species designated human enterovirus.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2923,7 +2923,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12637"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A species of the genus FLAVIVIRUS which causes an acute febrile and sometimes hemorrhagic disease in man. Dengue is mosquito-borne and four serotypes are known.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2938,7 +2938,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Human immunodeficiency virus. A non-taxonomic and historical term referring to any of two species, specifically HIV-1 and/or HIV-2. Prior to 1986, this was called human T-lymphotropic virus type III/lymphadenopathy-associated virus (HTLV-III/LAV). From 1986-1990, it was an official species called HIV. Since 1991, HIV was no longer considered an official species name; the two species were designated HIV-1 and HIV-2.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2947,9 +2947,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1280">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>Potentially pathogenic bacteria found in nasal membranes, skin, hair follicles, and perineum of warm-blooded animals. They may cause a wide range of infections and intoxications.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">Potentially pathogenic bacteria found in nasal membranes, skin, hair follicles, and perineum of warm-blooded animals. They may cause a wide range of infections and intoxications.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1280"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Potentially pathogenic bacteria found in nasal membranes, skin, hair follicles, and perineum of warm-blooded animals. They may cause a wide range of infections and intoxications.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -2957,9 +2962,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A gram-positive organism found in the upper respiratory tract, inflammatory exudates, and various body fluids of normal and/or diseased humans and, rarely, domestic animals.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A gram-positive organism found in the upper respiratory tract, inflammatory exudates, and various body fluids of normal and/or diseased humans and, rarely, domestic animals.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1313"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A gram-positive organism found in the upper respiratory tract, inflammatory exudates, and various body fluids of normal and/or diseased humans and, rarely, domestic animals.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -2967,9 +2977,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A genus of gram-negative, anaerobic, helical bacteria, various species of which produce RELAPSING FEVER in humans and other animals.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A genus of gram-negative, anaerobic, helical bacteria, various species of which produce RELAPSING FEVER in humans and other animals.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_138"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A genus of gram-negative, anaerobic, helical bacteria, various species of which produce RELAPSING FEVER in humans and other animals.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -2984,7 +2999,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_138950"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A species of ENTEROVIRUS infecting humans and containing 11 serotypes, all coxsackieviruses.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2993,9 +3008,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1392">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A species of bacteria that causes ANTHRAX in humans and animals.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A species of bacteria that causes ANTHRAX in humans and animals.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1392"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A species of bacteria that causes ANTHRAX in humans and animals.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3003,9 +3023,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1513">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>The cause of TETANUS in humans and domestic animals. It is a common inhabitant of human and horse intestines as well as soil. Two components make up its potent exotoxin activity, a neurotoxin and a hemolytic toxin.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">The cause of TETANUS in humans and domestic animals. It is a common inhabitant of human and horse intestines as well as soil. Two components make up its potent exotoxin activity, a neurotoxin and a hemolytic toxin.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1513"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">The cause of TETANUS in humans and domestic animals. It is a common inhabitant of human and horse intestines as well as soil. Two components make up its potent exotoxin activity, a neurotoxin and a hemolytic toxin.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3013,9 +3038,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_160">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>The causative agent of venereal and non-venereal syphilis as well as yaws.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">The causative agent of venereal and non-venereal syphilis as well as yaws.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_160"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">The causative agent of venereal and non-venereal syphilis as well as yaws.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3023,9 +3053,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1639">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A species of gram-positive, rod-shaped bacteria widely distributed in nature. It has been isolated from sewage, soil, silage, and from feces of healthy animals and man. Infection with this bacterium leads to encephalitis, meningitis, endocarditis, and abortion.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A species of gram-positive, rod-shaped bacteria widely distributed in nature. It has been isolated from sewage, soil, silage, and from feces of healthy animals and man. Infection with this bacterium leads to encephalitis, meningitis, endocarditis, and abortion.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1639"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A species of gram-positive, rod-shaped bacteria widely distributed in nature. It has been isolated from sewage, soil, silage, and from feces of healthy animals and man. Infection with this bacterium leads to encephalitis, meningitis, endocarditis, and abortion.</owl:annotatedTarget>
+        <oboInOwl:source>From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3033,9 +3068,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1717">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A species of gram-positive, asporogenous bacteria in which three cultural types are recognized. These types (gravis, intermedius, and mitis) were originally given in accordance with the clinical severity of the cases from which the different strains were most frequently isolated. This species is the causative agent of DIPHTHERIA.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A species of gram-positive, asporogenous bacteria in which three cultural types are recognized. These types (gravis, intermedius, and mitis) were originally given in accordance with the clinical severity of the cases from which the different strains were most frequently isolated. This species is the causative agent of DIPHTHERIA.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1717"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A species of gram-positive, asporogenous bacteria in which three cultural types are recognized. These types (gravis, intermedius, and mitis) were originally given in accordance with the clinical severity of the cases from which the different strains were most frequently isolated. This species is the causative agent of DIPHTHERIA.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3043,9 +3083,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1773">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A species of gram-positive, aerobic bacteria that produces TUBERCULOSIS in humans, other primates, CATTLE; DOGS; and some other animals which have contact with humans. Growth tends to be in serpentine, cordlike masses in which the bacilli show a parallel orientation.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A species of gram-positive, aerobic bacteria that produces TUBERCULOSIS in humans, other primates, CATTLE; DOGS; and some other animals which have contact with humans. Growth tends to be in serpentine, cordlike masses in which the bacilli show a parallel orientation.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1773"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A species of gram-positive, aerobic bacteria that produces TUBERCULOSIS in humans, other primates, CATTLE; DOGS; and some other animals which have contact with humans. Growth tends to be in serpentine, cordlike masses in which the bacilli show a parallel orientation.</owl:annotatedTarget>
+        <oboInOwl:source>From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3059,7 +3104,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A genus in the family FILOVIRIDAE consisting of several distinct species of Ebolavirus, each containing separate strains. These viruses cause outbreaks of a contagious, hemorrhagic disease (HEMORRHAGIC FEVER, EBOLA) in humans, usually with high mortality.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -3074,7 +3119,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1980442"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A genus of the family BUNYAVIRIDAE causing HANTAVIRUS INFECTIONS, first identified during the Korean war. Infection is found primarily in rodents and humans. Transmission does not appear to involve arthropods. HANTAAN VIRUS is the type species.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -3082,10 +3127,15 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <obo:IAO_0000115>One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000116 xml:lang="en">One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3099,7 +3149,22 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_208726"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A strain of HEPATITIS A VIRUS which causes hepatitis in humans. The virus replicates in hepatocytes and is presumed to reach the intestine via the bile duct. Transmission occurs by the fecal-oral route.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000116 xml:lang="en">One of the three domains of life (the others being BACTERIA and Eukarya), formerly called Archaebacteria under the taxon Bacteria, but now considered separate and distinct. They are characterized by: (1) the presence of characteristic tRNAs and ribosomal RNAs; (2) the absence of peptidoglycan cell walls; (3) the presence of ether-linked lipids built from branched-chain subunits; and (4) their occurrence in unusual habitats. While archaea resemble bacteria in morphology and genomic organization, they resemble eukarya in their method of genomic replication. The domain contains at least four kingdoms: CRENARCHAEOTA; EURYARCHAEOTA; NANOARCHAEOTA; and KORARCHAEOTA.</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">One of the three domains of life (the others being BACTERIA and Eukarya), formerly called Archaebacteria under the taxon Bacteria, but now considered separate and distinct. They are characterized by: (1) the presence of characteristic tRNAs and ribosomal RNAs; (2) the absence of peptidoglycan cell walls; (3) the presence of ether-linked lipids built from branched-chain subunits; and (4) their occurrence in unusual habitats. While archaea resemble bacteria in morphology and genomic organization, they resemble eukarya in their method of genomic replication. The domain contains at least four kingdoms: CRENARCHAEOTA; EURYARCHAEOTA; NANOARCHAEOTA; and KORARCHAEOTA.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -3115,7 +3180,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2560602"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">The type species of RUBULAVIRUS that causes an acute infectious disease in humans, affecting mainly children. Transmission occurs by droplet infection.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -3131,7 +3196,22 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A species of BETACORONAVIRUS causing atypical respiratory disease (COVID-19) in humans. The organism was first identified in 2019 in Wuhan, China. The natural host is the Chinese intermediate horseshoe bat, RHINOLOPHUS affinis.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000116 xml:lang="en">One of the three domains of life (the others being BACTERIA and ARCHAEA), also called Eukarya. These are organisms whose cells are enclosed in membranes and possess a nucleus. They comprise almost all multicellular and many unicellular organisms, and are traditionally divided into groups (sometimes called kingdoms) including ANIMALS; PLANTS; FUNGI; and various algae and other taxa that were previously part of the old kingdom Protista.</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">One of the three domains of life (the others being BACTERIA and ARCHAEA), also called Eukarya. These are organisms whose cells are enclosed in membranes and possess a nucleus. They comprise almost all multicellular and many unicellular organisms, and are traditionally divided into groups (sometimes called kingdoms) including ANIMALS; PLANTS; FUNGI; and various algae and other taxa that were previously part of the old kingdom Protista.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -3147,7 +3227,22 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3052230"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A genus of FLAVIVIRIDAE causing parenterally-transmitted HEPATITIS C which is associated with transfusions and drug abuse. Hepatitis C virus is the type species.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_36469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_36469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000116 xml:lang="en">Small proteinaceous infectious particles which resist inactivation by procedures that modify NUCLEIC ACIDS and contain an abnormal isoform of a cellular protein which is a major and necessary component. The abnormal (scrapie) isoform is PrPSc (PRPSC PROTEINS) and the cellular isoform PrPC (PRPC PROTEINS). The primary amino acid sequence of the two isoforms is identical. Human diseases caused by prions include CREUTZFELDT-JAKOB SYNDROME; GERSTMANN-STRAUSSLER SYNDROME; and INSOMNIA, FATAL FAMILIAL.</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_36469"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Small proteinaceous infectious particles which resist inactivation by procedures that modify NUCLEIC ACIDS and contain an abnormal isoform of a cellular protein which is a major and necessary component. The abnormal (scrapie) isoform is PrPSc (PRPSC PROTEINS) and the cellular isoform PrPC (PRPC PROTEINS). The primary amino acid sequence of the two isoforms is identical. Human diseases caused by prions include CREUTZFELDT-JAKOB SYNDROME; GERSTMANN-STRAUSSLER SYNDROME; and INSOMNIA, FATAL FAMILIAL.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -3162,7 +3257,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_37124"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">A species of ALPHAVIRUS causing an acute dengue-like fever.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -3171,19 +3266,29 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_445">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>Gram-negative aerobic rods, isolated from surface water or thermally polluted lakes or streams. Member are pathogenic for man. Legionella pneumophila is the causative agent for LEGIONNAIRES&apos; DISEASE.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">Gram-negative aerobic rods, isolated from surface water or thermally polluted lakes or streams. Member are pathogenic for man. Legionella pneumophila is the causative agent for LEGIONNAIRES&apos; DISEASE.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_445"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Gram-negative aerobic rods, isolated from surface water or thermally polluted lakes or streams. Member are pathogenic for man. Legionella pneumophila is the causative agent for LEGIONNAIRES&apos; DISEASE.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_4751 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4751">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <obo:IAO_0000115>A kingdom of eukaryotic, heterotrophic organisms that live parasitically as saprobes, including MUSHROOMS; YEASTS; smuts, molds, etc. They reproduce either sexually or asexually, and have life cycles that range from simple to complex. Filamentous fungi, commonly known as molds, refer to those that grow as multicellular colonies.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000116 xml:lang="en">A kingdom of eukaryotic, heterotrophic organisms that live parasitically as saprobes, including MUSHROOMS; YEASTS; smuts, molds, etc. They reproduce either sexually or asexually, and have life cycles that range from simple to complex. Filamentous fungi, commonly known as molds, refer to those that grow as multicellular colonies.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A kingdom of eukaryotic, heterotrophic organisms that live parasitically as saprobes, including MUSHROOMS; YEASTS; smuts, molds, etc. They reproduce either sexually or asexually, and have life cycles that range from simple to complex. Filamentous fungi, commonly known as molds, refer to those that grow as multicellular colonies.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3191,9 +3296,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_485">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A species of gram-negative, aerobic bacteria primarily found in purulent venereal discharges. It is the causative agent of GONORRHEA.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A species of gram-negative, aerobic bacteria primarily found in purulent venereal discharges. It is the causative agent of GONORRHEA.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_485"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A species of gram-negative, aerobic bacteria primarily found in purulent venereal discharges. It is the causative agent of GONORRHEA.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3201,9 +3311,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_487">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A species of gram-negative, aerobic BACTERIA. It is a commensal and pathogen only of humans, and can be carried asymptomatically in the NASOPHARYNX. When found in cerebrospinal fluid it is the causative agent of cerebrospinal meningitis (MENINGITIS, MENINGOCOCCAL). It is also found in venereal discharges and blood. There are at least 13 serogroups based on antigenic differences in the capsular polysaccharides; the ones causing most meningitis infections being A, B, C, Y, and W-135. Each serogroup can be further classified by serotype, serosubtype, and immunotype.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A species of gram-negative, aerobic BACTERIA. It is a commensal and pathogen only of humans, and can be carried asymptomatically in the NASOPHARYNX. When found in cerebrospinal fluid it is the causative agent of cerebrospinal meningitis (MENINGITIS, MENINGOCOCCAL). It is also found in venereal discharges and blood. There are at least 13 serogroups based on antigenic differences in the capsular polysaccharides; the ones causing most meningitis infections being A, B, C, Y, and W-135. Each serogroup can be further classified by serotype, serosubtype, and immunotype.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_487"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A species of gram-negative, aerobic BACTERIA. It is a commensal and pathogen only of humans, and can be carried asymptomatically in the NASOPHARYNX. When found in cerebrospinal fluid it is the causative agent of cerebrospinal meningitis (MENINGITIS, MENINGOCOCCAL). It is also found in venereal discharges and blood. There are at least 13 serogroups based on antigenic differences in the capsular polysaccharides; the ones causing most meningitis infections being A, B, C, Y, and W-135. Each serogroup can be further classified by serotype, serosubtype, and immunotype.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3211,9 +3326,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_520">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A species of gram-negative, aerobic bacteria that is the causative agent of WHOOPING COUGH. Its cells are minute coccobacilli that are surrounded by a slime sheath.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A species of gram-negative, aerobic bacteria that is the causative agent of WHOOPING COUGH. Its cells are minute coccobacilli that are surrounded by a slime sheath.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_520"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A species of gram-negative, aerobic bacteria that is the causative agent of WHOOPING COUGH. Its cells are minute coccobacilli that are surrounded by a slime sheath.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3221,9 +3341,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5500">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
-        <obo:IAO_0000115>A mitosporic fungal genus which causes COCCIDIOIDOMYCOSIS.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A mitosporic fungal genus which causes COCCIDIOIDOMYCOSIS.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5500"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A mitosporic fungal genus which causes COCCIDIOIDOMYCOSIS.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3231,19 +3356,29 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_562">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A species of gram-negative, facultatively anaerobic, rod-shaped bacteria (GRAM-NEGATIVE FACULTATIVELY ANAEROBIC RODS) commonly found in the lower part of the intestine of warm-blooded animals. It is usually nonpathogenic, but some strains are known to produce DIARRHEA and pyogenic infections. Pathogenic strains (virotypes) are classified by their specific pathogenic mechanisms such as toxins (ENTEROTOXIGENIC ESCHERICHIA COLI), etc.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A species of gram-negative, facultatively anaerobic, rod-shaped bacteria (GRAM-NEGATIVE FACULTATIVELY ANAEROBIC RODS) commonly found in the lower part of the intestine of warm-blooded animals. It is usually nonpathogenic, but some strains are known to produce DIARRHEA and pyogenic infections. Pathogenic strains (virotypes) are classified by their specific pathogenic mechanisms such as toxins (ENTEROTOXIGENIC ESCHERICHIA COLI), etc.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_562"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A species of gram-negative, facultatively anaerobic, rod-shaped bacteria (GRAM-NEGATIVE FACULTATIVELY ANAEROBIC RODS) commonly found in the lower part of the intestine of warm-blooded animals. It is usually nonpathogenic, but some strains are known to produce DIARRHEA and pyogenic infections. Pathogenic strains (virotypes) are classified by their specific pathogenic mechanisms such as toxins (ENTEROTOXIGENIC ESCHERICHIA COLI), etc.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_5820 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5820">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000237"/>
-        <obo:IAO_0000115>A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000116 xml:lang="en">A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5820"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A genus of protozoa that comprise the malaria parasites of mammals. Four species infect humans (although occasional infections with primate malarias may occur). These are PLASMODIUM FALCIPARUM; PLASMODIUM MALARIAE; PLASMODIUM OVALE, and PLASMODIUM VIVAX. Species causing infection in vertebrates other than man include: PLASMODIUM BERGHEI; PLASMODIUM CHABAUDI; P. vinckei, and PLASMODIUM YOELII in rodents; P. brasilianum, PLASMODIUM CYNOMOLGI; and PLASMODIUM KNOWLESI in monkeys; and PLASMODIUM GALLINACEUM in chickens.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3251,9 +3386,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_590">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that utilizes citrate as a sole carbon source. It is pathogenic for humans, causing enteric fevers, gastroenteritis, and bacteremia. Food poisoning is the most common clinical manifestation. Organisms within this genus are separated on the basis of antigenic characteristics, sugar fermentation patterns, and bacteriophage susceptibility.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that utilizes citrate as a sole carbon source. It is pathogenic for humans, causing enteric fevers, gastroenteritis, and bacteremia. Food poisoning is the most common clinical manifestation. Organisms within this genus are separated on the basis of antigenic characteristics, sugar fermentation patterns, and bacteriophage susceptibility.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_590"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that utilizes citrate as a sole carbon source. It is pathogenic for humans, causing enteric fevers, gastroenteritis, and bacteremia. Food poisoning is the most common clinical manifestation. Organisms within this genus are separated on the basis of antigenic characteristics, sugar fermentation patterns, and bacteriophage susceptibility.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3261,9 +3401,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_620">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that ferments sugar without gas production. Its organisms are intestinal pathogens of man and other primates and cause bacillary dysentery (DYSENTERY, BACILLARY).</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that ferments sugar without gas production. Its organisms are intestinal pathogens of man and other primates and cause bacillary dysentery (DYSENTERY, BACILLARY).</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_620"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A genus of gram-negative, facultatively anaerobic, rod-shaped bacteria that ferments sugar without gas production. Its organisms are intestinal pathogens of man and other primates and cause bacillary dysentery (DYSENTERY, BACILLARY).</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3277,7 +3422,22 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">An arbovirus in the FLAVIVIRUS genus of the family FLAVIVIRIDAE. Originally isolated in the Zika Forest of UGANDA it has been introduced to Asia and the Americas.</owl:annotatedTarget>
-        <obo:IAO_0000119 xml:lang="en">Definition from NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</obo:IAO_0000119>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000116 xml:lang="en">A class in the phylum MOLLUSCA comprised of SNAILS and slugs. The former have coiled external shells and the latter usually lack shells.</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6448"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A class in the phylum MOLLUSCA comprised of SNAILS and slugs. The former have coiled external shells and the latter usually lack shells.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -3286,31 +3446,119 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_666">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>The etiologic agent of CHOLERA.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">The etiologic agent of CHOLERA.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_666"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">The etiologic agent of CHOLERA.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_6935 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6935">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
-        <obo:IAO_0000115>Blood-sucking acarid parasites of the order Ixodida comprising two families: the softbacked ticks (ARGASIDAE) and hardbacked ticks (IXODIDAE). Ticks are larger than their relatives, the MITES. They penetrate the skin of their host by means of highly specialized, hooked mouth parts and feed on its blood. Ticks attack all groups of terrestrial vertebrates. In humans they are responsible for many TICK-BORNE DISEASES, including the transmission of ROCKY MOUNTAIN SPOTTED FEVER; TULAREMIA; BABESIOSIS; AFRICAN SWINE FEVER; and RELAPSING FEVER. (From Barnes, Invertebrate Zoology, 5th ed, pp543-44)</obo:IAO_0000115>
-        <obo:IAO_0000118>Ticks</obo:IAO_0000118>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000116 xml:lang="en">Blood-sucking acarid parasites of the order Ixodida comprising two families: the softbacked ticks (ARGASIDAE) and hardbacked ticks (IXODIDAE). Ticks are larger than their relatives, the MITES. They penetrate the skin of their host by means of highly specialized, hooked mouth parts and feed on its blood. Ticks attack all groups of terrestrial vertebrates. In humans they are responsible for many TICK-BORNE DISEASES, including the transmission of ROCKY MOUNTAIN SPOTTED FEVER; TULAREMIA; BABESIOSIS; AFRICAN SWINE FEVER; and RELAPSING FEVER. (From Barnes, Invertebrate Zoology, 5th ed, pp543-44)</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6935"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Blood-sucking acarid parasites of the order Ixodida comprising two families: the softbacked ticks (ARGASIDAE) and hardbacked ticks (IXODIDAE). Ticks are larger than their relatives, the MITES. They penetrate the skin of their host by means of highly specialized, hooked mouth parts and feed on its blood. Ticks attack all groups of terrestrial vertebrates. In humans they are responsible for many TICK-BORNE DISEASES, including the transmission of ROCKY MOUNTAIN SPOTTED FEVER; TULAREMIA; BABESIOSIS; AFRICAN SWINE FEVER; and RELAPSING FEVER. (From Barnes, Invertebrate Zoology, 5th ed, pp543-44)</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_70999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_70999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000116 xml:lang="en">A subfamily of assassin bugs (REDUVIIDAE) that are obligate blood-suckers of vertebrates. Included are the genera TRIATOMA; RHODNIUS; and PANSTRONGYLUS, which are vectors of TRYPANOSOMA CRUZI, the agent of CHAGAS DISEASE in humans.</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_70999"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A subfamily of assassin bugs (REDUVIIDAE) that are obligate blood-suckers of vertebrates. Included are the genera TRIATOMA; RHODNIUS; and PANSTRONGYLUS, which are vectors of TRYPANOSOMA CRUZI, the agent of CHAGAS DISEASE in humans.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000116 xml:lang="en">An order of the class Insecta. Wings, when present, number two and distinguish Diptera from other so-called flies, while the halteres, or reduced hindwings, separate Diptera from other insects with one pair of wings. The order includes the families Calliphoridae, Oestridae, Phoridae, SARCOPHAGIDAE, Scatophagidae, Sciaridae, SIMULIIDAE, Tabanidae, Therevidae, Trypetidae, CERATOPOGONIDAE; CHIRONOMIDAE; CULICIDAE; DROSOPHILIDAE; GLOSSINIDAE; MUSCIDAE; TEPHRITIDAE; and PSYCHODIDAE. The larval form of Diptera species are called maggots (see LARVA).</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7147"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">An order of the class Insecta. Wings, when present, number two and distinguish Diptera from other so-called flies, while the halteres, or reduced hindwings, separate Diptera from other insects with one pair of wings. The order includes the families Calliphoridae, Oestridae, Phoridae, SARCOPHAGIDAE, Scatophagidae, Sciaridae, SIMULIIDAE, Tabanidae, Therevidae, Trypetidae, CERATOPOGONIDAE; CHIRONOMIDAE; CULICIDAE; DROSOPHILIDAE; GLOSSINIDAE; MUSCIDAE; TEPHRITIDAE; and PSYCHODIDAE. The larval form of Diptera species are called maggots (see LARVA).</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_7157 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7157">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14198"/>
-        <obo:IAO_0000115>A family of the order DIPTERA that comprises the mosquitoes. The larval stages are aquatic, and the adults can be recognized by the characteristic WINGS, ANIMAL venation, the scales along the wing veins, and the long proboscis. Many species are of particular medical importance.</obo:IAO_0000115>
-        <obo:IAO_0000118>Mosquitos</obo:IAO_0000118>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7147"/>
+        <obo:IAO_0000116 xml:lang="en">A family of the order DIPTERA that comprises the mosquitoes. The larval stages are aquatic, and the adults can be recognized by the characteristic WINGS, ANIMAL venation, the scales along the wing veins, and the long proboscis. Many species are of particular medical importance.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7157"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A family of the order DIPTERA that comprises the mosquitoes. The larval stages are aquatic, and the adults can be recognized by the characteristic WINGS, ANIMAL venation, the scales along the wing veins, and the long proboscis. Many species are of particular medical importance.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7147"/>
+        <obo:IAO_0000116 xml:lang="en">Small, hairy, moth-like flies which are of considerable public health importance as vectors of certain pathogenic organisms. Important disease-related genera are PHLEBOTOMUS, Lutzomyia, and Sergentomyia.</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7198"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Small, hairy, moth-like flies which are of considerable public health importance as vectors of certain pathogenic organisms. Important disease-related genera are PHLEBOTOMUS, Lutzomyia, and Sergentomyia.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7147"/>
+        <obo:IAO_0000116 xml:lang="en">Bloodsucking flies of the genus Glossina, found primarily in equatorial Africa. Several species are intermediate hosts of trypanosomes.</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7393"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Bloodsucking flies of the genus Glossina, found primarily in equatorial Africa. Several species are intermediate hosts of trypanosomes.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000116 xml:lang="en">An order of parasitic, blood-sucking, wingless INSECTS with the common name of fleas.</obo:IAO_0000116>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7509"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">An order of parasitic, blood-sucking, wingless INSECTS with the common name of fleas.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3318,9 +3566,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_780">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A genus of gram-negative, aerobic, rod-shaped bacteria often surrounded by a protein microcapsular layer and slime layer. The natural cycle of its organisms generally involves a vertebrate and an invertebrate host. Species of the genus are the etiological agents of human diseases, such as typhus.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A genus of gram-negative, aerobic, rod-shaped bacteria often surrounded by a protein microcapsular layer and slime layer. The natural cycle of its organisms generally involves a vertebrate and an invertebrate host. Species of the genus are the etiological agents of human diseases, such as typhus.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_780"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A genus of gram-negative, aerobic, rod-shaped bacteria often surrounded by a protein microcapsular layer and slime layer. The natural cycle of its organisms generally involves a vertebrate and an invertebrate host. Species of the genus are the etiological agents of human diseases, such as typhus.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3328,9 +3581,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_810">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000115>A genus of the family CHLAMYDIACEAE whose species cause a variety of diseases in vertebrates including humans, mice, and swine. Chlamydia species are gram-negative and produce glycogen. The type species is CHLAMYDIA TRACHOMATIS.</obo:IAO_0000115>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">A genus of the family CHLAMYDIACEAE whose species cause a variety of diseases in vertebrates including humans, mice, and swine. Chlamydia species are gram-negative and produce glycogen. The type species is CHLAMYDIA TRACHOMATIS.</obo:IAO_0000116>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_810"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A genus of the family CHLAMYDIACEAE whose species cause a variety of diseases in vertebrates including humans, mice, and swine. Chlamydia species are gram-negative and produce glycogen. The type species is CHLAMYDIA TRACHOMATIS.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3338,12 +3596,18 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000238"/>
-        <obo:IAO_0000115>Members of the species Homo sapiens.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000116 xml:lang="en">Members of the species Homo sapiens.</obo:IAO_0000116>
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>human</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <rdfs:comment>Definition from NIH National Library of Medecine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</rdfs:comment>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Members of the species Homo sapiens.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -3678,7 +3942,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0015767">
         <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
         <obo:IAO_0000115>An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</obo:IAO_0000115>
-        <rdfs:comment>Definition from Koplan, Jeffrey P., T. Christopher Bond, Michael H. Merson, et al. 2009. “Towards a Common Definition of Global Health.” The Lancet 373 (9679): 1993–95. https://doi.org/10.1016/S0140-6736(09)60332-9.</rdfs:comment>
+        <rdfs:comment>From Koplan, Jeffrey P., T. Christopher Bond, Michael H. Merson, et al. 2009. “Towards a Common Definition of Global Health.” The Lancet 373 (9679): 1993–95. https://doi.org/10.1016/S0140-6736(09)60332-9.</rdfs:comment>
         <rdfs:label>Global Health</rdfs:label>
     </owl:Class>
     
@@ -3963,7 +4227,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
         <obo:IAO_0000115>To understand the behavior of complex biological systems, it is useful to devise computer based models by approximating the interactions, via biomathematical expressions. Without doubt, these models could be over simplifications of complex interactions but they would be useful in comparison to classical laboratory experimental approaches which may not be practical or feasible.</obo:IAO_0000115>
-        <rdfs:comment>Definition from Habtemariam, T., A. Ghartey-Tagoe, E. Mamo, and V. Robnett. &quot;Epidemiologic modelling of diseases—a case example using Schistosoma and Trypanosoma.&quot; Mathematical and Computer Modelling 11 (1988): 244-249.</rdfs:comment>
+        <rdfs:comment>From Habtemariam, T., A. Ghartey-Tagoe, E. Mamo, and V. Robnett. &quot;Epidemiologic modelling of diseases—a case example using Schistosoma and Trypanosoma.&quot; Mathematical and Computer Modelling 11 (1988): 244-249.</rdfs:comment>
         <rdfs:label>Computational Epidemiology</rdfs:label>
     </owl:Class>
     
@@ -3984,7 +4248,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas104">
         <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
         <obo:IAO_0000115>an inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response</obo:IAO_0000115>
-        <rdfs:comment>Definition from Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</rdfs:comment>
+        <rdfs:comment>From Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</rdfs:comment>
         <rdfs:label>Outbreak Science</rdfs:label>
     </owl:Class>
     
@@ -4015,7 +4279,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas107">
         <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
         <obo:IAO_0000115>Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
-        <rdfs:comment>Definition from Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</rdfs:comment>
+        <rdfs:comment>From Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</rdfs:comment>
         <rdfs:label>Phylodynamics</rdfs:label>
     </owl:Class>
     
@@ -4026,7 +4290,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas108">
         <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
         <obo:IAO_0000115>The practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
-        <rdfs:comment>Definition from Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</rdfs:comment>
+        <rdfs:comment>From Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</rdfs:comment>
         <rdfs:label>Science Communication</rdfs:label>
     </owl:Class>
     
@@ -4079,7 +4343,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas112">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</obo:IAO_0000115>
-        <rdfs:comment>Definition from The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</rdfs:comment>
+        <rdfs:comment>From The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</rdfs:comment>
         <rdfs:label>Synthetic Populations</rdfs:label>
     </owl:Class>
     
@@ -5301,7 +5565,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas93">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
         <obo:IAO_0000115>Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences.</obo:IAO_0000115>
-        <rdfs:comment>Definition from “Neglected Tropical Diseases.” n.d. Accessed July 25, 2025. https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases.</rdfs:comment>
+        <rdfs:comment>From “Neglected Tropical Diseases.” n.d. Accessed July 25, 2025. https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases.</rdfs:comment>
         <rdfs:label>Neglected Tropical Disease</rdfs:label>
     </owl:Class>
     
@@ -5312,7 +5576,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas94">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
         <obo:IAO_0000115>Vaccine preventable diseases are those infectious diseases that can be prevented by vaccination</obo:IAO_0000115>
-        <rdfs:comment>Definition from World Health Organization. 2012. International Travel and Health: Situation as on 1 January 2012. World Health Organization. https://iris.who.int/handle/10665/75329.</rdfs:comment>
+        <rdfs:comment>From World Health Organization. 2012. International Travel and Health: Situation as on 1 January 2012. World Health Organization. https://iris.who.int/handle/10665/75329.</rdfs:comment>
         <rdfs:label>Vaccine-Preventable Disease</rdfs:label>
     </owl:Class>
     
@@ -5323,7 +5587,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas95">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
         <obo:IAO_0000115>Dynamic models are [..] called dynamic because they describe how system properties change over time: a gene’s expression level, the abundance of an endangered species, the mercury level in different organs within an individual, and so on.</obo:IAO_0000115>
-        <rdfs:comment>Definition from &quot;Chapter 1: What are Dynamic Models?&quot; Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
+        <rdfs:comment>From &quot;Chapter 1: What are Dynamic Models?&quot; Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
         <rdfs:label>Dynamic Models</rdfs:label>
     </owl:Class>
     
@@ -5334,7 +5598,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas96">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
         <obo:IAO_0000115>Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms).</obo:IAO_0000115>
-        <rdfs:comment>Definition from Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
+        <rdfs:comment>From Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
         <rdfs:label>Geospatial Models</rdfs:label>
     </owl:Class>
     
@@ -5357,7 +5621,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115>Decision models (and decision science as a field, more broadly) provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
         <obo:IAO_0000118>Decision Models</obo:IAO_0000118>
-        <rdfs:comment>Definition from Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</rdfs:comment>
+        <rdfs:comment>From Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</rdfs:comment>
         <rdfs:label>Decision models</rdfs:label>
     </owl:Class>
     
