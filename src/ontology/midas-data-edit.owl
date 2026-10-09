@@ -17,9 +17,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/ontology/midas-data.owl">
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl"/>
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/mondo_import.owl"/>
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/apollo-sv_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/mondo_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncbitaxon_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncit_import.owl"/>
         <dc:creator>MIDAS Coordination Center</dc:creator>
         <terms:description>An ontology of midas data types.</terms:description>
@@ -372,7 +372,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://edamontology.org/topic_4013 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</obo:IAO_0000115>
         <obo:IAO_0000118>Antimicrobial Resistance</obo:IAO_0000118>
         <rdfs:label>Antimicrobial resistance</rdfs:label>
@@ -1237,6 +1237,39 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000112 xml:lang="en">an atom of element X has the disposition to decay to an atom of element Y</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">certain people have a predisposition to colon cancer</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">children are innately disposed to categorize objects in certain ways.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the cell wall is disposed to filter chemicals in endocytosis and exocytosis</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type.</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000112 xml:lang="en">the disposition of this piece of metal to conduct electricity.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the disposition of your blood to coagulate</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of your reproductive organs</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
+        <obo:IAO_0000112>the role of this boundary to delineate where Utah and Colorado meet</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</obo:IAO_0000115>
+        <obo:IAO_0000600 xml:lang="en">To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
@@ -1391,96 +1424,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/NCIT_C71104</obo:IAO_0100001>
         <rdfs:label xml:lang="en">clinical trial</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A Coronavirus infection that is characterized by fever, cough and shortness of breath and that has_material_basis_in SARS-CoV-2.</obo:IAO_0000115>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
-        <oboInOwl:hasDbXref>ICD10CM:U07.1</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MESH:D000086382</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCI:C171133</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:840539006</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C5203670</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.cdc.gov/coronavirus/2019-ncov/about/index.html</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2697049</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pubmed/?term=32007143</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pubmed/?term=32007145</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.who.int/emergencies/diseases/novel-coronavirus-2019</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym xml:lang="en">2019 Novel Coronavirus (2019-nCoV)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">2019-nCoV infection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>COVID19</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SARS-CoV-2 infection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">Wuhan coronavirus infection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">Wuhan seafood market pneumonia virus infection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DOID:0080600</oboInOwl:id>
-        <rdfs:label xml:lang="en">COVID-19</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DOID_3292 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3292">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10244"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A viral infectious disease that results in infection of primates, rodents and humans, located in skin, has_material_basis_in Monkeypox virus, which is transmitted by contact with the animal&apos;s blood, body fluids, rash, or with the body fluids of a sick person, transmitted by fomites, and transmitted by respiratory droplets. The infection has symptom fever, has symptom muscle ache, has symptom headache, and has symptom lymphadenopathy.</obo:IAO_0000115>
-        <obo:IAO_0000118>Mpox</obo:IAO_0000118>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
-        <oboInOwl:hasDbXref>GARD:10722</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ICD10CM:B04</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ICD9CM:059.01</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MESH:D045908</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCI:C128421</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:240466002</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0276180</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:http://www.cdc.gov/ncidod/monkeypox/factsheet2.htm</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DOID:3292</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#zoonotic_infectious_disease"/>
-        <rdfs:label>mpox</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
-        <obo:IAO_0000118>Disease</obo:IAO_0000118>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
-        <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCI:C2991</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:64572001</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0012634</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041577/</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DOID:4</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
-        <rdfs:label>disease</rdfs:label>
     </owl:Class>
     
 
@@ -1708,7 +1651,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IDO_0000436 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000436">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
         <obo:IAO_0000115 xml:lang="en">A disease whose physical basis is an infectious disorder.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
@@ -1780,7 +1723,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_590"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Salmonella Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1789,7 +1731,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000916">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
-        <obo:IAO_0000118>Intestinal Infectious Disease</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1805,7 +1746,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2560602"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Mumps</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1827,7 +1767,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_780"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Spotted Fever</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1842,7 +1781,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11250"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Respiratory Syncytial Virus Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1851,7 +1789,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001673">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
-        <obo:IAO_0000118>Diarrhea</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1866,7 +1803,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Fungi Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1875,7 +1811,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002251">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
-        <obo:IAO_0000118>Hepatitis</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1898,7 +1833,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11082"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>West Nile Fever</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1906,8 +1840,22 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0002494 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002494">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
-        <obo:IAO_0000118>Substance-Related Disorder</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002594">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10244"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1923,7 +1871,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_485"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Gonorrhea</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1931,8 +1878,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0004335 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
-        <obo:IAO_0000118>Digestive System Disorder</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
     </owl:Class>
     
 
@@ -1948,7 +1894,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11234"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Measles</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1979,7 +1924,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Rubella Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1995,7 +1939,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_520"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Pertussis</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2010,7 +1953,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Viruses Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2025,7 +1967,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Bacterial Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2041,7 +1982,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1313"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Streptococcus pneumoniae Infectious Disease</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2057,7 +1997,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1392"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Anthrax</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2066,7 +2005,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000118>Parisitic Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2090,7 +2028,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5820"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Malaria</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2106,7 +2043,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3052230"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Hepatitis C Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2114,11 +2050,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005249 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005249">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002041"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
-        <obo:IAO_0000118>Pneumonia</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2135,7 +2069,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10407"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Hepatitis B Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2150,7 +2083,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_487"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Neisseria meningitidis Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2174,7 +2106,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12637"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Dengue</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2190,7 +2121,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1717"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Diphtheria</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2206,7 +2136,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1513"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Tetanus</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2217,7 +2146,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000827"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
-        <obo:IAO_0000118>Typhoid Fever</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2233,7 +2161,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10335"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Varicella</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2249,7 +2176,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_810"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Chlamydial Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2264,7 +2190,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5500"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Valley Fever</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2272,7 +2197,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005737 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005737">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018087"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
@@ -2282,7 +2206,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_186536"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Ebola</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2297,7 +2220,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Hand Foot and Mouth Disease</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2312,7 +2234,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1980442"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Hantavirus Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2330,7 +2251,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_208726"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Hepatitis A Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2359,7 +2279,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11520"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Influenza</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2374,7 +2293,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_445"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Legionella Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2391,7 +2309,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1639"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Listeria Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2407,7 +2324,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Syphilis</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2439,7 +2355,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_666"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Cholera</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2455,7 +2370,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_138950"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Poliomyelitis</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2478,7 +2392,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_37124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Chikungunya</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2494,7 +2407,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1773"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Tuberculosis</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2502,8 +2414,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0018087 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018087">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000118>Viral Hemorrhagic Fever</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0600002"/>
     </owl:Class>
     
 
@@ -2526,7 +2437,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Zika</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2543,7 +2453,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_620"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Shigellosis</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2565,7 +2474,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Lyme Disease</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2589,7 +2497,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11089"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Yellow Fever Virus Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2606,7 +2513,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_562"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Escherichia coli Infections</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2615,7 +2521,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021681">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000118>Sexually Transmitted Disease</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2640,7 +2545,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6935"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>Tick-borne Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2649,7 +2553,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0043544">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000118>Healthcare-associated Infection</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2666,8 +2569,21 @@ agent seroprevalence will depend on a type of infectious agent and a population.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1280"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>MRSA</obo:IAO_0000118>
-        <obo:IAO_0000118>Methicillin-Resistant Staphylococcus Aureus Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas94"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2697049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2676,7 +2592,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000118>Vector-borne Infection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0600002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0600002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
     </owl:Class>
     
 
@@ -3898,6 +3821,17 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000116 xml:lang="en">&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">disease</rdfs:label>
     </owl:Class>
     
 
