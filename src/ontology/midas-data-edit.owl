@@ -769,7 +769,6 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000591">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
-        <obo:IAO_0000118>Climate</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -917,7 +916,6 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000614">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
-        <obo:IAO_0000118>Weather</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1488,9 +1486,8 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000587 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000587">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
         <obo:IAO_0000115>An information content entity about environmental material, environmental feature, environmental system, etc.</obo:IAO_0000115>
-        <obo:IAO_0000118>Environment Information</obo:IAO_0000118>
         <rdfs:label>environment information</rdfs:label>
     </owl:Class>
     
@@ -4344,8 +4341,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas20">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about natural cover of land surface such as forest, plains, rock, etc. or about human land development.</obo:IAO_0000115>
-        <obo:IAO_0000118>Land Cover / Land Use</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">land cover / land use</rdfs:label>
+        <rdfs:label xml:lang="en">land cover / land use data set</rdfs:label>
     </owl:Class>
     
 
@@ -4365,9 +4361,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas22">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
-        <obo:IAO_0000115 xml:lang="en">An environmenal dataset about air contaminants that threaten human health.</obo:IAO_0000115>
-        <obo:IAO_0000118>Air Quality</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">air quality</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An environmental dataset about air contaminants that threaten human health.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">air quality data set</rdfs:label>
     </owl:Class>
     
 
@@ -4377,8 +4372,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas23">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about destruction of entities in an ecosystem including living things and human-built sructures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</obo:IAO_0000115>
-        <obo:IAO_0000118>Natural Disasters</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">natural disasters</rdfs:label>
+        <rdfs:label xml:lang="en">natural disaster data set</rdfs:label>
     </owl:Class>
     
 
