@@ -1459,6 +1459,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DOID:0080600</oboInOwl:id>
         <rdfs:label xml:lang="en">COVID-19</rdfs:label>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/MONDO_0100096</obo:IAO_0100001>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1492,6 +1493,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#zoonotic_infectious_disease"/>
         <rdfs:label>mpox</rdfs:label>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/MONDO_0002594</obo:IAO_0100001>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1515,10 +1517,10 @@ Every behaviour is associated with mental processes, but not every mental proces
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
         <rdfs:label>disease</rdfs:label>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/OGMS_0000031</obo:IAO_0100001>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
-
 
 
     <!-- http://purl.obolibrary.org/obo/EUPATH_0000587 -->
