@@ -17,9 +17,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/ontology/midas-data.owl">
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/mondo_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/apollo-sv_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncit_import.owl"/>
         <dc:creator>MIDAS Coordination Center</dc:creator>
         <terms:description>An ontology of midas data types.</terms:description>
@@ -410,6 +410,7 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </owl:Class>
     
 
@@ -697,7 +698,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000397 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000397">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
         <obo:IAO_0000118>Infection Case List</obo:IAO_0000118>
     </owl:Class>
     
@@ -737,7 +738,6 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000497">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
-        <obo:IAO_0000118>Case Count</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -745,8 +745,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000542 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
-        <obo:IAO_0000118>Mortality</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
     </owl:Class>
     
 
@@ -796,8 +795,8 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000600">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
-        <obo:IAO_0000118>Hospitalization</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -874,7 +873,6 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000608">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-        <obo:IAO_0000118>Excess Mortality</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -925,8 +923,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000617 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000617">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000118>Population Count</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
     </owl:Class>
     
 
@@ -964,6 +961,14 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000625 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000625">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000626 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000626">
@@ -978,11 +983,18 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000627 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000628 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000628">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
-        <obo:IAO_0000118>Infection Count</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
     </owl:Class>
     
 
@@ -1053,8 +1065,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000644 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000644">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-        <obo:IAO_0000118>Cumulative Hospitalization</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000627"/>
     </owl:Class>
     
 
@@ -1062,8 +1073,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000645 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000645">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
-        <obo:IAO_0000118>Incident Hospitalization</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000627"/>
     </owl:Class>
     
 
@@ -1071,8 +1081,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000646 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000646">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-        <obo:IAO_0000118>Cumulative Death Count</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000625"/>
     </owl:Class>
     
 
@@ -1080,8 +1089,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000647 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000647">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-        <obo:IAO_0000118>Incident Death Count</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000625"/>
     </owl:Class>
     
 
@@ -1090,7 +1098,6 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000648">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000497"/>
-        <obo:IAO_0000118>Cumulative Case Count</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1099,7 +1106,6 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000649">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000497"/>
-        <obo:IAO_0000118>Incident Case Count</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1342,6 +1348,15 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000026">
@@ -1496,6 +1511,24 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <obo:IAO_0000111 xml:lang="en">measurement unit label</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term measurement unit was
+proposed for OBI (OBI_0000176) , edited by Chris Stoeckert and
+Cristian Cocos, and subsequently moved to IAO where the objective for
+which the original term was defined was satisfied with the definition
+of this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
@@ -1504,6 +1537,18 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
         <rdfs:label xml:lang="en">action specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">datum label</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">datum label</rdfs:label>
     </owl:Class>
     
 
@@ -3242,7 +3287,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C14419 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14419">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
     </owl:Class>
     
 
@@ -3677,6 +3722,80 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <rdfs:label xml:lang="en">material anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:label xml:lang="en">anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A unit which is a standard measure of physical quantity consisting of only a numerical number without any units.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/unit"/>
+        <apollo_sv:APOLLO_SV_0000040>DimensionlessUnit</apollo_sv:APOLLO_SV_0000040>
+        <oboInOwl:hasOBONamespace xml:lang="en">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_group_slim"/>
+        <rdfs:label xml:lang="en">dimensionless unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+        <obo:IAO_0000115 xml:lang="en">A dimensionless ratio unit which denotes numbers as fractions of 100.</obo:IAO_0000115>
+        <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
+        <apollo_sv:APOLLO_SV_0000040>Percent</apollo_sv:APOLLO_SV_0000040>
+        <oboInOwl:hasOBONamespace>unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset xml:lang="en">http://purl.org/obo/owl/obo#unit_slim</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">percent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000186"/>
+        <obo:IAO_0000115 xml:lang="en">A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.</obo:IAO_0000115>
+        <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
+        <apollo_sv:APOLLO_SV_0000040>Ratio</apollo_sv:APOLLO_SV_0000040>
+        <oboInOwl:hasOBONamespace xml:lang="en">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_group_slim"/>
+        <rdfs:label xml:lang="en">ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+        <obo:IAO_0000115 xml:lang="en">A dimensionless ratio unit which relates the part (the numerator) to the whole (the denominator).</obo:IAO_0000115>
+        <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
+        <apollo_sv:APOLLO_SV_0000040>Fraction</apollo_sv:APOLLO_SV_0000040>
+        <oboInOwl:hasOBONamespace>unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_slim"/>
+        <rdfs:label xml:lang="en">fraction</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
@@ -3750,9 +3869,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas100 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000627"/>
         <obo:IAO_0000115 xml:lang="en">Magnitude of the peak of incident hospitalizations occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
-        <obo:IAO_0000118>Hospitalization Peak Size</obo:IAO_0000118>
         <rdfs:label xml:lang="en">peak hospitalization count</rdfs:label>
     </owl:Class>
     
@@ -3761,9 +3879,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas101 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000600"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000627"/>
         <obo:IAO_0000115 xml:lang="en">Cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
-        <obo:IAO_0000118>Hospitalization Peak Time</obo:IAO_0000118>
         <rdfs:label xml:lang="en">peak hospitalization time cumulative distribution</rdfs:label>
     </owl:Class>
     
@@ -4233,6 +4350,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas139 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
+        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests that occurred in a population in a given temporal region.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">count of diagnostic tests performed in a population</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas14 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas14">
@@ -4242,6 +4369,26 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:comment>is there some existing external definition to tie this to?</rdfs:comment>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas140 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas140">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas139"/>
+        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the total number of diagnostic tests performed that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cumulative diagnostic test count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas141 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas141">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas139"/>
+        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the number of diagnostic tests performed that occur during a proper occurrent part of a reference temporal interval</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">incident diagnostic test count</rdfs:label>
     </owl:Class>
     
 
@@ -4298,9 +4445,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas17 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
         <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
-        <obo:IAO_0000118>Emergency Department Visit</obo:IAO_0000118>
         <rdfs:label xml:lang="en">emergency department visit dataset</rdfs:label>
     </owl:Class>
     
@@ -4388,7 +4534,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas24">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
         <obo:IAO_0000115 xml:lang="en">A count of emergency department visits in a population that is the total number of emergency department visits that occur during a reference temporal interval.</obo:IAO_0000115>
-        <obo:IAO_0000118>Cumulative Emergency Department Visit</obo:IAO_0000118>
         <rdfs:label xml:lang="en">cumulative emergency department visit count</rdfs:label>
     </owl:Class>
     
@@ -4411,8 +4556,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas26">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
-        <obo:IAO_0000115>A count of emergency department visits in a population that is the number of emergency department visits that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
-        <obo:IAO_0000118>Incident Emergency Department Visit</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A count of emergency department visits in a population that is the number of emergency department visits that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">incident emergency department visit count</rdfs:label>
     </owl:Class>
     
@@ -4488,10 +4632,11 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas34 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas34">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Information about diagnostic tests, results, including serology tests, PCR, and other tests</obo:IAO_0000115>
         <obo:IAO_0000118>Tests</obo:IAO_0000118>
         <rdfs:label xml:lang="en">diagnostic tests</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5023,10 +5168,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas86 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas86">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
-        <obo:IAO_0000115>A count of recovery that occured in a population in a given temporal region.</obo:IAO_0000115>
-        <obo:IAO_0000118>Recovery Count</obo:IAO_0000118>
-        <rdfs:label>count of recovered in a population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
+        <obo:IAO_0000115 xml:lang="en">A count of recovery that occured in a population in a given temporal region.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">count of recovery in a population</rdfs:label>
     </owl:Class>
     
 
@@ -5035,9 +5179,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas87">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas86"/>
-        <obo:IAO_0000115>A count of recovery in a population that is the total number of recovery that occur during a reference temporal interval</obo:IAO_0000115>
-        <obo:IAO_0000118>Cumulative Recovered Count</obo:IAO_0000118>
-        <rdfs:label>cumulative recovered count</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A count of recovery in a population that is the total number of recovery that occur during a reference temporal interval</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cumulative recovery count</rdfs:label>
     </owl:Class>
     
 
@@ -5046,9 +5189,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas88">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas86"/>
-        <obo:IAO_0000115>A count of recovery in a population that is the number of recovery that occured during a proper occurent part of a reference temporal interval.</obo:IAO_0000115>
-        <obo:IAO_0000118>Incident Recovered Count</obo:IAO_0000118>
-        <rdfs:label>incident recovered count</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A count of recovery in a population that is the number of recovery that occured during a proper occurent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">incident recovery count</rdfs:label>
     </owl:Class>
     
 
@@ -5056,10 +5198,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas89 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas89">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000617"/>
-        <obo:IAO_0000115>count of outpatient visit in a population.</obo:IAO_0000115>
-        <obo:IAO_0000118>Outpatient Visit</obo:IAO_0000118>
-        <rdfs:label>count of outpatient visit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
+        <obo:IAO_0000115 xml:lang="en">count of outpatient visit in a population.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">count of outpatient visit</rdfs:label>
     </owl:Class>
     
 
@@ -5079,9 +5220,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas90">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas89"/>
-        <obo:IAO_0000115>A count of outpatient visit in a population that is the total number of outpatient visit that occur during a reference temporal interval.</obo:IAO_0000115>
-        <obo:IAO_0000118>Cumulative Outpatient Visit</obo:IAO_0000118>
-        <rdfs:label>cumulative outpatient visit</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A count of outpatient visit in a population that is the total number of outpatient visit that occur during a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cumulative outpatient visit</rdfs:label>
     </owl:Class>
     
 
@@ -5090,9 +5230,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas91">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas89"/>
-        <obo:IAO_0000115>A count of outpatient visit in a population that is the number of outpatient visit that occured during a proper occurent part of a reference temporal interval.</obo:IAO_0000115>
-        <obo:IAO_0000118>Incident Outpatient Visit</obo:IAO_0000118>
-        <rdfs:label>incident outpatient visit</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A count of outpatient visit in a population that is the number of outpatient visit that occured during a proper occurent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">incident outpatient visit</rdfs:label>
     </owl:Class>
     
 
