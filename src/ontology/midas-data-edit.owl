@@ -17,9 +17,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/ontology/midas-data.owl">
-        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/mondo_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/apollo-sv_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncit_import.owl"/>
         <dc:creator>MIDAS Coordination Center</dc:creator>
         <terms:description>An ontology of midas data types.</terms:description>
@@ -1511,6 +1511,24 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <obo:IAO_0000111 xml:lang="en">measurement unit label</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term measurement unit was
+proposed for OBI (OBI_0000176) , edited by Chris Stoeckert and
+Cristian Cocos, and subsequently moved to IAO where the objective for
+which the original term was defined was satisfied with the definition
+of this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
@@ -1519,6 +1537,18 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
         <rdfs:label xml:lang="en">action specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">datum label</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">datum label</rdfs:label>
     </owl:Class>
     
 
@@ -1584,20 +1614,6 @@ JAR: A data item is an approximately justified approximately true approximate be
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
-this case we explicitly refer to the singular form</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Would write this as: has_part some &apos;measurement unit label&apos; and has_part some numeral and has_part exactly 2, except for the fact that this won&apos;t let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">scalar measurement datum</rdfs:label>
     </owl:Class>
     
 
@@ -3531,18 +3547,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0001554 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001554">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <obo:IAO_0000112>The rate of disassociation of a peptide from a complex with an MHC molecule measured by the ratio of bound and unbound peptide per unit of time.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that represents the number of events occuring over a time interval</obo:IAO_0000115>
-        <obo:IAO_0000119>IEDB</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">rate measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
@@ -3732,6 +3736,62 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:label xml:lang="en">anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A unit which is a standard measure of physical quantity consisting of only a numerical number without any units.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/unit"/>
+        <apollo_sv:APOLLO_SV_0000040>DimensionlessUnit</apollo_sv:APOLLO_SV_0000040>
+        <oboInOwl:hasOBONamespace xml:lang="en">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_group_slim"/>
+        <rdfs:label xml:lang="en">dimensionless unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+        <obo:IAO_0000115 xml:lang="en">A dimensionless ratio unit which denotes numbers as fractions of 100.</obo:IAO_0000115>
+        <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
+        <apollo_sv:APOLLO_SV_0000040>Percent</apollo_sv:APOLLO_SV_0000040>
+        <oboInOwl:hasOBONamespace>unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset xml:lang="en">http://purl.org/obo/owl/obo#unit_slim</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">percent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000186"/>
+        <obo:IAO_0000115 xml:lang="en">A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.</obo:IAO_0000115>
+        <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
+        <apollo_sv:APOLLO_SV_0000040>Ratio</apollo_sv:APOLLO_SV_0000040>
+        <oboInOwl:hasOBONamespace xml:lang="en">unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_group_slim"/>
+        <rdfs:label xml:lang="en">ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+        <obo:IAO_0000115 xml:lang="en">A dimensionless ratio unit which relates the part (the numerator) to the whole (the denominator).</obo:IAO_0000115>
+        <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
+        <apollo_sv:APOLLO_SV_0000040>Fraction</apollo_sv:APOLLO_SV_0000040>
+        <oboInOwl:hasOBONamespace>unit.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_slim"/>
+        <rdfs:label xml:lang="en">fraction</rdfs:label>
     </owl:Class>
     
 
