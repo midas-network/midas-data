@@ -768,7 +768,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000591">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
     </owl:Class>
     
 
@@ -915,7 +915,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000614 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000614">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
     </owl:Class>
     
 
@@ -1489,6 +1489,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
         <obo:IAO_0000115>An information content entity about environmental material, environmental feature, environmental system, etc.</obo:IAO_0000115>
         <rdfs:label>environment information</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4254,6 +4255,39 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas150 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <obo:IAO_0000115 xml:lang="en">A data collection about environmental material, environmental feature, environmental system, etc.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/EUPATH_0000587</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">environment information data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas151 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas151">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental dataset about the observed physical and biological cover of the Earth’s land surface including natural features such as vegetation, soils and waterbodies, as well as human-made features such as buildings and roads. Land cover is distinct from land use, which refers to the activities people undertake on a particular land cover type.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://agrovoc.fao.org/browse/agrovoc/en/page/c_37897</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">land cover data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas152 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas152">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
+        <obo:IAO_0000115 xml:lang="en">An environmental dataset about the activities, arrangements and inputs that people undertake on a particular land cover type to produce, change or maintain it. Land use encompasses a wide range of human activities, from farming and forestry to urban development and infrastructure, and is a key aspect of land management and sustainable development.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://agrovoc.fao.org/browse/agrovoc/en/page/c_4182</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">land use data set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas16 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas16">
@@ -4342,6 +4376,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about natural cover of land surface such as forest, plains, rock, etc. or about human land development.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">land cover / land use data set</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4360,7 +4395,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas22 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas22">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about air contaminants that threaten human health.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">air quality data set</rdfs:label>
     </owl:Class>
@@ -4370,7 +4405,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas23 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas23">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EUPATH_0000587"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about destruction of entities in an ecosystem including living things and human-built sructures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">natural disaster data set</rdfs:label>
     </owl:Class>
