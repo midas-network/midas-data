@@ -803,14 +803,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000565 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000565">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000583 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000583">
@@ -5016,8 +5008,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas163 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas163">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
-        <obo:IAO_0000115 xml:lang="en">A software application that implements methods for calibrating a model&apos;s parameters against observed data.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas179"/>
+        <obo:IAO_0000115 xml:lang="en">software that uses available data to infer possible values (including ranges) of model parameters</obo:IAO_0000115>
         <rdfs:label xml:lang="en">model calibration software</rdfs:label>
     </owl:Class>
     
@@ -5066,7 +5058,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas172">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
-        <obo:IAO_0000115 xml:lang="en">A cross-cutting computational technique or paradigm that may be applied across multiple model structures.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A computational technique or paradigm that may be applied across multiple model structures.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">modeling technique</rdfs:label>
     </owl:Class>
     
@@ -5128,6 +5120,15 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas97"/>
         <obo:IAO_0000115 xml:lang="en">A method that statistically combines the outputs of multiple independent models into a single combined projection, typically to improve accuracy and robustness over any individual model.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ensembling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas179 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+        <rdfs:label xml:lang="en">parameter estimation software</rdfs:label>
     </owl:Class>
     
 
