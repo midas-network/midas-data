@@ -483,8 +483,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000159 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000159">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000118>Population Demographic</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
     </owl:Class>
     
 
@@ -1453,6 +1452,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         </rdfs:subClassOf>
         <obo:IAO_0000115>A Coronavirus infection that is characterized by fever, cough and shortness of breath and that has_material_basis_in SARS-CoV-2.</obo:IAO_0000115>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/MONDO_0100096</obo:IAO_0100001>
         <oboInOwl:hasDbXref>ICD10CM:U07.1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D000086382</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCI:C171133</oboInOwl:hasDbXref>
@@ -1472,7 +1472,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DOID:0080600</oboInOwl:id>
         <rdfs:label xml:lang="en">COVID-19</rdfs:label>
-        <obo:IAO_0100001>http://purl.obolibrary.org/obo/MONDO_0100096</obo:IAO_0100001>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1492,6 +1491,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000115>A viral infectious disease that results in infection of primates, rodents and humans, located in skin, has_material_basis_in Monkeypox virus, which is transmitted by contact with the animal&apos;s blood, body fluids, rash, or with the body fluids of a sick person, transmitted by fomites, and transmitted by respiratory droplets. The infection has symptom fever, has symptom muscle ache, has symptom headache, and has symptom lymphadenopathy.</obo:IAO_0000115>
         <obo:IAO_0000118>Mpox</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/MONDO_0002594</obo:IAO_0100001>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
         <oboInOwl:hasDbXref>GARD:10722</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD10CM:B04</oboInOwl:hasDbXref>
@@ -1506,7 +1506,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#zoonotic_infectious_disease"/>
         <rdfs:label>mpox</rdfs:label>
-        <obo:IAO_0100001>http://purl.obolibrary.org/obo/MONDO_0002594</obo:IAO_0100001>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1519,6 +1518,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000115>A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
         <obo:IAO_0000118>Disease</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/OGMS_0000031</obo:IAO_0100001>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
         <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCI:C2991</oboInOwl:hasDbXref>
@@ -1530,7 +1530,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
         <rdfs:label>disease</rdfs:label>
-        <obo:IAO_0100001>http://purl.obolibrary.org/obo/OGMS_0000031</obo:IAO_0100001>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -4020,13 +4019,30 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about some person and whether that person identifies as some particular aspect of social identity—such as a gender, an ethnicity, a race, or a sexual orientation—where the sense of identifying may correspond to either (i) an aspect of one’s cognitive representation of oneself, (ii) how one prefers to be regarded by others within some social context, or (iii) how one chooses to present oneself to others within some social context.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl</obo:IAO_0000412>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">We include (i)-(iii) to acknowledge that there are different senses of &quot;identify&quot; that are relevant here, and that we may not always be sure which sense the person concretizing the social identity information content entity intended. While (i) concerns how one thinks of oneself, (ii) and (iii) are more focused on one&apos;s interactions with others. Importantly, some choose not to share with others how they identify in the sense of (i). For example, one can consider oneself to be some certain gender without either wanting others to know or choosing to present oneself in a corresponding way. We distinguish (ii) and (iii) because one can prefer to be regarded some certain way without attempting to present oneself in any corresponding way.</rdfs:comment>
+        <rdfs:label xml:lang="en">social identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000205 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000205">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000204"/>
         <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some ethnicity.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
-        <obo:IAO_0000118>Ethnicity</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl</obo:IAO_0000412>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -4042,10 +4058,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000209 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000209">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000204"/>
         <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some gender.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
-        <obo:IAO_0000118>Gender</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl</obo:IAO_0000412>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -4060,10 +4075,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000213 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000213">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000204"/>
         <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some race.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
-        <obo:IAO_0000118>Race</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl</obo:IAO_0000412>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -4086,17 +4100,30 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000111 xml:lang="en">biological sex</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
+        <apollo_sv:APOLLO_SV_0000040>biologicalSex</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">biological sex</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
         <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
-        <obo:IAO_0000118>Sex</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl</obo:IAO_0000412>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0001894</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <rdfs:label>phenotypic sex</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
