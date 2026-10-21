@@ -1805,7 +1805,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IDO_0000488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000488">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115 xml:lang="en">A quality that inheres in an organism population and is the number of organisms in the population that have antibody specific for an infectious agent in their serum at a specified time.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
@@ -3706,7 +3706,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C15719 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15719">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3722,9 +3722,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C16347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16347">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>The application of statistical methods to biological studies.</obo:IAO_0000115>
-        <rdfs:label>Biostatistics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3732,7 +3730,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C16556 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16556">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3740,7 +3738,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C16825 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16825">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3756,7 +3754,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C17039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17039">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3764,7 +3762,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C171586 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C171586">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3772,7 +3770,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C17214 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17214">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3788,7 +3786,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C173755 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C173755">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3813,7 +3811,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C18011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18011">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -3854,7 +3852,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C189155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C189155">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
     </owl:Class>
     
 
@@ -4011,11 +4009,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/OMIT_0015767 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0015767">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</obo:IAO_0000115>
-        <rdfs:comment>From Koplan, Jeffrey P., T. Christopher Bond, Michael H. Merson, et al. 2009. “Towards a Common Definition of Global Health.” The Lancet 373 (9679): 1993–95. https://doi.org/10.1016/S0140-6736(09)60332-9.</rdfs:comment>
-        <rdfs:label>Global Health</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000116 xml:lang="en">An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Global Health</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMIT_0015767"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">From Koplan, Jeffrey P., T. Christopher Bond, Michael H. Merson, et al. 2009. “Towards a Common Definition of Global Health.” The Lancet 373 (9679): 1993–95. https://doi.org/10.1016/S0140-6736(09)60332-9.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -4303,7 +4306,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://vocabs.lter-europe.net/EnvThes/21604">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115 xml:lang="en">A discipline is knowledge or wisdom associated with one academic field of study or profession. A discipline incorporates types of knowledge, expertise, skills, people, projects, communities, problems, challenges, studies, inquiry, approaches, and research areas that are strongly associated with academic areas of study or areas of professional practice</obo:IAO_0000115>
         <rdfs:label xml:lang="en">research topic</rdfs:label>
     </owl:Class>
@@ -4379,9 +4381,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16556"/>
-        <obo:IAO_0000115>To understand the behavior of complex biological systems, it is useful to devise computer based models by approximating the interactions, via biomathematical expressions. Without doubt, these models could be over simplifications of complex interactions but they would be useful in comparison to classical laboratory experimental approaches which may not be practical or feasible.</obo:IAO_0000115>
-        <rdfs:comment>From Habtemariam, T., A. Ghartey-Tagoe, E. Mamo, and V. Robnett. &quot;Epidemiologic modelling of diseases—a case example using Schistosoma and Trypanosoma.&quot; Mathematical and Computer Modelling 11 (1988): 244-249.</rdfs:comment>
-        <rdfs:label>Computational Epidemiology</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">To understand the behavior of complex biological systems, it is useful to devise computer based models by approximating the interactions, via biomathematical expressions. Without doubt, these models could be over simplifications of complex interactions but they would be useful in comparison to classical laboratory experimental approaches which may not be practical or feasible.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">From Habtemariam, T., A. Ghartey-Tagoe, E. Mamo, and V. Robnett. &quot;Epidemiologic modelling of diseases—a case example using Schistosoma and Trypanosoma.&quot; Mathematical and Computer Modelling 11 (1988): 244-249.</rdfs:comment>
+        <rdfs:label xml:lang="en">Computational Epidemiology</rdfs:label>
     </owl:Class>
     
 
@@ -4389,9 +4391,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas103 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas103">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>One Health is a collaborative, multisectoral, and transdisciplinary approach — working at the local, regional, national, and global levels — with the goal of achieving optimal health outcomes recognizing the interconnection between people, animals, plants, and their shared environment. (U.S. Government Definition, established 2017)</obo:IAO_0000115>
-        <rdfs:label>One Health</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115 xml:lang="en">One Health is a collaborative, multisectoral, and transdisciplinary approach — working at the local, regional, national, and global levels — with the goal of achieving optimal health outcomes recognizing the interconnection between people, animals, plants, and their shared environment. (U.S. Government Definition, established 2017)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">One Health</rdfs:label>
     </owl:Class>
     
 
@@ -4399,10 +4401,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas104 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas104">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>an inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response</obo:IAO_0000115>
-        <rdfs:comment>From Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</rdfs:comment>
-        <rdfs:label>Outbreak Science</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115 xml:lang="en">an inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">From Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Outbreak Science</rdfs:label>
     </owl:Class>
     
 
@@ -4410,9 +4412,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas105 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas105">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem</obo:IAO_0000115>
-        <rdfs:label>Parasite Ecology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115 xml:lang="en">The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Parasite Ecology</rdfs:label>
     </owl:Class>
     
 
@@ -4420,9 +4422,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas106 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas106">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>The genetic changes that occur within a pathogen population over time</obo:IAO_0000115>
-        <rdfs:label>Pathogen Evolution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115 xml:lang="en">The genetic changes that occur within a pathogen population over time</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Pathogen Evolution</rdfs:label>
     </owl:Class>
     
 
@@ -4430,10 +4432,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas107 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas107">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
-        <rdfs:comment>From Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</rdfs:comment>
-        <rdfs:label>Phylodynamics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115 xml:lang="en">Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">From Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Phylodynamics</rdfs:label>
     </owl:Class>
     
 
@@ -4441,10 +4443,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas108 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas108">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>The practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
-        <rdfs:comment>From Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</rdfs:comment>
-        <rdfs:label>Science Communication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115 xml:lang="en">The practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">From Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">science communication</rdfs:label>
     </owl:Class>
     
 
@@ -5096,9 +5098,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas28 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas28">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
-        <obo:IAO_0000115>Construction and/or visualization of phylogenetic trees based on sequence data</obo:IAO_0000115>
-        <obo:IAO_0000118>Phylogenetics</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115 xml:lang="en">Construction and/or visualization of phylogenetic trees based on sequence data</obo:IAO_0000115>
         <rdfs:label xml:lang="en">phylogenetics</rdfs:label>
     </owl:Class>
     
