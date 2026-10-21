@@ -3971,6 +3971,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4175,6 +4176,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115 xml:lang="en">An executable file is a digital file that executes a process.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">Executable File</obo:IAO_0000118>
         <rdfs:label xml:lang="en">executable file</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5009,7 +5011,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas163">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas179"/>
-        <obo:IAO_0000115 xml:lang="en">software that uses available data to infer possible values (including ranges) of model parameters</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">software designed to identify parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections</obo:IAO_0000115>
         <rdfs:label xml:lang="en">model calibration software</rdfs:label>
     </owl:Class>
     
@@ -5019,6 +5021,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas164">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+        <obo:IAO_0000115 xml:lang="en">tools for assessing the performance of models relative to ground truth observed data, or other models, generally using quantiative measures</obo:IAO_0000115>
         <rdfs:label xml:lang="en">modeling output evaluation software</rdfs:label>
     </owl:Class>
     
@@ -5048,7 +5051,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas171">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
-        <obo:IAO_0000115 xml:lang="en">An inherent characteristic describing how a model behaves or is built, independent of its structure, purpose, technique, or subject matter — for example, whether it is deterministic or stochastic.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a feature of a modeling approach that influences the behavior of that model</obo:IAO_0000115>
         <rdfs:label xml:lang="en">modeling characteristic</rdfs:label>
     </owl:Class>
     
@@ -5068,7 +5071,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas173">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas172"/>
-        <obo:IAO_0000115 xml:lang="en">A modeling technique that adjusts a model&apos;s parameters so its output matches observed data as closely as possible.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A modeling technique that identify parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections</obo:IAO_0000115>
         <rdfs:label xml:lang="en">calibration</rdfs:label>
     </owl:Class>
     
@@ -5128,6 +5131,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas179">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+        <obo:IAO_0000115 xml:lang="en">software that uses available data to infer possible values (including ranges) of model parameters</obo:IAO_0000115>
         <rdfs:label xml:lang="en">parameter estimation software</rdfs:label>
     </owl:Class>
     
