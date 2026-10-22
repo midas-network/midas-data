@@ -405,6 +405,16 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://id.nlm.nih.gov/mesh/M000606076 -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/M000606076">
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
+        <obo:IAO_0000115 xml:lang="en">A type of ARTIFICIAL INTELLIGENCE that enable COMPUTERS to independently initiate and execute LEARNING when exposed to new data.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Machine Learning</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000007">
@@ -5057,20 +5067,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
-    <!-- http://w3id.org/midas-metadata/midas172 -->
-
-    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas172">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
-        <obo:IAO_0000115 xml:lang="en">A computational technique or paradigm that may be applied across multiple model structures.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">modeling technique</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/midas-metadata/midas173 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas173">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas172"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
         <obo:IAO_0000115 xml:lang="en">A modeling technique that identify parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections</obo:IAO_0000115>
         <rdfs:label xml:lang="en">calibration</rdfs:label>
     </owl:Class>
@@ -5080,9 +5080,15 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas174 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas174">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas172"/>
-        <obo:IAO_0000115 xml:lang="en">A computing system (inspired by biological neural networks) that learns (progressively improves its ability) to do tasks by considering examples without task-specific programming. (After DeepAI Machine Learning Glossary and Terms)</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">machine learning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://id.nlm.nih.gov/mesh/M000606076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Modeling systems build on machine learning method</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">machine learning modeling</rdfs:label>
     </owl:Class>
     
 
