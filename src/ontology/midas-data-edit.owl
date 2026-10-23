@@ -2008,7 +2008,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IDO_0000488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000488">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115 xml:lang="en">A quality that inheres in an organism population and is the number of organisms in the population that have antibody specific for an infectious agent in their serum at a specified time.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
@@ -4358,6 +4358,30 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000018"/>
+        <obo:IAO_0000112 xml:lang="en">This a general term that can include every organism of a species living in an area or any subset of them. Subclasses can be more specific as needed.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A collection of organisms, all of the same species, that live in the same place.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">ISBN:0878932739</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">It is sometimes difficult to define the physical boundaries of a population. In the case of sexually reproducing organisms, the individuals within a population have the potential to reproduce with one another during the course of their lifetimes. &apos;Community&apos;, as often used to describe a group of humans, is a type of population of organisms. Classes for population already exist in IDO (&apos;organism population&apos;, IDO_0000509) and OBI (&apos;population&apos;, OBI_0000181). The definitions should be standardized across OBO Foundry ontologies and only one term used.</rdfs:comment>
+        <rdfs:label xml:lang="en">population of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that has as parts two or more organisms, viruses, or viroids of the same species and no members of any other species.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">collection of organisms of the same species</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">single-species collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0001260 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260">
@@ -4554,8 +4578,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas03 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas03">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">Level of details of the location: ADMIN0, ADMIN1, Country, State, … (can be multiple).</obo:IAO_0000115>
-        <obo:IAO_0000118>Geographical Resolution</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">List comes from GEONAMES class like: &quot;Dependent political entity&quot; or &quot;First-order administrative division&quot;, but it also contains common terms (from https://en.wikipedia.org/wiki/Administrative_division for example) to help with the data entry</rdfs:comment>
         <rdfs:label xml:lang="en">geographical resolution</rdfs:label>
     </owl:Class>
@@ -4723,7 +4747,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas112 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas112">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
         <obo:IAO_0000115>artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</obo:IAO_0000115>
         <rdfs:comment>From The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</rdfs:comment>
         <rdfs:label>Synthetic Populations</rdfs:label>
@@ -6067,8 +6091,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas77 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas77">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">Name of the location in English at country or ADMIN1 level corresponding from GEONAMES (if more than 10 different countries possible &quot;Earth&quot; can be used).</obo:IAO_0000115>
-        <obo:IAO_0000118>Geographical Scope</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">Also have Continent and Earth information as some data set have data for multiple countries but in the same continent.</rdfs:comment>
         <rdfs:label xml:lang="en">geographical scope</rdfs:label>
     </owl:Class>
