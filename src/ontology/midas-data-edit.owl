@@ -17,10 +17,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://midasnetwork.us/ontology/midas-data.owl">
+        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/mondo_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl"/>
-        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/apollo-sv_import.owl"/>
-        <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncit_import.owl"/>
+        <owl:imports rdf:resource="http://midasnetwork.us/datasets/imports/ncit_import.owl"/>
         <dc:creator>MIDAS Coordination Center</dc:creator>
         <terms:description>An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
@@ -329,6 +329,29 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">is specified output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <obo:IAO_0000112 xml:lang="en">this blood clot participates in this blood coagulation</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this input material (or this output material) participates in this process</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002451 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002451">
@@ -361,10 +384,10 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://edamontology.org/operation_0324 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0324">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis. Analyse an existing phylogenetic tree or trees, typically to detect features or make predictions.</obo:IAO_0000115>
-        <obo:IAO_0000118>Phylogenetic Analysis</obo:IAO_0000118>
-        <rdfs:label>Phylogenetic analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas175"/>
+        <obo:IAO_0000115 xml:lang="en">Analyse an existing phylogenetic tree or trees, typically to detect features or make predictions. Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis.</rdfs:comment>
+        <rdfs:label xml:lang="en">Phylogenetic analysis</rdfs:label>
     </owl:Class>
     
 
@@ -974,6 +997,11 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D006304"/>
         <obo:IAO_0000115 xml:lang="en">The circumstances in which people are born, grow up, live, work, and age, as well as the systems put in place to deal with illness. These circumstances are in turn shaped by a wider set of forces: economics, social policies, and politics (http://www.cdc.gov/socialdeterminants/).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Social Determinants of Health</rdfs:label>
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000007 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
     </owl:Class>
     
 
@@ -1002,6 +1030,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
         <obo:IAO_0000118>Time Series</obo:IAO_0000118>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1080,8 +1109,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000174 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000174">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000118>Disease Transmission</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas175"/>
     </owl:Class>
     
 
@@ -1313,10 +1341,26 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000542 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
     </owl:Class>
     
 
@@ -1331,6 +1375,76 @@ Every behaviour is associated with mental processes, but not every mental proces
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000545"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000557 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000557">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000562 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000562">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000563">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000564">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000557"/>
     </owl:Class>
     
 
@@ -1357,7 +1471,14 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000595">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
-        <obo:IAO_0000118>Treatment Facility</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
     </owl:Class>
     
 
@@ -1467,7 +1588,6 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
-        <obo:IAO_0000118>Laboratory Testing Facility</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1500,8 +1620,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000618 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000618">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000118>Wastewater</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000554"/>
     </owl:Class>
     
 
@@ -1721,6 +1840,14 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000799 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000799">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
@@ -1882,6 +2009,35 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000116 xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112 xml:lang="en">a collection of cells in a blood biobank.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a swarm of bees is an aggregate of members who are linked together through natural bonds</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a symphony orchestra</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an organization is an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">defined by fiat: the aggregate of members of an organization</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">defined through physical attachment: the aggregate of atoms in a lump of granite</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">defined through physical containment: the aggregate of molecules of carbon dioxide in a sealed container</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">defined via attributive delimitations such as: the patients in this hospital</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the aggregate of bearings in a constant velocity axle joint</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the aggregate of blood cells in your body</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the nitrogen atoms in the atmosphere</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the restaurants in Palo Alto</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your collection of Meissen ceramic plates.</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee).</obo:IAO_0000116>
+        <obo:IAO_0000119>ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, &apos;A Theory of Granular Partitions&apos;, in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.</obo:IAO_0000119>
+        <rdfs:comment>Definition: A material entity [snap:MaterialEntity] that is a mereological sum of separate object [snap:Object] entities and possesses non-connected boundaries.</rdfs:comment>
+        <rdfs:comment>Examples: a heap of stones, a group of commuters on the subway, a collection of random bacteria, a flock of geese, the patients in a hospital</rdfs:comment>
+        <rdfs:comment>Synonyms: substance aggregate</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">object aggregate</rdfs:label>
     </owl:Class>
     
 
@@ -2164,6 +2320,7 @@ of this, different, term.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
         <obo:IAO_0000111 xml:lang="en">software</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -2346,6 +2503,39 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000593 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000593">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">A software library is software composed of a collection of software modules and/or software methods in a form that can be statically or dynamically linked to some software application.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">software library</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000594">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">A software application is software that can be directly executed by some processing unit.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">software application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000595 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">A software script is software whose instructions can be executed using a software interpreter.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">software script</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0001000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0001000">
@@ -2378,7 +2568,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IDO_0000488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000488">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115 xml:lang="en">A quality that inheres in an organism population and is the number of organisms in the population that have antibody specific for an infectious agent in their serum at a specified time.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
@@ -4383,7 +4573,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C176231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
     </owl:Class>
     
 
@@ -4400,7 +4589,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C18141 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18141">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
         <oboInOwl:hasExactSynonym>Computer Sciences; Computer Technology</oboInOwl:hasExactSynonym>
     </owl:Class>
     
@@ -4466,7 +4655,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C51306 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51306">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
     </owl:Class>
     
 
@@ -4475,6 +4664,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4482,7 +4672,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C71104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71104">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
     </owl:Class>
     
 
@@ -4493,6 +4683,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Computer methods for creating images, diagrams or animations.</obo:IAO_0000115>
         <rdfs:label>Graphics Visualization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4501,9 +4692,8 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000267">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>A method that tries to describe logical and internally consistent sequences of events to explore how the future might, could or should evolve from the past and present.</obo:IAO_0000115>
-        <obo:IAO_0000118>Scenario Analysis</obo:IAO_0000118>
-        <rdfs:label>scenario analysis</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A method that tries to describe logical and internally consistent sequences of events to explore how the future might, could or should evolve from the past and present.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">scenario analysis</rdfs:label>
     </owl:Class>
     
 
@@ -4511,10 +4701,9 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/OBCS_0000375 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000375">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>Representation of model output uncertainty using probability distributions.</obo:IAO_0000115>
-        <obo:IAO_0000118>Uncertainty Quantification</obo:IAO_0000118>
-        <rdfs:label>uncertainty quantification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas97"/>
+        <obo:IAO_0000115 xml:lang="en">Representation of model output uncertainty using probability distributions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">uncertainty quantification</rdfs:label>
     </owl:Class>
     
 
@@ -4534,6 +4723,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <rdfs:comment>Information content entity was used as specified input and output since it was more appropriate then data item or dataset.</rdfs:comment>
         <rdfs:label>data service</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4546,6 +4736,18 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000116 xml:lang="en">&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302867 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302867">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000111>predicted data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A data item that was generated on the basis of a calculation or logical reasonin</obo:IAO_0000115>
+        <obo:IAO_0000116>BP 12/21: Edited the incomplete definition from Philippe. It is still unclear to me if this should be a data item at all, or an information content entity. This will be important, because if we exclude predictions from data items, we will run into issues that we willl have to duplicate things like &apos;weight datum&apos; etc. all of which can be predicted.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">predicted data item</rdfs:label>
     </owl:Class>
     
 
@@ -4690,6 +4892,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115 xml:lang="en">An executable file is a digital file that executes a process.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">Executable File</obo:IAO_0000118>
         <rdfs:label xml:lang="en">executable file</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4722,10 +4925,48 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000112>Examples include: population, community, species (meaning the collection of organisms that makes up a species, not the taxonomic rank), and family.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more organisms, viruses, or viroids.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">group of organism</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">organism collection</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">May be of the same or different species.</rdfs:comment>
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000018"/>
+        <obo:IAO_0000112 xml:lang="en">This a general term that can include every organism of a species living in an area or any subset of them. Subclasses can be more specific as needed.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A collection of organisms, all of the same species, that live in the same place.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">ISBN:0878932739</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">It is sometimes difficult to define the physical boundaries of a population. In the case of sexually reproducing organisms, the individuals within a population have the potential to reproduce with one another during the course of their lifetimes. &apos;Community&apos;, as often used to describe a group of humans, is a type of population of organisms. Classes for population already exist in IDO (&apos;organism population&apos;, IDO_0000509) and OBI (&apos;population&apos;, OBI_0000181). The definitions should be standardized across OBO Foundry ontologies and only one term used.</rdfs:comment>
+        <rdfs:label xml:lang="en">population of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that has as parts two or more organisms, viruses, or viroids of the same species and no members of any other species.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">collection of organisms of the same species</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">single-species collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0001260 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>A collection of discontinuous sequences.</obo:IAO_0000115>
         <obo:IAO_0000118>Sequence Collection</obo:IAO_0000118>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/so/2021-11-22/so.owl</obo:IAO_0000412>
@@ -4741,7 +4982,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/STATO_0000107 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000107">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16870"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">a statistical model is an information content entity which is a formalization of relationships between variables in the form of mathematical equations. A statistical model describes how one or more random variables are related to one or more other variables. The model is statistical as the variables are not deterministically but stochastically related.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
@@ -4763,9 +5004,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000530">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
-        <obo:IAO_0000115>a Bayesian model is a statistical model where inference is based on using Bayes theorem to obtain a posterior distribution for a quantity (or quantities) of interest for some model (such as parameter values) based on some prior distribution for the relevant unknown parameters and the likelihood from the model.</obo:IAO_0000115>
-        <obo:IAO_0000118>Bayesian Model</obo:IAO_0000118>
-        <rdfs:label>Bayesian model</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a Bayesian model is a statistical model where inference is based on using Bayes theorem to obtain a posterior distribution for a quantity (or quantities) of interest for some model (such as parameter values) based on some prior distribution for the relevant unknown parameters and the likelihood from the model.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bayesian model</rdfs:label>
     </owl:Class>
     
 
@@ -4919,8 +5159,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas03 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas03">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">Level of details of the location: ADMIN0, ADMIN1, Country, State, … (can be multiple).</obo:IAO_0000115>
-        <obo:IAO_0000118>Geographical Resolution</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">List comes from GEONAMES class like: &quot;Dependent political entity&quot; or &quot;First-order administrative division&quot;, but it also contains common terms (from https://en.wikipedia.org/wiki/Administrative_division for example) to help with the data entry</rdfs:comment>
         <rdfs:label xml:lang="en">geographical resolution</rdfs:label>
     </owl:Class>
@@ -4930,9 +5170,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas04 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas04">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge</obo:IAO_0000115>
-        <obo:IAO_0000118>Expert Assessment / Opinion</obo:IAO_0000118>
         <rdfs:label xml:lang="en">expert assessment / opinion</rdfs:label>
     </owl:Class>
     
@@ -5073,6 +5312,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
         <obo:IAO_0000115>Decision support systems (DSS) utilize technology to aid in the prevention, detection, and response to infectious disease</obo:IAO_0000115>
         <rdfs:label>Decision Support Systems</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5080,9 +5320,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas111 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas111">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>Process using various metrics to assess the performance and effectiveness of a model</obo:IAO_0000115>
-        <rdfs:label>Evaluation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">Process using various metrics to assess the performance and effectiveness of a model</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">evaluation</rdfs:label>
     </owl:Class>
     
 
@@ -5090,7 +5330,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas112 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas112">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
         <obo:IAO_0000115>artificially created model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</obo:IAO_0000115>
         <rdfs:comment>From The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</rdfs:comment>
         <rdfs:label>Synthetic Populations</rdfs:label>
@@ -5124,6 +5364,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000171"/>
         <obo:IAO_0000115 xml:lang="en">A treatment with an antibody to stimulate an individual&apos;s immune system</obo:IAO_0000115>
         <rdfs:label xml:lang="en">antibody treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas116 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas116">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
+        <obo:IAO_0000115 xml:lang="en">A census about personal protective equipment supplies (masks, gloves, gowns, shields, boots, etc.) in a particular geographical region</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">census of PPE supplies</rdfs:label>
     </owl:Class>
     
 
@@ -5306,6 +5556,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas129 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas129">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
+        <obo:IAO_0000115 xml:lang="en">A census about the number of hospital beds in a particular geographical region</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hospital bed census</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas13 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas13">
@@ -5435,6 +5695,22 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas138 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about one or more clinical trials</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">clinical trial data set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas139 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas139">
@@ -5474,6 +5750,116 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas139"/>
         <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the number of diagnostic tests performed that occur during a proper occurrent part of a reference temporal interval</obo:IAO_0000115>
         <rdfs:label xml:lang="en">incident diagnostic test count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas142 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas142">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
+        <obo:IAO_0000115 xml:lang="en">A census about nursing home beds or capacity in a particular geographical region</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nursing home capacity census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas143 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas143">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
+        <obo:IAO_0000115 xml:lang="en">A census about therapeutics supplies or treatment in a particular geographical region</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">therapeutics census</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas144 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas28"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data set representing one or more phylogenetic trees</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">phylogenetic tree data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas145 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">A data set that is about a collection of genomic sequences.</rdfs:label>
+        <rdfs:label xml:lang="en">sequence data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas146 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000488"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about infectious agent seroprevalence in a population</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">seroprevalence data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas147 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data set that is representing a synthetic population</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">synthetic population data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas148 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <obo:IAO_0000115 xml:lang="en">A data set compiling performance data for diagnostic tests for a specific pathogen</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">diagnostic test performance data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas149 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas111"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about one or multiple specific metrics used to assess the performance or effectiveness of a model.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modeling evaluation metric data set</rdfs:label>
     </owl:Class>
     
 
@@ -5533,6 +5919,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas160 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+        <obo:IAO_0000115 xml:lang="en">A software application that combines the outputs of multiple independent models into a single combined projection, typically to improve accuracy and robustness over any individual model.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ensemble software</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas161 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas161">
@@ -5560,6 +5956,26 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas163 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas163">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas179"/>
+        <obo:IAO_0000115 xml:lang="en">software designed to identify parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">model calibration software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas164 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+        <obo:IAO_0000115 xml:lang="en">tools for assessing the performance of models relative to ground truth observed data, or other models, generally using quantiative measures</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modeling output evaluation software</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas17 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
@@ -5570,13 +5986,108 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas170 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <obo:IAO_0000115 xml:lang="en">A statistical model that describes how a variable changes over time, based on the ordered sequence of its past observed values.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">time series model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas171 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas171">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <obo:IAO_0000115 xml:lang="en">a feature of a modeling approach that influences the behavior of that model</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modeling characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas173 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas173">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <obo:IAO_0000115 xml:lang="en">A modeling technique that identify parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">calibration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas174 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas174">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://id.nlm.nih.gov/mesh/M000606076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Modeling systems build on machine learning method</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">machine learning modeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas175 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas175">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <obo:IAO_0000115 xml:lang="en">The subject matter or biological/epidemiological scope that a model targets.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modeling scope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas176 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas176">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas171"/>
+        <obo:IAO_0000115 xml:lang="en">A modeling characteristic describing a model whose output is fully determined by its initial conditions and parameters, producing the same result every time it is run with the same inputs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">deterministic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas177 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas177">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas171"/>
+        <obo:IAO_0000115 xml:lang="en">A modeling characteristic describing a model that incorporates randomness, such that running it multiple times with the same initial conditions and parameters can produce different outputs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">stochastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas178 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas178">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas97"/>
+        <obo:IAO_0000115 xml:lang="en">A method that statistically combines the outputs of multiple independent models into a single combined projection, typically to improve accuracy and robustness over any individual model.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ensembling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas179 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+        <obo:IAO_0000115 xml:lang="en">software that uses available data to infer possible values (including ranges) of model parameters</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">parameter estimation software</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas18 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas18">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115 xml:lang="en">Projections of outbreak behavior into some future time, determined relative to a defined starting point. Might include retrospective projects or projections for current activitiy (known as &quot;now-casting&quot;).</obo:IAO_0000115>
-        <obo:IAO_0000118>Forecasting</obo:IAO_0000118>
-        <rdfs:label>forecasting</rdfs:label>
+        <rdfs:label xml:lang="en">forecasting</rdfs:label>
     </owl:Class>
     
 
@@ -5692,8 +6203,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas28 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas28">
-        <rdfs:subClassOf rdf:resource="http://vocabs.lter-europe.net/EnvThes/21604"/>
-        <obo:IAO_0000115 xml:lang="en">Construction and/or visualization of phylogenetic trees based on sequence data</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <obo:IAO_0000115>Construction and/or visualization of phylogenetic trees based on sequence data</obo:IAO_0000115>
+        <obo:IAO_0000118>Phylogenetics</obo:IAO_0000118>
         <rdfs:label xml:lang="en">phylogenetics</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -5761,9 +6273,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas35">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas43"/>
-        <obo:IAO_0000115>Data on impact of outbreak on humanitarian efforts</obo:IAO_0000115>
-        <obo:IAO_0000118>Aid / Responses</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">aid/responses</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Data on impact of outbreak on humanitarian efforts</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">aid/response data set</rdfs:label>
     </owl:Class>
     
 
@@ -5807,9 +6318,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas40 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas40">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
-        <obo:IAO_0000115>Forecasts based on SIR (Susceptible, Infected, Recovered) models or any of the many variants of this basic famework.</obo:IAO_0000115>
-        <obo:IAO_0000118>Compartmental Models</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16870"/>
+        <obo:IAO_0000115 xml:lang="en">Forecasts based on SIR (Susceptible, Infected, Recovered) models or any of the many variants of this basic famework.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">compartmental models</rdfs:label>
     </owl:Class>
     
@@ -5830,10 +6340,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas43 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas43">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>includes social, economic, also mental health impact</obo:IAO_0000115>
-        <obo:IAO_0000118>Socio-economic Impacts</obo:IAO_0000118>
-        <rdfs:label>socio-economic impacts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas109"/>
+        <obo:IAO_0000115 xml:lang="en">A data set including data about social, economic, also mental health impact</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">socio-economic impact data set</rdfs:label>
     </owl:Class>
     
 
@@ -5917,9 +6426,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas53 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas53">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
-        <obo:IAO_0000115>Models based on simulated actions of individuals and interactions between those individuals</obo:IAO_0000115>
-        <obo:IAO_0000118>Agent-based Models</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16870"/>
+        <obo:IAO_0000115 xml:lang="en">Models based on simulated actions of individuals and interactions between those individuals</obo:IAO_0000115>
         <rdfs:label xml:lang="en">agent-based models</rdfs:label>
     </owl:Class>
     
@@ -5975,7 +6483,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas6 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas6">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115>Descriptors of the behavior of an outbreak</obo:IAO_0000115>
         <obo:IAO_0000118>Modeling</obo:IAO_0000118>
         <rdfs:label xml:lang="en">modeling</rdfs:label>
@@ -6044,9 +6552,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas66 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas66">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas2"/>
-        <obo:IAO_0000115>Tools for initial stages of data processing, usually prior to modeling. Includes pre-processing, cleaning, exploratory analysis.</obo:IAO_0000115>
-        <obo:IAO_0000118>Data Preparation</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+        <obo:IAO_0000115 xml:lang="en">Tools for initial stages of data processing, usually prior to modeling. Includes pre-processing, cleaning, exploratory analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">data preparation</rdfs:label>
     </owl:Class>
     
@@ -6056,8 +6563,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas67">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>Predicted value of key outbreak parameters, including (but not limited to) fatality rate, R_0, etc.</obo:IAO_0000115>
-        <obo:IAO_0000118>Parameter Estimation</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">Predicted value of key outbreak parameters, including (but not limited to) fatality rate, R_0, etc.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">parameter estimation</rdfs:label>
     </owl:Class>
     
@@ -6079,9 +6585,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas69 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas69">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>Models of interactions between entities that might impact outbreak progression.</obo:IAO_0000115>
-        <obo:IAO_0000118>Network Modeling</obo:IAO_0000118>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16870"/>
+        <obo:IAO_0000115 xml:lang="en">Models of interactions between entities that might impact outbreak progression.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">network modeling</rdfs:label>
     </owl:Class>
     
@@ -6170,8 +6675,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas77 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas77">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">Name of the location in English at country or ADMIN1 level corresponding from GEONAMES (if more than 10 different countries possible &quot;Earth&quot; can be used).</obo:IAO_0000115>
-        <obo:IAO_0000118>Geographical Scope</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">Also have Continent and Earth information as some data set have data for multiple countries but in the same continent.</rdfs:comment>
         <rdfs:label xml:lang="en">geographical scope</rdfs:label>
     </owl:Class>
@@ -6273,10 +6778,15 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas85 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas85">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas74"/>
-        <obo:IAO_0000115>Datasets discussing outbreaks on social media sites</obo:IAO_0000115>
-        <obo:IAO_0000118>Social Media</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">social media</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19442"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Datasets discussing outbreaks on social media sites</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">social media outbreak data set</rdfs:label>
     </owl:Class>
     
 
@@ -6387,10 +6897,11 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas95 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas95">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas16"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
         <obo:IAO_0000115>Dynamic models are [..] called dynamic because they describe how system properties change over time: a gene’s expression level, the abundance of an endangered species, the mercury level in different organs within an individual, and so on.</obo:IAO_0000115>
         <rdfs:comment>From &quot;Chapter 1: What are Dynamic Models?&quot; Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
         <rdfs:label>Dynamic Models</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -6399,9 +6910,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas96">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
-        <obo:IAO_0000115>Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms).</obo:IAO_0000115>
         <rdfs:comment>From Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
-        <rdfs:label>Geospatial Models</rdfs:label>
+        <rdfs:label xml:lang="en">geospatial models</rdfs:label>
     </owl:Class>
     
 
@@ -6421,10 +6932,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas98">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>Decision models (and decision science as a field, more broadly) provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
-        <obo:IAO_0000118>Decision Models</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">Decision models (and decision science as a field, more broadly) provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
         <rdfs:comment>From Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</rdfs:comment>
-        <rdfs:label>Decision models</rdfs:label>
+        <rdfs:label xml:lang="en">decision models</rdfs:label>
     </owl:Class>
     
 
@@ -6432,10 +6942,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas99 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas99">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115>intra-host models are mathematical models focusing on the dynamics of an infection within a single individual host</obo:IAO_0000115>
-        <obo:IAO_0000118>Intra-host Modeling</obo:IAO_0000118>
-        <rdfs:label>Intra-host modeling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas175"/>
+        <obo:IAO_0000115 xml:lang="en">intra-host models are mathematical models focusing on the dynamics of an infection within a single individual host</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">intra-host modeling</rdfs:label>
     </owl:Class>
     
 
