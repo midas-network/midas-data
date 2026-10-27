@@ -1027,7 +1027,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000795"/>
         <obo:IAO_0000118>Vaccination Capacity</obo:IAO_0000118>
     </owl:Class>
@@ -1580,7 +1579,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000189"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1719,6 +1717,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000639">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
         <obo:IAO_0000118>Nirsevimab Vaccination</obo:IAO_0000118>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2120,6 +2119,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
         <rdfs:label xml:lang="en">organism</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4461,7 +4461,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C14419 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14419">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </owl:Class>
     
 
@@ -6655,6 +6655,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000115>Information about media, coverage about a topic</obo:IAO_0000115>
         <obo:IAO_0000118>Media</obo:IAO_0000118>
         <rdfs:label xml:lang="en">media</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -6965,6 +6966,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000115>A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
         <obo:IAO_0000118>Ensemble Specification</obo:IAO_0000118>
         <rdfs:label>ensemble specification</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
 </rdf:RDF>
 
