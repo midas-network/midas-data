@@ -985,7 +985,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/D062486">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D011159"/>
         <obo:IAO_0000115 xml:lang="en">The ongoing, systematic collection, analysis, and interpretation of health-related data with the purpose of preventing or controlling disease or injury, or of identifying unusual events of public health importance, followed by the dissemination and use of information for public health action. (From Am J Prev Med 2011;41(6):636)</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Public Health Surveillancee</rdfs:label>
+        <rdfs:label xml:lang="en">Public Health Surveillance</rdfs:label>
     </owl:Class>
     
 
@@ -997,7 +997,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D006304"/>
         <obo:IAO_0000115 xml:lang="en">The circumstances in which people are born, grow up, live, work, and age, as well as the systems put in place to deal with illness. These circumstances are in turn shaped by a wider set of forces: economics, social policies, and politics (http://www.cdc.gov/socialdeterminants/).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Social Determinants of Health</rdfs:label>
-
+    </owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000007 -->
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000007">
