@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://midasnetwork.us/datasets/"
-     xml:base="http://midasnetwork.us/datasets/"
+<rdf:RDF xmlns="http://midasnetwork.us/ontology/"
+     xml:base="http://midasnetwork.us/ontology/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -998,8 +998,11 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000115 xml:lang="en">The circumstances in which people are born, grow up, live, work, and age, as well as the systems put in place to deal with illness. These circumstances are in turn shaped by a wider set of forces: economics, social policies, and politics (http://www.cdc.gov/socialdeterminants/).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Social Determinants of Health</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000007 -->
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
     </owl:Class>
@@ -6020,12 +6023,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas174">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://id.nlm.nih.gov/mesh/M000606076"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Modeling systems build on machine learning method</obo:IAO_0000115>
         <rdfs:label xml:lang="en">machine learning modeling</rdfs:label>
     </owl:Class>
