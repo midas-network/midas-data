@@ -998,8 +998,17 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000115 xml:lang="en">The circumstances in which people are born, grow up, live, work, and age, as well as the systems put in place to deal with illness. These circumstances are in turn shaped by a wider set of forces: economics, social policies, and politics (http://www.cdc.gov/socialdeterminants/).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Social Determinants of Health</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://id.nlm.nih.gov/mesh/M000606076 -->
+
+    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/M000606076"/>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000007 -->
+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
     </owl:Class>
@@ -5980,8 +5989,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
-        <obo:IAO_0000115 xml:lang="en">a dataset that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">emergency department visit dataset</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a count of emergency department visit in a population that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">count of emergency department visit in a population</rdfs:label>
     </owl:Class>
     
 
