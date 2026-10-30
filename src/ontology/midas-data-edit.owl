@@ -5226,7 +5226,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
-        <obo:IAO_0000115 xml:lang="en">A treatment with an antibody to stimulate an individual&apos;s immune system</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Treatment that uses antibodies to help the body fight cancer, infection, or other diseases. Antibodies are proteins made by the immune system that bind to specific markers on cells or tissues.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.cancer.gov/publications/dictionaries/cancer-terms/def/antibody-therapy</obo:IAO_0000119>
         <rdfs:label xml:lang="en">antibody treatment</rdfs:label>
     </owl:Class>
     
@@ -6173,7 +6174,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas45">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <obo:IAO_0000115>An infectious disease control strategy that has an action specification that is realized in cancelling event due to an outbreak</obo:IAO_0000115>
+        <obo:IAO_0000115>An infectious disease control strategy that has an action specification that is realized in cancelling event due to an outbreak.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">event cancellation control strategy</rdfs:label>
     </owl:Class>
     
