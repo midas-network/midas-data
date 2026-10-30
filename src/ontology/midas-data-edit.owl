@@ -1193,14 +1193,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000237 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000237">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000238 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000238">
@@ -5380,20 +5372,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000007"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19442"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas153"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that has an action specification that is realized in public communication via television, radio, newspapers, pamphlets, telephone, or other media, intended to influence health or social behaviors.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that has a media campaign action specification as part.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">media campaign control strategy</rdfs:label>
     </owl:Class>
     
@@ -5758,6 +5740,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas153 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy action specification that is realized in public communication via television, radio, newspapers, pamphlets, telephone, or other media, intended to influence health or social behaviors.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">media campaign action specification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas16 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas16">
@@ -5828,7 +5820,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
-        <obo:IAO_0000115 xml:lang="en">a count of emergency department visit in a population that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A count of emergency department visit in a population that is about two or more emergency department visits involving two or more patients.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">count of emergency department visit in a population</rdfs:label>
     </owl:Class>
     
