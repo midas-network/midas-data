@@ -1204,7 +1204,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000238 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000238">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
     </owl:Class>
     
 
@@ -1228,6 +1228,17 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000308 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000308">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000310"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1623,14 +1634,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000639 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000639">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000640 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000640">
@@ -2019,8 +2022,11 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">organism</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3392,7 +3398,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <obo:IAO_0000116 xml:lang="en">Minute infectious agents whose genomes are composed of DNA or RNA, but not both. They are characterized by a lack of independent metabolism and the inability to replicate outside living host cells.</obo:IAO_0000116>
     </owl:Class>
     <owl:Axiom>
@@ -3834,7 +3840,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <obo:IAO_0000116 xml:lang="en">One of the three domains of life (the others being Eukarya and ARCHAEA), also called Eubacteria. They are unicellular prokaryotic microorganisms which generally possess rigid cell walls, multiply by cell division, and exhibit three principal forms: round or coccal, rodlike or bacillary, and spiral or spirochetal.</obo:IAO_0000116>
     </owl:Class>
     <owl:Axiom>
@@ -3864,7 +3870,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2157">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <obo:IAO_0000116 xml:lang="en">One of the three domains of life (the others being BACTERIA and Eukarya), formerly called Archaebacteria under the taxon Bacteria, but now considered separate and distinct. They are characterized by: (1) the presence of characteristic tRNAs and ribosomal RNAs; (2) the absence of peptidoglycan cell walls; (3) the presence of ether-linked lipids built from branched-chain subunits; and (4) their occurrence in unusual habitats. While archaea resemble bacteria in morphology and genomic organization, they resemble eukarya in their method of genomic replication. The domain contains at least four kingdoms: CRENARCHAEOTA; EURYARCHAEOTA; NANOARCHAEOTA; and KORARCHAEOTA.</obo:IAO_0000116>
     </owl:Class>
     <owl:Axiom>
@@ -3911,7 +3917,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <obo:IAO_0000116 xml:lang="en">One of the three domains of life (the others being BACTERIA and ARCHAEA), also called Eukarya. These are organisms whose cells are enclosed in membranes and possess a nucleus. They comprise almost all multicellular and many unicellular organisms, and are traditionally divided into groups (sometimes called kingdoms) including ANIMALS; PLANTS; FUNGI; and various algae and other taxa that were previously part of the old kingdom Protista.</obo:IAO_0000116>
     </owl:Class>
     <owl:Axiom>
@@ -4338,7 +4344,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C14419 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14419">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
     </owl:Class>
     
 
@@ -4613,18 +4619,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:comment>Information content entity was used as specified input and output since it was more appropriate then data item or dataset.</rdfs:comment>
         <rdfs:label>data service</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
 
@@ -5353,12 +5347,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that has an action specification that is realized in individuals adopting behaviors or equipment that reduce their exposure to or transmission of infectious agents.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">personal protective measure control strategy</rdfs:label>
     </owl:Class>
@@ -5392,12 +5380,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -5421,12 +5403,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that has an action specification that is realized in testing organisms to determine infection status.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">testing control strategy</rdfs:label>
     </owl:Class>
@@ -6205,12 +6181,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas45">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>An infectious disease control strategy that has an action specification that is realized in cancelling event due to an outbreak</obo:IAO_0000115>
         <rdfs:label xml:lang="en">event cancellation control strategy</rdfs:label>
     </owl:Class>
