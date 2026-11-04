@@ -2832,9 +2832,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/MONDO_0005249 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005249">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002041"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0024352"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
     </owl:Class>
     
 
@@ -2966,6 +2964,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005706">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005135"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -3284,8 +3283,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020920">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128351"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
@@ -3340,7 +3337,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005113"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0043544"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
