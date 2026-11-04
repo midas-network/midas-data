@@ -381,17 +381,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://edamontology.org/operation_0324 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_0324">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas175"/>
-        <obo:IAO_0000115 xml:lang="en">Analyse an existing phylogenetic tree or trees, typically to detect features or make predictions. Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis.</rdfs:comment>
-        <rdfs:label xml:lang="en">Phylogenetic analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/topic_4013 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4013">
@@ -2275,6 +2264,21 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
         <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)</obo:IAO_0000119>
+        <obo:IAO_0000119>OBI_0000270</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -4335,14 +4339,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C15367 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15367">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C15719 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15719">
@@ -4551,16 +4547,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000115>Computer methods for creating images, diagrams or animations.</obo:IAO_0000115>
         <rdfs:label>Graphics Visualization</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBCS_0000267 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000267">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115 xml:lang="en">A method that tries to describe logical and internally consistent sequences of events to explore how the future might, could or should evolve from the past and present.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">scenario analysis</rdfs:label>
     </owl:Class>
     
 
@@ -5745,10 +5731,42 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas154 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas154">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas175"/>
+        <obo:IAO_0000115 xml:lang="en">A model that represents trait evolution and predicts trait values using phylogeny as a basis</obo:IAO_0000115>
+        <obo:IAO_0000119>http://edamontology.org/operation_0324</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">phylogenetic modeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas155 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas155">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115 xml:lang="en">A modeling purpose to estimate the probability that one or more adverse event(s) will occur as a result of exposure to an actual or potential hazardous situation or chemical.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C15367</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">health risk assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/midas-metadata/midas156 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas156">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
+        <obo:IAO_0000115 xml:lang="en">A modeling purpose of using a method to project outbreak trajectories under different assumptions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">scenario projection</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas16 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas16">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000115 xml:lang="en">The method or type of model used to achieve the purpose.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">modeling method</rdfs:label>
     </owl:Class>
@@ -5844,7 +5862,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas173 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas173">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000115 xml:lang="en">A modeling technique that identify parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections</obo:IAO_0000115>
         <rdfs:label xml:lang="en">calibration</rdfs:label>
     </owl:Class>
@@ -5854,7 +5872,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas174 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas174">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -5870,8 +5888,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas175 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas175">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
-        <obo:IAO_0000115 xml:lang="en">The subject matter or biological/epidemiological scope that a model targets.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 xml:lang="en">An algorithm grouped by the subject matter or biological/epidemiological scope that a model targets.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">modeling scope</rdfs:label>
     </owl:Class>
     
@@ -5901,8 +5919,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas178">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas97"/>
-        <obo:IAO_0000115 xml:lang="en">A method that statistically combines the outputs of multiple independent models into a single combined projection, typically to improve accuracy and robustness over any individual model.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ensembling</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A modeling output of a method that statistically combines the outputs of multiple independent models into a single combined projection, typically to improve accuracy and robustness over any individual model.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ensemble projection</rdfs:label>
     </owl:Class>
     
 
@@ -5921,7 +5939,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas18">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115 xml:lang="en">Projections of outbreak behavior into some future time, determined relative to a defined starting point. Might include retrospective projects or projections for current activity (known as &quot;now-casting&quot;).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A modeling purpose of projecting outbreak behavior into some future time, determined relative to a defined starting point. Might include retrospective projects or projections for current activity (known as &quot;now-casting&quot;).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">forecasting</rdfs:label>
     </owl:Class>
     
@@ -6137,7 +6155,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas40">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16870"/>
-        <obo:IAO_0000115 xml:lang="en">Forecasts based on SIR (Susceptible, Infected, Recovered) models or any of the many variants of this basic framework.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Models based on SIR (Susceptible, Infected, Recovered) models or any of the many variants of this basic framework.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">compartmental models</rdfs:label>
     </owl:Class>
     
@@ -6285,7 +6303,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas6">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>Descriptors of the behavior of an outbreak</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that describes a feature of a model or modeling study.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">modeling</rdfs:label>
     </owl:Class>
     
@@ -6357,7 +6375,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas67">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115 xml:lang="en">Predicted value of key outbreak parameters, including (but not limited to) fatality rate, R_0, etc.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A modeling purpose of predicting the values of key outbreak parameters, including (but not limited to) fatality rate, R_0, etc.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">parameter estimation</rdfs:label>
     </owl:Class>
     
@@ -6694,8 +6712,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas97">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
-        <obo:IAO_0000115>The output of a model.</obo:IAO_0000115>
-        <rdfs:label>modeling output</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The output of a model.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modeling output</rdfs:label>
     </owl:Class>
     
 
@@ -6704,8 +6722,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas98">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115 xml:lang="en">Decision models (and decision science as a field, more broadly) provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
-        <rdfs:comment>From Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A modeling purpose using decision models to provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
+        <obo:IAO_0000119>Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">decision models</rdfs:label>
     </owl:Class>
     
