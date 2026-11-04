@@ -6186,7 +6186,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas45">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <obo:IAO_0000115>An infectious disease control strategy that has an action specification that is realized in cancelling event due to an outbreak.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy that has an action specification that is realized in the cancellation of events due to an outbreak.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">event cancellation control strategy</rdfs:label>
     </owl:Class>
     
@@ -6667,10 +6667,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas93 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas93">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000115>Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences.</obo:IAO_0000115>
-        <rdfs:comment>From “Neglected Tropical Diseases.” n.d. Accessed July 25, 2025. https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases.</rdfs:comment>
-        <rdfs:label>Neglected Tropical Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A disease that the World Health Organization lists as a neglected tropical disease. Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">From “Neglected Tropical Diseases.” n.d. Accessed July 25, 2025. https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases.</obo:IAO_0000119>
+        <rdfs:label>neglected tropical disease</rdfs:label>
     </owl:Class>
     
 
@@ -6679,9 +6679,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas94">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000115>Vaccine preventable diseases are those infectious diseases that can be prevented by vaccination</obo:IAO_0000115>
-        <rdfs:comment>From World Health Organization. 2012. International Travel and Health: Situation as on 1 January 2012. World Health Organization. https://iris.who.int/handle/10665/75329.</rdfs:comment>
-        <rdfs:label>Vaccine-Preventable Disease</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Vaccine preventable diseases are those infectious diseases that can be prevented by vaccination.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">From World Health Organization. 2012. International Travel and Health: Situation as on 1 January 2012. World Health Organization. https://iris.who.int/handle/10665/75329.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">vaccine-preventable disease</rdfs:label>
     </owl:Class>
     
 
