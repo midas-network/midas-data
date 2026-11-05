@@ -4344,6 +4344,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20865"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C16309 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16309">
@@ -4493,7 +4501,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C19442 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19442">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16048"/>
     </owl:Class>
     
 
@@ -4502,6 +4510,14 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20181">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20865 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20865">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20181"/>
     </owl:Class>
     
 
