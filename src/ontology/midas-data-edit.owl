@@ -5155,10 +5155,16 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas112 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas112">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">artificially created population from a model, developed using data and statistical methods, that samples or resembles a real population. By accurately representing a population, they can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">synthetic populations</rdfs:label>
+        <rdfs:label xml:lang="en">synthetic population</rdfs:label>
     </owl:Class>
     
 
@@ -6162,7 +6168,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas43 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas43">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <obo:IAO_0000115 xml:lang="en">A data set including data about social, economic, also mental health impact</obo:IAO_0000115>
         <rdfs:label xml:lang="en">socio-economic impact data set</rdfs:label>
     </owl:Class>
@@ -6538,8 +6544,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas83 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas83">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas131"/>
-        <obo:IAO_0000115>A data set that is about claims of false or unsubstantiated rumors about any aspect of an outbreak.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about claims of false or unsubstantiated rumors about any aspect of an outbreak.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">conspiracy theory data set</rdfs:label>
     </owl:Class>
     
