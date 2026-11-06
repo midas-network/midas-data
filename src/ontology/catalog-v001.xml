@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://midasnetwork.us/datasets/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://midasnetwork.us/ontology/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://midasnetwork.us/ontology/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://midasnetwork.us/ontology/imports/mondo_import.owl" uri="imports/mondo_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://midasnetwork.us/ontology/imports/apollo-sv_import.owl" uri="imports/apollo-sv_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://midasnetwork.us/ontology/midas-data.owl" uri="midas-data-edit.owl"/>
     <uri id="User Entered Import Resolution" name="http://midasnetwork.us/datasets/imports/apollo-sv_import.owl" uri="imports/apollo-sv_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://midasnetwork.us/datasets/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://midasnetwork.us/datasets/imports/mondo_import.owl" uri="imports/mondo_import.owl"/>
