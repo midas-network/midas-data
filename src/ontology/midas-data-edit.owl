@@ -498,16 +498,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://edamontology.org/topic_4013 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_4013">
-        <obo:IAO_0000115 xml:lang="en">Microbial mechanisms for protecting microorganisms against antimicrobial agents.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Antimicrobial resistance</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://humanbehaviourchange.org/ontology/BCIO_036000 -->
 
     <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_036000">
@@ -3044,26 +3034,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_60816 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60816">
-        <obo:IAO_0000115>An antigen capable, on its own, of inducing an immune response.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">immunogenicity</obo:IAO_0000118>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/chebi/213/chebi.owl</obo:IAO_0000412>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C18011</obo:IAO_0100001>
-        <oboInOwl:hasDbXref>PMID:19152635</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:19328011</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:19397283</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>CHEBI:60816</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
-        <oboInOwl:source>Europe PMC</oboInOwl:source>
-        <rdfs:label>immunogen</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
@@ -3110,101 +3080,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CTO_0000220 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CTO_0000220">
-        <obo:IAO_0000115>a clinical trial is a medical interventional study where participants are assigned prospectively to an intervention or interventions according to a protocol to evaluate the safety and efficacy of the intervention(s) on biomedical or other health related outcomes. The Interventions include but are not restricted to drugs, cells and other biological products, surgical procedures, radiologic procedures, devices, behavioral treatments, process-of-care changes, preventive care, etc.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He, Asiyah Yu Lin, Qingliang Li</obo:IAO_0000117>
-        <obo:IAO_0000118>interventional trial</obo:IAO_0000118>
-        <obo:IAO_0000119>https://clinicaltrials.gov/ct2/search/map</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Clinical_trial</obo:IAO_0000119>
-        <obo:IAO_0000119>https://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
-        <obo:IAO_0000119>https://www.who.int/ictrp/en/</obo:IAO_0000119>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/cto.owl</obo:IAO_0000412>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/NCIT_C71104</obo:IAO_0100001>
-        <rdfs:label xml:lang="en">clinical trial</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DOID_0080600 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080600">
-        <obo:IAO_0000115>A Coronavirus infection that is characterized by fever, cough and shortness of breath and that has_material_basis_in SARS-CoV-2.</obo:IAO_0000115>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MONDO_0100096</obo:IAO_0100001>
-        <oboInOwl:hasDbXref>ICD10CM:U07.1</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MESH:D000086382</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCI:C171133</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:840539006</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C5203670</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.cdc.gov/coronavirus/2019-ncov/about/index.html</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2697049</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pubmed/?term=32007143</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pubmed/?term=32007145</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.who.int/emergencies/diseases/novel-coronavirus-2019</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym xml:lang="en">2019 Novel Coronavirus (2019-nCoV)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">2019-nCoV infection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>COVID19</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SARS-CoV-2 infection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">Wuhan coronavirus infection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">Wuhan seafood market pneumonia virus infection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DOID:0080600</oboInOwl:id>
-        <rdfs:label xml:lang="en">COVID-19</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DOID_3292 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3292">
-        <obo:IAO_0000115>A viral infectious disease that results in infection of primates, rodents and humans, located in skin, has_material_basis_in Monkeypox virus, which is transmitted by contact with the animal&apos;s blood, body fluids, rash, or with the body fluids of a sick person, transmitted by fomites, and transmitted by respiratory droplets. The infection has symptom fever, has symptom muscle ache, has symptom headache, and has symptom lymphadenopathy.</obo:IAO_0000115>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MONDO_0002594</obo:IAO_0100001>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
-        <oboInOwl:hasDbXref>GARD:10722</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ICD10CM:B04</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ICD9CM:059.01</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MESH:D045908</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCI:C128421</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:240466002</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0276180</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:http://www.cdc.gov/ncidod/monkeypox/factsheet2.htm</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DOID:3292</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#zoonotic_infectious_disease"/>
-        <rdfs:label>mpox</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
-        <obo:IAO_0000115>A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/doid/releases/2022-08-29/doid.owl</obo:IAO_0000412>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/OGMS_0000031</obo:IAO_0100001>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
-        <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCI:C2991</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:64572001</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0012634</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041577/</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DOID:4</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
-        <rdfs:label>disease</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/DRON_00000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DRON_00000005">
@@ -3230,16 +3105,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">environmental system process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/EUPATH_0000587 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000587">
-        <obo:IAO_0000115>An information content entity about environmental material, environmental feature, environmental system, etc.</obo:IAO_0000115>
-        <rdfs:label>environment information</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4766,22 +4631,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11676 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11709 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11709">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_12059 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_12059">
@@ -5512,14 +5361,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C15719 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C15719">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C16048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16048">
@@ -5532,54 +5373,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16309">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C16347 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16347">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C16556 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16556">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C16825 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16825">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C17039 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17039">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C171586 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C171586">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C17214 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17214">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5600,26 +5393,10 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C17449 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17449">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C176231 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C176231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C18011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18011">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5704,28 +5481,10 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C54192 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54192">
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C71104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C85439 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C85439">
-        <obo:IAO_0000115>Computer methods for creating images, diagrams or animations.</obo:IAO_0000115>
-        <rdfs:label>Graphics Visualization</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5736,25 +5495,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas97"/>
         <obo:IAO_0000115 xml:lang="en">Representation of model output uncertainty using probability distributions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">uncertainty quantification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001530 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001530">
-        <obo:IAO_0000111>data service</obo:IAO_0000111>
-        <obo:IAO_0000112>Data analysis service such statistical abalysis or storage service such data  backup.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115>A service that has some information content entity as input and output.</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON: Carlo Torniai</obo:IAO_0000117>
-        <obo:IAO_0000117>PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000118>Data Service</obo:IAO_0000118>
-        <obo:IAO_0000119>PERSON: Carlo Torniai</obo:IAO_0000119>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
-        <rdfs:comment>Information content entity was used as specified input and output since it was more appropriate then data item or dataset.</rdfs:comment>
-        <rdfs:label>data service</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5848,22 +5588,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMIT_0015767 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0015767">
-        <obo:IAO_0000116 xml:lang="en">An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">Global Health</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMIT_0015767"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget xml:lang="en">An area for study, research, and practice that places a priority on improving health and achieving equity in health for all people worldwide</owl:annotatedTarget>
-        <rdfs:comment xml:lang="en">From Koplan, Jeffrey P., T. Christopher Bond, Michael H. Merson, et al. 2009. “Towards a Common Definition of Global Health.” The Lancet 373 (9679): 1993–95. https://doi.org/10.1016/S0140-6736(09)60332-9.</rdfs:comment>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000062">
@@ -5944,16 +5668,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ONTOAVIDA_00000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONTOAVIDA_00000002">
-        <obo:IAO_0000115 xml:lang="en">An executable file is a digital file that executes a process.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">executable file</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
@@ -5963,20 +5677,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
         <apollo_sv:APOLLO_SV_0000040>biologicalSex</apollo_sv:APOLLO_SV_0000040>
         <rdfs:label xml:lang="en">biological sex</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
-        <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl</obo:IAO_0000412>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001894</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <rdfs:label>phenotypic sex</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -6177,10 +5877,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
-        <owl:equivalentClass rdf:nodeID="genid406"/>
+        <owl:equivalentClass rdf:nodeID="genid405"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:subClassOf rdf:nodeID="genid417"/>
-        <rdfs:subClassOf rdf:nodeID="genid419"/>
+        <rdfs:subClassOf rdf:nodeID="genid416"/>
+        <rdfs:subClassOf rdf:nodeID="genid418"/>
         <obo:IAO_0000115>A vaccine is a processed material with the function that when administered, it prevents or ameliorates a disorder in a target organism by inducing or modifying adaptive immune responses specific to the antigens in the vaccine.</obo:IAO_0000115>
         <obo:IAO_0000116>Many vaccines are developed to protect against infectious pathogens. Many vaccines are also being developed against some diseases such as cancer and autoimmune diseases. Vaccine is developed against a disease. Allergy.</obo:IAO_0000116>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
@@ -6188,7 +5888,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:label>vaccine</rdfs:label>
         <rdfs:seeAlso>MeSH: D014612</rdfs:seeAlso>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid406">
+    <owl:Class rdf:nodeID="genid405">
         <owl:intersectionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000026"/>
             <owl:Restriction>
@@ -6211,11 +5911,11 @@ last accessed: 14/01/2014</obo:IAO_0000119>
             </owl:Restriction>
         </owl:intersectionOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid417">
+    <owl:Restriction rdf:nodeID="genid416">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000590"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid419">
+    <owl:Restriction rdf:nodeID="genid418">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
         <owl:someValuesFrom>
             <owl:Class>
@@ -6232,19 +5932,19 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid406"/>
+        <owl:annotatedTarget rdf:nodeID="genid405"/>
         <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7); OBI_0000047 replaced by COB_0000026 to match MIDAS&apos;s COB alignment.</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid417"/>
+        <owl:annotatedTarget rdf:nodeID="genid416"/>
         <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid419"/>
+        <owl:annotatedTarget rdf:nodeID="genid418"/>
         <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
     </owl:Axiom>
     
@@ -6266,16 +5966,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000115>vaccine preparation is a manufacturing process to produce a vaccine.</obo:IAO_0000115>
         <rdfs:label>vaccine preparation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocabs.lter-europe.net/EnvThes/21604 -->
-
-    <owl:Class rdf:about="http://vocabs.lter-europe.net/EnvThes/21604">
-        <obo:IAO_0000115 xml:lang="en">A discipline is knowledge or wisdom associated with one academic field of study or profession. A discipline incorporates types of knowledge, expertise, skills, people, projects, communities, problems, challenges, studies, inquiry, approaches, and research areas that are strongly associated with academic areas of study or areas of professional practice</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">research topic</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -8032,16 +7722,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas175"/>
         <obo:IAO_0000115 xml:lang="en">intra-host models are mathematical models focusing on the dynamics of an infection within a single individual host</obo:IAO_0000115>
         <rdfs:label xml:lang="en">intra-host modeling</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000037 -->
-
-    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000037">
-        <obo:IAO_0000115>A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
-        <rdfs:label>ensemble specification</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
