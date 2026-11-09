@@ -25,6 +25,7 @@
         <terms:description xml:lang="en">An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Logical axioms on 37 classes copied from Apollo-SV release 2026-07-19 (MIDAS review row B7). In 4 of these axioms (on host organism, vaccination and vaccine), OBI_0100026 and OBI_0000047 were replaced by COB_0000022 and COB_0000026 to match MIDAS's COB alignment.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -1151,36 +1152,26 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032">
-        <owl:equivalentClass rdf:nodeID="genid10"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000033"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:subClassOf rdf:nodeID="genid15"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid10">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000033"/>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid15">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000033"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid10"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid15"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1211,7 +1202,17 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000086 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086">
-        <owl:equivalentClass rdf:nodeID="genid17"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000075"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1224,33 +1225,13 @@ Every behaviour is associated with mental processes, but not every mental proces
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <rdfs:subClassOf rdf:nodeID="genid26"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid17">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000075"/>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid26">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000075"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid17"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid26"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1290,33 +1271,28 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000139">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:subClassOf rdf:nodeID="genid28"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000029"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid28">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCO_0000001"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000029"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000139"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid28"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1331,14 +1307,61 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000142 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142">
-        <owl:equivalentClass rdf:nodeID="genid37"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000141"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000278"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000172"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
-        <rdfs:subClassOf rdf:nodeID="genid58"/>
-        <rdfs:subClassOf rdf:nodeID="genid65"/>
-        <rdfs:subClassOf rdf:nodeID="genid71"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid37">
-        <owl:intersectionOf rdf:parseType="Collection">
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom>
@@ -1358,6 +1381,8 @@ Every behaviour is associated with mental processes, but not every mental proces
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom>
@@ -1372,6 +1397,8 @@ Every behaviour is associated with mental processes, but not every mental proces
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom>
@@ -1386,79 +1413,8 @@ Every behaviour is associated with mental processes, but not every mental proces
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid58">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-        <owl:someValuesFrom>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000141"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid65">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <owl:someValuesFrom>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000278"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid71">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <owl:someValuesFrom>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000172"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid37"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7); OBI_0100026 replaced by COB_0000022 to match MIDAS&apos;s COB alignment.</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid58"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid65"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid71"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7); OBI_0100026 replaced by COB_0000022 to match MIDAS&apos;s COB alignment.</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1473,74 +1429,54 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000159 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000159">
-        <owl:equivalentClass rdf:nodeID="genid77"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000158"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000158"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
-        <rdfs:subClassOf rdf:nodeID="genid84"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid77">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000158"/>
             </owl:Restriction>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000158"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid84">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000158"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid77"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid84"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000171 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000171">
-        <owl:equivalentClass rdf:nodeID="genid86"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36044"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
-        <rdfs:subClassOf rdf:nodeID="genid91"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid86">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36044"/>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid91">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36044"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000171"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid86"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000171"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid91"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1556,47 +1492,42 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf rdf:nodeID="genid93"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GEO_000000372"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid93">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GEO_000000372"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid93"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1620,7 +1551,32 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000194">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <rdfs:subClassOf rdf:nodeID="genid108"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000007"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -1643,36 +1599,6 @@ Every behaviour is associated with mental processes, but not every mental proces
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid108">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000007"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000194"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid108"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1711,35 +1637,25 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000238 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000238">
-        <owl:equivalentClass rdf:nodeID="genid124"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000651"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
-        <rdfs:subClassOf rdf:nodeID="genid129"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid124">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000651"/>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid129">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000651"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000238"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid124"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7); OBI_0100026 replaced by COB_0000022 to match MIDAS&apos;s COB alignment.</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000238"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid129"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1795,35 +1711,25 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000318 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000318">
-        <owl:equivalentClass rdf:nodeID="genid136"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DRON_00000005"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
-        <rdfs:subClassOf rdf:nodeID="genid141"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid136">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DRON_00000005"/>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid141">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DRON_00000005"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid136"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid141"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1895,18 +1801,13 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000542">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf rdf:nodeID="genid143"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid143">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid143"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -1999,42 +1900,37 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000591">
-        <owl:equivalentClass rdf:nodeID="genid146"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid146">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:intersectionOf>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000591"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid146"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2042,33 +1938,28 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000595">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
-        <rdfs:subClassOf rdf:nodeID="genid159"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid159">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000595"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid159"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2091,7 +1982,17 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000602 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000602">
-        <owl:equivalentClass rdf:nodeID="genid168"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000601"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas131"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2100,126 +2001,81 @@ Every behaviour is associated with mental processes, but not every mental proces
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid168">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000601"/>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000602"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid168"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000604 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604">
-        <owl:equivalentClass rdf:nodeID="genid174"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
-        <rdfs:subClassOf rdf:nodeID="genid179"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid174">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000173"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid179">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid174"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid179"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000605 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000605">
-        <owl:equivalentClass rdf:nodeID="genid181"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000123"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <rdfs:subClassOf rdf:nodeID="genid186"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid181">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000123"/>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid186">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000123"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000605"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid181"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000605"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid186"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000606">
-        <owl:equivalentClass rdf:nodeID="genid188"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <rdfs:subClassOf rdf:nodeID="genid193"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid188">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid193">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000136"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000606"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid188"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000606"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid193"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2235,7 +2091,27 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000609">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000189"/>
-        <rdfs:subClassOf rdf:nodeID="genid195"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -2243,31 +2119,6 @@ Every behaviour is associated with mental processes, but not every mental proces
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid195">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000609"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid195"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2275,33 +2126,28 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000610">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
-        <rdfs:subClassOf rdf:nodeID="genid205"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid205">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:intersectionOf>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000610"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid205"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2316,13 +2162,29 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000614 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000614">
-        <owl:equivalentClass rdf:nodeID="genid214"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01001079"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000113"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
-        <rdfs:subClassOf rdf:nodeID="genid223"/>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid214">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom>
@@ -2337,34 +2199,8 @@ Every behaviour is associated with mental processes, but not every mental proces
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid223">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01001079"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000113"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000614"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid214"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000614"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid223"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2404,33 +2240,28 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000624">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
-        <rdfs:subClassOf rdf:nodeID="genid229"/>
-    </owl:Class>
-    <owl:Restriction rdf:nodeID="genid229">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid229"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -2452,33 +2283,28 @@ Every behaviour is associated with mental processes, but not every mental proces
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid237"/>
-    </owl:Class>
-    <owl:Restriction rdf:nodeID="genid237">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000626"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid237"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -2486,33 +2312,28 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000627">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
-        <rdfs:subClassOf rdf:nodeID="genid244"/>
-    </owl:Class>
-    <owl:Restriction rdf:nodeID="genid244">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000098"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000098"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000627"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid244"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -2520,33 +2341,28 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000628">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000624"/>
-        <rdfs:subClassOf rdf:nodeID="genid251"/>
-    </owl:Class>
-    <owl:Restriction rdf:nodeID="genid251">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000114"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000114"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000628"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid251"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -2718,7 +2534,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:subClassOf rdf:nodeID="genid258"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240</obo:IAO_0000116>
         <obo:IAO_0000116>Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</obo:IAO_0000116>
@@ -2726,16 +2547,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">continuant</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid258">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid258"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2743,7 +2554,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <rdfs:subClassOf rdf:nodeID="genid260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players.</obo:IAO_0000116>
@@ -2753,16 +2569,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">occurrent</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid260">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid260"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -2776,7 +2582,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <rdfs:subClassOf rdf:nodeID="genid263"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a heart</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a leg</obo:IAO_0000112>
@@ -2792,16 +2603,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">independent continuant</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid263">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid263"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2846,7 +2647,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf rdf:nodeID="genid265"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">the disposition of this piece of metal to conduct electricity.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the disposition of your blood to coagulate</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the function of your reproductive organs</obo:IAO_0000112>
@@ -2857,16 +2663,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">realizable entity</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid265">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid265"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2874,7 +2670,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:subClassOf rdf:nodeID="genid267"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112>the ambient temperature of this portion of air</obo:IAO_0000112>
         <obo:IAO_0000112>the color of a tomato</obo:IAO_0000112>
         <obo:IAO_0000112>the length of the circumference of your waist</obo:IAO_0000112>
@@ -2885,16 +2686,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">quality</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid267">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid267"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2902,7 +2693,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <rdfs:subClassOf rdf:nodeID="genid269"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">of one-sided specifically dependent continuants: the mass of this tomato</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates.</obo:IAO_0000112>
@@ -2920,16 +2716,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid269">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid269"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -2966,7 +2752,12 @@ Every behaviour is associated with mental processes, but not every mental proces
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <rdfs:subClassOf rdf:nodeID="genid271"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the pdf file on your laptop, the pdf file that is a copy thereof on my laptop</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
@@ -2975,16 +2766,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid271">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid271"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -3223,7 +3004,12 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <rdfs:subClassOf rdf:nodeID="genid273"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
@@ -3234,16 +3020,6 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid273">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid273"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -3251,7 +3027,12 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf rdf:nodeID="genid275"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
@@ -3261,16 +3042,6 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
         <rdfs:label xml:lang="en">directive information entity</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid275">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid275"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -3341,8 +3112,18 @@ whole sentence is deleted.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <rdfs:subClassOf rdf:nodeID="genid277"/>
-        <rdfs:subClassOf rdf:nodeID="genid279"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
@@ -3364,26 +3145,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label xml:lang="en">plan specification</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/231#issuecomment-1010455131</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid277">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-    </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid279">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid277"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid279"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -3480,7 +3241,12 @@ Request that IAO either clarify these or change definitions not to use them</rdf
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000488">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid281"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A quality that inheres in an organism population and is the number of organisms in the population that have antibody specific for an infectious agent in their serum at a specified time.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000117>Alexander Diehl</obo:IAO_0000117>
@@ -3489,16 +3255,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
 agent seroprevalence will depend on a type of infectious agent and a population.  Actual measures of seroprevalence are based only on tested individuals and usually specify a geographic location.  Other constraints may include population demographics.</rdfs:comment>
         <rdfs:label xml:lang="en">infectious agent seroprevalence</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid281">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000509"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IDO_0000488"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid281"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -5526,23 +5282,18 @@ agent seroprevalence will depend on a type of infectious agent and a population.
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:nodeID="genid402"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
         <rdfs:label>bodily process</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid402">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid402"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -5877,24 +5628,39 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
-        <owl:equivalentClass rdf:nodeID="genid405"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000026"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000590"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/VO_0000278"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000026"/>
-        <rdfs:subClassOf rdf:nodeID="genid416"/>
-        <rdfs:subClassOf rdf:nodeID="genid418"/>
-        <obo:IAO_0000115>A vaccine is a processed material with the function that when administered, it prevents or ameliorates a disorder in a target organism by inducing or modifying adaptive immune responses specific to the antigens in the vaccine.</obo:IAO_0000115>
-        <obo:IAO_0000116>Many vaccines are developed to protect against infectious pathogens. Many vaccines are also being developed against some diseases such as cancer and autoimmune diseases. Vaccine is developed against a disease. Allergy.</obo:IAO_0000116>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
-        <apollo_sv:APOLLO_SV_0000040>Vaccine</apollo_sv:APOLLO_SV_0000040>
-        <rdfs:label>vaccine</rdfs:label>
-        <rdfs:seeAlso>MeSH: D014612</rdfs:seeAlso>
-    </owl:Class>
-    <owl:Class rdf:nodeID="genid405">
-        <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000026"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000590"/>
             </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
                 <owl:someValuesFrom>
@@ -5909,44 +5675,14 @@ last accessed: 14/01/2014</obo:IAO_0000119>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </owl:intersectionOf>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vaccine is a processed material with the function that when administered, it prevents or ameliorates a disorder in a target organism by inducing or modifying adaptive immune responses specific to the antigens in the vaccine.</obo:IAO_0000115>
+        <obo:IAO_0000116>Many vaccines are developed to protect against infectious pathogens. Many vaccines are also being developed against some diseases such as cancer and autoimmune diseases. Vaccine is developed against a disease. Allergy.</obo:IAO_0000116>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
+        <apollo_sv:APOLLO_SV_0000040>Vaccine</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label>vaccine</rdfs:label>
+        <rdfs:seeAlso>MeSH: D014612</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid416">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VO_0000590"/>
-    </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid418">
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <owl:someValuesFrom>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/VO_0000278"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000142"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:someValuesFrom>
-    </owl:Restriction>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
-        <owl:annotatedTarget rdf:nodeID="genid405"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7); OBI_0000047 replaced by COB_0000026 to match MIDAS&apos;s COB alignment.</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid416"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid418"/>
-        <rdfs:comment xml:lang="en">Copied from Apollo-SV release 2026-07-19 (MIDAS review row B7).</rdfs:comment>
-    </owl:Axiom>
     
 
 
