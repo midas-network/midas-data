@@ -5719,7 +5719,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas0">
         <obo:IAO_0000115>A medical diagnosis associated with a given outbreak or dataset related to that outbreak. Usually will refer to an ICD, NCIT, UMLS, or similar code.</obo:IAO_0000115>
         <rdfs:comment></rdfs:comment>
-        <rdfs:label xml:lang="en">diagnosis</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete diagnosis</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -5791,7 +5791,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas103">
         <obo:IAO_0000115 xml:lang="en">One Health is a collaborative, multisectoral, and transdisciplinary approach — working at the local, regional, national, and global levels — with the goal of achieving optimal health outcomes recognizing the interconnection between people, animals, plants, and their shared environment. (U.S. Government Definition, established 2017)</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">One Health</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete One Health</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <obo:IAO_0100001 rdf:resource="http://id.nlm.nih.gov/mesh/D000074823"/>
     </owl:Class>
@@ -5877,7 +5877,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas110">
         <obo:IAO_0000115>Decision support systems (DSS) utilize technology to aid in the prevention, detection, and response to infectious disease</obo:IAO_0000115>
-        <rdfs:label>Decision Support Systems</rdfs:label>
+        <rdfs:label>obsolete Decision Support Systems</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -5900,7 +5900,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">From The Decision Lab. n.d. “The Decision Lab - Behavioral Science, Applied.” Accessed July 25, 2025. https://thedecisionlab.com/reference-guide/statistics/synthetic-population.</obo:IAO_0000119>
         <obo:IAO_0100001 rdf:resource="http://w3id.org/midas-metadata/midas147"/>
         <rdfs:comment xml:lang="en">By accurately representing a population, it can then be used for various simulations, analyses, and decision-making processes across multiple fields such as public health, urban planning, and social sciences.</rdfs:comment>
-        <rdfs:label xml:lang="en">synthetic population</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete synthetic population</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6112,7 +6112,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000115>Code that allows users to change input and obtain modified output (interactive)</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:comment>link to some external entity?</rdfs:comment>
-        <rdfs:label xml:lang="en">Software</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Software</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6266,7 +6266,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000115>A collection of data presented in a formatted and defined manner, along with metadata enabling interpretation of that data. Might be one of the elements in a catalog or repository</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:comment>is there some existing external definition to tie this to?</rdfs:comment>
-        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Dataset</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6687,9 +6687,11 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas19">
         <obo:IAO_0000115 xml:lang="en">data on occurrences of different pathogen species, strains, clades, or variants</obo:IAO_0000115>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14419"/>
-        <rdfs:label xml:lang="en">variant cases</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete variant cases</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000497"/>
+        <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas145"/>
+        <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14419"/>
     </owl:Class>
     
 
@@ -6698,7 +6700,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas2">
         <obo:IAO_0000115>The subject of the digital object - what it is about.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">topic</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete topic</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6708,7 +6710,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas20">
         <obo:IAO_0000115 xml:lang="en">An environmental dataset about natural cover of land surface such as forest, plains, rock, etc. or about human land development.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">land cover / land use data set</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete land cover / land use data set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas151"/>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas152"/>
@@ -6761,7 +6763,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas25">
         <obo:IAO_0000115>Code for facilitating access to modeling data from a remote source.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000799"/>
-        <rdfs:label xml:lang="en">Data retrieval/API</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Data retrieval/API</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6791,7 +6793,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas28">
         <obo:IAO_0000115>Construction and/or visualization of phylogenetic trees based on sequence data</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">phylogenetics</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete phylogenetics</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000563"/>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas144"/>
@@ -6804,7 +6806,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas29">
         <obo:IAO_0000115>Analysis and comparison of DNA, RNA, or other sequence data. Includes all types of analysis, including alignment, cleaning, and other comparisons.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/SO_0001260"/>
-        <rdfs:label xml:lang="en">Sequence data</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Sequence data</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6844,7 +6846,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas34">
         <obo:IAO_0000115>Information about diagnostic tests, results, including serology tests, PCR, and other tests</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">diagnostic tests</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete diagnostic tests</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas148"/>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas139"/>
@@ -6867,7 +6869,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas36">
         <obo:IAO_0000115>Data describing human behavior in terms of shopping gathering, transit, etc.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://w3id.org/midas-metadata/midas131"/>
-        <rdfs:label xml:lang="en">Behavior</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Behavior</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6877,7 +6879,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas38">
         <obo:IAO_0000115>Counts of cases, deaths, etc. Often includes multiple types of counts as not compatible with more specific labels. Information about diagnostic tests, results, including serology tests, PCR, and other tests. Can include various methods of estimation, including the COVID-19 Forecast and Scenario Hubs</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">case counts</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete case counts</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
     </owl:Class>
@@ -6889,7 +6891,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas4">
         <obo:IAO_0000115>Associated with the 2019-2020 COVID-19 outbreak.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100096"/>
-        <rdfs:label xml:lang="en">COVID-19</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete COVID-19</rdfs:label>
         <rdfs:seeAlso>ICD Code U07.1</rdfs:seeAlso>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -6911,7 +6913,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas41">
         <obo:IAO_0000115>Information about population counts, and counts for subgroups</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
-        <rdfs:label xml:lang="en">Demographics</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Demographics</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6942,7 +6944,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas46">
         <obo:IAO_0000115>Increases in deaths potentially attributable to an outbreak</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000608"/>
-        <rdfs:label xml:lang="en">Excess mortality</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Excess mortality</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6953,7 +6955,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas49">
         <obo:IAO_0000115>Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://w3id.org/midas-metadata/midas04"/>
-        <rdfs:label xml:lang="en">expert opinion forecasts</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete expert opinion forecasts</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6974,7 +6976,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas50">
         <obo:IAO_0000115>Health systems/providers participating in some aspect of relevant data</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000595"/>
-        <rdfs:label xml:lang="en">Health systems</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Health systems</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -6985,7 +6987,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas51">
         <obo:IAO_0000115>Includes diagnosed cases, deaths, hospitalizations. Also known as line lists.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000397"/>
-        <rdfs:label xml:lang="en">Individual cases reported</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Individual cases reported</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7006,7 +7008,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas54">
         <obo:IAO_0000115>Impacts of outbreak on human movement</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000602"/>
-        <rdfs:label xml:lang="en">Mobility</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Mobility</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7027,7 +7029,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas58">
         <obo:IAO_0000115>Numbers of deaths</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000542"/>
-        <rdfs:label xml:lang="en">Deaths</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Deaths</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7038,7 +7040,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas59">
         <obo:IAO_0000115>Information about vaccination, lockdowns, school closures, other interventions</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <rdfs:label xml:lang="en">Public health interventions and policies</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Public health interventions and policies</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7059,7 +7061,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas60">
         <obo:IAO_0000115>Where tests are available, how many tests, etc.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000610"/>
-        <rdfs:label xml:lang="en">Testing availability</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Testing availability</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7069,7 +7071,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas61">
         <obo:IAO_0000115>Places where outbreaks are transmitted.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Transmission settings</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Transmission settings</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7090,7 +7092,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas64">
         <obo:IAO_0000115>Counts of inpatients by region, facility, etc.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000627"/>
-        <rdfs:label xml:lang="en">Hospitalizations</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Hospitalizations</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7100,7 +7102,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas65">
         <obo:IAO_0000115>Policies undertaken to slow spread or otherwise combat outbreaks</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Interventions</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Interventions</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
     </owl:Class>
@@ -7133,7 +7135,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000115>Estimates of  understanding potential impacts of aspects of human behavior on transmission risk , often under different scenarios.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000174"/>
         <rdfs:comment>Need a clearer distinction to distinguish from other parameter estimation.</rdfs:comment>
-        <rdfs:label xml:lang="en">Transmission modeling</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Transmission modeling</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7164,7 +7166,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas71">
         <obo:IAO_0000115>Data regarding the availability or administration of vaccinations.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000609"/>
-        <rdfs:label xml:lang="en">Vaccinations</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Vaccinations</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7175,7 +7177,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas72">
         <obo:IAO_0000115>Information about the educational institutions that either paused in-person instruction or closed entirely in response to an outbreak.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000605"/>
-        <rdfs:label xml:lang="en">School closures</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete School closures</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7186,7 +7188,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas73">
         <obo:IAO_0000115>Information about population mobility: Flights , trains, general travel, cruise ships, etc.</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000602"/>
-        <rdfs:label xml:lang="en">Mobility</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Mobility</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7196,7 +7198,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas74">
         <obo:IAO_0000115>Information about media, coverage about a topic</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">media</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete media</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas85"/>
     </owl:Class>
@@ -7217,7 +7219,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas76">
         <obo:IAO_0000115>Groups of people relevant to specific locations - schools, nursing homes, prisons, etc.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">location-specific</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete location-specific</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7239,7 +7241,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas78">
         <obo:IAO_0000115>Estimates of parameter values based on expert opinion</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:resource="http://w3id.org/midas-metadata/midas04"/>
-        <rdfs:label xml:lang="en">expert assessments of parameter values</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete expert assessments of parameter values</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7249,7 +7251,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas79">
         <obo:IAO_0000115>Actions of groups of people in response to outbreaks.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">behavior</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete behavior</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas131"/>
     </owl:Class>
@@ -7270,7 +7272,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas80">
         <obo:IAO_0000115>data about high-risk areas, and places where transmission is likely to happen.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Transmission settings</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete Transmission settings</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7290,7 +7292,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas82">
         <obo:IAO_0000115>Rates of compliance with policies/interventions including mask wearing, facility closures, large events, etc.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">policy adherence</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete policy adherence</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000139"/>
     </owl:Class>
@@ -7434,7 +7436,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas95">
         <obo:IAO_0000115>Dynamic models are [..] called dynamic because they describe how system properties change over time: a gene’s expression level, the abundance of an endangered species, the mercury level in different organs within an individual, and so on.</obo:IAO_0000115>
         <rdfs:comment>From &quot;Chapter 1: What are Dynamic Models?&quot; Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
-        <rdfs:label>Dynamic Models</rdfs:label>
+        <rdfs:label>obsolete Dynamic Models</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas157"/>
     </owl:Class>
