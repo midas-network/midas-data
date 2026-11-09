@@ -21,10 +21,10 @@
         <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/mondo_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncbitaxon_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncit_import.owl"/>
-        <dc:creator>MIDAS Coordination Center</dc:creator>
-        <terms:description>An ontology of midas data types.</terms:description>
+        <dc:creator xml:lang="en">MIDAS Coordination Center</dc:creator>
+        <terms:description xml:lang="en">An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <rdfs:comment>Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
     </owl:Ontology>
     
 
