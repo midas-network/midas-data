@@ -24,7 +24,7 @@
         <dc:creator xml:lang="en">MIDAS Coordination Center</dc:creator>
         <terms:description xml:lang="en">An ontology of midas data types.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <rdfs:comment xml:lang="en">Logical axioms on 37 classes copied from Apollo-SV release 2026-07-19 (MIDAS review row B7). In 4 of these axioms (on host organism, vaccination and vaccine), OBI_0100026 and OBI_0000047 were replaced by COB_0000022 and COB_0000026 to match MIDAS&apos;s COB alignment.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Logical axioms on 37 classes copied from Apollo-SV on 2026-07-19. In 4 of these axioms (on host organism, vaccination and vaccine), OBI_0100026 and OBI_0000047 were replaced by COB_0000022 and COB_0000026 to match MIDAS&apos;s COB alignment.</rdfs:comment>
         <rdfs:comment xml:lang="en">Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
     </owl:Ontology>
     
@@ -515,7 +515,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112>walks for 15 mins/day, never eats meat, attends school daily</obo:IAO_0000112>
         <obo:IAO_0000115>A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.</obo:IAO_0000115>
         <apollo_sv:APOLLO_SV_0000040>HumanBehavior</apollo_sv:APOLLO_SV_0000040>
-        <rdfs:comment>it is concerned with moving skeletal parts to which it is usually attached.&apos; (https://www.collinsdictionary.com/dictionary/english/striped-muscle)</rdfs:comment>
         <rdfs:comment>The class human behaviour [BCIO:042000] has been made obsolete. If you want to refer to the behaviour of an individual, refer to individual human behaviour . If you want to refer to the behaviour of a group, refer to population behaviour.
 
 Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.
@@ -2603,7 +2602,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112 xml:lang="en">an organism</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the bottom right portion of a human torso</obo:IAO_0000112>
         <obo:IAO_0000112>the interior of your mouth</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">B is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">independent continuant</rdfs:label>
@@ -2622,7 +2621,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
         <obo:IAO_0000112>your process of aging.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">P is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: The realm of occurrents is less pervasively marked by the presence of natural units than is the case in the realm of independent continuants. Thus there is here no counterpart of ‘object’. In BFO 1.0 ‘process’ served as such a counterpart. In BFO 2.0 ‘process’ is, rather, the occurrent counterpart of ‘material entity’. Those natural – as contrasted with engineered, which here means: deliberately executed – units which do exist in the realm of occurrents are typically either parasitic on the existence of natural units on the continuant side, or they are fiat in nature. Thus we can count lives; we can count football games; we can count chemical reactions performed in experiments or in chemical manufacturing. We cannot count the processes taking place, for instance, in an episode of insect mating behavior.Even where natural units are identifiable, for example cycles in a cyclical process such as the beating of a heart or an organism’s sleep/wake cycle, the processes in question form a sequence with no discontinuities (temporal gaps) of the sort that we find for instance where billiard balls or zebrafish or planets are separated by clear spatial gaps. Lives of organisms are process units, but they too unfold in a continuous series from other, prior processes such as fertilization, and they unfold in turn in continuous series of post-life processes such as post-mortem decay. Clear examples of boundaries of processes are almost always of the fiat sort (midnight, a time of death as declared in an operating theater or on a death certificate, the initiation of a state of war)</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -2714,7 +2713,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the shape of this hole.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the smell of this portion of mozzarella</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">B is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
@@ -2764,7 +2763,6 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the pdf file on your laptop, the pdf file that is a copy thereof on my laptop</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
@@ -5128,14 +5126,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C16309 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16309">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C172305 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C172305">
@@ -5152,28 +5142,10 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C176231 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C176231">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C18141 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18141">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20181"/>
-        <oboInOwl:hasExactSynonym>Computer Sciences; Computer Technology</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C18149 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18149">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D003205"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C18141"/>
     </owl:Class>
     
 
@@ -5775,9 +5747,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas102">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D004813"/>
-        <obo:IAO_0000115 xml:lang="en">Computational epidemiology is an interdisciplinary area setting its sights on developing and using computer models to understand and control the spatiotemporal diffusion of disease through populations.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">From Computational Epidemiology – Communications of the ACM. 2013. https://cacm.acm.org/research/computational-epidemiology/.</rdfs:comment>
-        <rdfs:label xml:lang="en">Computational Epidemiology</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An interdisciplinary area of epidemiology that sets its sights on developing and using computer models to understand and control the spatiotemporal diffusion of disease through populations.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">From Computational Epidemiology – Communications of the ACM. 2013. https://cacm.acm.org/research/computational-epidemiology/.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">computational epidemiology</rdfs:label>
     </owl:Class>
     
 
@@ -5799,7 +5771,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D010811"/>
         <obo:IAO_0000115 xml:lang="en">an inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Outbreak Science</rdfs:label>
+        <rdfs:label xml:lang="en">outbreak science</rdfs:label>
     </owl:Class>
     
 
@@ -5808,8 +5780,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas105">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D004463"/>
-        <obo:IAO_0000115 xml:lang="en">The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Parasite Ecology</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">parasite ecology</rdfs:label>
     </owl:Class>
     
 
@@ -5818,8 +5790,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas106">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D005075"/>
-        <obo:IAO_0000115 xml:lang="en">The genetic changes that occur within a pathogen population over time</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Pathogen Evolution</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The genetic changes that occur within a pathogen population over time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">pathogen evolution</rdfs:label>
     </owl:Class>
     
 
@@ -5831,7 +5803,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D005075"/>
         <obo:IAO_0000115 xml:lang="en">Phylodynamics is a term originally coined by Grenfell and colleagues, to refer to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Phylodynamics</rdfs:label>
+        <rdfs:label xml:lang="en">phylodynamics</rdfs:label>
     </owl:Class>
     
 
@@ -6672,7 +6644,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas18">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115 xml:lang="en">A modeling purpose of projecting outbreak behavior into some future time, determined relative to a defined starting point. Might include retrospective projects or projections for current activity (known as &quot;now-casting&quot;).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A modeling purpose of projecting outbreak behavior into some future time, determined relative to a defined starting point. Might include retrospective projections or projections for current activity (known as &quot;nowcasting&quot;).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">forecasting</rdfs:label>
     </owl:Class>
     
@@ -6811,8 +6783,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas30">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
-        <obo:IAO_0000115 xml:lang="en">Papers describing modeling studies</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">modeling studies</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Papers describing modeling studies.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modeling study</rdfs:label>
     </owl:Class>
     
 
@@ -6898,7 +6870,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas40">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas157"/>
         <obo:IAO_0000115 xml:lang="en">Models based on SIR (Susceptible, Infected, Recovered) models or any of the many variants of this basic framework.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">compartmental models</rdfs:label>
+        <rdfs:label xml:lang="en">compartmental model</rdfs:label>
     </owl:Class>
     
 
@@ -6992,8 +6964,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas53">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas157"/>
-        <obo:IAO_0000115 xml:lang="en">Models based on simulated actions of individuals and interactions between those individuals</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">agent-based models</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Models based on simulated actions of individuals and interactions between those individuals.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">agent-based model</rdfs:label>
     </owl:Class>
     
 
@@ -7076,8 +7048,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas62">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
-        <obo:IAO_0000115 xml:lang="en">Reports of policy violations</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">regulatory complaints</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Reports of policy violations.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">regulatory complaint</rdfs:label>
     </owl:Class>
     
 
@@ -7443,8 +7415,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas96">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
         <obo:IAO_0000115 xml:lang="en">Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms).</obo:IAO_0000115>
-        <rdfs:comment>From Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</rdfs:comment>
-        <rdfs:label xml:lang="en">geospatial models</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">From Ellner, Stephen P., and John Guckenheimer. 2006. Dynamic Models in Biology. Princeton University Press. https://doi.org/10.2307/j.ctvcm4h1q.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">geospatial model</rdfs:label>
     </owl:Class>
     
 
@@ -7464,8 +7436,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas98">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115 xml:lang="en">A modeling purpose using decision models to provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
-        <obo:IAO_0000119>Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">decision models</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">decision model</rdfs:label>
     </owl:Class>
     
 
