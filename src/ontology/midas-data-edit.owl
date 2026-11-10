@@ -5696,7 +5696,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas03">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Level of details of the location: ADMIN0, ADMIN1, Country, State, … (can be multiple).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that specifies the level of detail of a location, such as ADMIN0, ADMIN1, country or state (several levels can apply).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">List comes from GEONAMES class like: &quot;Dependent political entity&quot; or &quot;First-order administrative division&quot;, but it also contains common terms (from https://en.wikipedia.org/wiki/Administrative_division for example) to help with the data entry</rdfs:comment>
         <rdfs:label xml:lang="en">geographical resolution</rdfs:label>
     </owl:Class>
@@ -5707,7 +5707,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas04">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of expertise-driven estimates from epidemiologists, modelers or others with domain knowledge.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expert assessment / opinion</rdfs:label>
     </owl:Class>
     
@@ -5717,7 +5717,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas10">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Descriptors - broadly categorizing the entries that might be annotated with this model.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that broadly categorizes the kinds of entries that might be annotated with this ontology.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">digital object type</rdfs:label>
     </owl:Class>
     
@@ -5727,7 +5727,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000627"/>
-        <obo:IAO_0000115 xml:lang="en">Magnitude of the peak of incident hospitalizations occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A count of hospital stays in a population that is the magnitude of the peak of incident hospitalizations during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">peak hospitalization count</rdfs:label>
     </owl:Class>
     
@@ -5736,8 +5736,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas101 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000627"/>
-        <obo:IAO_0000115 xml:lang="en">Cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">peak hospitalization time cumulative distribution</rdfs:label>
     </owl:Class>
     
@@ -5780,7 +5780,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas105">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D004463"/>
-        <obo:IAO_0000115 xml:lang="en">The study of how parasites interact with their environment, including their hosts, other parasites, and the surrounding ecosystem.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An area of ecology that studies how parasites interact with their environment, including their hosts, other parasites and the surrounding ecosystem.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">parasite ecology</rdfs:label>
     </owl:Class>
     
@@ -5790,7 +5790,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas106">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D005075"/>
-        <obo:IAO_0000115 xml:lang="en">The genetic changes that occur within a pathogen population over time.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A biological evolution that consists of the genetic changes occurring within a pathogen population over time.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pathogen evolution</rdfs:label>
     </owl:Class>
     
@@ -5812,7 +5812,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas108">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D003142"/>
-        <obo:IAO_0000115 xml:lang="en">The practice of informing, raising awareness of science-related topics, and also getting involved with audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A communication that is the practice of informing about, and raising awareness of, science-related topics, and of engaging audiences that include, at least in part, people from outside the science community.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From Europe, Science. n.d. “Science Communication.” Science Europe. Accessed July 25, 2025. https://scienceeurope.org/our-priorities/science-communication/.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">science communication</rdfs:label>
     </owl:Class>
@@ -5896,7 +5896,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
-        <obo:IAO_0000115 xml:lang="en">Treatment that uses antibodies to help the body fight cancer, infection, or other diseases. Antibodies are proteins made by the immune system that bind to specific markers on cells or tissues.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A drug treatment that uses antibodies to help the body fight cancer, infection or other diseases. Antibodies are proteins made by the immune system that bind to specific markers on cells or tissues.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://www.cancer.gov/publications/dictionaries/cancer-terms/def/antibody-therapy</obo:IAO_0000119>
         <rdfs:label xml:lang="en">antibody treatment</rdfs:label>
     </owl:Class>
@@ -6496,7 +6496,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas161">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115 xml:lang="en">Resources focused on educational or instructional content.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A digital object type for resources focused on educational or instructional content.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">educational resource</rdfs:label>
     </owl:Class>
     
@@ -6522,7 +6522,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas163">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas179"/>
-        <obo:IAO_0000115 xml:lang="en">Software designed to identify parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A parameter estimation software designed to identify parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">model calibration software</rdfs:label>
     </owl:Class>
     
@@ -6638,7 +6638,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas179">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
-        <obo:IAO_0000115 xml:lang="en">Software that uses available data to infer possible values (including ranges) of model parameters.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A software application that uses available data to infer possible values (including ranges) of model parameters.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">parameter estimation software</rdfs:label>
     </owl:Class>
     
@@ -6793,7 +6793,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas30">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
-        <obo:IAO_0000115 xml:lang="en">Papers describing modeling studies.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A literature catalog of papers that describe modeling studies.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">modeling study</rdfs:label>
     </owl:Class>
     
@@ -6942,7 +6942,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas5">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">The &quot;domain&quot; of the entity - specifically, the focus of the data contained therein.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that describes the biological &quot;domain&quot; of the entity - specifically, the focus of the data contained therein.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">biological scale</rdfs:label>
     </owl:Class>
     
@@ -7058,7 +7058,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas62">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
-        <obo:IAO_0000115 xml:lang="en">Reports of policy violations.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A report of a violation of a policy or regulation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">regulatory complaint</rdfs:label>
     </owl:Class>
     
@@ -7132,7 +7132,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas7">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas11"/>
-        <obo:IAO_0000115 xml:lang="en">Collections of entities from the research literature, or derived from the literature.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A catalog of items from the research literature, or derived from it.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">literature</rdfs:label>
     </owl:Class>
     
@@ -7206,7 +7206,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas77">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Name of the location in English at country or ADMIN1 level corresponding from GEONAMES (if more than 10 different countries possible &quot;Earth&quot; can be used).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that names the locations covered, in English, at country or ADMIN1 level as given in GeoNames (if more than 10 different countries, &quot;Earth&quot; can be used).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Also have Continent and Earth information as some data set have data for multiple countries but in the same continent.</rdfs:comment>
         <rdfs:label xml:lang="en">geographical scope</rdfs:label>
     </owl:Class>
@@ -7239,7 +7239,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas8">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas5"/>
-        <obo:IAO_0000115 xml:lang="en">Items referring to sequence-level, including genomics, microbiomics, proteomics, etc.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A biological scale referring to sequence-level, including genomics, microbiomics, proteomics, etc.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">molecular</rdfs:label>
     </owl:Class>
     
@@ -7350,7 +7350,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas9">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas5"/>
-        <obo:IAO_0000115 xml:lang="en">Items corresponding to entire populations or subpopulations. Might be geographically or temporally limited.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A biological scale corresponding to entire populations or subpopulations, which may be limited in place or time.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">population</rdfs:label>
     </owl:Class>
     
