@@ -5707,7 +5707,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas04">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Expertise-driven estimates from epidemiologists, modelers, or others with domain knowledge.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expert assessment / opinion</rdfs:label>
     </owl:Class>
     
@@ -5717,7 +5717,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas10">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Descriptors - broadly categorizing the entries that might be annotated with this model</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Descriptors - broadly categorizing the entries that might be annotated with this model.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">digital object type</rdfs:label>
     </owl:Class>
     
@@ -5823,7 +5823,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000115 xml:lang="en">A data set that is about variability or diversity within a population that can influence their health outcomes, risk factors, and response to interventions</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about variability or diversity within a population that can influence their health outcomes, risk factors, and response to interventions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">health heterogeneity data set</rdfs:label>
     </owl:Class>
     
@@ -5908,7 +5908,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas116">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
-        <obo:IAO_0000115 xml:lang="en">A census about personal protective equipment supplies (masks, gloves, gowns, shields, boots, etc.) in a particular geographical region</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A census about personal protective equipment supplies (masks, gloves, gowns, shields, boots, etc.) in a particular geographical region.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">census of PPE supplies</rdfs:label>
     </owl:Class>
     
@@ -6066,7 +6066,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas129">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
-        <obo:IAO_0000115 xml:lang="en">A census about the number of hospital beds in a particular geographical region</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A census about the number of hospital beds in a particular geographical region.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">hospital bed census</rdfs:label>
     </owl:Class>
     
@@ -6114,7 +6114,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000115 xml:lang="en">A data set that is about the intent of one or more organisms to participate in some future process</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about the intent of one or more organisms to participate in some future process.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">intent data set</rdfs:label>
     </owl:Class>
     
@@ -6210,7 +6210,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A data set that is about one or more clinical trials</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about one or more clinical trials.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">clinical trial data set</rdfs:label>
     </owl:Class>
     
@@ -6252,7 +6252,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas141">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas139"/>
-        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the number of diagnostic tests performed that occur during a proper occurrent part of a reference temporal interval</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the number of diagnostic tests performed that occur during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">incident diagnostic test count</rdfs:label>
     </owl:Class>
     
@@ -6262,7 +6262,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas142">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
-        <obo:IAO_0000115 xml:lang="en">A census about nursing home beds or capacity in a particular geographical region</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A census about nursing home beds or capacity in a particular geographical region.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">nursing home capacity census</rdfs:label>
     </owl:Class>
     
@@ -6272,7 +6272,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas143">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
-        <obo:IAO_0000115 xml:lang="en">A census about therapeutics supplies or treatment in a particular geographical region</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A census about therapeutics supplies or treatment in a particular geographical region.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">therapeutics census</rdfs:label>
     </owl:Class>
     
@@ -6288,7 +6288,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://id.nlm.nih.gov/mesh/D010802"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A data set representing one or more phylogenetic trees</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set representing one or more phylogenetic trees.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">phylogenetic tree data set</rdfs:label>
     </owl:Class>
     
@@ -6320,7 +6320,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000488"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A data set that is about infectious agent seroprevalence in a population</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that is about infectious agent seroprevalence in a population.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">seroprevalence data set</rdfs:label>
     </owl:Class>
     
@@ -6343,7 +6343,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000115 xml:lang="en">A data set compiling performance data for diagnostic tests for a specific pathogen</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set compiling performance data for diagnostic tests for a specific pathogen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">diagnostic test performance data set</rdfs:label>
     </owl:Class>
     
@@ -6491,7 +6491,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas161">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115 xml:lang="en">Resources focused on educational or instructional content</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Resources focused on educational or instructional content.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">educational resource</rdfs:label>
     </owl:Class>
     
@@ -6567,7 +6567,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <obo:IAO_0000115 xml:lang="en">A modeling technique that identifies parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A modeling technique that identifies parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">calibration</rdfs:label>
     </owl:Class>
     
@@ -6583,7 +6583,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://id.nlm.nih.gov/mesh/D000069550"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Modeling systems built on machine learning method</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Modeling systems built on machine learning method.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">machine learning model</rdfs:label>
     </owl:Class>
     
@@ -6792,7 +6792,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas32">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115 xml:lang="en">A collection of information in various types of structured or non-structured formats</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A collection of information in various types of structured or non-structured formats.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">repository</rdfs:label>
     </owl:Class>
     
@@ -6802,7 +6802,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas33">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
-        <obo:IAO_0000115 xml:lang="en">A catalog focused on a specific disease</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A catalog focused on a specific disease.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">disease-specific collection</rdfs:label>
     </owl:Class>
     
@@ -6824,7 +6824,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas35">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas43"/>
-        <obo:IAO_0000115 xml:lang="en">Data on impact of outbreak on humanitarian efforts</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Data on impact of outbreak on humanitarian efforts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">aid/response data set</rdfs:label>
     </owl:Class>
     
@@ -6984,7 +6984,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas57">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas109"/>
-        <obo:IAO_0000115>Aggregate descriptions of multiple factors involving susceptibility to outbreaks</obo:IAO_0000115>
+        <obo:IAO_0000115>Aggregate descriptions of multiple factors involving susceptibility to outbreaks.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">risk factor data set</rdfs:label>
     </owl:Class>
     
@@ -7175,7 +7175,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas75">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000159"/>
-        <obo:IAO_0000115>Population data divided by age ranges</obo:IAO_0000115>
+        <obo:IAO_0000115>Population data divided by age ranges.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">age-stratified population census</rdfs:label>
     </owl:Class>
     
@@ -7412,7 +7412,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas96 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas96">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas157"/>
         <obo:IAO_0000115 xml:lang="en">Geospatial models are a class of statistical and deterministic methods that account for spatial relationships and/or spatiotemporal correlation in the fixed effects (e.g., covariates, mechanisms) and/or random effects (e.g., error terms).</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Clark, L.P., Zilber, D., Schmitt, C. et al. A review of geospatial exposure models and approaches for health data integration. J Expo Sci Environ Epidemiol 35, 131–148 (2025). https://doi.org/10.1038/s41370-024-00712-8</obo:IAO_0000119>
         <rdfs:label xml:lang="en">geospatial model</rdfs:label>
