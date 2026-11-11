@@ -22,10 +22,12 @@
         <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncbitaxon_import.owl"/>
         <owl:imports rdf:resource="http://midasnetwork.us/ontology/imports/ncit_import.owl"/>
         <dc:creator xml:lang="en">MIDAS Coordination Center</dc:creator>
-        <terms:description xml:lang="en">An ontology of midas data types.</terms:description>
-        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <rdfs:comment xml:lang="en">Logical axioms on 37 classes copied from Apollo-SV on 2026-07-19. In 4 of these axioms (on host organism, vaccination and vaccine), OBI_0100026 and OBI_0000047 were replaced by COB_0000022 and COB_0000026 to match MIDAS&apos;s COB alignment.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Testing automated release process by editing the midas-data-edit.owl file.</rdfs:comment>
+        <terms:description xml:lang="en">An ontology for describing resources in the MIDAS (Models of Infectious Disease Agent Study) Catalog, covering biological scale, artifact type, modeling topics and other topics of interest.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">MIDAS Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Logical axioms on 37 classes copied from the Apollo-SV release of 2026-07-19. In 4 of these axioms (on host organism, vaccination and vaccine), OBI_0100026 and OBI_0000047 were replaced by COB_0000022 and COB_0000026 to match MIDAS&apos;s COB alignment.</rdfs:comment>
+        <foaf:homepage rdf:resource="https://midasnetwork.us/ontology/index.html"/>
+        <foaf:mbox rdf:resource="mailto:questions@midasnetwork.us"/>
     </owl:Ontology>
     
 
@@ -266,6 +268,22 @@
         <rdfs:label>label</rdfs:label>
         <rdfs:label xml:lang="en">label</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
+        <rdfs:label xml:lang="en">homepage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox">
+        <rdfs:label xml:lang="en">mbox</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
