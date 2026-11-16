@@ -263,7 +263,6 @@
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:label>label</rdfs:label>
         <rdfs:label xml:lang="en">label</rdfs:label>
     </rdf:Description>
     
@@ -1217,24 +1216,7 @@ Every behaviour is associated with mental processes, but not every mental proces
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000794"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000075"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
