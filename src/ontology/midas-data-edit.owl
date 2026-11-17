@@ -391,7 +391,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000067">
-        <obo:IAO_0000115 xml:lang="en">[Copied from inverse property &apos;occurs in&apos;] b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">[copied from inverse property &apos;occurs in&apos;] b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
         <rdfs:label xml:lang="en">contains process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2631,7 +2631,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112 xml:lang="en">an organism</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the bottom right portion of a human torso</obo:IAO_0000112>
         <obo:IAO_0000112>the interior of your mouth</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">B is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">independent continuant</rdfs:label>
@@ -2650,7 +2650,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
         <obo:IAO_0000112>your process of aging.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">P is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: The realm of occurrents is less pervasively marked by the presence of natural units than is the case in the realm of independent continuants. Thus there is here no counterpart of ‘object’. In BFO 1.0 ‘process’ served as such a counterpart. In BFO 2.0 ‘process’ is, rather, the occurrent counterpart of ‘material entity’. Those natural – as contrasted with engineered, which here means: deliberately executed – units which do exist in the realm of occurrents are typically either parasitic on the existence of natural units on the continuant side, or they are fiat in nature. Thus we can count lives; we can count football games; we can count chemical reactions performed in experiments or in chemical manufacturing. We cannot count the processes taking place, for instance, in an episode of insect mating behavior.Even where natural units are identifiable, for example cycles in a cyclical process such as the beating of a heart or an organism’s sleep/wake cycle, the processes in question form a sequence with no discontinuities (temporal gaps) of the sort that we find for instance where billiard balls or zebrafish or planets are separated by clear spatial gaps. Lives of organisms are process units, but they too unfold in a continuous series from other, prior processes such as fertilization, and they unfold in turn in continuous series of post-life processes such as post-mortem decay. Clear examples of boundaries of processes are almost always of the fiat sort (midnight, a time of death as declared in an operating theater or on a death certificate, the initiation of a state of war)</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -2714,7 +2714,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112>the mass of this piece of gold.</obo:IAO_0000112>
         <obo:IAO_0000112>the shape of your nose</obo:IAO_0000112>
         <obo:IAO_0000112>the shape of your nostril</obo:IAO_0000112>
-        <obo:IAO_0000600 xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</obo:IAO_0000600>
+        <obo:IAO_0000600 xml:lang="en">A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</obo:IAO_0000600>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">quality</rdfs:label>
     </owl:Class>
@@ -2742,7 +2742,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the shape of this hole.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the smell of this portion of mozzarella</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">B is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
@@ -2792,7 +2792,7 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the pdf file on your laptop, the pdf file that is a copy thereof on my laptop</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">B is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
     </owl:Class>
@@ -5496,7 +5496,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000107">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas157"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115 xml:lang="en">a statistical model is an information content entity which is a formalization of relationships between variables in the form of mathematical equations. A statistical model describes how one or more random variables are related to one or more other variables. The model is statistical as the variables are not deterministically but stochastically related.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A statistical model is an information content entity which is a formalization of relationships between variables in the form of mathematical equations. A statistical model describes how one or more random variables are related to one or more other variables. The model is statistical as the variables are not deterministically but stochastically related.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
@@ -5515,7 +5515,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000530">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000107"/>
-        <obo:IAO_0000115 xml:lang="en">a Bayesian model is a statistical model where inference is based on using Bayes theorem to obtain a posterior distribution for a quantity (or quantities) of interest for some model (such as parameter values) based on some prior distribution for the relevant unknown parameters and the likelihood from the model.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A Bayesian model is a statistical model where inference is based on using Bayes theorem to obtain a posterior distribution for a quantity (or quantities) of interest for some model (such as parameter values) based on some prior distribution for the relevant unknown parameters and the likelihood from the model.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">bayesian model</rdfs:label>
     </owl:Class>
     
@@ -5583,7 +5583,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/unit"/>
         <apollo_sv:APOLLO_SV_0000040>DimensionlessUnit</apollo_sv:APOLLO_SV_0000040>
         <oboInOwl:hasOBONamespace xml:lang="en">unit.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_group_slim"/>
         <rdfs:label xml:lang="en">dimensionless unit</rdfs:label>
     </owl:Class>
     
@@ -5597,7 +5596,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
         <apollo_sv:APOLLO_SV_0000040>Percent</apollo_sv:APOLLO_SV_0000040>
         <oboInOwl:hasOBONamespace>unit.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset xml:lang="en">http://purl.org/obo/owl/obo#unit_slim</oboInOwl:inSubset>
         <rdfs:label xml:lang="en">percent</rdfs:label>
     </owl:Class>
     
@@ -5611,7 +5609,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
         <apollo_sv:APOLLO_SV_0000040>Ratio</apollo_sv:APOLLO_SV_0000040>
         <oboInOwl:hasOBONamespace xml:lang="en">unit.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_group_slim"/>
         <rdfs:label xml:lang="en">ratio</rdfs:label>
     </owl:Class>
     
@@ -5625,7 +5622,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000412>http://purl.org/obo/owl/unit</obo:IAO_0000412>
         <apollo_sv:APOLLO_SV_0000040>Fraction</apollo_sv:APOLLO_SV_0000040>
         <oboInOwl:hasOBONamespace>unit.ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#unit_slim"/>
         <rdfs:label xml:lang="en">fraction</rdfs:label>
     </owl:Class>
     
@@ -5696,7 +5692,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000278">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <obo:IAO_0000115 xml:lang="en">vaccine function is a function that inheres in a vaccine that induces protective immune response against a disease. It is realized in the immunization process in the host.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">To induce or modify protective or therapeutic immune response against a disease.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">PERSPN: Oliver He: There has been hot discussion about whether we use &apos;vaccine function&apos; or &apos;vaccine role&apos;. Vaccine role may not be the good term to use. Vaccine is designed to be &apos;vaccine&apos;, so it should be vaccine function. One special case is cowpox virus. The cowpox virus can be mixed with some liquid like water and used as a smallpox vaccine. In this case, people often say: the cowpox virus has a &apos;vaccine role&apos;. However, the cowpox virus vaccine is a processed material of a mix of the virus with water. The virus is a virus, it is not a vaccine per se. Therefore, vaccine role may not be an accurate term.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">vaccine function</rdfs:label>
     </owl:Class>
     
@@ -5706,7 +5703,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000590">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <obo:IAO_0000115 xml:lang="en">vaccine preparation is a manufacturing process to produce a vaccine.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Vaccine preparation is a manufacturing process to produce a vaccine.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">vaccine preparation</rdfs:label>
     </owl:Class>
     
