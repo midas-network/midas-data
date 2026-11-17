@@ -25,9 +25,9 @@
         <terms:description xml:lang="en">An ontology for describing resources in the MIDAS (Models of Infectious Disease Agent Study) Catalog, covering biological scale, artifact type, modeling topics and other topics of interest.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">MIDAS Ontology</terms:title>
-        <owl:priorVersion rdf:resource="http://midasnetwork.us/datasets/v2026-07-23/midas-data.owl"/>
-        <rdfs:comment xml:lang="en">The ontology IRI changed from http://midasnetwork.us/datasets/midas-data.owl (which did not resolve) to http://midasnetwork.us/ontology/midas-data.owl after the 2026-07-23 version.</rdfs:comment>
         <rdfs:comment xml:lang="en">Logical axioms on 37 classes copied from the Apollo-SV release of 2026-07-19. In 4 of these axioms (on host organism, vaccination and vaccine), OBI_0100026 and OBI_0000047 were replaced by COB_0000022 and COB_0000026 to match MIDAS&apos;s COB alignment.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The ontology IRI changed from http://midasnetwork.us/datasets/midas-data.owl (which did not resolve) to http://midasnetwork.us/ontology/midas-data.owl after the 2026-07-23 version.</rdfs:comment>
+        <owl:priorVersion rdf:resource="http://midasnetwork.us/datasets/v2026-07-23/midas-data.owl"/>
         <foaf:homepage rdf:resource="https://midasnetwork.us/ontology/index.html"/>
         <foaf:mbox rdf:resource="mailto:questions@midasnetwork.us"/>
     </owl:Ontology>
@@ -4759,7 +4759,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_36469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_36469">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <obo:IAO_0000116 xml:lang="en">Small proteinaceous infectious particles which resist inactivation by procedures that modify NUCLEIC ACIDS and contain an abnormal isoform of a cellular protein which is a major and necessary component. The abnormal (scrapie) isoform is PrPSc (PRPSC PROTEINS) and the cellular isoform PrPC (PRPC PROTEINS). The primary amino acid sequence of the two isoforms is identical. Human diseases caused by prions include CREUTZFELDT-JAKOB SYNDROME; GERSTMANN-STRAUSSLER SYNDROME; and INSOMNIA, FATAL FAMILIAL.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">prion</rdfs:label>
     </owl:Class>
