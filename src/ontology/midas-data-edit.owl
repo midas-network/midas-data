@@ -5390,8 +5390,15 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
         <obo:IAO_0000115 xml:lang="en">TODO</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A health care process in which a patient is admitted to a hospital as an inpatient and receives care there.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">hospitalization</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000098"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">A health care process in which a patient is admitted to a hospital as an inpatient and receives care there.</owl:annotatedTarget>
+        <obo:IAO_0000119 xml:lang="en">Adapted from the OGMS discussion on health care encounters (ogms-discuss mailing list, 2011): https://groups.google.com/g/ogms-discuss/c/otvC7R3_mdY</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -7327,7 +7334,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas81">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas131"/>
-        <obo:IAO_0000115 xml:lang="en">A data set about the frequency of interactions between individuals in different settings, at different times...</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set about the frequency of interactions between individuals in different settings, at different times, etc.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">contact rate data set</rdfs:label>
     </owl:Class>
     
