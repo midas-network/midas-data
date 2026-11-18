@@ -7422,7 +7422,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas94">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0000436"/>
-        <obo:IAO_0000115 xml:lang="en">An infectious disease for which the World Health Organization lists an available vaccine.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease for which at least one vaccine is available that is either listed by the World Health Organization (WHO) on its vaccine-preventable diseases page or prequalified by WHO.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">From: https://www.who.int/news-room/q-a-detail/ebola-vaccines, accessed on Nov 18, 2026</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">From: https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases, accessed on Nov 4, 2026</obo:IAO_0000119>
         <rdfs:label xml:lang="en">vaccine-preventable disease</rdfs:label>
     </owl:Class>
