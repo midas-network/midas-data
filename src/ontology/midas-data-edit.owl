@@ -6622,6 +6622,37 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas161 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention and public health measures.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">wildlife health control strategy</rdfs:label>
+    </owl:Class>    
+
+
+
+    <!-- http://w3id.org/midas-metadata/midas162 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas162">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas161"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <obo:IAO_0000115 xml:lang="en">A control strategy census that is about wildlife health control strategies implemented in a particular geographical region.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">wildlife health control strategy census</rdfs:label>
+</owl:Class>
+
+
+
     <!-- http://w3id.org/midas-metadata/midas17 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
@@ -7499,9 +7530,11 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas92 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas92">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
-        <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention, public health considerations.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">wildlife health control strategy</rdfs:label>
+        <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention, public health considerations, etc.</obo:IAO_0000115>
+        <rdfs:label>obsolete Wildlife Health Interventions</rdfs:label>
+        <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas161"/>
+        <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas162"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
