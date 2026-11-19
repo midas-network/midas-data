@@ -7124,15 +7124,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas63 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas63">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas84"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A data set that is an aggregate of estimates of reluctance to being vaccinated.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">vaccine hesitancy data set</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000075"/>
+        <obo:IAO_0000115 xml:lang="en">A mental quality characterizing reluctance, doubt, or ambivalence toward being vaccinated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vaccine hesitancy</rdfs:label>
     </owl:Class>
     
 
@@ -7372,9 +7366,15 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas84 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas84">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000075"/>
-        <obo:IAO_0000115 xml:lang="en">A mental quality characterizing reluctance, doubt, or ambivalence toward being vaccinated.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">vaccine hesitancy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas63"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A data set that is an aggregate of estimates of reluctance to being vaccinated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vaccine hesitancy data set</rdfs:label>
     </owl:Class>
     
 
