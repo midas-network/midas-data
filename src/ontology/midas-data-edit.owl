@@ -1484,7 +1484,7 @@ Every behaviour is associated with mental processes, but not every mental proces
                                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                                        <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas9"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -4814,7 +4814,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_36469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_36469">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000116 xml:lang="en">Small proteinaceous infectious particles which resist inactivation by procedures that modify NUCLEIC ACIDS and contain an abnormal isoform of a cellular protein which is a major and necessary component. The abnormal (scrapie) isoform is PrPSc (PRPSC PROTEINS) and the cellular isoform PrPC (PRPC PROTEINS). The primary amino acid sequence of the two isoforms is identical. Human diseases caused by prions include CREUTZFELDT-JAKOB SYNDROME; GERSTMANN-STRAUSSLER SYNDROME; and INSOMNIA, FATAL FAMILIAL.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">prion</rdfs:label>
     </owl:Class>
@@ -6628,8 +6628,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
         <obo:IAO_0000115 xml:lang="en">An infectious disease control strategy focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention and public health measures.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">wildlife health control strategy</rdfs:label>
-    </owl:Class>    
-
+    </owl:Class>
+    
 
 
     <!-- http://w3id.org/midas-metadata/midas162 -->
@@ -6649,8 +6649,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
         <obo:IAO_0000115 xml:lang="en">A control strategy census that is about wildlife health control strategies implemented in a particular geographical region.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">wildlife health control strategy census</rdfs:label>
-</owl:Class>
-
+    </owl:Class>
+    
 
 
     <!-- http://w3id.org/midas-metadata/midas17 -->
@@ -6980,6 +6980,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     </owl:Class>
     
 
+
     <!-- http://w3id.org/midas-metadata/midas45 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas45">
@@ -6989,6 +6990,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:label xml:lang="en">obsolete event cancellations</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
 
 
     <!-- http://w3id.org/midas-metadata/midas46 -->
@@ -7257,7 +7259,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas69">
         <obo:IAO_0000115 xml:lang="en">A mathematical model of the interactions between entities that might affect outbreak progression.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">network model</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete network model</rdfs:label>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000612"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -7531,9 +7534,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas92">
         <obo:IAO_0000115>A range of activities focused on preventing, managing, and mitigating health issues in wild animal populations, including disease prevention, public health considerations, etc.</obo:IAO_0000115>
-        <rdfs:label>obsolete Wildlife Health Interventions</rdfs:label>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas161"/>
         <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas162"/>
+        <rdfs:label>obsolete Wildlife Health Interventions</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
