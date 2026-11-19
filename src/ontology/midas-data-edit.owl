@@ -6595,6 +6595,33 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     
 
 
+    <!-- http://w3id.org/midas-metadata/midas160 -->
+
+    <owl:Class rdf:about="http://w3id.org/midas-metadata/midas160">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas159"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas159"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A control strategy census that is about event cancellation control strategies implemented in a particular geographical region.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">event cancellation control strategy census</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/midas-metadata/midas17 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas17">
@@ -6922,32 +6949,15 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     </owl:Class>
     
 
-
     <!-- http://w3id.org/midas-metadata/midas45 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas45">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas159"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000604"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas159"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A control strategy census that is about event cancellation control strategies implemented in a particular geographical region.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">event cancellation control strategy census</rdfs:label>
+        <obo:IAO_0000115>Events that were cancelled due to an outbreak</obo:IAO_0000115>
+        <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas159"/>
+        <oboInOwl:consider rdf:resource="http://w3id.org/midas-metadata/midas160"/>
+        <rdfs:label xml:lang="en">obsolete event cancellations</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-    
 
 
     <!-- http://w3id.org/midas-metadata/midas46 -->
