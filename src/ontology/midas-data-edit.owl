@@ -5193,7 +5193,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <!-- http://purl.obolibrary.org/obo/NCIT_C128351 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C128351">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004335"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
     </owl:Class>
     
 
@@ -7259,8 +7259,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas69">
         <obo:IAO_0000115 xml:lang="en">A mathematical model of the interactions between entities that might affect outbreak progression.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">obsolete network model</rdfs:label>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000612"/>
+        <rdfs:label xml:lang="en">obsolete network model</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
