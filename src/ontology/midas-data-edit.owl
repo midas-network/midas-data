@@ -3851,7 +3851,7 @@ agent seroprevalence will depend on a type of infectious agent and a population.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0014001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_810"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_813"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4101,7 +4101,6 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018661">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005108"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100120"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C35803"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002451"/>
@@ -5157,16 +5156,16 @@ agent seroprevalence will depend on a type of infectious agent and a population.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_810 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_813 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_810">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_813">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
-        <obo:IAO_0000116 xml:lang="en">A genus of the family CHLAMYDIACEAE whose species cause a variety of diseases in vertebrates including humans, mice, and swine. Chlamydia species are gram-negative and produce glycogen. The type species is CHLAMYDIA TRACHOMATIS.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Type species of CHLAMYDIA causing a variety of ocular and urogenital diseases.</obo:IAO_0000116>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_810"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_813"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget xml:lang="en">A genus of the family CHLAMYDIACEAE whose species cause a variety of diseases in vertebrates including humans, mice, and swine. Chlamydia species are gram-negative and produce glycogen. The type species is CHLAMYDIA TRACHOMATIS.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Type species of CHLAMYDIA causing a variety of ocular and urogenital diseases.</owl:annotatedTarget>
         <oboInOwl:source xml:lang="en">From NIH National Library of Medicine, National Center for Biotechnology Information; Medical Subject Headings (MeSH) thesaurus</oboInOwl:source>
     </owl:Axiom>
     
