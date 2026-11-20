@@ -7023,7 +7023,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas48">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas6"/>
-        <obo:IAO_0000115 xml:lang="en">A feature of a modeling approach that influences the behavior of that model.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A modeling feature that describes an aspect of a model’s approach that influences the model’s behavior.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">modeling characteristic</rdfs:label>
     </owl:Class>
     
@@ -7160,7 +7160,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas6">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that describes a feature of a model or modeling study.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">modeling</rdfs:label>
+        <oboInOwl:hasExactSynonym xml:lang="en">modeling</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">modeling feature</rdfs:label>
     </owl:Class>
     
 
