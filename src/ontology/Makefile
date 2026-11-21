@@ -1,7 +1,8 @@
 # Midas Ontology Makefile
 # Bill Hogan <hoganwr@ufl.edu>
 # edit 2025-05-27, John Levander <jdl50@pitt.edu>
-# edit 2025-07-23 - add NCIT ontology import, Lucie Contamin <contamin@pitt.edu)
+# edit 2025-07-23 - add NCIT ontology import, Lucie Contamin <contamin@pitt.edu>
+# edit 2025-11-18 - path for temp MONDO listeriosis import issue, Lucie Contamin <contamin@pitt.edu>
 #
 # This Makefile is used to build artifacts
 # for the Ontology for Biomedical Investigations.
@@ -25,7 +26,7 @@ SHELL := bash
 ### Definitions
 
 OBO     := http://purl.obolibrary.org/obo
-MIDAS	:= http://midasnetwork.us/datasets
+MIDAS	:= http://midasnetwork.us/ontology
 TODAY   := $(shell date +%Y-%m-%d)
 
 ### Release files
@@ -61,12 +62,14 @@ endef
 # $(1) = ontology name (e.g., mondo)
 # $(2) = base IRI for removal (e.g., http://purl.obolibrary.org/obo/MONDO_)
 # $(3) = copy ontology annotations (true/false)
+# $(4) = optional SPARQL update file applied to the import (local patch)
 define create_import
-$(IMPORTDIR)/$(1)_import.owl: $(MIRRORDIR)/$(1).owl $(IMPORTDIR)/seed.txt | build/robot.jar
+$(IMPORTDIR)/$(1)_import.owl: $(MIRRORDIR)/$(1).owl $(IMPORTDIR)/seed.txt $(4) | build/robot.jar
 	$(ROBOT) \
 		extract -i $(MIRRORDIR)/$(1).owl -T $(IMPORTDIR)/seed.txt --copy-ontology-annotations $(3) --force true --method subset \
 		remove --base-iri $(2) --axioms external --preserve-structure false --trim false \
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/seed.txt --select complement \
+		$(if $(4),query --update $(4)) \
 		annotate --ontology-iri "$(MIDAS)/$$@" --output $$@
 endef
 ########################### End Helper Functions ##############################
@@ -94,7 +97,7 @@ $(eval $(call mirror_ontology,mondo,mondo/mondo-simple.owl))
 $(eval $(call mirror_ontology,ncit,ncit.owl))
 
 # Create the imports
-$(eval $(call create_import,mondo,http://purl.obolibrary.org/obo/MONDO_,false))
+$(eval $(call create_import,mondo,http://purl.obolibrary.org/obo/MONDO_,false,$(IMPORTDIR)/remove_listeriosis_vbd.ru))
 $(eval $(call create_import,apollo-sv,http://purl.obolibrary.org/obo/APOLLO_SV_,true))
 $(eval $(call create_import,ncbitaxon,http://purl.obolibrary.org/obo/NCBITaxon_,true))
 $(eval $(call create_import,ncit,http://purl.obolibrary.org/obo/NCIT_,true))
@@ -111,19 +114,19 @@ midas-data.owl: $(SRC) $(IMPORTS) $(MIRRORS) | build/robot.jar
 
 .PHONY: zip_ontologies
 zip_ontologies: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl #$(MIRRORDIR)/ncit.owl
-	@echo "-- Zipping all ontologies in $(MIRRORDIR) and $(IMPORTDIR) --"
+	@echo "-- Zipping all ontologies in $(MIRRORDIR) --" #and $(IMPORTDIR) --"
 	for f in mirror/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
 	@echo "Zipped ontologies in $(MIRRORDIR) to $(MIRRORDIR).zip"
-	for f in imports/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
-	@echo "Zipped all ontologies in $(IMPORTDIR) to $(IMPORTDIR).zip"
+#	for f in imports/*.owl; do zip -j "$(basename "$$f".owl).zip" "$$f"; done
+#	@echo "Zipped all ontologies in $(IMPORTDIR) to $(IMPORTDIR).zip"
 
 .PHONY: delete_owl_files
 delete_owl_files: $(MIRRORDIR)/apollo-sv.owl $(MIRRORDIR)/mondo.owl $(MIRRORDIR)/ncbitaxon.owl $(IMPORTS) midas-data.owl #$(MIRRORDIR)/ncit.owl
-	@echo "-- Deleting all owl files in $(MIRRORDIR) and $(IMPORTDIR) --"
+	@echo "-- Deleting all owl files in $(MIRRORDIR) --" # and $(IMPORTDIR) --"
 	rm -f $(MIRRORDIR)/*.owl
 	@echo "Deleted all owl files in $(MIRRORDIR)"
-	rm -f $(IMPORTDIR)/*.owl
-	@echo "Deleted all owl files in $(IMPORTDIR)"
+#	rm -f $(IMPORTDIR)/*.owl
+#	@echo "Deleted all owl files in $(IMPORTDIR)"
 
 
 .PHONY: prepare_release
