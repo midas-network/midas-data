@@ -25,7 +25,7 @@
         <terms:description xml:lang="en">An ontology for describing resources in the MIDAS (Models of Infectious Disease Agent Study) Catalog, covering biological scale, artifact type, modeling topics and other topics of interest.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">MIDAS Ontology</terms:title>
-        <rdfs:comment xml:lang="en">Logical axioms on 37 classes copied from the Apollo-SV release of 2026-07-19. In 4 of these axioms (on host organism, vaccination and vaccine), OBI_0100026 and OBI_0000047 were replaced by COB_0000022 and COB_0000026 to match MIDAS&apos;s COB alignment.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Logical axioms on several classes copied from the Apollo-SV release of 2026-07-19. To match MIDAS&apos;s COB alignment, three OBI classes were replaced by COB classes: OBI_0100026 (organism) by COB_0000022, OBI_0000047 (processed material) by COB_0000026, and OBI_0000011 (planned process) by COB_0000035 (completely executed planned process).</rdfs:comment>
         <rdfs:comment xml:lang="en">The ontology IRI changed from http://midasnetwork.us/datasets/midas-data.owl (which did not resolve) to http://midasnetwork.us/ontology/midas-data.owl after the 2026-07-23 version.</rdfs:comment>
         <owl:priorVersion rdf:resource="http://midasnetwork.us/datasets/v2026-07-23/midas-data.owl"/>
         <foaf:homepage rdf:resource="https://midasnetwork.us/ontology/index.html"/>
@@ -367,13 +367,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-        <obo:IAO_0000111 xml:lang="en">obsolete_is_realized_by</obo:IAO_0000111>
-        <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
+        <obo:IAO_0000111>realized in</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Relation between a realizable and a process. Reciprocal relation of realizes [GOC:cjm]</obo:IAO_0000115>
-        <obo:IAO_0000116>replaced by http://purl.obolibrary.org/obo/BFO_0000054: &apos;is realized by&apos;</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:label xml:lang="en">realized in</rdfs:label>
@@ -550,6 +550,16 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0014001">
         <obo:IAO_0000115 xml:lang="en">A relationship between a disease and an infectious agent where the material basis of the disease is an infection with some infectious agent.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">disease has infectious agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="https://purl.obolibrary.org/obo/BFO_0000066">
+        <obo:IAO_0000115 xml:lang="en">b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant</rdfs:comment>
+        <rdfs:label xml:lang="en">occurs in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1284,7 +1294,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000107 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000107">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
     </owl:Class>
     
 
@@ -2560,7 +2570,7 @@ Every behaviour is associated with mental processes, but not every mental proces
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000651 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000651">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
     </owl:Class>
     
 
@@ -2804,6 +2814,25 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112 xml:lang="en">or with divisions drawn by cognitive subjects for practical reasons, such as the division of a cake (before slicing) into (what will become) slices (and thus member parts of an object aggregate). However, this does not mean that fiat object parts are dependent for their existence on divisions or delineations effected by cognitive subjects. If, for example, it is correct to conceive geological layers of the Earth as fiat object parts of the Earth, then even though these layers were first delineated in recent times, still existed long before such delineation and what holds of these layers (for example that the oldest layers are also the lowest layers) did not begin to hold because of our acts of delineation.Treatment of material entity in BFOExamples viewed by some as problematic cases for the trichotomy of fiat object part, object, and object aggregate include: a mussel on (and attached to) a rock, a slime mold, a pizza, a cloud, a galaxy, a railway train with engine and multiple carriages, a clonal stand of quaking aspen, a bacterial community (biofilm), a broken femur. Note that, as Aristotle already clearly recognized, such problematic cases – which lie at or near the penumbra of instances defined by the categories in question – need not invalidate these categories. The existence of grey objects does not prove that there are not objects which are black and objects which are white; the existence of mules does not prove that there are not objects which are donkeys and objects which are horses. It does, however, show that the examples in question need to be addressed carefully in order to show how they can be fitted into the proposed scheme, for example by recognizing additional subdivisions [29</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the FMA:regional parts of an intact human body.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Western hemisphere of the Earth</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the division of the brain into regions</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the division of the planet into hemispheres</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the dorsal and ventral surfaces of the body</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the upper and lower lobes of the left lung</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Most examples of fiat object parts are associated with theoretically drawn divisions</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
@@ -2983,6 +3012,25 @@ Every behaviour is associated with mental processes, but not every mental proces
         <obo:IAO_0000115 xml:lang="en">A geographical entity that is demarcated at least in part by one or more closed fiat boundaries all of whose lines are part of the planetary surface.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">geographical region</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <rdfs:comment xml:lang="en">Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <rdfs:label xml:lang="en">biological process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -5966,6 +6014,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas115"/>
         <obo:IAO_0000115 xml:lang="en">An antibody treatment against respiratory syncytial virus via the administration of the monoclonal antibody nirsevimab.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">immunization with nirsevimab</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000639"/>
     </owl:Class>
     
 
