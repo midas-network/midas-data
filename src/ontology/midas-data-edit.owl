@@ -1148,16 +1148,6 @@ Every behaviour is associated with mental processes, but not every mental proces
     
 
 
-    <!-- http://id.nlm.nih.gov/mesh/D064886 -->
-
-    <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/D064886">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115 xml:lang="en">Works consisting of organized collections of data, which have been stored permanently in a formalized manner suitable for communication, interpretation, or processing.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Dataset</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://id.nlm.nih.gov/mesh/D064890 -->
 
     <owl:Class rdf:about="http://id.nlm.nih.gov/mesh/D064890">
@@ -3052,7 +3042,6 @@ of this, different, term.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
         <obo:IAO_0000111 xml:lang="en">software</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">Software is a plan specification composed of a series of instructions that can be 
@@ -5814,9 +5803,10 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas10 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas10">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that broadly categorizes the kinds of entries that might be annotated with this ontology.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">digital object type</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete digital object type</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/dc/elements/1.1/type"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5930,8 +5920,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas11 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas11">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115 xml:lang="en">A collection of links to other items, often found in external repositories. No claims are made as to the format or consistency of the items associated with those links.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of links to other items, often found in external repositories. No claims are made as to the format or consistency of the items associated with those links.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">catalog</rdfs:label>
     </owl:Class>
     
@@ -6050,8 +6040,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas12 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas12">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115 xml:lang="en">An interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counts and forecast.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is an interactive display, usually in the form of a web page, that provides a summary of the current state of some dataset, usually from multiple perspectives. May include both counts and forecasts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">dashboard</rdfs:label>
     </owl:Class>
     
@@ -6836,8 +6826,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas32 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas32">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115 xml:lang="en">A collection of information in various types of structured or non-structured formats.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of information in various types of structured or non-structured formats.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">repository</rdfs:label>
     </owl:Class>
     
@@ -7285,8 +7275,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas70 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas70">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas10"/>
-        <obo:IAO_0000115 xml:lang="en">A digital object type for resources focused on educational or instructional content.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity focused on educational or instructional content.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">educational resource</rdfs:label>
     </owl:Class>
     
