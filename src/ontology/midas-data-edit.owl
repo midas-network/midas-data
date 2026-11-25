@@ -5898,7 +5898,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas03">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that specifies the level of detail of a location, such as ADMIN0, ADMIN1, country or state (several levels can apply).</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">List comes from GEONAMES class like: &quot;Dependent political entity&quot; or &quot;First-order administrative division&quot;, but it also contains common terms (from https://en.wikipedia.org/wiki/Administrative_division for example) to help with the data entry</rdfs:comment>
+        <rdfs:comment xml:lang="en">The allowed values (e.g. country, ADMIN1) are maintained in the MIDAS Catalog. They are based on GeoNames feature classes, such as &quot;Dependent political entity&quot; or &quot;First-order administrative division&quot;, plus common terms (e.g. from https://en.wikipedia.org/wiki/Administrative_division) to help with data entry.</rdfs:comment>
         <rdfs:label xml:lang="en">geographical resolution</rdfs:label>
     </owl:Class>
     
@@ -5949,7 +5949,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas102">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D004813"/>
-        <obo:IAO_0000115 xml:lang="en">An interdisciplinary area of epidemiology that sets its sights on developing and using computer models to understand and control the spatiotemporal diffusion of disease through populations.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An interdisciplinary area of epidemiology that focuses on developing and using computer models to understand and control the spatiotemporal diffusion of disease through populations.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From Computational Epidemiology – Communications of the ACM. 2013. https://cacm.acm.org/research/computational-epidemiology/.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">computational epidemiology</rdfs:label>
     </owl:Class>
@@ -5971,7 +5971,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas104">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D010811"/>
-        <obo:IAO_0000115 xml:lang="en">An inter-disciplinary field to improve the implementation of models and critical data analyses in epidemic response.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An interdisciplinary field to improve the implementation of models and critical data analyses in epidemic response.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">outbreak science</rdfs:label>
     </owl:Class>
@@ -6137,7 +6137,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas118">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas117"/>
         <obo:IAO_0000115 xml:lang="en">A count of antibody administrations in a population that is the total number of a given type of antibody administered during a reference temporal interval.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">cumulative antibody administrations count</rdfs:label>
+        <rdfs:label xml:lang="en">cumulative antibody administration count</rdfs:label>
     </owl:Class>
     
 
@@ -6147,7 +6147,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas119">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas117"/>
         <obo:IAO_0000115 xml:lang="en">A count of antibody administrations in a population that is the number of a given type of antibody administered during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">incident antibody administrations count</rdfs:label>
+        <rdfs:label xml:lang="en">incident antibody administration count</rdfs:label>
     </owl:Class>
     
 
@@ -6202,7 +6202,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas123">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas124"/>
-        <obo:IAO_0000115 xml:lang="en">A personal protective measure control strategy whereby people clean or disinfect their hands to prevent the transmission of diseases by hand.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A personal protective measure control strategy whereby people clean or disinfect their hands to prevent the transmission of diseases via the hands.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">hand hygiene control strategy</rdfs:label>
     </owl:Class>
     
@@ -6450,7 +6450,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas140">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas139"/>
-        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the total number of diagnostic tests performed that occur during a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the total number of diagnostic tests performed during a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cumulative diagnostic test count</rdfs:label>
     </owl:Class>
     
@@ -6460,7 +6460,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas141">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas139"/>
-        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the number of diagnostic tests performed that occur during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A count of diagnostic tests performed in a population that is the number of diagnostic tests performed during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">incident diagnostic test count</rdfs:label>
     </owl:Class>
     
@@ -6598,7 +6598,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas151">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
-        <obo:IAO_0000115 xml:lang="en">An environmental dataset about the observed physical and biological cover of the Earth’s land surface including natural features such as vegetation, soils and waterbodies, as well as human-made features such as buildings and roads. Land cover is distinct from land use, which refers to the activities people undertake on a particular land cover type.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An environment information dataset about the observed physical and biological cover of the Earth’s land surface including natural features such as vegetation, soils and waterbodies, as well as human-made features such as buildings and roads. Land cover is distinct from land use, which refers to the activities people undertake on a particular land cover type.</obo:IAO_0000115>
         <obo:IAO_0000119>https://agrovoc.fao.org/browse/agrovoc/en/page/c_37897</obo:IAO_0000119>
         <rdfs:label xml:lang="en">land cover data set</rdfs:label>
     </owl:Class>
@@ -6609,7 +6609,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas152">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
-        <obo:IAO_0000115 xml:lang="en">An environmental dataset about the activities, arrangements and inputs that people undertake on a particular land cover type to produce, change or maintain it. Land use encompasses a wide range of human activities, from farming and forestry to urban development and infrastructure, and is a key aspect of land management and sustainable development.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An environment information dataset about the activities, arrangements and inputs that people undertake on a particular land cover type to produce, change or maintain it. Land use encompasses a wide range of human activities, from farming and forestry to urban development and infrastructure, and is a key aspect of land management and sustainable development.</obo:IAO_0000115>
         <obo:IAO_0000119>https://agrovoc.fao.org/browse/agrovoc/en/page/c_4182</obo:IAO_0000119>
         <rdfs:label xml:lang="en">land use data set</rdfs:label>
     </owl:Class>
@@ -6838,7 +6838,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An environmental dataset about air contaminants that threaten human health.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An environment information dataset about air contaminants that threaten human health.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">air quality data set</rdfs:label>
     </owl:Class>
     
@@ -6848,7 +6848,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas23">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas150"/>
-        <obo:IAO_0000115 xml:lang="en">An environmental dataset about destruction of entities in an ecosystem including living things and human-built structures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An environment information dataset about destruction of entities in an ecosystem including living things and human-built structures and artifacts by overwhelming natural phenomena such as hurricanes, tornadoes, tsunamis, earthquakes, and volcano eruptions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">natural disaster data set</rdfs:label>
     </owl:Class>
     
@@ -6879,7 +6879,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas26">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas17"/>
-        <obo:IAO_0000115 xml:lang="en">A count of emergency department visits in a population that is the number of emergency department visits that occurred during a proper part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A count of emergency department visits in a population that is the number of emergency department visits that occurred during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">incident emergency department visit count</rdfs:label>
     </owl:Class>
     
@@ -6942,7 +6942,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas32">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of information in various types of structured or non-structured formats.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of information in various types of structured or unstructured formats.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">repository</rdfs:label>
     </owl:Class>
     
@@ -7232,7 +7232,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas57">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas109"/>
-        <obo:IAO_0000115 xml:lang="en">A health heterogeneity data set that aggregates descriptions of multiple factors affecting susceptibility to outbreaks.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health heterogeneity data set that aggregates descriptions of multiple factors affecting susceptibility to infection or disease.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">risk factor data set</rdfs:label>
     </owl:Class>
     
@@ -7348,7 +7348,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas67">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
-        <obo:IAO_0000115 xml:lang="en">A modeling purpose of predicting the values of key outbreak parameters, including (but not limited to) fatality rate, R_0, etc.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A modeling purpose of predicting the values of key outbreak parameters, such as fatality rate or R_0.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">parameter estimation</rdfs:label>
     </owl:Class>
     
@@ -7466,7 +7466,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas77">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that names the locations covered, in English, at country or ADMIN1 level as given in GeoNames (if more than 10 different countries, &quot;Earth&quot; can be used).</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Also have Continent and Earth information as some data set have data for multiple countries but in the same continent.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Also have Continent and Earth information as some data sets have data for multiple countries but in the same continent.</rdfs:comment>
         <rdfs:label xml:lang="en">geographical scope</rdfs:label>
     </owl:Class>
     
@@ -7498,7 +7498,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas8">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas5"/>
-        <obo:IAO_0000115 xml:lang="en">A biological scale referring to sequence-level, including genomics, microbiomics, proteomics, etc.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A biological scale referring to sequence level, including genomics, microbiomics, proteomics, etc.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">molecular</rdfs:label>
     </owl:Class>
     
@@ -7555,7 +7555,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas63"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A data set that is an aggregate of estimates of reluctance to being vaccinated.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data set that is an aggregate of estimates of reluctance to be vaccinated.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">vaccine hesitancy data set</rdfs:label>
     </owl:Class>
     
@@ -7625,7 +7625,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas90">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas89"/>
-        <obo:IAO_0000115 xml:lang="en">A count of outpatient visit in a population that is the total number of outpatient visit that occur during a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A count of outpatient visits in a population that is the total number of outpatient visits that occur during a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cumulative outpatient visit count</rdfs:label>
     </owl:Class>
     
@@ -7635,7 +7635,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas91">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas89"/>
-        <obo:IAO_0000115 xml:lang="en">A count of outpatient visit in a population that is the number of outpatient visit that occurred during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A count of outpatient visits in a population that is the number of outpatient visits that occurred during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">incident outpatient visit count</rdfs:label>
     </owl:Class>
     
