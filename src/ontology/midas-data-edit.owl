@@ -5938,8 +5938,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas101 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302867"/>
+        <obo:IAO_0000115 xml:lang="en">A predicted data item that is the cumulative probability of the incident hospitalization peak occurring during a proper occurrent part of a reference temporal interval.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">peak hospitalization time cumulative distribution</rdfs:label>
     </owl:Class>
     
@@ -5970,7 +5970,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas104 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas104">
-        <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D010811"/>
+        <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D004813"/>
         <obo:IAO_0000115 xml:lang="en">An interdisciplinary field to improve the implementation of models and critical data analyses in epidemic response.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From Rivers, Caitlin, Jean-Paul Chretien, Steven Riley, et al. 2019. “Using ‘Outbreak Science’ to Strengthen the Use of Models during Epidemics.” Nature Communications 10 (1). https://doi.org/10.1038/s41467-019-11067-2.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">outbreak science</rdfs:label>
@@ -6002,7 +6002,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas107">
         <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D002965"/>
-        <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D005075"/>
+        <rdfs:subClassOf rdf:resource="http://id.nlm.nih.gov/mesh/D010802"/>
         <obo:IAO_0000115 xml:lang="en">A field of study that refers to the reconstruction of epidemiological and immunological processes from the shape of phylogenetic tree relating infections.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From Ferreira, Roux-Cil, Connor Chato, Laura Muñoz Baena, et al. 2024. “Chapter 130 - Molecular Epidemiology of Viral Infections.” In Molecular Medical Microbiology (Third Edition), edited by Yi-Wei Tang, Musa Y. Hindiyeh, Dongyou Liu, Andrew Sails, Paul Spearman, and Jing-Ren Zhang. Academic Press. https://doi.org/10.1016/B978-0-12-818619-0.00137-4.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">phylodynamics</rdfs:label>
@@ -6099,8 +6099,9 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
-        <obo:IAO_0000115 xml:lang="en">A drug treatment that uses antibodies to help the body fight cancer, infection or other diseases. Antibodies are proteins made by the immune system that bind to specific markers on cells or tissues.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">https://www.cancer.gov/publications/dictionaries/cancer-terms/def/antibody-therapy</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A drug treatment in which antibodies are administered to prevent or treat a disease, such as an infection.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Adapted from: https://www.cancer.gov/publications/dictionaries/cancer-terms/def/antibody-therapy</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Antibodies are proteins made by the immune system that bind to specific markers on cells or tissues.</rdfs:comment>
         <rdfs:label xml:lang="en">antibody treatment</rdfs:label>
     </owl:Class>
     
@@ -6109,7 +6110,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas116 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas116">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas21"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000189"/>
         <obo:IAO_0000115 xml:lang="en">A census about personal protective equipment supplies (masks, gloves, gowns, shields, boots, etc.) in a particular geographical region.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">census of PPE supplies</rdfs:label>
     </owl:Class>
@@ -6123,7 +6124,22 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/midas-metadata/midas115"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://w3id.org/midas-metadata/midas115"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A count of antibody administration events that occurred in a population during a temporal region.</obo:IAO_0000115>
@@ -6169,7 +6185,22 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000318"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A count of drug treatment events that occurred in a population during a temporal region.</obo:IAO_0000115>
@@ -6635,7 +6666,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <!-- http://w3id.org/midas-metadata/midas154 -->
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas154">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas157"/>
         <obo:IAO_0000115 xml:lang="en">A model that represents trait evolution and predicts trait values using phylogeny as a basis.</obo:IAO_0000115>
         <obo:IAO_0000119>http://edamontology.org/operation_0324</obo:IAO_0000119>
         <rdfs:label xml:lang="en">phylogenetic model</rdfs:label>
@@ -6923,7 +6954,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas30">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
         <obo:IAO_0000115 xml:lang="en">A literature catalog of papers that describe modeling studies.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">modeling study</rdfs:label>
+        <obo:IAO_0000118>modeling study</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">modeling study catalog</rdfs:label>
     </owl:Class>
     
 
@@ -6952,7 +6984,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas33">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas7"/>
-        <obo:IAO_0000115 xml:lang="en">A catalog focused on a specific disease.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A literature catalog focused on a specific disease.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">disease-specific collection</rdfs:label>
     </owl:Class>
     
@@ -7079,12 +7111,6 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas44">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://id.nlm.nih.gov/mesh/D000069550"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A model built using machine learning methods.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">machine learning model</rdfs:label>
     </owl:Class>
@@ -7118,7 +7144,8 @@ last accessed: 14/01/2014</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas47">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <obo:IAO_0000115 xml:lang="en">A modeling technique that identifies parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An algorithm that identifies parameters that can be used to recreate the measured history of an outbreak, with the intent of using those parameter values to inform projections.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Use for the method of fitting parameters so the model reproduces observed data, usually before projecting. For studies whose goal is the parameter values themselves, see parameter estimation.</rdfs:comment>
         <rdfs:label xml:lang="en">calibration</rdfs:label>
     </owl:Class>
     
@@ -7349,6 +7376,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
     <owl:Class rdf:about="http://w3id.org/midas-metadata/midas67">
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115 xml:lang="en">A modeling purpose of predicting the values of key outbreak parameters, such as fatality rate or R_0.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Use when the goal of the study is the parameter values themselves (e.g. R0, fatality rate). For tuning a model to observed data before projecting, see calibration.</rdfs:comment>
         <rdfs:label xml:lang="en">parameter estimation</rdfs:label>
     </owl:Class>
     
@@ -7659,6 +7687,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
         <obo:IAO_0000115 xml:lang="en">A disease that the World Health Organization lists as a neglected tropical disease. Neglected tropical diseases (NTDs) are a diverse group of conditions caused by a variety of pathogens (including viruses, bacteria, parasites, fungi and toxins) and associated with devastating health, social and economic consequences.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From “Neglected Tropical Diseases.” n.d. Accessed July 25, 2025. https://www.who.int/news-room/questions-and-answers/item/neglected-tropical-diseases.</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">List follows the WHO list of neglected tropical diseases and must be reviewed when WHO updates it (last checked July 2025).</rdfs:comment>
         <rdfs:label xml:lang="en">neglected tropical disease</rdfs:label>
     </owl:Class>
     
@@ -7671,6 +7700,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">An infectious disease for which at least one vaccine is available that is either listed by the World Health Organization (WHO) on its vaccine-preventable diseases page or prequalified by WHO.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">From: https://www.who.int/news-room/q-a-detail/ebola-vaccines, accessed on Nov 18, 2026</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">From: https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases, accessed on Nov 4, 2026</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">List follows the WHO lists cited in the definition sources and must be reviewed when WHO updates them (last checked November 2026).</rdfs:comment>
         <rdfs:label xml:lang="en">vaccine-preventable disease</rdfs:label>
     </owl:Class>
     
@@ -7715,7 +7745,7 @@ last accessed: 14/01/2014</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://w3id.org/midas-metadata/midas15"/>
         <obo:IAO_0000115 xml:lang="en">A modeling purpose using decision models to provide an approach to defining and evaluating alternative policy options under complex and changing conditions.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Shearer, Freya M., Robert Moss, Jodie McVernon, Joshua V. Ross, and James M. McCaw. 2020. “Infectious Disease Pandemic Planning and Response: Incorporating Decision Analysis.” PLOS Medicine 17 (1): e1003018. https://doi.org/10.1371/journal.pmed.1003018.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">decision model</rdfs:label>
+        <rdfs:label xml:lang="en">decision support</rdfs:label>
     </owl:Class>
     
 
